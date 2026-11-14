@@ -284,7 +284,7 @@ class Enricher:
         if not text:
             return {"status": "failed", "kind": "results", "error": "no text (scanned or unreachable PDF)"}
         lender_hint = bool(LENDER_HINTS.search(self.sectors.get(item["symbol"], "")))
-        raw = self.llm.json("extract", RESULTS_SYSTEM,
+        raw = self.llm.json("numbers", RESULTS_SYSTEM,
                             RESULTS_USER.format(company=item.get("company") or item["symbol"], text=text),
                             max_tokens=1200)
         if raw is None:  # dry run
@@ -396,7 +396,7 @@ class Enricher:
                 stats["skipped_cached"] += 1
                 continue
             if self.llm.dry_run:  # no PDF downloads, no calls: just the plan
-                tier = {"results": "extract", "management": "cheap", "generic": "cheap"}[kind]
+                tier = {"results": "numbers", "management": "cheap", "generic": "cheap"}[kind]
                 est = {"results": 5000, "management": 2000, "generic": 1100}[kind]
                 self.llm.planned.append({"tier": tier, "kind": kind, "symbol": it["symbol"], "est_tokens_in": est})
                 stats[f"planned_{kind}"] += 1
@@ -404,6 +404,10 @@ class Enricher:
             try:
                 out = self.results_best(it) if kind == "results" else getattr(self, kind)(it)
             except LLMUnavailable as e:
+                if kind == "results":  # no trustworthy model for numbers right now; keep going with the rest
+                    log.warning("skipping %s results card: %s", it["symbol"], str(e)[:120])
+                    stats["results_skipped_no_model"] += 1
+                    continue
                 log.warning("stopping LLM pass: %s", e)
                 stats["stopped"] = 1
                 break

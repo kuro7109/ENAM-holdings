@@ -62,6 +62,9 @@ def _route(tier: str) -> list[tuple[str, str]]:
         "extract": [("gemini", e("FINN_EXTRACT_MODEL", "gemini-2.5-flash")),
                     ("gemini", e("FINN_EXTRACT_MODEL_2", "gemini-2.5-flash-lite")),  # separate free quota
                     ("groq", e("FINN_EXTRACT_FALLBACK", "openai/gpt-oss-120b"))],
+        # Results numbers: Gemini only. A wrong revenue figure is worse than "open the filing".
+        "numbers": [("gemini", e("FINN_EXTRACT_MODEL", "gemini-2.5-flash")),
+                    ("gemini", e("FINN_EXTRACT_MODEL_2", "gemini-2.5-flash-lite"))],
         "reason": [("gemini", e("FINN_REASON_MODEL", "gemini-2.5-flash")),
                    ("gemini", e("FINN_REASON_MODEL_2", "gemini-2.5-flash-lite")),
                    ("groq", e("FINN_REASON_FALLBACK", "openai/gpt-oss-120b"))],
@@ -172,6 +175,8 @@ class LLM:
                 log.warning("%s/%s: daily quota used up, skipping it for this run", provider, model)
                 last = e
             except Exception as e:  # rate limit, bad JSON, outage: try the next model in the chain
+                if "404" in str(e):
+                    EXHAUSTED.add(model)  # model not served to this key; don't retry it this run
                 log.warning("%s/%s failed: %s", provider, model, str(e)[:200])
                 last = e
         raise LLMUnavailable(f"all models failed for tier '{tier}': {last}")

@@ -48,7 +48,9 @@ def main(argv=None) -> int:
     ap.add_argument("--redo", choices=["results", "management", "generic"],
                     help="re-run this kind even if already enriched (e.g. after a prompt fix)")
     ap.add_argument("--feed-only", action="store_true")
-    ap.add_argument("--symbol", help="only this company (e.g. SUNPHARMA)")
+    ap.add_argument("--symbol", help="only these companies, comma-separated (e.g. HAL,SUNPHARMA)")
+    ap.add_argument("--forget", choices=["results", "management", "generic"],
+                    help="delete stored enrichment of this kind (with --symbol: only those companies)")
     ap.add_argument("-v", "--verbose", action="store_true")
     a = ap.parse_args(argv)
     logging.basicConfig(level=logging.DEBUG if a.verbose else logging.INFO,
@@ -59,6 +61,19 @@ def main(argv=None) -> int:
         print("No data/out/announcements.json yet. Run `python run_daily.py --days 30` first.")
         return 1
     cfg = load_config()
+    syms = {x.strip().upper() for x in (a.symbol or "").split(",") if x.strip()}
+
+    if a.forget:
+        p = OUT / "enrichment.json"
+        store = json.loads(p.read_text(encoding="utf-8")) if p.exists() else {"items": {}}
+        sym_of = {i["id"]: i["symbol"] for i in ann["items"]}
+        drop = [k for k, v in store["items"].items()
+                if v.get("kind") == a.forget and (not syms or sym_of.get(k) in syms)]
+        for k in drop:
+            store["items"].pop(k)
+        p.write_text(json.dumps(store, ensure_ascii=False, indent=1), encoding="utf-8")
+        print(f"forgot {len(drop)} {a.forget} entries" + (f" for {', '.join(sorted(syms))}" if syms else ""))
+        a.feed_only = True
 
     if not a.feed_only:
         llm = LLM(dry_run=a.dry_run, max_calls=a.max_calls)
@@ -68,7 +83,7 @@ def main(argv=None) -> int:
             enr = Enricher(llm, OUT / "enrichment.json",
                            sectors={c.symbol: c.sector for c in cfg.companies},
                            names={c.symbol: c.name for c in cfg.companies})
-            items = [i for i in ann["items"] if not a.symbol or i["symbol"] == a.symbol.upper()]
+            items = [i for i in ann["items"] if not syms or i["symbol"] in syms]
             stats = enr.run(items, retry_failed=a.retry_failed, only=a.only, redo=a.redo)
             if a.dry_run:
                 est = sum(p["est_tokens_in"] for p in llm.planned)

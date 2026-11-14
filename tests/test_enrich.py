@@ -104,7 +104,7 @@ def test_enricher_routes_tiers_and_persists(tmp_path):
              _item("g", "LT", "press_release", "Order win"),
              _item("z", "LT", "unclassified", "Compliance certificate", tags=["routine"])]
     answers = {
-        "extract": lambda u: RAW,
+        "numbers": lambda u: RAW,
         "cheap": lambda u: ({"people": [{"name": "A Kumar", "role": "CFO", "change": "appointed",
                                          "top_role": True, "profile": None}], "summary": "A Kumar named CFO"}
                             if "position changes" in u else
@@ -117,7 +117,7 @@ def test_enricher_routes_tiers_and_persists(tmp_path):
                      fetch=lambda url: b"%PDF", search=lambda q: [{"title": "t", "url": "u", "content": "c"}])
     enr._pages = lambda it: [page]
     stats = enr.run(items)
-    assert llm.seen.count("extract") == 1           # results -> long-context model
+    assert llm.seen.count("numbers") == 1           # results -> Gemini-only numbers tier
     assert "z" not in enr.store                      # routine -> no call at all
     assert enr.store["m"]["management"]["people"][0]["bio"].startswith("Ex-CFO")
     assert enr.store["g"]["summary"] == "Bags ₹2,000 cr order"
@@ -196,7 +196,7 @@ def test_results_falls_back_to_next_filing(tmp_path):
     items = [_item("a", "MARUTI", "results", "Financial results for the quarter ended Sep 2026"),
              _item("b", "MARUTI", "results", "Outcome of board meeting - results", filed="2026-11-09T16:00:00+05:30")]
     calls = []
-    llm = FakeLLM(tmp_path / "c", {"extract": lambda u: calls.append(u) or ({"found": False} if len(calls) == 1 else RAW)})
+    llm = FakeLLM(tmp_path / "c", {"numbers": lambda u: calls.append(u) or ({"found": False} if len(calls) == 1 else RAW)})
     enr = E.Enricher(llm, tmp_path / "e.json", {}, {})
     enr._pages = lambda it: ["Revenue from operations Profit before tax quarter ended"]
     enr.run(items)
