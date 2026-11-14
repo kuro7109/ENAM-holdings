@@ -1,0 +1,40 @@
+# FINN demo portfolio: mix of sectors and sizes so alerts + filings look different per stock.
+# bse_code is only used when NSE is unreachable (BSE fallback). Verify codes on bseindia.com.
+
+alerts:                  # global thresholds (override per stock below)
+  price_move_pct: 4.0    # |daily move| >= 4%
+  volume_multiple: 2.0   # volume >= 2x 20-day average
+  volume_lookback: 20
+  sigma_threshold: 3.0   # move >= 3 std-devs of the stock's own daily moves; null to disable
+  sigma_lookback: 60
+  min_avg_volume: 0
+
+portfolio:
+  # --- large caps ---
+  - {symbol: RELIANCE,   bse_code: 500325, name: Reliance Industries,  sector: Energy & Conglomerate}
+  - {symbol: HDFCBANK,   bse_code: 500180, name: HDFC Bank,            sector: Private Bank}
+  - {symbol: INFY,       bse_code: 500209, name: Infosys,              sector: IT Services}
+  - {symbol: ITC,        bse_code: 500875, name: ITC,                  sector: FMCG}
+  - {symbol: BHARTIARTL, bse_code: 532454, name: Bharti Airtel,        sector: Telecom}
+  - {symbol: LT,         bse_code: 500510, name: Larsen & Toubro,      sector: Capital Goods}
+  - {symbol: SUNPHARMA,  bse_code: 524715, name: Sun Pharma,           sector: Pharma}
+  - {symbol: MARUTI,     bse_code: 532500, name: Maruti Suzuki,        sector: Auto}
+  - {symbol: ASIANPAINT, bse_code: 500820, name: Asian Paints,         sector: Paints}
+  - {symbol: BAJFINANCE, bse_code: 500034, name: Bajaj Finance,        sector: NBFC}
+  - {symbol: TITAN,      bse_code: 500114, name: Titan Company,        sector: Consumer}
+  # --- mid caps ---
+  - {symbol: TRENT,      bse_code: 500251, name: Trent,                sector: Retail}
+  - {symbol: DIXON,      bse_code: 540699, name: Dixon Technologies,   sector: Electronics Mfg}
+  - {symbol: POLYCAB,    bse_code: 542652, name: Polycab India,        sector: Cables & Wires}
+  - {symbol: PERSISTENT, bse_code: 533179, name: Persistent Systems,   sector: IT Services}
+  - {symbol: HAL,        bse_code: 541154, name: Hindustan Aeronautics, sector: Defence}
+  # --- volatile names (looser price threshold so they don't spam) ---
+  - {symbol: SUZLON,     bse_code: 532667, name: Suzlon Energy,        sector: Renewables, alerts: {price_move_pct: 6.0}}
+  - {symbol: IRFC,       bse_code: 543257, name: IRFC,                 sector: PSU Finance, alerts: {price_move_pct: 5.0}}
+
+# Pull-side demo companies (can be outside the portfolio). The engine must work on any ticker.
+research:
+  - {symbol: PIDILITIND, bse_code: 500331, name: Pidilite Industries}
+  - {symbol: HAVELLS,    bse_code: 517354, name: Havells India}
+  - {symbol: ASTRAL,     bse_code: 532830, name: Astral}
+  - {symbol: KAYNES,     bse_code: 543664, name: Kaynes Technology}
