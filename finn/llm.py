@@ -68,7 +68,7 @@ def _route(tier: str) -> list[tuple[str, str]]:
         # Results numbers: Gemini only. A wrong revenue figure is worse than "open the filing".
         "numbers": flash + lite,
         "extract": flash + lite + groq_big,
-        "reason": [("gemini", e("FINN_REASON_MODEL", "gemini-3.5-flash"))] + flash[1:] + groq_big,
+        "reason": [("gemini", e("FINN_REASON_MODEL", "gemini-3.5-flash")), flash[1]] + groq_big,
     }
     return chains[tier]
 
@@ -130,7 +130,7 @@ class LLM:
     """
 
     def __init__(self, cache_dir: Path = ROOT / ".cache" / "llm", dry_run: bool = False,
-                 max_calls: int | None = None, timeout: int = 120, session=None):
+                 max_calls: int | None = None, timeout: int = 75, session=None):
         self.cache_dir = Path(cache_dir)
         self.cache_dir.mkdir(parents=True, exist_ok=True)
         self.dry_run, self.max_calls, self.timeout = dry_run, max_calls, timeout
@@ -168,7 +168,15 @@ class LLM:
                 raise LLMUnavailable(f"call budget of {self.max_calls} reached")
             try:
                 content = self._post(provider, model, messages, max_tokens, temperature, tier)
-                data = parse_json(content)
+                try:
+                    data = parse_json(content)
+                except ValueError:  # one malformed answer: ask the same model once more, stricter
+                    log.info("%s returned malformed JSON, retrying once", model)
+                    retry = messages + [{"role": "assistant", "content": content[:2000]},
+                                        {"role": "user", "content": "That was not valid JSON. Return the complete "
+                                         "answer again as one valid JSON object; escape any double quotes inside strings."}]
+                    content = self._post(provider, model, retry, max_tokens, temperature, tier)
+                    data = parse_json(content)
                 path.write_text(json.dumps({"model": model, "content": content}), encoding="utf-8")
                 return data
             except QuotaExhausted as e:
