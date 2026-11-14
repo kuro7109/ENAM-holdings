@@ -16,35 +16,41 @@ export function Spark({ values, w = 74, h = 26 }: { values: (number | null)[]; w
 }
 
 export function ResultsTable({ r }: { r: Results }) {
+  // Filings report in lakhs, crores or millions; show everything in ₹ crore so cards compare.
+  const u = (r.unit || "").toLowerCase();
+  const k = u.includes("lakh") ? 0.01 : u.includes("million") || u.includes("mn") ? 0.1 : 1;
+  const unit = /lakh|million|crore|cr\b|mn/.test(u) ? "₹ cr" : (r.unit || "");
+  const c = (x: number | null) => (x == null ? null : x * k);
+  const em = r.margins.ebitda;
   return (
     <>
       <table className="ledger">
         <thead>
           <tr>
             <th scope="col">{r.labels.current || "This quarter"}</th>
-            <th scope="col">{(r.unit || "").replace(/crore/i, "cr")}</th>
+            <th scope="col">{unit}</th>
             <th scope="col">QoQ</th>
             <th scope="col">YoY</th>
           </tr>
         </thead>
         <tbody>
-          {r.rows.map((row) => (
+          {r.rows.filter((row) => row.current != null).map((row) => (
             <tr key={row.key}>
               <td>{row.metric}</td>
-              <td className="num now">{num(row.current)}</td>
+              <td className="num now">{num(c(row.current))}</td>
               <td className={`num ${tone(row.qoq)}`}>{pct(row.qoq, 0)}</td>
               <td className={`num ${tone(row.yoy)}`}>{pct(row.yoy, 0)}</td>
             </tr>
           ))}
         </tbody>
       </table>
-      {r.margins.ebitda && (
+      {em && em.current != null ? (
         <div className="foot">
-          EBITDA margin <span className="num">{pct(r.margins.ebitda.current, 1, false)}</span> vs{" "}
-          <span className="num">{pct(r.margins.ebitda.year_ago_quarter, 1, false)}</span> a year ago ·{" "}
+          EBITDA margin <span className="num">{pct(em.current, 1, false)}</span>
+          {em.year_ago_quarter != null && <> vs <span className="num">{pct(em.year_ago_quarter, 1, false)}</span> a year ago</>} ·{" "}
           {r.statement} · {r.ebitda_note}
         </div>
-      )}
+      ) : !r.is_lender && <div className="foot">{r.statement}. EBITDA not computable from this filing's table.</div>}
       {r.is_lender && <div className="foot">Lender: EBITDA isn't meaningful, so it's left out. {r.statement}.</div>}
       {r.checks.map((c) => (
         <div className="check" key={c}>Check: {c}</div>
