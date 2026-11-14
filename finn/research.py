@@ -395,6 +395,12 @@ def horizon_quarters(horizon: str) -> tuple[list[str], str] | None:
     return None
 
 
+def _absolute(g: dict) -> bool:
+    """Guidance in rupees (₹ cr / billion), not a percentage."""
+    unit = (g.get("unit") or "").lower()
+    return "cr" in unit or "₹" in unit or "rs" in unit or "bn" in unit or (g.get("target_low") or 0) > 300
+
+
 def _prior(qlabel: str) -> str:
     q, fy = qlabel.split(" FY")
     return f"{q} FY{int(fy) - 1:02d}"
@@ -427,6 +433,17 @@ def check_in_code(g: dict, q: list[dict], a: list[dict]) -> dict | None:
             return None
         actual = round(op / sales * 100, 1)
         hit, partly = actual >= lo - 0.5, actual >= lo - 1.5
+    elif metric == "revenue_growth" and _absolute(g):
+        # "Targeting ₹4,100 crore of revenue": compare reported sales with the amount, not a growth rate.
+        if any(r.get("sales") is None for r in got):
+            return None
+        actual = round(sum(r["sales"] for r in got), 1)
+        if not complete:
+            return {"verdict": "too_early", "actual": f"₹{actual:,.0f} cr of sales ({span})", "where": span}
+        hit, partly = actual >= lo * 0.98, actual >= lo * 0.9
+        verdict = "delivered" if hit else "partly" if partly else "missed"
+        return {"verdict": verdict, "actual": f"₹{actual:,.0f} cr of sales vs ₹{lo:,.0f} cr promised ({span})",
+                "actual_value": actual, "where": span}
     else:
         key = "sales" if metric == "revenue_growth" else "pat"
         prev = [by_q.get(_prior(r["q"])) for r in got]

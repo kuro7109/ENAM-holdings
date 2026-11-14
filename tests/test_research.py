@@ -148,3 +148,10 @@ def test_api_serves_cached(tmp_path, monkeypatch):
     c = TestClient(S.app)
     assert c.get("/api/research/acme").json()["status"] == "ready"
     assert c.get("/api/research/bad sym!").status_code in (400, 404)
+
+
+def test_absolute_revenue_target_compares_rupees_not_growth():
+    n = R.compute_numbers(R.parse_screener(HTML, "u"))
+    q, a = n["trajectory"]["quarterly"], n["trajectory"]["annual"]
+    c = R.check_in_code({"metric": "revenue_growth", "target_low": 5000, "unit": "₹ cr", "horizon": "FY26"}, q, a)
+    assert c["verdict"] == "partly" and "₹4,630 cr of sales vs ₹5,000 cr" in c["actual"]  # Q1..Q4 FY26 = 4,630

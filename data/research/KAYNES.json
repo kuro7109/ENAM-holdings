@@ -936,7 +936,7 @@
    "target_high": 4100.0,
    "unit": "₹ cr",
    "verdict": "missed",
-   "actual": "sales growth 33.3% (FY26)",
+   "actual": "₹3,626 cr of sales vs ₹4,100 cr promised (FY26)",
    "note": null,
    "checked_by": "code"
   },
