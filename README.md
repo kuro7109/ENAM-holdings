@@ -40,7 +40,7 @@ web/ (Vite + React) reads the JSON, re-applies your thresholds on the phone, ren
 
 | Tier | Default model | Used for | Why |
 |---|---|---|---|
-| none | rules | classifying ~80% of filings, all scoring, every number | Exchanges already label filings; arithmetic doesn't need a model |
+| none | rules | classifying 73% of filings (176 of 241), all scoring, every number | Exchanges already label filings; arithmetic doesn't need a model |
 | cheap | Groq GPT-OSS 20B (→ Gemini 3.5 Flash-Lite on rate limit) | one-liners, management changes, rule misses | short text, high volume, free and fast |
 | extract | Gemini 3.5 Flash → 2.5 Flash (each has its own free quota) | results tables (Gemini only: no answer beats a wrong number), transcripts | long context, must copy numbers exactly |
 | reason | Gemini 3.5 Flash (set a Pro model if you have quota) | verdicts the code can't compute, bull / bear | the only step that needs judgment |
@@ -79,24 +79,30 @@ pipeline (`scripts/make_sample_data.py`), so the UI can be built offline.
 
 ## On real data (30 days to 13 Nov 2026)
 
-241 filings across 18 holdings → ~35 ranked as needing attention, 146 folded as routine.
-12 results cards with QoQ/YoY; 17 management changes with who-is-this; 94 one-liners.
-Research: Pidilite, Havells, Astral, Kaynes, with 14–28 tracked promises each.
-Total model spend for all of it: ~0.5M input tokens on free tiers (₹0).
+241 filings across 18 holdings: 35 ranked top by default, 18 worth a look, 146 folded as routine
+(the app's own count can differ: it adds price moves no filing explains and the categories you choose).
+Results cards for 12 of the 16 companies that filed (11 with QoQ, 9 with EBITDA; the other 4 link
+to the filing). 17 management-change filings parsed into 33 people (who, role, in or out); profile
+taken from the filing for 20, web background added for 8 new top-role appointees. 94 one-liners.
+Research: Pidilite, Havells, Astral, Kaynes, 14–28 tracked promises each; every promise links to
+its transcript page (80 of 80).
+Model spend across the logged runs: ~445k input tokens, all on free tiers (₹0).
 
 ## Decisions
 
 - **Rules before models.** Exchanges already attach a category and subject to every filing, so
-  a regex classifier labels most of them for nothing. Only rule misses and material filings get a call.
+  a regex classifier labels 73% of them for nothing. Only rule misses and material filings get a call.
 - **The model reads, Python counts.** For results the model only copies line items from the
   table; QoQ, YoY, margins and EBITDA (= PBT + finance costs + D&A − other income, because
   filings rarely state it) are computed and sanity-checked in code. The same goes for research:
   a guided "10% growth in Q2" is verified against the reported quarter in code; the model
   only judges what arithmetic can't.
 - **Primary sources only on the pull side.** Prompts carry only filings, transcripts and the
-  annual report, and every claim must cite a transcript page or a numbers row.
-- **The filing first, the web second.** SEBI requires a profile of newly appointed directors
-  and KMP inside the disclosure itself, so FINN reads that before searching the web.
+  annual report. Every promise links to its transcript page; bull/bear points carry a citation
+  (prompt-enforced, not machine-verified).
+- **The filing first, the web second.** Under SEBI's 13 July 2023 circular on Reg. 30 disclosures,
+  an appointment filing must include a brief profile of the appointee, so FINN reads that before
+  searching the web (needed for 8 of 33 people).
 - **Relative alerts.** Besides ±X% and k× volume, a σ rule flags moves that are unusual for
   *that* stock. Volatile names keep proportionally looser bars as you move the dial.
 - **A move nobody explained is news.** A price/volume alert with no filing behind it surfaces

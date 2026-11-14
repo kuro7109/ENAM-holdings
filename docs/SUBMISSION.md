@@ -34,19 +34,19 @@ FINN is a mobile-first triage tool for an 18-stock Indian portfolio, with two mo
 
 - **Brief (push).** It opens with one sentence, e.g. *"2 things need you. 12 filings don't."* By default it covers the time since you last looked or the last 24 hours, and you can pick 3, 7 or 30 days. On a quiet day it widens itself and says so instead of showing an empty screen.
   - Quarterly results arrive as a Revenue / EBITDA / PBT / PAT table, QoQ and YoY.
-  - A management change arrives with who the person is: first the profile SEBI requires inside the filing, then a web search only if that profile is thin.
+  - A management change arrives with who the person is: first the brief profile SEBI's July 2023 disclosure circular requires inside an appointment filing, then a web search only if that profile is thin (8 of 33 people).
   - Red flags, such as an auditor resigning, always surface. Routine paperwork folds into one line. **Done** clears an item.
-  - Over the last 30 days: 241 filings, of which about 35 ranked as needing attention.
+  - Over the last 30 days: 241 filings; 35 ranked top by default and 146 folded as routine.
 - **Alerts.** You set what "unusual" means: daily move %, volume × its 20-day average, and a σ rule (a move that's unusual *for that stock*). As you drag a dial, the app shows how many days that setting would have flagged in the last month, so you can tune the noise before committing. A price or volume move that no filing explains surfaces as its own item.
 - **Research (pull), any NSE ticker.** The centrepiece is *promised vs delivered*. Every forward statement management made on the last four earnings calls is pulled with its transcript page. Each one is then checked against the reported quarters (delivered / on track / behind / missed), or against what management itself reported on later calls. It also covers narrative vs numbers, trajectory, balance sheet, cash conversion, and a cited bull / bear case. Demo set: Pidilite, Havells, Astral, Kaynes (16–28 promises each).
 
 **Key decisions and trade-offs**
 
-- **Rules before models.** Exchanges already label filings, so a regex classifier handles most of them for free. Only rule misses and material filings cost a model call. NSE now ships its own one-line summary per filing; I use it as a free fallback and as cheap model input instead of the PDF.
+- **Rules before models.** Exchanges already label filings, so a regex classifier handles 73% of them (176 of 241) for free. Only rule misses and material filings cost a model call. NSE now attaches its own short plain-English summary to each filing; I use its first sentence as a free fallback and the summary as cheap model input instead of the PDF.
 - **The model reads, Python counts.** For results, the model only copies line items from the table. QoQ, YoY, margins and EBITDA are computed in code, with one-offs stripped out and sanity checks. On the research side, a promise like "10% growth in Q2" is verified against the reported quarter in code; the model only judges what arithmetic can't.
 - **No answer beats a wrong number.** When a fallback model misread a results table, I routed results cards to Gemini only. If no reliable model is available, the card says "Open filing" rather than guessing.
-- **Cheap routing.** Groq GPT-OSS 20B handles bulk one-liners. Gemini Flash handles long documents (results tables, transcripts), with a chain of models that each have their own free quota, plus provider fallback. Everything is cached per filing, so nothing is paid for twice. A full month of enrichment plus four research reports came to about 0.5M input tokens, all on free tiers: ₹0.
-- **Primary sources only for research.** Only filings, transcripts and screener.in's standardised financials go into the prompts. Every claim cites a transcript page or a numbers row.
+- **Cheap routing.** Groq GPT-OSS 20B handles bulk one-liners. Gemini Flash handles long documents (results tables, transcripts), with a chain of models that each have their own free quota, plus provider fallback. Everything is cached per filing, so nothing is paid for twice. A full month of enrichment plus four research reports came to about 445k input tokens across the logged runs, all on free tiers: ₹0.
+- **Primary sources only for research.** Only filings, transcripts and screener.in's standardised financials go into the prompts. Every promise links to its transcript page; bull and bear points each carry a citation.
 - **Built not to break the demo.** NSE with BSE fallback and a circuit breaker; on-disk caches; the app reads precomputed JSON, so it loads instantly; demo research is precomputed.
 
 **What I left out on purpose**

@@ -14,8 +14,10 @@
 | Motion | `--t-fast` `--t-med` `--t-slow` | 150 / 220 / 400 ms | hover / sheets and screens / hero |
 | Easing | `--ease` `--spring` | `cubic-bezier(.2,.7,.2,1)` / `(.34,1.56,.64,1)` | default / success pop only |
 
-Contrast (WCAG AA): ink on paper 13.4:1; `--ink-2` on paper 6.6:1; `--ink-3` on paper 3.6:1
-(used only for 12–13px meta, large-ish UI labels); blue on paper 7.9:1; white on ink 15.6:1.
+Contrast (WCAG 2 formula, computed): ink on paper 13.2:1; `--ink-2` 6.3:1; `--ink-3` 4.7:1
+(was 3.2:1, which failed AA for small text, so it was darkened from #7B8494 to #5F6878);
+blue links 7.2:1; white on ink 15.7:1; tab labels on ink 7.7:1; gain green 4.9:1, loss red 6.0:1,
+amber 5.4:1 on raised sheets. All pass AA for body text.
 
 **Type:** one family, Archivo (self-hosted). The width axis carries hierarchy: expanded for
 the sentence that matters, normal for reading, condensed + tabular figures for numbers.
