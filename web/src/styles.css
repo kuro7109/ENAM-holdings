@@ -206,3 +206,47 @@ input[type="range"] { accent-color: var(--ink); }
 .pulse { display: inline-block; width: 8px; height: 8px; border-radius: 4px; background: var(--blue); margin-right: 10px; animation: pulse 1.2s infinite; vertical-align: middle; }
 @keyframes pulse { 50% { opacity: 0.25; } }
 @media (prefers-reduced-motion: reduce) { .pulse { animation: none; } }
+
+/* ---------------------------------------------------------------- motion + press feedback */
+:root {
+  --t-fast: 150ms; --t-med: 220ms; --t-slow: 400ms;
+  --ease: cubic-bezier(.2, .7, .2, 1); --spring: cubic-bezier(.34, 1.56, .64, 1);
+}
+.screen { animation: enter var(--t-med) var(--ease); }
+@keyframes enter { from { opacity: 0; transform: translateY(8px); } }
+button, .btn, .chip { position: relative; overflow: hidden; -webkit-tap-highlight-color: transparent;
+  transition: transform var(--t-fast) var(--ease), background-color var(--t-fast) var(--ease), color var(--t-fast) var(--ease); }
+button:active, .btn:active { transform: scale(.97); }
+.btn { box-shadow: 0 3px 0 #0b1424; }
+.btn:active { box-shadow: 0 1px 0 #0b1424; transform: translateY(2px); }
+.ripple { position: absolute; border-radius: 50%; background: currentColor; opacity: .18; pointer-events: none;
+  transform: scale(0); animation: ripple 550ms var(--ease) forwards; }
+@keyframes ripple { to { transform: scale(1); opacity: 0; } }
+.pop { animation: pop 260ms var(--spring); }
+@keyframes pop { 50% { transform: scale(1.12); } }
+
+/* ---------------------------------------------------------------- 44px tap targets, same look */
+.chip { min-height: 44px; display: inline-flex; align-items: center; }
+.done { min-height: 44px; display: inline-flex; align-items: center; }
+.actions a { display: inline-flex; align-items: center; min-height: 44px; }
+input[type="range"] { height: 44px; }
+.linkbtn, .promise a, .bio a, .row .more a, .sources a { display: inline-block; padding: 12px 4px; margin: -12px -4px; line-height: 20px; }
+.ask input, .ask .btn { min-height: 46px; }
+
+@media (prefers-reduced-motion: reduce) {
+  .screen, .ripple, .pop { animation: none !important; }
+  button:active, .btn:active { transform: none; }
+}
+
+/* ---------------------------------------------------------------- desktop: sidebar instead of bottom bar */
+@media (min-width: 1024px) {
+  .app { max-width: 680px; padding-bottom: 48px; margin-left: max(232px, calc(50vw - 340px + 116px)); }
+  .tabs { top: 0; bottom: 0; right: auto; width: 216px; height: auto; padding: 72px 12px 24px; justify-content: flex-start; }
+  .tabs-inner { display: flex; flex-direction: column; gap: 4px; max-width: none; }
+  .tab { flex-direction: row; justify-content: flex-start; gap: 12px; padding: 0 14px; min-height: 48px; border-radius: 10px; font-size: 15px; }
+  .tab[aria-current="page"] { background: rgba(255, 255, 255, .08); }
+  .tab .badge { position: static; margin-left: auto; }
+  .sheet-back { align-items: center; }
+  .sheet { border-radius: 16px; max-height: 80vh; }
+  .hero h1 { font-size: 38px; }
+}

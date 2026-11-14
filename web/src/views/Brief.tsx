@@ -2,6 +2,7 @@ import { useMemo, useState } from "react";
 import { MoveItem, NeedItem, Row } from "../components/Cards";
 import type { Data, FeedItem, Thresholds } from "../lib";
 import { applyThresholds, CATEGORY_LABEL } from "../lib";
+import { success } from "../press";
 
 type Win = { key: string; label: string; hours: number };
 const H = 3600_000;
@@ -68,6 +69,7 @@ export function Brief({ data, thresholds, careAbout, seen, markSeen, lastVisit }
   const rest = worth.length + routine.length;
 
   const done = (id: string) => {
+    success(document.querySelector(".hero h1"));  // the count drops: small pop + firmer buzz
     setLeaving(id);
     window.setTimeout(() => { markSeen(id); setLeaving(null); }, 260);
   };
