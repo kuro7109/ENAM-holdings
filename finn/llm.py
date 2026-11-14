@@ -56,18 +56,19 @@ PROVIDERS = {
 def _route(tier: str) -> list[tuple[str, str]]:
     """(provider, model) chain for a tier. First one with a key wins; the rest are fallbacks."""
     e = os.environ.get
+    # Each Gemini model has its own free daily quota, so a chain of them goes a long way.
+    flash = [("gemini", e("FINN_EXTRACT_MODEL", "gemini-3.5-flash")),
+             ("gemini", e("FINN_EXTRACT_MODEL_2", "gemini-2.5-flash")),
+             ("gemini", e("FINN_EXTRACT_MODEL_3", "gemini-flash-latest"))]
+    lite = [("gemini", e("FINN_LITE_MODEL", "gemini-3.5-flash-lite")),
+            ("gemini", e("FINN_LITE_MODEL_2", "gemini-3.1-flash-lite"))]
+    groq_big = [("groq", e("FINN_EXTRACT_FALLBACK", "openai/gpt-oss-120b"))]
     chains = {
-        "cheap": [("groq", e("FINN_CHEAP_MODEL", "openai/gpt-oss-20b")),
-                  ("gemini", e("FINN_CHEAP_FALLBACK", "gemini-2.5-flash-lite"))],
-        "extract": [("gemini", e("FINN_EXTRACT_MODEL", "gemini-2.5-flash")),
-                    ("gemini", e("FINN_EXTRACT_MODEL_2", "gemini-2.5-flash-lite")),  # separate free quota
-                    ("groq", e("FINN_EXTRACT_FALLBACK", "openai/gpt-oss-120b"))],
+        "cheap": [("groq", e("FINN_CHEAP_MODEL", "openai/gpt-oss-20b"))] + lite,
         # Results numbers: Gemini only. A wrong revenue figure is worse than "open the filing".
-        "numbers": [("gemini", e("FINN_EXTRACT_MODEL", "gemini-2.5-flash")),
-                    ("gemini", e("FINN_EXTRACT_MODEL_2", "gemini-2.5-flash-lite"))],
-        "reason": [("gemini", e("FINN_REASON_MODEL", "gemini-2.5-flash")),
-                   ("gemini", e("FINN_REASON_MODEL_2", "gemini-2.5-flash-lite")),
-                   ("groq", e("FINN_REASON_FALLBACK", "openai/gpt-oss-120b"))],
+        "numbers": flash + lite,
+        "extract": flash + lite + groq_big,
+        "reason": [("gemini", e("FINN_REASON_MODEL", "gemini-3.5-flash"))] + flash[1:] + groq_big,
     }
     return chains[tier]
 

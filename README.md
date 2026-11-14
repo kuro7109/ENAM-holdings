@@ -41,9 +41,9 @@ web/ (Vite + React) reads the JSON, re-applies your thresholds on the phone, ren
 | Tier | Default model | Used for | Why |
 |---|---|---|---|
 | none | rules | classifying ~80% of filings, all scoring, every number | Exchanges already label filings; arithmetic doesn't need a model |
-| cheap | Groq GPT-OSS 20B (→ Gemini Flash-Lite on rate limit) | one-liners, management changes, rule misses | short text, high volume, free and fast |
-| extract | Gemini Flash | results tables, whole transcripts | long context, must copy numbers exactly |
-| reason | Gemini Flash (set a Pro model if you have quota) | verdicts the code can't compute, bull / bear | the only step that needs judgment |
+| cheap | Groq GPT-OSS 20B (→ Gemini 3.5 Flash-Lite on rate limit) | one-liners, management changes, rule misses | short text, high volume, free and fast |
+| extract | Gemini 3.5 Flash → 2.5 Flash (each has its own free quota) | results tables (Gemini only: no answer beats a wrong number), transcripts | long context, must copy numbers exactly |
+| reason | Gemini 3.5 Flash (set a Pro model if you have quota) | verdicts the code can't compute, bull / bear | the only step that needs judgment |
 
 All calls go through one OpenAI-compatible client (`finn/llm.py`) with provider fallback, a disk
 cache keyed by prompt, a per-run budget (`--max-calls`) and `--dry-run`. Enrichment is stored by

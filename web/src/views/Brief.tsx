@@ -25,22 +25,29 @@ export function Brief({ data, thresholds, careAbout, seen, markSeen, lastVisit }
   const [showRoutine, setShowRoutine] = useState(false);
   const [showCleared, setShowCleared] = useState(false);
   const items = data.feed?.items || [];
-  const inWin = (w: Win) => items.filter((i) => now - new Date(i.filed_at).getTime() <= w.hours * H);
-
-  // Default window: since last visit, else 24h. If that's empty and the user didn't choose it, widen.
-  let win = windows.find((w) => w.key === picked) || windows[0];
-  let widenedFrom: Win | null = null;
-  if (!picked && inWin(win).length === 0) {
-    const next = windows.find((w) => inWin(w).length > 0);
-    if (next) { widenedFrom = win; win = next; }
-  }
-  const filings = inWin(win);
+  // Fixed windows count back from the last data refresh (shown in the header), so the brief
+  // still makes sense on a weekend or days after the last run. "Since you last looked" is real time.
+  const anchor = data.feed ? new Date(data.feed.generated_at).getTime() : now;
+  const inWin = (w: Win) => items.filter((i) => {
+    const t = new Date(i.filed_at).getTime();
+    return w.key === "since" ? t >= (lastVisit || 0) : anchor - t <= w.hours * H;
+  });
 
   // The user's view of priority: categories they care about can reach the top; red flags always do.
   const care = new Set(careAbout);
   const tierOf = (i: FeedItem) =>
     i.tags.includes("red_flag") || (care.has(i.category) && i.score >= 55) ? "top"
       : i.score >= 30 && !i.tags.includes("routine") ? "worth" : "routine";
+
+  // Default window: since last visit, else 24h. If nothing important is in it and the user didn't
+  // choose it, widen to the first window (up to 7 days) that has something that needs them.
+  let win = windows.find((w) => w.key === picked) || windows[0];
+  let widenedFrom: { w: Win; n: number } | null = null;
+  if (!picked && !inWin(win).some((i) => tierOf(i) === "top")) {
+    const next = windows.find((w) => w.hours <= 168 && w.hours > win.hours && inWin(w).some((i) => tierOf(i) === "top"));
+    if (next) { widenedFrom = { w: win, n: inWin(win).length }; win = next; }
+  }
+  const filings = inWin(win);
 
   // Price/volume moves on the last close that no filing explains.
   const asOf = data.signals?.as_of;
@@ -89,7 +96,7 @@ export function Brief({ data, thresholds, careAbout, seen, markSeen, lastVisit }
           <span className="quiet">{rest === 0 ? "Nothing else filed." : `${rest} ${rest === 1 ? "filing doesn't" : "filings don't"}.`}</span>
         </h1>
         <p>
-          {widenedFrom ? `Nothing filed in the last ${widenedFrom.label.toLowerCase()}, so this covers the last ${win.label.toLowerCase()}. ` : ""}
+          {widenedFrom ? `${widenedFrom.w.key === "since" ? "Quiet since you last looked" : `Quiet ${widenedFrom.w.label.toLowerCase()}`}${widenedFrom.n ? ` (${widenedFrom.n} routine ${widenedFrom.n === 1 ? "filing" : "filings"})` : ""}, so this covers the last ${win.label.toLowerCase()}. ` : ""}
           Across {data.market?.stocks.length || "your"} holdings. Ranked by what can move a stock; paperwork is folded away.
         </p>
       </header>
@@ -128,7 +135,7 @@ export function Brief({ data, thresholds, careAbout, seen, markSeen, lastVisit }
         <>
           <div className="section-title">Folded</div>
           <button className="fold" onClick={() => setShowRoutine(!showRoutine)} aria-expanded={showRoutine}>
-            <span><b>{routine.length} routine filings.</b> {routineMix.slice(0, 3).map(([k, v]) => `${v} ${k}`).join(", ")}{routineMix.length > 3 ? ", …" : ""}</span>
+            <span><b>{routine.length} routine {routine.length === 1 ? "filing" : "filings"}.</b> {routineMix.slice(0, 3).map(([k, v]) => `${v} ${k}`).join(", ")}{routineMix.length > 3 ? ", …" : ""}</span>
             <span className="linkbtn">{showRoutine ? "Hide" : "Show"}</span>
           </button>
           {showRoutine && <ul className="rows">{routine.map((i) => <Row key={i.id} item={i} />)}</ul>}
@@ -138,7 +145,7 @@ export function Brief({ data, thresholds, careAbout, seen, markSeen, lastVisit }
       {cleared.length > 0 && (
         <>
           <button className="fold" style={{ marginTop: 14 }} onClick={() => setShowCleared(!showCleared)} aria-expanded={showCleared}>
-            <span><b>{cleared.length} done.</b> Items you've already cleared.</span>
+            <span><b>{cleared.length} done.</b> {cleared.length === 1 ? "An item" : "Items"} you've already cleared.</span>
             <span className="linkbtn">{showCleared ? "Hide" : "Show"}</span>
           </button>
           {showCleared && <ul className="rows">{cleared.map((i) => <Row key={i.id} item={i} />)}</ul>}

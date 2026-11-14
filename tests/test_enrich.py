@@ -233,12 +233,22 @@ def test_daily_quota_skips_model_immediately(tmp_path, monkeypatch):
     class S:
         def post(self, url, json=None, **kw):
             hits.append(json["model"])
-            if json["model"] == "gemini-2.5-flash":
+            if json["model"] == "gemini-3.5-flash":
                 return R(429, text='{"error": {"message": "Quota exceeded: GenerateRequestsPerDayPerProjectPerModel-FreeTier"}}')
             return R(200, {"choices": [{"message": {"content": '{"ok": 1}'}}], "usage": {}})
 
     llm = LLM(cache_dir=tmp_path, session=S())
     assert llm.json("extract", "s", "u1") == {"ok": 1}
     assert llm.json("extract", "s", "u2") == {"ok": 1}
-    assert hits == ["gemini-2.5-flash", "gemini-2.5-flash-lite", "gemini-2.5-flash-lite"]  # no waiting, no retry
+    assert hits == ["gemini-3.5-flash", "gemini-2.5-flash", "gemini-2.5-flash"]  # no waiting, no retry
     L.EXHAUSTED.clear()
+
+
+def test_repeated_people_change_merges_and_reappointment_is_not_urgent():
+    a = _item("a", "HDFCBANK", "management_change", "Reappointment of WTD", tags=["top_role"], filed="2026-11-12T17:00:00+05:30")
+    b = _item("b", "HDFCBANK", "management_change", "Re-appointment of WTD", tags=["top_role"], filed="2026-11-13T16:00:00+05:30")
+    ppl = lambda n: {"status": "ok", "kind": "management", "summary": "x",
+                     "management": {"people": [{"name": n, "role": "Whole-time Director", "change": "reappointed"}]}}
+    feed = E.build_feed({"items": [a, b]}, {}, {"a": ppl("Mr. V. Srinivasa Rangan"), "b": ppl("V Srinivasa Rangan")}, {}, {})
+    assert len(feed["items"]) == 1 and len(feed["items"][0]["related"]) == 1
+    assert feed["items"][0]["tier"] != "top"

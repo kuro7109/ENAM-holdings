@@ -308,7 +308,7 @@ class Enricher:
             return {}
         people = [p for p in (raw.get("people") or []) if p.get("name")]
         for p in people:
-            if p.get("change") in ("appointed", "redesignated", "reappointed") and p.get("top_role") \
+            if p.get("change") in ("appointed", "redesignated") and p.get("top_role") \
                     and len(p.get("profile") or "") < 80:
                 p.update(self._bio(p, item))
         return {"status": "ok" if people else "partial", "kind": "management", "summary": raw.get("summary"),
@@ -501,6 +501,10 @@ def score(it: dict, enr: dict | None, alert: dict | None) -> tuple[float, list[s
     if "top_role" in tags:
         why.append("Top-role change")
     if enr:
+        people = (enr.get("management") or {}).get("people") or []
+        if people and all(p.get("change") in ("reappointed", "redesignated") for p in people):
+            s = min(s, 35)  # continuity, not change
+            why = [w for w in why if w != "Top-role change"]
         if enr.get("routine"):
             s = min(s, 15)
         imp = enr.get("importance")
@@ -546,10 +550,27 @@ def build_feed(ann: dict, alerts: dict, store: dict, names: dict, sectors: dict)
         d = (it.get("filed_at") or "")[:10]
         groups[(it["symbol"], it["category"], d if it["category"] != "results" else "q")].append(it)
 
+    # The same people change is often filed more than once (intimation, then outcome): merge by people.
+    merged: dict[tuple, list[dict]] = {}
+    for key, members in list(groups.items()):
+        if key[1] != "management_change":
+            continue
+        who = set()
+        for m in members:
+            for p in ((store.get(m["id"]) or {}).get("management") or {}).get("people") or []:
+                who.add(re.sub(r"^(mr|ms|mrs|dr|shri)\.?\s+", "", p.get("name", "").lower()).replace(".", "").strip())
+        if not who:
+            continue
+        sig = (key[0], frozenset(who))
+        if sig in merged:
+            merged[sig].extend(members)
+            del groups[key]
+        else:
+            merged[sig] = members
+
     feed = []
     for members in groups.values():
-        members.sort(key=lambda i: (i["id"] not in primaries, not store.get(i["id"]), i.get("filed_at") or ""),
-                     reverse=False)
+        members.sort(key=lambda i: (i["id"] not in primaries, not store.get(i["id"]), _neg(i.get("filed_at") or "")))
         lead = members[0]
         enr = store.get(lead["id"]) or {}
         cat = enr.get("category") or lead["category"]
