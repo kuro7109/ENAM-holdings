@@ -1,6 +1,7 @@
 import { useMemo } from "react";
 import type { Data, Thresholds } from "../lib";
 import { applyThresholds, CATEGORY_LABEL, dayLabel, pct, times } from "../lib";
+import { tick } from "../press";
 
 const CHOOSABLE = ["results", "M&A", "management_change", "litigation", "fund_raise", "pledging", "capex",
   "credit_rating", "insider_trading", "bonus_split", "dividend", "press_release"];
@@ -31,13 +32,13 @@ export function Alerts({ data, t, setT, careAbout, setCareAbout }: {
       <div className="dial">
         <label htmlFor="mv">Daily move <span className="num">±{t.price_move_pct.toFixed(1)}%</span></label>
         <input id="mv" type="range" min={1} max={10} step={0.5} value={t.price_move_pct}
-          onChange={(e) => setT({ ...t, price_move_pct: +e.target.value })} />
+          onChange={(e) => { tick(); setT({ ...t, price_move_pct: +e.target.value }); }} />
         <div className="hint">Close-to-close change on the day. Volatile names (set in portfolio.yaml) keep a proportionally looser bar.</div>
       </div>
       <div className="dial">
         <label htmlFor="vl">Volume <span className="num">{t.volume_multiple.toFixed(1)}× average</span></label>
         <input id="vl" type="range" min={1.2} max={5} step={0.1} value={t.volume_multiple}
-          onChange={(e) => setT({ ...t, volume_multiple: +e.target.value })} />
+          onChange={(e) => { tick(); setT({ ...t, volume_multiple: +e.target.value }); }} />
         <div className="hint">Against the stock's own 20-day average, today excluded.</div>
       </div>
       <div className="dial">
@@ -46,7 +47,7 @@ export function Alerts({ data, t, setT, careAbout, setCareAbout }: {
           <span className="num">{sigmaOn ? `${t.sigma_threshold!.toFixed(1)}σ` : "Off"}</span>
         </label>
         <input id="sg" type="range" min={1.5} max={5} step={0.5} value={t.sigma_threshold ?? 5} disabled={!sigmaOn}
-          onChange={(e) => setT({ ...t, sigma_threshold: +e.target.value })} />
+          onChange={(e) => { tick(); setT({ ...t, sigma_threshold: +e.target.value }); }} />
         <div className="hint">
           A 2.5% day is news for a sleepy bank and noise for a small-cap. This scales by each stock's own volatility.{" "}
           <button className="linkbtn" onClick={() => setT({ ...t, sigma_threshold: sigmaOn ? null : 3 })}>{sigmaOn ? "Turn off" : "Turn on"}</button>

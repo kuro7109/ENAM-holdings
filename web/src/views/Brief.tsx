@@ -6,6 +6,10 @@ import { success } from "../press";
 
 type Win = { key: string; label: string; hours: number };
 const H = 3600_000;
+const plural = (k: string, n: number) => {
+  if (/paperwork|results/.test(k)) return k;
+  return n === 1 ? k.replace(/s$/, "") : k.endsWith("s") ? k : `${k}s`;
+};
 
 export function Brief({ data, thresholds, careAbout, seen, markSeen, lastVisit }: {
   data: Data; thresholds: Thresholds; careAbout: string[]; seen: Set<string>;
@@ -137,7 +141,7 @@ export function Brief({ data, thresholds, careAbout, seen, markSeen, lastVisit }
         <>
           <div className="section-title">Folded</div>
           <button className="fold" onClick={() => setShowRoutine(!showRoutine)} aria-expanded={showRoutine}>
-            <span><b>{routine.length} routine {routine.length === 1 ? "filing" : "filings"}.</b> {routineMix.slice(0, 3).map(([k, v]) => `${v} ${k}`).join(", ")}{routineMix.length > 3 ? ", …" : ""}</span>
+            <span><b>{routine.length} routine {routine.length === 1 ? "filing" : "filings"}.</b> {routineMix.slice(0, 3).map(([k, v]) => `${v} ${plural(k, v)}`).join(", ")}{routineMix.length > 3 ? ", …" : ""}</span>
             <span className="linkbtn">{showRoutine ? "Hide" : "Show"}</span>
           </button>
           {showRoutine && <ul className="rows">{routine.map((i) => <Row key={i.id} item={i} />)}</ul>}

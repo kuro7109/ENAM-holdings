@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { Row, Spark } from "../components/Cards";
 import type { Data, Stock, Thresholds } from "../lib";
 import { applyThresholds, dayLabel, num, pct, times, tone } from "../lib";
@@ -41,6 +41,17 @@ function StockSheet({ s, data, hits, onClose, onResearch }: {
   s: Stock; data: Data; hits: ReturnType<typeof applyThresholds>; onClose: () => void; onResearch: () => void;
 }) {
   const filings = (data.feed?.items || []).filter((i) => i.symbol === s.symbol);
+  const closeRef = useRef<HTMLButtonElement>(null);
+  const onCloseRef = useRef(onClose);
+  onCloseRef.current = onClose;
+  useEffect(() => {
+    const prev = document.body.style.overflow;
+    document.body.style.overflow = "hidden";  // page behind the sheet doesn't scroll
+    closeRef.current?.focus();
+    const onKey = (e: KeyboardEvent) => { if (e.key === "Escape") onCloseRef.current(); };
+    window.addEventListener("keydown", onKey);
+    return () => { document.body.style.overflow = prev; window.removeEventListener("keydown", onKey); };
+  }, []);
   const pos = s.high_52w > s.low_52w ? ((s.close - s.low_52w) / (s.high_52w - s.low_52w)) * 100 : 50;
   return (
     <div className="sheet-back" onClick={onClose} role="dialog" aria-modal="true" aria-label={s.name}>
@@ -48,7 +59,7 @@ function StockSheet({ s, data, hits, onClose, onResearch }: {
         <div className="grabber" />
         <div className="need-head">
           <span className="sym" style={{ fontSize: 22 }}>{s.symbol}</span>
-          <button className="linkbtn" onClick={onClose}>Close</button>
+          <button ref={closeRef} className="linkbtn" onClick={onClose}>Close</button>
         </div>
         <div className="muted small">{s.name} · {s.sector}</div>
         <div className="stats">

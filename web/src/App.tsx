@@ -22,7 +22,15 @@ const LABEL: Record<Tab, string> = { brief: "Brief", alerts: "Alerts", holdings:
 
 export default function App() {
   const [data, setData] = useState<Data | null>(null);
-  const [tab, setTab] = useState<Tab>(() => (location.hash.slice(1) as Tab) || "brief");
+  const TABS: Tab[] = ["brief", "alerts", "holdings", "ask"];
+  const fromHash = (): Tab => (TABS.includes(location.hash.slice(1) as Tab) ? (location.hash.slice(1) as Tab) : "brief");
+  const [tab, setTabState] = useState<Tab>(fromHash);
+  // Each tab change is a history entry, so the phone's Back button steps between tabs.
+  const setTab = (t: Tab) => {
+    if (t === tab) return;
+    history.pushState(null, "", `#${t}`);
+    setTabState(t);
+  };
   const [lastVisit] = useState<number | null>(() => store.get<number | null>("lastVisit", null));
   const [seen, setSeen] = useState<Set<string>>(() => new Set(store.get<string[]>("seen", [])));
   const [care, setCare] = useState<string[]>(() => store.get("care", DEFAULT_CARE));
@@ -33,7 +41,14 @@ export default function App() {
     loadData().then(setData);
     store.set("lastVisit", Date.now());
   }, []);
-  useEffect(() => { history.replaceState(null, "", `#${tab}`); window.scrollTo(0, 0); }, [tab]);
+  useEffect(() => {
+    if (!location.hash) history.replaceState(null, "", `#${tab}`);
+    const onPop = () => setTabState(fromHash());
+    window.addEventListener("popstate", onPop);
+    window.addEventListener("hashchange", onPop);
+    return () => { window.removeEventListener("popstate", onPop); window.removeEventListener("hashchange", onPop); };
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
+  useEffect(() => { window.scrollTo(0, 0); }, [tab]);
 
   const thresholds: Thresholds = t || {
     price_move_pct: data?.signals?.defaults.price_move_pct ?? 4,

@@ -105,6 +105,7 @@ const VERDICTS: [string, string, string][] = [
 const ORDER = ["missed", "behind", "partly", "delivered", "on_track", "too_early", "unverifiable"];
 
 function Research({ r }: { r: any }) {
+  const [allPromises, setAllPromises] = useState(false);
   const s = r.snapshot || {}, tr = r.trajectory || {}, bal = r.balance || {}, cash = r.cash || {};
   const total = r.promises?.length || 0;
   const q = (tr.quarterly || []).slice(-8);
@@ -128,7 +129,8 @@ function Research({ r }: { r: any }) {
             {VERDICTS.map(([k, , c]) => r.tally?.[k] ? <i key={k} style={{ width: `${(r.tally[k] / total) * 100}%`, background: c }} /> : null)}
           </div>
           <div className="legend">{VERDICTS.filter(([k]) => r.tally?.[k]).map(([k, l, c]) => <span key={k}><b style={{ background: c }} />{r.tally[k]} {l.toLowerCase()}</span>)}</div>
-          {[...r.promises].sort((x: any, y: any) => ORDER.indexOf(x.verdict) - ORDER.indexOf(y.verdict)).map((p: any) => (
+          {[...r.promises].sort((x: any, y: any) => ORDER.indexOf(x.verdict) - ORDER.indexOf(y.verdict))
+            .slice(0, allPromises ? undefined : 6).map((p: any) => (
             <div className="promise" key={p.id}>
               <div className="head">
                 <span>{p.call} call · for {p.horizon || "unspecified"}{p.speaker ? ` · ${p.speaker}` : ""}</span>
@@ -146,6 +148,13 @@ function Research({ r }: { r: any }) {
             </div>
           ))}
         </>
+      )}
+
+      {total > 6 && (
+        <button className="fold" onClick={() => setAllPromises(!allPromises)} aria-expanded={allPromises}>
+          <span>{allPromises ? "Showing all promises." : <><b>{total - 6} more promises,</b> mostly on track or too early to judge.</>}</span>
+          <span className="linkbtn">{allPromises ? "Show fewer" : `Show all ${total}`}</span>
+        </button>
       )}
 
       {r.narrative_vs_numbers?.length > 0 && (

@@ -21,9 +21,14 @@ Contrast (WCAG AA): ink on paper 13.4:1; `--ink-2` on paper 6.6:1; `--ink-3` on 
 the sentence that matters, normal for reading, condensed + tabular figures for numbers.
 
 ## Behaviour
-- One passive `pointerdown` listener (`web/src/press.ts`): ripple from the touch point,
-  `navigator.vibrate(4)` on taps and `8` on primary actions; **Done** gives a pop on the
-  headline count and a firmer 15 ms buzz. All motion is off under `prefers-reduced-motion`.
+- `web/src/press.ts`: ripple from the touch point on `pointerdown`; haptics on `click`
+  (Chrome blocks `navigator.vibrate` until a tap completes, so vibrating on pointerdown
+  silently fails on the first tap). 4 ms on taps, 8 ms on primary buttons, 3 ms rate-limited
+  ticks while dragging an alert dial, 15 ms + a pop on the headline count for **Done**.
+  iPhone Safari has no vibrate API: on iOS 18+ a hidden native `<input switch>` is toggled
+  inside the tap, which plays the system haptic. Motion is off under `prefers-reduced-motion`.
+- Back button steps between tabs (each tab is a history entry); the stock sheet closes on
+  Escape or a tap outside and locks the page behind it.
 - Screens enter with a fade and an 8px rise (220 ms); only transform and opacity animate.
 - 44px minimum tap targets everywhere (chips, Done, links via padded hit areas, slider).
 - Phone: bottom tab bar with labels, safe-area insets. Desktop (≥1024px): left sidebar.
@@ -38,6 +43,9 @@ the sentence that matters, normal for reading, condensed + tabular figures for n
 | Tap targets < 44px | 27 → 0 | 27 → 0 | 27 → 0 |
 | Press feedback | none → ripple + haptics | same | ripple |
 | Desktop navigation | — | — | phone bottom bar → sidebar |
+| Back button | left the app → steps between tabs | same | same |
+| Haptics on first tap (Android) | blocked → fires | same | n/a |
+| Haptics on iPhone | none → system haptic (iOS 18+) | same | n/a |
 
 ## Test list
 Brief: window chips, Done (count drops, item leaves), Worth-a-look rows expand, Folded expands,
