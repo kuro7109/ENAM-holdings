@@ -212,3 +212,33 @@ def test_ebitda_prefers_printed_pre_exceptional_and_ignores_wild_one_offs():
     card = E.build_results_card(raw)
     assert next(r for r in card["rows"] if r["key"] == "ebitda")["current"] == 12888 + 10 + 40 - 20
     assert any("unusually large" in c for c in card["checks"])
+
+
+def test_daily_quota_skips_model_immediately(tmp_path, monkeypatch):
+    import finn.llm as L
+    monkeypatch.setenv("GEMINI_API_KEY", "k")
+    monkeypatch.delenv("GROQ_API_KEY", raising=False)
+    L.EXHAUSTED.clear()
+    hits = []
+
+    class R:
+        def __init__(self, code, body=None, text=""):
+            self.status_code, self._b, self.text, self.headers = code, body, text, {}
+        def raise_for_status(self):
+            if self.status_code >= 400:
+                raise RuntimeError(self.status_code)
+        def json(self):
+            return self._b
+
+    class S:
+        def post(self, url, json=None, **kw):
+            hits.append(json["model"])
+            if json["model"] == "gemini-2.5-flash":
+                return R(429, text='{"error": {"message": "Quota exceeded: GenerateRequestsPerDayPerProjectPerModel-FreeTier"}}')
+            return R(200, {"choices": [{"message": {"content": '{"ok": 1}'}}], "usage": {}})
+
+    llm = LLM(cache_dir=tmp_path, session=S())
+    assert llm.json("extract", "s", "u1") == {"ok": 1}
+    assert llm.json("extract", "s", "u2") == {"ok": 1}
+    assert hits == ["gemini-2.5-flash", "gemini-2.5-flash-lite", "gemini-2.5-flash-lite"]  # no waiting, no retry
+    L.EXHAUSTED.clear()

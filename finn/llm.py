@@ -60,8 +60,10 @@ def _route(tier: str) -> list[tuple[str, str]]:
         "cheap": [("groq", e("FINN_CHEAP_MODEL", "openai/gpt-oss-20b")),
                   ("gemini", e("FINN_CHEAP_FALLBACK", "gemini-2.5-flash-lite"))],
         "extract": [("gemini", e("FINN_EXTRACT_MODEL", "gemini-2.5-flash")),
+                    ("gemini", e("FINN_EXTRACT_MODEL_2", "gemini-2.5-flash-lite")),  # separate free quota
                     ("groq", e("FINN_EXTRACT_FALLBACK", "openai/gpt-oss-120b"))],
         "reason": [("gemini", e("FINN_REASON_MODEL", "gemini-2.5-flash")),
+                   ("gemini", e("FINN_REASON_MODEL_2", "gemini-2.5-flash-lite")),
                    ("groq", e("FINN_REASON_FALLBACK", "openai/gpt-oss-120b"))],
     }
     return chains[tier]
@@ -69,6 +71,13 @@ def _route(tier: str) -> list[tuple[str, str]]:
 
 class LLMUnavailable(RuntimeError):
     pass
+
+
+class QuotaExhausted(RuntimeError):
+    """A daily (not per-minute) free-tier quota is used up: waiting won't help today."""
+
+
+EXHAUSTED: set[str] = set()  # models out of daily quota for the rest of this process
 
 
 @dataclass
@@ -141,6 +150,8 @@ class LLM:
 
         last: Exception | None = None
         for provider, model in chain:
+            if model in EXHAUSTED:
+                continue
             key = hashlib.sha1(json.dumps([model, messages, max_tokens]).encode()).hexdigest()
             path = self.cache_dir / f"{key}.json"
             if path.exists():
@@ -156,6 +167,10 @@ class LLM:
                 data = parse_json(content)
                 path.write_text(json.dumps({"model": model, "content": content}), encoding="utf-8")
                 return data
+            except QuotaExhausted as e:
+                EXHAUSTED.add(model)
+                log.warning("%s/%s: daily quota used up, skipping it for this run", provider, model)
+                last = e
             except Exception as e:  # rate limit, bad JSON, outage: try the next model in the chain
                 log.warning("%s/%s failed: %s", provider, model, str(e)[:200])
                 last = e
@@ -176,6 +191,8 @@ class LLM:
         headers = {"Authorization": f"Bearer {os.environ[key_env]}", "Content-Type": "application/json"}
         for attempt in range(retries):
             r = self.session.post(url, json=body, headers=headers, timeout=self.timeout)
+            if r.status_code == 429 and _daily_quota(r):
+                raise QuotaExhausted(model)
             if r.status_code == 429 and attempt < retries - 1:
                 wait = float(r.headers.get("retry-after") or 0) or 8 * (attempt + 1)
                 log.info("%s rate-limited, waiting %.0fs", provider, min(wait, 60))
@@ -190,6 +207,14 @@ class LLM:
                 raise RuntimeError(f"empty answer (finish_reason={j['choices'][0].get('finish_reason')})")
             return content
         raise RuntimeError(f"{provider} kept rate-limiting")
+
+
+def _daily_quota(r) -> bool:
+    try:
+        body = r.text or ""
+    except Exception:
+        return False
+    return bool(re.search(r"per ?day|PerDay|requests per day|RPD|daily", body, re.I))
 
 
 # --------------------------------------------------------------------------- web search

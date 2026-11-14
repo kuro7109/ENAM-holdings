@@ -48,6 +48,7 @@ def main(argv=None) -> int:
     ap.add_argument("--redo", choices=["results", "management", "generic"],
                     help="re-run this kind even if already enriched (e.g. after a prompt fix)")
     ap.add_argument("--feed-only", action="store_true")
+    ap.add_argument("--symbol", help="only this company (e.g. SUNPHARMA)")
     ap.add_argument("-v", "--verbose", action="store_true")
     a = ap.parse_args(argv)
     logging.basicConfig(level=logging.DEBUG if a.verbose else logging.INFO,
@@ -67,7 +68,8 @@ def main(argv=None) -> int:
             enr = Enricher(llm, OUT / "enrichment.json",
                            sectors={c.symbol: c.sector for c in cfg.companies},
                            names={c.symbol: c.name for c in cfg.companies})
-            stats = enr.run(ann["items"], retry_failed=a.retry_failed, only=a.only, redo=a.redo)
+            items = [i for i in ann["items"] if not a.symbol or i["symbol"] == a.symbol.upper()]
+            stats = enr.run(items, retry_failed=a.retry_failed, only=a.only, redo=a.redo)
             if a.dry_run:
                 est = sum(p["est_tokens_in"] for p in llm.planned)
                 print(f"\nDRY RUN · {len(llm.planned)} calls planned · ~{est:,} input tokens (estimate)")
