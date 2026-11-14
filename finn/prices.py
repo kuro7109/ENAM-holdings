@@ -204,3 +204,9 @@ def snapshot(symbol: str, sig: pd.DataFrame) -> dict | None:
         "pct_from_52w_high": _r((float(r["close"]) / hi - 1) * 100) if hi else None,
         "spark": [_r(x) for x in sig["close"].tail(30)],
     }
+
+
+def signal_history(sig: pd.DataFrame, last_n: int = 22) -> list[dict]:
+    """Compact per-session signals for client-side thresholding: [date, close, pct, vol_ratio, sigma]."""
+    return [[d.strftime("%Y-%m-%d"), _r(r["close"]), _r(r["pct_change"]), _r(r["vol_ratio"]), _r(r["sigma"])]
+            for d, r in sig.tail(last_n).iterrows()]

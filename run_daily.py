@@ -64,13 +64,14 @@ def run_prices(cfg: Config, store: Store, force: bool = False, out_dir: Path = O
         log.info("prices: using today's cached pull (%s); --force to refetch", last)
 
     names = {c.symbol: c for c in cfg.companies}
-    snapshots, alerts = [], []
+    snapshots, alerts, signals = [], [], {}
     for c in cfg.companies:
         df = store.load_prices(c.symbol)
         if df.empty:
             continue
         a_cfg = cfg.alerts_for(c.symbol)
         sig = px.compute_signals(df, a_cfg)
+        signals[c.symbol] = px.signal_history(sig, ALERT_HISTORY_SESSIONS)
         snap = px.snapshot(c.symbol, sig)
         if snap:
             snap.update(name=c.name, sector=c.sector)
@@ -94,6 +95,9 @@ def run_prices(cfg: Config, store: Store, force: bool = False, out_dir: Path = O
                        "overrides": {s: c.alerts for s, c in names.items() if c.alerts}},
         "alerts": alerts,
     })
+    # Raw per-day signals so the app can re-apply *the user's* thresholds instantly, on the phone.
+    write_json(out_dir, "signals.json", {"generated_at": generated, "as_of": as_of,
+                                         "defaults": cfg.alerts_for(""), "stocks": signals})
     today = [a for a in alerts if a["date"] == as_of]
     return {"stocks": len(snapshots), "failed": failed, "alerts_today": len(today),
             "alerts_total": len(alerts), "as_of": as_of}
@@ -201,6 +205,13 @@ def main(argv: list[str] | None = None) -> int:
               f" · {a['total'] - a['material']} routine · {a['needs_llm']} need LLM · {a['new']} new")
         _print_errors(a["errors"])
         ok = ok and not any(e["fatal"] for e in a["errors"])
+    try:  # re-rank the feed with whatever enrichment already exists (no LLM calls here)
+        from run_enrich import rebuild_feed
+        f = rebuild_feed(cfg)
+        print(f"  feed     {len(f['items'])} cards · {f['counts'].get('top', 0)} top"
+              f" · run `python run_enrich.py` to add summaries + results cards")
+    except Exception as e:  # the feed is a bonus; never fail the refresh over it
+        log.warning("feed rebuild skipped: %s", e)
     print(f"  output   {OUT.relative_to(ROOT)}/\n")
     return 0 if ok else 1
 
