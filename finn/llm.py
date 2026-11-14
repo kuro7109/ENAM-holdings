@@ -162,7 +162,7 @@ class LLM:
         raise LLMUnavailable(f"all models failed for tier '{tier}': {last}")
 
     def _post(self, provider: str, model: str, messages: list, max_tokens: int, temperature: float,
-              tier: str = "cheap", retries: int = 3) -> str:
+              tier: str = "cheap", retries: int = 5) -> str:
         url, key_env = PROVIDERS[provider]
         body = {"model": model, "messages": messages, "max_tokens": max_tokens,
                 "temperature": temperature, "response_format": {"type": "json_object"}}

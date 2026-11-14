@@ -61,6 +61,7 @@ for losses; null if the line is not in the table):
   other_income   "Other income"
   finance_costs  "Finance costs" / "Interest expense" (lenders: null)
   depreciation   "Depreciation and amortisation expense"
+  pbt_pre_exceptional  "Profit before exceptional items and tax" exactly as printed (null if the table has no such line)
   exceptional    "Exceptional items" as printed (positive = gain/income, negative = loss/expense; null if none)
   associates     "Share of profit/(loss) of associates and joint ventures" (null if none)
   pbt            "Profit before tax" (after exceptional items)
@@ -70,7 +71,7 @@ JSON shape:
 {{"statement": "consolidated|standalone", "unit": "as printed, e.g. ₹ crore / ₹ lakh / ₹ million",
   "is_lender": true|false,
   "labels": {{"current": "e.g. Q2 FY27 (30-Sep-2026)", "previous_quarter": "...", "year_ago_quarter": "..."}},
-  "current": {{"revenue": 0, "other_income": 0, "finance_costs": 0, "depreciation": 0, "exceptional": null,
+  "current": {{"revenue": 0, "other_income": 0, "finance_costs": 0, "depreciation": 0, "pbt_pre_exceptional": null, "exceptional": null,
               "associates": null, "pbt": 0, "pat": 0}},
   "previous_quarter": {{...same keys...}},
   "year_ago_quarter": {{...same keys...}},
@@ -106,11 +107,20 @@ def ebitda(q: dict, lender: bool):
     (exceptional items and share of associates/JVs sit inside PBT but aren't operations)."""
     if lender:
         return None
-    pbt, fin, dep, oth, exc, assoc = (_num(q.get(k)) for k in
-                                      ("pbt", "finance_costs", "depreciation", "other_income", "exceptional", "associates"))
-    if pbt is None or dep is None:
+    pbt, pre, fin, dep, oth, exc, assoc, rev = (_num(q.get(k)) for k in (
+        "pbt", "pbt_pre_exceptional", "finance_costs", "depreciation", "other_income", "exceptional",
+        "associates", "revenue"))
+    if dep is None or (pbt is None and pre is None):
         return None
-    return round(pbt + (fin or 0) + dep - (oth or 0) - (exc or 0) - (assoc or 0), 2)
+    if pre is not None:  # the table already prints profit before one-offs: no sign guessing needed
+        base = pre
+    elif exc is not None and rev and abs(exc) <= 0.3 * rev:
+        base = pbt - exc
+    else:  # no one-off, or one too large to trust the sign of
+        base = pbt
+    if assoc is not None and rev and abs(assoc) <= 0.3 * rev:
+        base -= assoc
+    return round(base + (fin or 0) + dep - (oth or 0), 2)
 
 
 def build_results_card(raw: dict) -> dict | None:
@@ -122,7 +132,7 @@ def build_results_card(raw: dict) -> dict | None:
     for key in ("current", "previous_quarter", "year_ago_quarter"):
         q = raw.get(key) or {}
         vals = {k: _num(q.get(k)) for k in ("revenue", "other_income", "finance_costs", "depreciation", "exceptional",
-                                            "associates", "pbt", "pat")}
+                                            "pbt_pre_exceptional", "associates", "pbt", "pat")}
         vals["ebitda"] = ebitda(vals, lender)
         quarters[key] = vals
     cur, prev, yago = quarters["current"], quarters["previous_quarter"], quarters["year_ago_quarter"]
@@ -161,7 +171,9 @@ def build_results_card(raw: dict) -> dict | None:
     if yago.get("revenue") is None and yago.get("pat") is None:
         checks.append("year-ago quarter not found in this filing")
     if cur.get("exceptional"):
-        checks.append(f"PBT includes exceptional items of {cur['exceptional']:,.0f}; EBITDA excludes them")
+        big = cur.get("revenue") and abs(cur["exceptional"]) > 0.3 * cur["revenue"] and cur.get("pbt_pre_exceptional") is None
+        checks.append(f"Exceptional items of {cur['exceptional']:,.0f} this quarter"
+                      + (" (unusually large; EBITDA left unadjusted, verify in the filing)" if big else "; EBITDA excludes them"))
     pat_yoy = next((r["yoy"] for r in rows if r["key"] == "pat"), None)
     rev_yoy = next((r["yoy"] for r in rows if r["key"] == "revenue"), None)
     bits = []

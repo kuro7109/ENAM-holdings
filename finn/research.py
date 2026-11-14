@@ -359,6 +359,14 @@ From these annual-report pages, return:
 {text}"""
 
 
+GUIDANCE_KEYWORDS = [
+    (r"guidance", 4), (r"\bguide", 3), (r"outlook", 3), (r"we expect", 3), (r"expect(?:ing|ed)? to", 2),
+    (r"target", 2), (r"double[- ]digit", 3), (r"high single", 3), (r"margin", 1.5), (r"growth", 1),
+    (r"capex", 2), (r"capacity", 1), (r"\bfy ?2?\d{2}\b", 1.5), (r"next (?:year|quarter|few)", 2),
+    (r"going forward", 2), (r"sustain", 1), (r"band", 1), (r"range of", 1.5), (r"debt[- ]free|net cash", 1),
+]
+
+
 def _fy_of_quarter(qlabel: str) -> str | None:
     m = re.match(r"Q\d FY(\d{2})", qlabel or "")
     return f"FY{m.group(1)}" if m else None
@@ -435,7 +443,8 @@ def research(symbol: str, llm: LLM | None = None, n_calls: int = 4, with_ar: boo
         quarter = quarter_discussed(t["month"]) or t["month"]
         progress(f"Reading {quarter} earnings call")
         pages = pdftext.pages_text(fetch_pdf(t["url"]))
-        text = "\n\n".join(f"[page {i + 1}]\n{p}" for i, p in enumerate(pages) if p)[:120_000]
+        # Only the pages where management talks about the future: ~3x fewer tokens than the whole call.
+        text = pdftext.best_pages(pages, GUIDANCE_KEYWORDS, k=12, max_chars=45_000)
         if not text:
             calls.append({"month": t["month"], "quarter": quarter, "url": t["url"], "status": "unreadable"})
             continue

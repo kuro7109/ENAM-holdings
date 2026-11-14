@@ -201,3 +201,14 @@ def test_results_falls_back_to_next_filing(tmp_path):
     enr._pages = lambda it: ["Revenue from operations Profit before tax quarter ended"]
     enr.run(items)
     assert enr.store["a"]["status"] == "ok" and enr.store["a"]["source_id"] == "b" and len(calls) == 2
+
+
+def test_ebitda_prefers_printed_pre_exceptional_and_ignores_wild_one_offs():
+    raw = json.loads(json.dumps(RAW))
+    raw["current"].update(pbt_pre_exceptional=200, exceptional=12688, pbt=12888)  # sign-confused one-off
+    e = next(r for r in E.build_results_card(raw)["rows"] if r["key"] == "ebitda")["current"]
+    assert e == 200 + 10 + 40 - 20
+    raw["current"].update(pbt_pre_exceptional=None)
+    card = E.build_results_card(raw)
+    assert next(r for r in card["rows"] if r["key"] == "ebitda")["current"] == 12888 + 10 + 40 - 20
+    assert any("unusually large" in c for c in card["checks"])
