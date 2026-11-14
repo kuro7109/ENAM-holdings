@@ -41,7 +41,7 @@ web/ (Vite + React) reads the JSON, re-applies your thresholds on the phone, ren
 | Tier | Default model | Used for | Why |
 |---|---|---|---|
 | none | rules | classifying ~80% of filings, all scoring, every number | Exchanges already label filings; arithmetic doesn't need a model |
-| cheap | Groq Llama 3.1 8B (→ Gemini Flash-Lite on rate limit) | one-liners, management changes, rule misses | short text, high volume, free and fast |
+| cheap | Groq GPT-OSS 20B (→ Gemini Flash-Lite on rate limit) | one-liners, management changes, rule misses | short text, high volume, free and fast |
 | extract | Gemini Flash | results tables, whole transcripts | long context, must copy numbers exactly |
 | reason | Gemini Flash (set a Pro model if you have quota) | verdicts the code can't compute, bull / bear | the only step that needs judgment |
 

@@ -36,7 +36,8 @@ def read_env() -> dict:
 def check_gemini(key: str) -> str:
     r = requests.get("https://generativelanguage.googleapis.com/v1beta/models", params={"key": key}, timeout=20)
     if r.status_code != 200:
-        return f"REJECTED ({r.status_code}): {r.text[:120]}"
+        return (f"REJECTED ({r.status_code}): Google says the key isn't valid. Copy it again from "
+                "aistudio.google.com/apikey (use the copy icon) and re-run this script")
     names = {m["name"].split("/")[-1] for m in r.json().get("models", [])}
     want = ["gemini-2.5-flash", "gemini-2.5-flash-lite"]
     missing = [m for m in want if m not in names]
@@ -49,9 +50,9 @@ def check_groq(key: str) -> str:
     if r.status_code != 200:
         return f"REJECTED ({r.status_code}): {r.text[:120]}"
     names = {m["id"] for m in r.json().get("data", [])}
-    want = ["llama-3.1-8b-instant", "llama-3.3-70b-versatile"]
+    want = ["openai/gpt-oss-20b", "openai/gpt-oss-120b"]
     missing = [m for m in want if m not in names]
-    return "works" + (f", but {missing} not listed; available: {sorted(names)[:8]}" if missing else "")
+    return "works" + (f", but {missing} not listed; available: {sorted(names)}" if missing else "")
 
 
 def check_tavily(key: str) -> str:

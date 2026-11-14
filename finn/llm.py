@@ -2,7 +2,7 @@
 
 Routing (override any model with env vars; see .env.example):
   cheap    bulk work on short text: classify a filing, one-line summary, pull a name + role.
-           Groq Llama 3.1 8B (fast, free), falls back to Gemini Flash-Lite on rate limits.
+           Groq GPT-OSS 20B (fast, free), falls back to Gemini Flash-Lite on rate limits.
   extract  long documents where numbers must be read exactly: results tables, concall
            transcripts. Gemini Flash (1M context, so a whole transcript is one call).
   reason   the few calls that need judgment: promised-vs-delivered verdicts, bull/bear.
@@ -57,12 +57,12 @@ def _route(tier: str) -> list[tuple[str, str]]:
     """(provider, model) chain for a tier. First one with a key wins; the rest are fallbacks."""
     e = os.environ.get
     chains = {
-        "cheap": [("groq", e("FINN_CHEAP_MODEL", "llama-3.1-8b-instant")),
+        "cheap": [("groq", e("FINN_CHEAP_MODEL", "openai/gpt-oss-20b")),
                   ("gemini", e("FINN_CHEAP_FALLBACK", "gemini-2.5-flash-lite"))],
         "extract": [("gemini", e("FINN_EXTRACT_MODEL", "gemini-2.5-flash")),
-                    ("groq", e("FINN_EXTRACT_FALLBACK", "llama-3.3-70b-versatile"))],
+                    ("groq", e("FINN_EXTRACT_FALLBACK", "openai/gpt-oss-120b"))],
         "reason": [("gemini", e("FINN_REASON_MODEL", "gemini-2.5-flash")),
-                   ("groq", e("FINN_REASON_FALLBACK", "llama-3.3-70b-versatile"))],
+                   ("groq", e("FINN_REASON_FALLBACK", "openai/gpt-oss-120b"))],
     }
     return chains[tier]
 
@@ -152,7 +152,7 @@ class LLM:
             if self.max_calls is not None and self.usage.calls >= self.max_calls:
                 raise LLMUnavailable(f"call budget of {self.max_calls} reached")
             try:
-                content = self._post(provider, model, messages, max_tokens, temperature)
+                content = self._post(provider, model, messages, max_tokens, temperature, tier)
                 data = parse_json(content)
                 path.write_text(json.dumps({"model": model, "content": content}), encoding="utf-8")
                 return data
@@ -162,10 +162,17 @@ class LLM:
         raise LLMUnavailable(f"all models failed for tier '{tier}': {last}")
 
     def _post(self, provider: str, model: str, messages: list, max_tokens: int, temperature: float,
-              retries: int = 3) -> str:
+              tier: str = "cheap", retries: int = 3) -> str:
         url, key_env = PROVIDERS[provider]
         body = {"model": model, "messages": messages, "max_tokens": max_tokens,
                 "temperature": temperature, "response_format": {"type": "json_object"}}
+        # Thinking models spend output tokens on reasoning before the answer. Keep thinking short
+        # (copying numbers or summarising doesn't need it) and leave headroom so JSON isn't cut off.
+        thinking = ("gpt-oss" in model or "qwen3" in model) if provider == "groq" else \
+            (provider == "gemini" and "lite" not in model)
+        if thinking:
+            body["reasoning_effort"] = "medium" if tier == "reason" else "low"
+            body["max_tokens"] = max_tokens + 2048
         headers = {"Authorization": f"Bearer {os.environ[key_env]}", "Content-Type": "application/json"}
         for attempt in range(retries):
             r = self.session.post(url, json=body, headers=headers, timeout=self.timeout)
@@ -178,7 +185,10 @@ class LLM:
             j = r.json()
             u = j.get("usage") or {}
             self.usage.add(model, int(u.get("prompt_tokens") or 0), int(u.get("completion_tokens") or 0))
-            return j["choices"][0]["message"]["content"]
+            content = j["choices"][0]["message"].get("content")
+            if not content:
+                raise RuntimeError(f"empty answer (finish_reason={j['choices'][0].get('finish_reason')})")
+            return content
         raise RuntimeError(f"{provider} kept rate-limiting")
 
 
