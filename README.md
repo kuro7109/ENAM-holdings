@@ -54,7 +54,9 @@ filing id, so each filing is paid for once, ever. Total cost on free tiers: ₹0
 ```bash
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
-cp .env.example .env                      # add GEMINI_API_KEY, GROQ_API_KEY, TAVILY_API_KEY
+cp .env.example .env                      # paste keys right after each '=' (no quotes, no spaces)
+# Keys: aistudio.google.com (Gemini), console.groq.com (Groq), app.tavily.com (Tavily).
+# Model names can be overridden with FINN_CHEAP_MODEL / FINN_EXTRACT_MODEL / FINN_REASON_MODEL.
 
 python run_daily.py --days 30             # prices, alerts, filings, rules-only feed
 python run_enrich.py --dry-run            # see the call plan before spending
