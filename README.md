@@ -3,7 +3,7 @@
 A mobile-first investing agent for an Indian equity portfolio. It **pushes** what changed and
 why it matters, and **pulls** research on any NSE company from primary sources only.
 
-**Try it on a phone:** `<your Vercel URL>` · Add to Home Screen for the app feel.
+**Try it on a phone:** https://enamholdingsbyroku.vercel.app · Add to Home Screen for the app feel.
 
 ## What it does
 
@@ -63,7 +63,7 @@ python run_enrich.py --dry-run            # see the call plan before spending
 python run_enrich.py                      # results cards, people, one-liners -> feed.json
 python run_research.py --demo             # precompute research for the companies in portfolio.yaml
 python run_research.py HAVELLS --probe    # check what was parsed from screener.in (no LLM)
-python -m pytest -q                       # 70 offline tests
+python -m pytest -q                       # 71 offline tests
 
 cd web && npm install && npm run dev      # app on http://localhost:5173
 ```

@@ -5,7 +5,7 @@
 1. **Deploy the app on Vercel** (2 min). vercel.com → *Add New…* → *Project* → import
    `kuro7109/ENAM-holdings` → **Root Directory: `web`** (click *Edit*) → Framework: **Vite** → *Deploy*.
    Copy the `https://….vercel.app` link and open it on your phone.
-2. **Put the link in the README.** Replace `<your Vercel URL>` near the top of `README.md`
+2. **Put the link in the README.** Replace `https://enamholdingsbyroku.vercel.app` near the top of `README.md`
    (GitHub → README → pencil icon → *Commit changes*).
 3. **Share the build history.** Open this Claude session, then *Share* → copy the link.
    Do the same for any other AI chats you used.
@@ -24,7 +24,7 @@ Hello ENAM team,
 
 Here is my submission for the FINN build challenge.
 
-- **App (open on a phone):** <your Vercel URL>
+- **App (open on a phone):** https://enamholdingsbyroku.vercel.app
 - **Repository:** https://github.com/kuro7109/ENAM-holdings
 - **AI build history:** <Claude session share link> <any other chat links>
 
