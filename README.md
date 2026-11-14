@@ -1,68 +1,109 @@
-# FINN backend · Day 1
+# FINN
 
-End-of-day market data and exchange filings for a 15–20 stock NSE portfolio, turned into
-three JSON files the mobile frontend reads.
+A mobile-first investing agent for an Indian equity portfolio. It **pushes** what changed and
+why it matters, and **pulls** research on any NSE company from primary sources only.
+
+**Try it on a phone:** `<your Vercel URL>` · Add to Home Screen for the app feel.
+
+## What it does
+
+| Screen | The job |
+|---|---|
+| **Brief** | Opens with one sentence: *"3 things need you. 38 filings don't."* Covers since you last looked (or 24 h, 3 / 7 / 30 days). Results arrive as a QoQ / YoY table; a CFO change arrives with who the new person is; an auditor resigning is always on top. Routine paperwork folds into one line. **Done** clears an item. |
+| **Alerts** | You set what "unusual" means (daily move, volume ×, σ for that stock). As you drag, it shows how many days that setting would have flagged in the last month, so you can tune the noise before committing. You also pick which filing types can reach the top. |
+| **Holdings** | 18 stocks, biggest move first, sparkline, volume ×; tap for 52-week range, flagged days and filings. |
+| **Research** | Any NSE symbol. The centrepiece is **promised vs delivered**: every guidance statement from the last four earnings calls, checked against reported numbers, each linking to its transcript page. Also narrative vs numbers, trajectory, balance sheet, cash conversion and bull / bear. |
+
+## Architecture
 
 ```
-Yahoo Finance ──► prices.py ──► signals (move %, volume ratio, σ) ──► alerts.json, market.json
+                       ┌────────────── run_daily.py (17:00 IST, GitHub Action) ──────────────┐
+Yahoo Finance ──► prices.py ──► signals (move %, volume ×, σ) ──► market.json, alerts.json, signals.json
 NSE ─┐
-     ├──► announcements.py ──► classify.py (rules) ──► announcements.json
-BSE ─┘ (fallback)                     │
-                                      └── needs_llm=True ──► cheap LLM (Day 2)
+     ├─► announcements.py ──► classify.py (rules, free) ──► announcements.json
+BSE ─┘                                                    │
+                                     run_enrich.py ◄──────┘  only filings that matter cost a call
+                                       │  results PDF ──► extract model copies line items ──► Python: QoQ, YoY, EBITDA, margins
+                                       │  mgmt change ──► cheap model reads the filing's own profile ──► web search only if thin
+                                       │  other material ──► cheap model: one line + importance
+                                       └► enrichment.json (cached by filing id) ──► feed.json (ranked, clustered)
+
+screener.in ──► research.py ──► numbers in Python (snapshot, CAGR, D/E, CFO/PAT, working capital)
+transcripts ──► extract model: guidance with page refs ──► check_in_code() verifies what arithmetic can
+                                                        └► reason model: the rest + narrative vs numbers + bull/bear
+                        run_research.py (precomputed demo set)   api/server.py (any ticker, live)
+
+web/ (Vite + React) reads the JSON, re-applies your thresholds on the phone, renders.
 ```
 
-## Run
+## Model routing
+
+| Tier | Default model | Used for | Why |
+|---|---|---|---|
+| none | rules | classifying ~80% of filings, all scoring, every number | Exchanges already label filings; arithmetic doesn't need a model |
+| cheap | Groq Llama 3.1 8B (→ Gemini Flash-Lite on rate limit) | one-liners, management changes, rule misses | short text, high volume, free and fast |
+| extract | Gemini Flash | results tables, whole transcripts | long context, must copy numbers exactly |
+| reason | Gemini Flash (set a Pro model if you have quota) | verdicts the code can't compute, bull / bear | the only step that needs judgment |
+
+All calls go through one OpenAI-compatible client (`finn/llm.py`) with provider fallback, a disk
+cache keyed by prompt, a per-run budget (`--max-calls`) and `--dry-run`. Enrichment is stored by
+filing id, so each filing is paid for once, ever. Total cost on free tiers: ₹0.
+
+## Run it
 
 ```bash
-python -m venv .venv && source .venv/bin/activate   # Windows: .venv\Scripts\activate
+python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
-python run_daily.py --probe RELIANCE   # 1. sanity-check the live NSE/BSE payload shape
-python run_daily.py                    # 2. full refresh: prices + last 7 days of filings
-python -m pytest -q                    # 3. 47 offline tests
+cp .env.example .env                      # add GEMINI_API_KEY, GROQ_API_KEY, TAVILY_API_KEY
+
+python run_daily.py --days 30             # prices, alerts, filings, rules-only feed
+python run_enrich.py --dry-run            # see the call plan before spending
+python run_enrich.py                      # results cards, people, one-liners -> feed.json
+python run_research.py --demo             # precompute research for the companies in portfolio.yaml
+python run_research.py HAVELLS --probe    # check what was parsed from screener.in (no LLM)
+python -m pytest -q                       # 64 offline tests
+
+cd web && npm install && npm run dev      # app on http://localhost:5173
 ```
 
-Flags: `--days 30` (filing window), `--only prices|announcements`, `--source auto|nse|bse`,
-`--force` (ignore caches), `-v`. Edit the portfolio and alert thresholds in `config/portfolio.yaml`.
+If `data/out` is empty the app falls back to clearly labelled sample data made by the real
+pipeline (`scripts/make_sample_data.py`), so the UI can be built offline.
 
-## Outputs (`data/out/`)
-
-| File | What the frontend gets |
-|---|---|
-| `market.json` | Latest close, daily move, volume ratio, σ, 52-week range and a 30-day sparkline per stock; a `stale` flag when a stock has no bar for the latest session |
-| `alerts.json` | Triggered alerts for the last ~month (one card per stock-day, with every trigger that fired, a severity and a plain-English headline), plus the thresholds in force |
-| `announcements.json` | Every filing in the window with primary category, secondary categories, tags, `material` and `needs_llm`, plus per-category counts |
+### Deploy
+- **App:** Vercel → import repo → Root Directory `web` (framework: Vite). Optional env
+  `VITE_API_URL` = the Render URL below. Every data push redeploys.
+- **Live research API:** Render → New → Blueprint → this repo (`render.yaml`), add the keys.
+- **Daily refresh:** add the three keys as GitHub Actions secrets.
 
 ## Decisions
 
-**Alerts are configurable, and relative.** Besides the fixed ±X% and k× volume rules, a σ rule
-flags moves that are unusual *for that stock* (a 2.5% day in a sleepy bank is news; in a
-small-cap it isn't). It only fires when the % rule didn't. Thresholds can be set globally or
-per stock. Today's volume is excluded from its own baseline.
+- **Rules before models.** Exchanges already attach a category and subject to every filing, so
+  a regex classifier labels most of them for nothing. Only rule misses and material filings get a call.
+- **The model reads, Python counts.** For results the model only copies line items from the
+  table; QoQ, YoY, margins and EBITDA (= PBT + finance costs + D&A − other income, because
+  filings rarely state it) are computed and sanity-checked in code. The same goes for research:
+  a guided "10% growth in Q2" is verified against the reported quarter in code; the model
+  only judges what arithmetic can't.
+- **Primary sources only on the pull side.** Prompts carry only filings, transcripts and the
+  annual report, and every claim must cite a transcript page or a numbers row.
+- **The filing first, the web second.** SEBI requires a profile of newly appointed directors
+  and KMP inside the disclosure itself, so FINN reads that before searching the web.
+- **Relative alerts.** Besides ±X% and k× volume, a σ rule flags moves that are unusual for
+  *that* stock. Volatile names keep proportionally looser bars as you move the dial.
+- **A move nobody explained is news.** A price/volume alert with no filing behind it surfaces
+  as its own item.
+- **Built not to break the demo.** NSE with BSE fallback and a circuit breaker; every response
+  cached; the app reads precomputed JSON; research for the demo set is precomputed and the live
+  API is only for new tickers.
 
-**Rules before LLMs.** Exchanges already attach a category and subject to every filing, so
-a regex classifier labels most of them for free. Only filings it can't place get
-`needs_llm=True`; those are the only ones that will cost a model call.
+## Left out on purpose
 
-**Judgment in the classifier.** Board outcomes keep secondary labels (results + dividend).
-Scheduling notices, newspaper ads and ESOP allotments are tagged routine so they collapse in
-the digest. CEO/CFO/MD/Chair changes are tagged `top_role`. An auditor resigning is tagged
-`red_flag` and always surfaces.
+Real push notifications (the brief and alerts model them; web-push is next), voice, intraday
+data, per-user portfolios, broker/news data (excluded by design), and the annual report on the
+live research path (it's 300 pages; the precomputed demo set uses `--with-ar`).
 
-**Built not to break the demo.** NSE needs a warmed browser session; the client re-warms on
-401/403 or an HTML block page. BSE is a per-symbol fallback. After 3 straight failures an
-exchange is skipped for the rest of the run (circuit breaker). Every response is cached on
-disk (30 min), prices are fetched at most once per evening, and the frontend reads
-precomputed JSON rather than live endpoints.
+## Next
 
-**Prices are re-pulled in full (1 year, one batched call).** It's ~5k rows, and it means
-split/bonus adjustments that Yahoo applies retroactively never leave stale history in the DB.
-Today's bar is dropped if the script runs before 15:45 IST, so a half-day volume never gets
-compared against full-day averages.
-
-## Known limits
-
-- NSE/BSE field names are undocumented and can change. `--probe` prints the raw keys; the
-  normalisers in `announcements.py` are the only place to fix.
-- Exchange `subject` lines are sometimes boilerplate. Those filings land in the right
-  exchange category but need the PDF text (Day 2) to know *who* or *what*.
-- NSE often blocks cloud IPs, so the GitHub Actions refresh may fall back to BSE.
+Web-push for threshold breaches; per-user weights learned from what they mark Done vs open;
+segment-level promise tracking; diffing each new transcript against the last one ("what did
+management stop talking about?").
