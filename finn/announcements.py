@@ -189,6 +189,9 @@ def normalize_nse(row: dict, symbol: str) -> dict:
         "exchange_category": category,
         "subject": _squash(row.get("attchmntText")),
         "pdf_url": pdf,
+        # NSE's own plain-English summary of the filing: a free one-liner source, and much
+        # cheaper model input than the PDF.
+        "exchange_summary": _squash(row.get("voiceSummary")) or None,
     }
 
 
@@ -208,6 +211,7 @@ def normalize_bse(row: dict, symbol: str) -> dict:
         "exchange_category": category,
         "subject": subject,
         "pdf_url": BSEClient.PDF_BASE + att if att else None,
+        "exchange_summary": None,
     }
 
 

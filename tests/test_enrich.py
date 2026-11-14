@@ -165,3 +165,17 @@ def test_llm_caches_and_falls_back(tmp_path, monkeypatch):
     n = len(calls)
     assert llm.json("cheap", "s", "u") == {"ok": True}       # groq still fails, gemini answer cached
     assert len(calls) == n + 1 and llm.usage.cached == 1
+
+
+def test_exchange_summary_is_free_fallback_and_cheap_input(tmp_path):
+    es = ("Reliance Industries Limited disclosed that its executives will participate in the Morgan Stanley "
+          "Summit in Singapore on November 18 and 19, 2026. The meetings are one-on-one.")
+    assert E.first_sentence(es).startswith("Disclosed that its executives will participate")
+    it = _item("g", "LT", "press_release", "Order win", exchange_summary="L&T Limited has bagged a large order worth over Rs 5,000 crore for a metro project.")
+    feed = E.build_feed({"items": [it]}, {}, {}, {}, {})
+    assert feed["items"][0]["summary"].startswith("Bagged a large order")
+    seen = []
+    llm = FakeLLM(tmp_path / "c", {"cheap": lambda u: seen.append(u) or {"summary": "x", "importance": 3}})
+    enr = E.Enricher(llm, tmp_path / "e.json", {}, {}, fetch=lambda u: (_ for _ in ()).throw(AssertionError("no PDF")))
+    enr.generic(it)
+    assert "exchange's own summary" in seen[0]

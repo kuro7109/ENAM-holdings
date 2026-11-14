@@ -310,7 +310,9 @@ class Enricher:
                 "bio_sources": [h["url"] for h in hits[:3]]}
 
     def generic(self, item: dict) -> dict:
-        text = pdftext.head(self._pages(item), 3000)
+        # NSE already summarises the filing; read that instead of downloading the PDF.
+        es = item.get("exchange_summary")
+        text = f"(exchange's own summary)\n{es}" if es and len(es) > 60 else pdftext.head(self._pages(item), 3000)
         raw = self.llm.json("cheap", GENERIC_SYSTEM, GENERIC_USER.format(
             company=item.get("company") or item["symbol"], exchange_category=item.get("exchange_category", ""),
             subject=item.get("subject", ""), category=item.get("category"), categories=", ".join(CATEGORIES),
@@ -376,6 +378,16 @@ class Enricher:
         if not self.llm.dry_run:
             self.save()
         return dict(stats)
+
+
+def first_sentence(text: str | None, limit: int = 170) -> str | None:
+    """Rules-only fallback: the first sentence of NSE's own summary, minus the company name."""
+    if not text:
+        return None
+    s = re.split(r"(?<=[.!?])\s+", text.strip())[0]
+    s = re.sub(r"^[A-Z][\w&.,' -]*?(?:Limited|Ltd\.?)\s+(?:has\s+)?", "", s).strip()
+    s = s[:1].upper() + s[1:]
+    return s if len(s) <= limit else s[: limit - 1].rsplit(" ", 1)[0] + "…"
 
 
 def _clamp(x, lo=1, hi=5):
@@ -494,7 +506,8 @@ def build_feed(ann: dict, alerts: dict, store: dict, names: dict, sectors: dict)
             "sector": sectors.get(lead["symbol"], ""), "filed_at": lead.get("filed_at"), "source": lead.get("source"),
             "category": cat, "tags": lead.get("tags") or [], "title": lead.get("subject") or lead.get("exchange_category"),
             "exchange_category": lead.get("exchange_category"), "pdf_url": lead.get("pdf_url"),
-            "summary": enr.get("summary") if enr.get("status") in ("ok", "partial") else None,
+            "summary": (enr.get("summary") if enr.get("status") in ("ok", "partial") else None)
+                       or first_sentence(lead.get("exchange_summary")),
             "score": sc, "tier": "top" if sc >= TOP else "worth" if sc >= WORTH else "routine", "why": why,
             "enriched": enr.get("status"),
             "related": [{"id": m["id"], "title": m.get("subject"), "pdf_url": m.get("pdf_url"),

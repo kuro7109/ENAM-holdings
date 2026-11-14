@@ -20,14 +20,14 @@ CREATE TABLE IF NOT EXISTS prices (
 CREATE TABLE IF NOT EXISTS announcements (
     id TEXT PRIMARY KEY, symbol TEXT, company TEXT, source TEXT, filed_at TEXT,
     exchange_category TEXT, subject TEXT, pdf_url TEXT,
-    category TEXT, secondary TEXT, tags TEXT, needs_llm INTEGER, fetched_at TEXT
+    category TEXT, secondary TEXT, tags TEXT, needs_llm INTEGER, fetched_at TEXT, exchange_summary TEXT
 );
 CREATE INDEX IF NOT EXISTS idx_ann_symbol_time ON announcements (symbol, filed_at);
 CREATE TABLE IF NOT EXISTS meta (key TEXT PRIMARY KEY, value TEXT);
 """
 
 _ANN_COLS = ["id", "symbol", "company", "source", "filed_at", "exchange_category", "subject",
-             "pdf_url", "category", "secondary", "tags", "needs_llm", "fetched_at"]
+             "pdf_url", "category", "secondary", "tags", "needs_llm", "fetched_at", "exchange_summary"]
 
 
 class Store:
@@ -35,6 +35,9 @@ class Store:
         Path(path).parent.mkdir(parents=True, exist_ok=True)
         self.conn = sqlite3.connect(str(path))
         self.conn.executescript(SCHEMA)
+        cols = {r[1] for r in self.conn.execute("PRAGMA table_info(announcements)")}
+        if "exchange_summary" not in cols:  # DBs created before this column existed
+            self.conn.execute("ALTER TABLE announcements ADD COLUMN exchange_summary TEXT")
 
     # ---------- prices ----------
     def upsert_prices(self, symbol: str, df: pd.DataFrame) -> int:
@@ -72,7 +75,8 @@ class Store:
             self.conn.executemany(
                 f"INSERT INTO announcements ({','.join(_ANN_COLS)}) VALUES ({','.join(':' + c for c in _ANN_COLS)}) "
                 "ON CONFLICT(id) DO UPDATE SET category=excluded.category, secondary=excluded.secondary, "
-                "tags=excluded.tags, needs_llm=excluded.needs_llm",
+                "tags=excluded.tags, needs_llm=excluded.needs_llm, "
+                "exchange_summary=COALESCE(excluded.exchange_summary, announcements.exchange_summary)",
                 payload,
             )
         return len(set(ids) - existing)
