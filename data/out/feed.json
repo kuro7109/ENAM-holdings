@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-15T03:50:22+05:30",
+ "generated_at": "2026-11-15T03:52:54+05:30",
  "window": {
   "from": "2026-10-16",
   "to": "2026-11-15",
@@ -313,14 +313,78 @@
    "title": "Hindustan Aeronautics Limited has submitted to the Exchange, the financial results for the period ended September 30, 2026.",
    "exchange_category": "Outcome of Board Meeting",
    "pdf_url": "https://nsearchives.nseindia.in/corporate/HAL_12112026132915_IntegratedFinancial_30092026.pdf",
-   "summary": "Filed its audited standalone and consolidated financial results for the quarter and half year ended 30th September 2026.",
+   "summary": "Revenue +15% YoY, PAT +16% YoY",
    "score": 100.0,
    "tier": "top",
    "why": [
     "Stock moved on it"
    ],
-   "enriched": null,
+   "enriched": "ok",
    "related": [],
+   "results": {
+    "statement": "consolidated",
+    "unit": "Rs in Lakhs",
+    "is_lender": false,
+    "labels": {
+     "current": "30-Sep-26",
+     "previous_quarter": null,
+     "year_ago_quarter": "30-Sep-25"
+    },
+    "rows": [
+     {
+      "metric": "Revenue",
+      "key": "revenue",
+      "current": 761325.0,
+      "previous_quarter": null,
+      "year_ago_quarter": 662861.0,
+      "qoq": null,
+      "yoy": 14.9
+     },
+     {
+      "metric": "EBITDA",
+      "key": "ebitda",
+      "current": null,
+      "previous_quarter": null,
+      "year_ago_quarter": null,
+      "qoq": null,
+      "yoy": null
+     },
+     {
+      "metric": "PBT",
+      "key": "pbt",
+      "current": 256605.0,
+      "previous_quarter": null,
+      "year_ago_quarter": 222698.0,
+      "qoq": null,
+      "yoy": 15.2
+     },
+     {
+      "metric": "PAT",
+      "key": "pat",
+      "current": 193564.0,
+      "previous_quarter": null,
+      "year_ago_quarter": 166905.0,
+      "qoq": null,
+      "yoy": 16.0
+     }
+    ],
+    "margins": {
+     "ebitda": {
+      "current": null,
+      "previous_quarter": null,
+      "year_ago_quarter": null
+     },
+     "pat": {
+      "current": 25.4,
+      "previous_quarter": null,
+      "year_ago_quarter": 25.2
+     }
+    },
+    "checks": [],
+    "headline": "Revenue +15% YoY, PAT +16% YoY",
+    "complete": true,
+    "ebitda_note": "EBITDA = PBT + finance costs + D&A − other income − one-offs"
+   },
    "alert": {
     "date": "2026-11-12",
     "pct_change": -2.13,
@@ -2771,14 +2835,81 @@
    "title": "Unaudited Financial Results for the quarter and half year ended 30 September 2026",
    "exchange_category": "Outcome of Board Meeting",
    "pdf_url": "https://nsearchives.nseindia.in/corporate/SUNSEC_30102026141321_BMOutcomeFinancialoct26signed.pdf",
-   "summary": null,
-   "score": 100.0,
+   "summary": "Revenue +12% YoY, PAT -36% YoY, EBITDA margin 29.3% (-210 bps)",
+   "score": 100,
    "tier": "top",
    "why": [
+    "PAT -36% YoY",
     "Stock moved on it"
    ],
-   "enriched": null,
+   "enriched": "ok",
    "related": [],
+   "results": {
+    "statement": "consolidated",
+    "unit": "₹ Million",
+    "is_lender": false,
+    "labels": {
+     "current": "Quarter ended 30.09.2026",
+     "previous_quarter": "Quarter ended 30.06.2026",
+     "year_ago_quarter": "Quarter ended 30.09.2025"
+    },
+    "rows": [
+     {
+      "metric": "Revenue",
+      "key": "revenue",
+      "current": 161987.1,
+      "previous_quarter": 152998.8,
+      "year_ago_quarter": 144783.1,
+      "qoq": 5.9,
+      "yoy": 11.9
+     },
+     {
+      "metric": "EBITDA",
+      "key": "ebitda",
+      "current": 47504.0,
+      "previous_quarter": 44272.4,
+      "year_ago_quarter": 45391.9,
+      "qoq": 7.3,
+      "yoy": 4.7
+     },
+     {
+      "metric": "PBT",
+      "key": "pbt",
+      "current": 31593.7,
+      "previous_quarter": 40988.1,
+      "year_ago_quarter": 41676.1,
+      "qoq": -22.9,
+      "yoy": -24.2
+     },
+     {
+      "metric": "PAT",
+      "key": "pat",
+      "current": 19885.3,
+      "previous_quarter": 28947.9,
+      "year_ago_quarter": 31179.5,
+      "qoq": -31.3,
+      "yoy": -36.2
+     }
+    ],
+    "margins": {
+     "ebitda": {
+      "current": 29.3,
+      "previous_quarter": 28.9,
+      "year_ago_quarter": 31.4
+     },
+     "pat": {
+      "current": 12.3,
+      "previous_quarter": 18.9,
+      "year_ago_quarter": 21.5
+     }
+    },
+    "checks": [
+     "Exceptional items of 12,688 this quarter; EBITDA excludes them"
+    ],
+    "headline": "Revenue +12% YoY, PAT -36% YoY, EBITDA margin 29.3% (-210 bps)",
+    "complete": true,
+    "ebitda_note": "EBITDA = PBT + finance costs + D&A − other income − one-offs"
+   },
    "alert": {
     "date": "2026-10-30",
     "pct_change": 0.95,

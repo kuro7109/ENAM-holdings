@@ -1,0 +1,44 @@
+{
+ "PIDILITIND": {
+  "name": "Pidilite Industries Ltd",
+  "as_of": "2026-11-15",
+  "tally": {
+   "too_early": 1,
+   "delivered": 7,
+   "on_track": 3,
+   "unverifiable": 3
+  }
+ },
+ "HAVELLS": {
+  "name": "Havells India Ltd",
+  "as_of": "2026-11-15",
+  "tally": {
+   "on_track": 5,
+   "too_early": 5,
+   "delivered": 3,
+   "behind": 2,
+   "partly": 1
+  }
+ },
+ "ASTRAL": {
+  "name": "Astral Ltd",
+  "as_of": "2026-11-15",
+  "tally": {
+   "on_track": 18,
+   "too_early": 5,
+   "unverifiable": 1,
+   "behind": 4
+  }
+ },
+ "KAYNES": {
+  "name": "Kaynes Technology India Ltd",
+  "as_of": "2026-11-15",
+  "tally": {
+   "on_track": 12,
+   "delivered": 1,
+   "too_early": 5,
+   "missed": 3,
+   "unverifiable": 1
+  }
+ }
+}

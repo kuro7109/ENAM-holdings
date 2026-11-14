@@ -1,0 +1,1096 @@
+{
+ "symbol": "HAVELLS",
+ "name": "Havells India Ltd",
+ "generated_at": "2026-11-15T04:04:13+05:30",
+ "as_of": "2026-11-15",
+ "business": {
+  "about": "Havells India Limited is a leading Fast Moving Electrical Goods (FMEG) Company and a major power distribution equipment manufacturer with a strong global presence. It enjoys enviable market dominance across a wide spectrum of products, including Industrial & Domestic Circuit Protection Devices, Cables & Wires, Motors, Fans, Modular Switches, Home Appliances, Air Conditioners, Electric Water Heaters, Power Capacitors, Luminaires for Domestic, Commercial and Industrial Applications. [1]",
+  "key_points": "Product Segments [1] [2] [3] The company offers 24 products verticals, under the following segments: 1) Cables (~39% in FY26 vs ~33% in FY25): The company offers flexible and power cables including multicore round cable, flat submersible cable, LAN cable, CCTV, speaker cable, etc. 2) Lloyd Consumer (~18% in FY26 vs ~24% in FY25): Lloyd offers air conditioners, washing machines, refrigerators and televisions. 3) Electrical Consumer Durables (~17% in  FY26 vs ~18% in FY25): It offers fans, appliances and water heaters. 4) Switchgears (~12% in FY26 vs 11% in FY25): The company offers domestic switchgears, capacitors, switches, industrial switchgears, etc. 5) Lighting & Fixtures (~7% in FY26 vs ~8% in FY25): Comprises of professional and consumer luminaries including Home Art lights, LED panels, LED Cobs, lamps, batten, etc. [4] 6) Others (~8% in FY26 vs ~24% in FY25): Includes motors, solar, pump & water purifiers, personal grooming products, etc.",
+  "segments": [
+   {
+    "name": "Cables and Switchgear",
+    "share_or_growth": "grew (healthy contributions)",
+    "page": 3
+   },
+   {
+    "name": "Renewables",
+    "share_or_growth": "emerging/fast-growing, ~₹300 crores per quarter",
+    "page": 6
+   },
+   {
+    "name": "Lloyd",
+    "share_or_growth": "healthy revenue growth (28.5% top-line growth)",
+    "page": 4
+   },
+   {
+    "name": "Switchgear Exports",
+    "share_or_growth": "15% of switchgear overall",
+    "page": 7
+   },
+   {
+    "name": "Lloyd - RAC",
+    "share_or_growth": "close to 75% of Lloyd business",
+    "page": 15
+   }
+  ]
+ },
+ "snapshot": {
+  "market_cap_cr": 72867.0,
+  "price": 1161.0,
+  "pe": 42.9,
+  "roce": 24.9,
+  "roe": 19.0,
+  "div_yield": 0.86,
+  "ttm_sales": 25243.0,
+  "ttm_pat": 1662.0,
+  "last_q": "Q2 FY27",
+  "last_q_sales_yoy": 34.6,
+  "last_q_pat_yoy": 9.7,
+  "last_q_opm": 9.0,
+  "fy_opm": 10.0,
+  "fy": "FY26"
+ },
+ "trajectory": {
+  "sales_cagr_3y": 10.0,
+  "sales_cagr_5y": 16.6,
+  "pat_cagr_3y": 16.4,
+  "pat_cagr_5y": 10.1,
+  "opm_change_3y": 0.0,
+  "quarterly": [
+   {
+    "period": "Dec 2023",
+    "q": "Q3 FY24",
+    "sales": 4414.0,
+    "op_profit": 433.0,
+    "opm": 10.0,
+    "pat": 288.0
+   },
+   {
+    "period": "Mar 2024",
+    "q": "Q4 FY24",
+    "sales": 5442.0,
+    "op_profit": 635.0,
+    "opm": 12.0,
+    "pat": 447.0
+   },
+   {
+    "period": "Jun 2024",
+    "q": "Q1 FY25",
+    "sales": 5806.0,
+    "op_profit": 572.0,
+    "opm": 10.0,
+    "pat": 408.0
+   },
+   {
+    "period": "Sep 2024",
+    "q": "Q2 FY25",
+    "sales": 4539.0,
+    "op_profit": 375.0,
+    "opm": 8.0,
+    "pat": 268.0,
+    "sales_yoy": 16.4,
+    "pat_yoy": 7.6
+   },
+   {
+    "period": "Dec 2024",
+    "q": "Q3 FY25",
+    "sales": 4889.0,
+    "op_profit": 426.0,
+    "opm": 9.0,
+    "pat": 278.0,
+    "sales_yoy": 10.8,
+    "pat_yoy": -3.5
+   },
+   {
+    "period": "Mar 2025",
+    "q": "Q4 FY25",
+    "sales": 6544.0,
+    "op_profit": 757.0,
+    "opm": 12.0,
+    "pat": 517.0,
+    "sales_yoy": 20.2,
+    "pat_yoy": 15.7
+   },
+   {
+    "period": "Jun 2025",
+    "q": "Q1 FY26",
+    "sales": 5455.0,
+    "op_profit": 516.0,
+    "opm": 9.0,
+    "pat": 348.0,
+    "sales_yoy": -6.0,
+    "pat_yoy": -14.7
+   },
+   {
+    "period": "Sep 2025",
+    "q": "Q2 FY26",
+    "sales": 4779.0,
+    "op_profit": 438.0,
+    "opm": 9.0,
+    "pat": 318.0,
+    "sales_yoy": 5.3,
+    "pat_yoy": 18.7
+   },
+   {
+    "period": "Dec 2025",
+    "q": "Q3 FY26",
+    "sales": 5588.0,
+    "op_profit": 516.0,
+    "opm": 9.0,
+    "pat": 300.0,
+    "sales_yoy": 14.3,
+    "pat_yoy": 7.9
+   },
+   {
+    "period": "Mar 2026",
+    "q": "Q4 FY26",
+    "sales": 6705.0,
+    "op_profit": 729.0,
+    "opm": 11.0,
+    "pat": 723.0,
+    "sales_yoy": 2.5,
+    "pat_yoy": 39.8
+   },
+   {
+    "period": "Jun 2026",
+    "q": "Q1 FY27",
+    "sales": 6518.0,
+    "op_profit": 466.0,
+    "opm": 7.0,
+    "pat": 290.0,
+    "sales_yoy": 19.5,
+    "pat_yoy": -16.7
+   },
+   {
+    "period": "Sep 2026",
+    "q": "Q2 FY27",
+    "sales": 6432.0,
+    "op_profit": 573.0,
+    "opm": 9.0,
+    "pat": 349.0,
+    "sales_yoy": 34.6,
+    "pat_yoy": 9.7
+   }
+  ],
+  "annual": [
+   {
+    "period": "Mar 2017",
+    "fy": "FY17",
+    "sales": 6130.0,
+    "opm": 13.0,
+    "pat": 494.0,
+    "borrowings": 208.0,
+    "equity": 3276.0,
+    "de": 0.06,
+    "cfo": 767.0,
+    "cfi": -220.0,
+    "sales_growth": -19.3
+   },
+   {
+    "period": "Mar 2018",
+    "fy": "FY18",
+    "sales": 8116.0,
+    "opm": 13.0,
+    "pat": 661.0,
+    "borrowings": 115.0,
+    "equity": 3730.0,
+    "de": 0.03,
+    "cfo": 1100.0,
+    "cfi": -946.0,
+    "sales_growth": 32.4
+   },
+   {
+    "period": "Mar 2019",
+    "fy": "FY19",
+    "sales": 10073.0,
+    "opm": 12.0,
+    "pat": 788.0,
+    "borrowings": 94.0,
+    "equity": 4198.0,
+    "de": 0.02,
+    "cfo": 501.0,
+    "cfi": 185.0,
+    "sales_growth": 24.1
+   },
+   {
+    "period": "Mar 2020",
+    "fy": "FY20",
+    "sales": 9440.0,
+    "opm": 11.0,
+    "pat": 735.0,
+    "borrowings": 72.0,
+    "equity": 4312.0,
+    "de": 0.02,
+    "cfo": 827.0,
+    "cfi": -548.0,
+    "sales_growth": -6.3
+   },
+   {
+    "period": "Mar 2021",
+    "fy": "FY21",
+    "sales": 10457.0,
+    "opm": 15.0,
+    "pat": 1044.0,
+    "borrowings": 521.0,
+    "equity": 5177.0,
+    "de": 0.1,
+    "cfo": 660.0,
+    "cfi": -763.0,
+    "sales_growth": 10.8
+   },
+   {
+    "period": "Mar 2022",
+    "fy": "FY22",
+    "sales": 13938.0,
+    "opm": 13.0,
+    "pat": 1196.0,
+    "borrowings": 616.0,
+    "equity": 6003.0,
+    "de": 0.1,
+    "cfo": 1728.0,
+    "cfi": -759.0,
+    "sales_growth": 33.3
+   },
+   {
+    "period": "Mar 2023",
+    "fy": "FY23",
+    "sales": 16911.0,
+    "opm": 10.0,
+    "pat": 1072.0,
+    "borrowings": 223.0,
+    "equity": 6626.0,
+    "de": 0.03,
+    "cfo": 565.0,
+    "cfi": 31.0,
+    "sales_growth": 21.3
+   },
+   {
+    "period": "Mar 2024",
+    "fy": "FY24",
+    "sales": 18590.0,
+    "opm": 10.0,
+    "pat": 1271.0,
+    "borrowings": 303.0,
+    "equity": 7447.0,
+    "de": 0.04,
+    "cfo": 1953.0,
+    "cfi": -1618.0,
+    "sales_growth": 9.9
+   },
+   {
+    "period": "Mar 2025",
+    "fy": "FY25",
+    "sales": 21778.0,
+    "opm": 10.0,
+    "pat": 1470.0,
+    "borrowings": 319.0,
+    "equity": 8324.0,
+    "de": 0.04,
+    "cfo": 1523.0,
+    "cfi": -305.0,
+    "sales_growth": 17.1
+   },
+   {
+    "period": "Mar 2026",
+    "fy": "FY26",
+    "sales": 22528.0,
+    "opm": 10.0,
+    "pat": 1689.0,
+    "borrowings": 265.0,
+    "equity": 9456.0,
+    "de": 0.03,
+    "cfo": 1572.0,
+    "cfi": -895.0,
+    "sales_growth": 3.4
+   }
+  ]
+ },
+ "balance": {
+  "borrowings": 265.0,
+  "equity": 9456.0,
+  "de": 0.03,
+  "de_3y_ago": 0.03,
+  "working_capital": {
+   "Debtor Days": [
+    {
+     "period": "Mar 2021",
+     "value": 20.0
+    },
+    {
+     "period": "Mar 2022",
+     "value": 20.0
+    },
+    {
+     "period": "Mar 2023",
+     "value": 21.0
+    },
+    {
+     "period": "Mar 2024",
+     "value": 23.0
+    },
+    {
+     "period": "Mar 2025",
+     "value": 21.0
+    },
+    {
+     "period": "Mar 2026",
+     "value": 13.0
+    }
+   ],
+   "Inventory Days": [
+    {
+     "period": "Mar 2021",
+     "value": 153.0
+    },
+    {
+     "period": "Mar 2022",
+     "value": 119.0
+    },
+    {
+     "period": "Mar 2023",
+     "value": 119.0
+    },
+    {
+     "period": "Mar 2024",
+     "value": 102.0
+    },
+    {
+     "period": "Mar 2025",
+     "value": 104.0
+    },
+    {
+     "period": "Mar 2026",
+     "value": 110.0
+    }
+   ],
+   "Days Payable": [
+    {
+     "period": "Mar 2021",
+     "value": 93.0
+    },
+    {
+     "period": "Mar 2022",
+     "value": 95.0
+    },
+    {
+     "period": "Mar 2023",
+     "value": 85.0
+    },
+    {
+     "period": "Mar 2024",
+     "value": 81.0
+    },
+    {
+     "period": "Mar 2025",
+     "value": 78.0
+    },
+    {
+     "period": "Mar 2026",
+     "value": 72.0
+    }
+   ],
+   "Cash Conversion Cycle": [
+    {
+     "period": "Mar 2021",
+     "value": 79.0
+    },
+    {
+     "period": "Mar 2022",
+     "value": 44.0
+    },
+    {
+     "period": "Mar 2023",
+     "value": 55.0
+    },
+    {
+     "period": "Mar 2024",
+     "value": 44.0
+    },
+    {
+     "period": "Mar 2025",
+     "value": 47.0
+    },
+    {
+     "period": "Mar 2026",
+     "value": 51.0
+    }
+   ],
+   "Working Capital Days": [
+    {
+     "period": "Mar 2021",
+     "value": 20.0
+    },
+    {
+     "period": "Mar 2022",
+     "value": 7.0
+    },
+    {
+     "period": "Mar 2023",
+     "value": 25.0
+    },
+    {
+     "period": "Mar 2024",
+     "value": 11.0
+    },
+    {
+     "period": "Mar 2025",
+     "value": 12.0
+    },
+    {
+     "period": "Mar 2026",
+     "value": 14.0
+    }
+   ],
+   "ROCE %": [
+    {
+     "period": "Mar 2021",
+     "value": 30.0
+    },
+    {
+     "period": "Mar 2022",
+     "value": 27.0
+    },
+    {
+     "period": "Mar 2023",
+     "value": 22.0
+    },
+    {
+     "period": "Mar 2024",
+     "value": 24.0
+    },
+    {
+     "period": "Mar 2025",
+     "value": 25.0
+    },
+    {
+     "period": "Mar 2026",
+     "value": 25.0
+    }
+   ]
+  }
+ },
+ "cash": {
+  "cfo_to_pat_3y": 1.14,
+  "years": [
+   {
+    "fy": "FY21",
+    "cfo": 660.0,
+    "pat": 1044.0,
+    "cfi": -763.0
+   },
+   {
+    "fy": "FY22",
+    "cfo": 1728.0,
+    "pat": 1196.0,
+    "cfi": -759.0
+   },
+   {
+    "fy": "FY23",
+    "cfo": 565.0,
+    "pat": 1072.0,
+    "cfi": 31.0
+   },
+   {
+    "fy": "FY24",
+    "cfo": 1953.0,
+    "pat": 1271.0,
+    "cfi": -1618.0
+   },
+   {
+    "fy": "FY25",
+    "cfo": 1523.0,
+    "pat": 1470.0,
+    "cfi": -305.0
+   },
+   {
+    "fy": "FY26",
+    "cfo": 1572.0,
+    "pat": 1689.0,
+    "cfi": -895.0
+   }
+  ]
+ },
+ "calls": [
+  {
+   "month": "Oct 2026",
+   "quarter": "Q2 FY27",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=160d9e40-34d9-4f66-8c1f-e1c50f663569.pdf",
+   "status": "ok",
+   "tone": "Management is confident and disciplined, maintaining long-term margin targets despite short-term commodity price pressures and competitive dynamics.",
+   "pushback": [
+    "Lloyd's profitability challenges and timeline for turning profitable",
+    "Cable segment contribution margin decline due to aluminium prices",
+    "Competitive strategy and pricing pressure in wires business"
+   ],
+   "delivery_comments": [
+    {
+     "topic": "Switchgear Volume Growth",
+     "quote": "And I think, overall, volume growth has also been healthy, closer to double digits, because switchgear value growth is not the same as cables wires",
+     "page": 4
+    },
+    {
+     "topic": "Distribution System Shift",
+     "quote": "We do believe that it has established well, and now it's more pull-led rather than push-led.",
+     "page": 10
+    },
+    {
+     "topic": "Cables Margin Impact",
+     "quote": "Contribution margins were softer year-on-year, primarily due to cables, where a decline in aluminium prices during the quarter impacted margins",
+     "page": 3
+    }
+   ],
+   "segments": [
+    {
+     "name": "Cables and Switchgear",
+     "share_or_growth": "grew (healthy contributions)",
+     "page": 3
+    },
+    {
+     "name": "Renewables",
+     "share_or_growth": "emerging/fast-growing, ~₹300 crores per quarter",
+     "page": 6
+    },
+    {
+     "name": "Lloyd",
+     "share_or_growth": "healthy revenue growth (28.5% top-line growth)",
+     "page": 4
+    },
+    {
+     "name": "Switchgear Exports",
+     "share_or_growth": "15% of switchgear overall",
+     "page": 7
+    },
+    {
+     "name": "Lloyd - RAC",
+     "share_or_growth": "close to 75% of Lloyd business",
+     "page": 15
+    }
+   ]
+  },
+  {
+   "month": "Jul 2026",
+   "quarter": "Q1 FY27",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=5e39e029-d034-49cf-b1b7-14523890ac2a.pdf",
+   "status": "ok",
+   "tone": "Management maintained a confident tone regarding long-term category demand resilience and margin recovery despite quarterly margin pressures.",
+   "pushback": [
+    "Steep rise in A&P spend impacting Q1 profitability.",
+    "Switchgear underperformance and margin erosion due to West Asia exports.",
+    "Underperformance and flat volume growth in Cables and Wires."
+   ],
+   "delivery_comments": [
+    {
+     "topic": "Revenue & Demand Environment",
+     "quote": "We delivered strong revenue growth in the first quarter as the demand was resilient despite inflationary pressures and the uncertainties arising from the West Asia situation.",
+     "page": 3
+    },
+    {
+     "topic": "A&P Spends & Profitability Impact",
+     "quote": "advertising spends more than doubling year-on-year. While this front-loading of investments impacted the quarter profitability, these will normalize during the rest of the year.",
+     "page": 3
+    },
+    {
+     "topic": "Lloyd AC Growth Mix",
+     "quote": "volume growth in air conditioners would be single digits, but the value growth has been higher because of the calibrated price hikes",
+     "page": 5
+    },
+    {
+     "topic": "Cables & Wires Volumes",
+     "quote": "volume has been largely flat, very, very low single-digit, but I will term it more as flat. And this is across wires as well as cables.",
+     "page": 7
+    }
+   ],
+   "segments": [
+    {
+     "name": "Renewables",
+     "share_or_growth": "rapid growth, reported as separate segment",
+     "page": 3
+    },
+    {
+     "name": "Switchgear",
+     "share_or_growth": "international business is 15% mix, 4% decline in segment sales reported",
+     "page": 4
+    },
+    {
+     "name": "Lloyd / Air Conditioners",
+     "share_or_growth": "single-digit volume growth, higher value growth",
+     "page": 5
+    },
+    {
+     "name": "Cables and Wires",
+     "share_or_growth": "flat volume growth (low single-digit)",
+     "page": 7
+    }
+   ]
+  },
+  {
+   "month": "Apr 2026",
+   "quarter": "Q4 FY26",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=d6d676cf-d73c-4a15-a3dd-8c2bf8213110.pdf",
+   "status": "ok",
+   "tone": "Management expressed cautious optimism amid short-term commodity inflation and geopolitical uncertainties while reiterating long-term investments.",
+   "pushback": [
+    "Near-term volume and growth guidance for FY27.",
+    "Impact of cost inflation, raw material prices, and price pass-through.",
+    "Profitability and capital returns strategy for Lloyd segment."
+   ],
+   "delivery_comments": [
+    {
+     "topic": "Volume and value growth in Cables and Wires",
+     "quote": "overall volume growth was 6%... overall cable and wire, 6% volume growth and 14% value growth.",
+     "page": 5
+    },
+    {
+     "topic": "Lighting segment contribution margin",
+     "quote": "Your contribution stands at 37%... in lighting, this has happened. And so, I would say a long-term would be 30% to 32%.",
+     "page": 5
+    },
+    {
+     "topic": "Cooling products and fans performance",
+     "quote": "fans, we have degrown in the entire year. Fans, ACs and air coolers, there we have degrown.",
+     "page": 13
+    }
+   ],
+   "segments": [
+    {
+     "name": "Cables and Wires",
+     "share_or_growth": "14% value growth, 6% volume growth in Q4",
+     "page": 4
+    },
+    {
+     "name": "Lighting",
+     "share_or_growth": "37% contribution margin in Q4",
+     "page": 5
+    },
+    {
+     "name": "Others (including Solar)",
+     "share_or_growth": "48% growth",
+     "page": 7
+    },
+    {
+     "name": "B2C to B2B mix",
+     "share_or_growth": "70%-30% to 75%-25% ratio",
+     "page": 11
+    }
+   ]
+  },
+  {
+   "month": "Jan 2026",
+   "quarter": "Q3 FY26",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=2292e7c9-0098-4067-a7a1-b5c2a5b755b6.pdf",
+   "status": "ok",
+   "tone": "Management is cautiously optimistic, balancing growth with prudent cost discipline and disciplined capex amidst input inflation pressures.",
+   "pushback": [
+    "Margin pressures and passing on commodity inflation",
+    "Channel inventory normalization and old BEE norm liquidation for RAC/Lloyd",
+    "Underperformance of non-cable consumer categories versus cables growth"
+   ],
+   "delivery_comments": [
+    {
+     "topic": "revenue and EBITDA growth",
+     "quote": "revenue grew by 14% and EBITDA was up 21% Y-o-Y.",
+     "page": 3
+    },
+    {
+     "topic": "exceptional item impact",
+     "quote": "exceptional item impact of INR45 crores on account of additional provisioning pursuant to the new labour codes.",
+     "page": 3
+    },
+    {
+     "topic": "wires and cables volume growth",
+     "quote": "volume growth has been a good healthy double digit, over 20%.",
+     "page": 5
+    }
+   ],
+   "segments": [
+    {
+     "name": "Cables and Wires",
+     "share_or_growth": "Accelerated growth driven by volume expansion (>20% volume growth) and commodity price inflation",
+     "page": 3
+    },
+    {
+     "topic": "Heating products / ECD",
+     "share_or_growth": "4% growth in ECD, led by winter products (OFR, water heaters)",
+     "page": 7
+    },
+    {
+     "topic": "Solar / Other",
+     "share_or_growth": "Healthy growth in 'other' segment driven by solar modules and inverters",
+     "page": 8
+    }
+   ]
+  }
+ ],
+ "promises": [
+  {
+   "id": "G1",
+   "call": "Q2 FY27",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=160d9e40-34d9-4f66-8c1f-e1c50f663569.pdf",
+   "page": 9,
+   "metric": "capex",
+   "horizon": "FY27",
+   "quote": "are we retaining our estimate of about INR14 billion capex in FY27, and largely for C&W? Anil Rai Gupta: Cables and wires, R&D centre as well.",
+   "speaker": "Anil Rai Gupta, Chairman and Managing Director",
+   "target_low": 1400.0,
+   "target_high": 1400.0,
+   "unit": "₹ cr",
+   "verdict": "on_track",
+   "actual": "Capex planned at ₹1,400 crore for FY27",
+   "note": "FY27 is currently ongoing; capex for C&W and R&D center remains scheduled.",
+   "checked_by": "model"
+  },
+  {
+   "id": "G2",
+   "call": "Q2 FY27",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=160d9e40-34d9-4f66-8c1f-e1c50f663569.pdf",
+   "page": 15,
+   "metric": "other",
+   "horizon": "next 18 months",
+   "quote": "I think by in next 18 months, the full expansion will be on stream... most of the expansion is on the MV and the EHV side.",
+   "speaker": "Rajiv Goel, Executive Director",
+   "target_low": null,
+   "target_high": null,
+   "unit": null,
+   "verdict": "too_early",
+   "actual": "Target timeframe is 18 months from Q2 FY27",
+   "note": "Expansion for MV and EHV is scheduled for completion over the next 18 months.",
+   "checked_by": "model"
+  },
+  {
+   "id": "G3",
+   "call": "Q2 FY27",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=160d9e40-34d9-4f66-8c1f-e1c50f663569.pdf",
+   "page": 15,
+   "metric": "other",
+   "horizon": "over a period of time",
+   "quote": "RAC continues to be the large part of the business, close to almost 75%. And hopefully, over a period of time, we want to bring it to around 60% with growth in the non-RAC products.",
+   "speaker": "Rajiv Goel, Executive Director",
+   "target_low": 60.0,
+   "target_high": 60.0,
+   "unit": "%",
+   "verdict": "too_early",
+   "actual": "Long-term target to reduce RAC share to 60%",
+   "note": "Management set a long-term goal for non-RAC growth.",
+   "checked_by": "model"
+  },
+  {
+   "id": "G4",
+   "call": "Q1 FY27",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=5e39e029-d034-49cf-b1b7-14523890ac2a.pdf",
+   "page": 3,
+   "metric": "other",
+   "horizon": "FY27",
+   "quote": "advertising spends... will normalize during the rest of the year.",
+   "speaker": "Anil Rai Gupta",
+   "target_low": null,
+   "target_high": null,
+   "unit": null,
+   "verdict": "delivered",
+   "actual": "OPM recovered from 7.0% in Q1 to 9.0% in Q2",
+   "note": "Advertising spends normalized following heavy front-loading in Q1 FY27.",
+   "checked_by": "model"
+  },
+  {
+   "id": "G5",
+   "call": "Q1 FY27",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=5e39e029-d034-49cf-b1b7-14523890ac2a.pdf",
+   "page": 4,
+   "metric": "revenue_growth",
+   "horizon": "Q2 FY27",
+   "quote": "confident that Q2 will see a good growth in the international and overall switchgear segment.",
+   "speaker": "Rajiv Goel",
+   "target_low": null,
+   "target_high": null,
+   "unit": null,
+   "verdict": "delivered",
+   "actual": "Q2 FY27 sales grew 34.6% YoY with double-digit volume",
+   "note": "Switchgear volume growth reached close to double digits as guided.",
+   "checked_by": "model"
+  },
+  {
+   "id": "G6",
+   "call": "Q1 FY27",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=5e39e029-d034-49cf-b1b7-14523890ac2a.pdf",
+   "page": 4,
+   "metric": "ebitda_margin",
+   "horizon": "H2 FY27",
+   "quote": "renewable... move more towards the consumer side of the business, we are expecting improvement in the margins",
+   "speaker": "Rajiv Goel",
+   "target_low": null,
+   "target_high": null,
+   "unit": null,
+   "verdict": "too_early",
+   "actual": "Margin expansion targeted for H2 FY27",
+   "note": "H2 FY27 performance data is not yet reported.",
+   "checked_by": "model"
+  },
+  {
+   "id": "G7",
+   "call": "Q1 FY27",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=5e39e029-d034-49cf-b1b7-14523890ac2a.pdf",
+   "page": 6,
+   "metric": "other",
+   "horizon": "next 4-5 years",
+   "quote": "Percentage of revenue of consumer products, I think over a longer period of time, 4 to 5 years, we will be remaining consistent.",
+   "speaker": "Anil Rai Gupta",
+   "target_low": null,
+   "target_high": null,
+   "unit": "%",
+   "verdict": "too_early",
+   "actual": "Target timeline is over 4 to 5 years",
+   "note": "Long-term mix guidance for consumer products remains ongoing.",
+   "checked_by": "model"
+  },
+  {
+   "id": "G8",
+   "call": "Q1 FY27",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=5e39e029-d034-49cf-b1b7-14523890ac2a.pdf",
+   "page": 6,
+   "metric": "other",
+   "horizon": "FY27",
+   "quote": "long-term average has been around close to 2.7% of revenue as a company as a whole... expect that to remain the same even for the current year.",
+   "speaker": "Rajiv Goel",
+   "target_low": 2.7,
+   "target_high": 2.7,
+   "unit": "%",
+   "verdict": "on_track",
+   "actual": "Ad spend guided at 2.7% of revenue for FY27",
+   "note": "Full-year FY27 financial spend results are pending.",
+   "checked_by": "model"
+  },
+  {
+   "id": "G9",
+   "call": "Q1 FY27",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=5e39e029-d034-49cf-b1b7-14523890ac2a.pdf",
+   "page": 9,
+   "metric": "gross_margin",
+   "horizon": "near-term",
+   "quote": "we should be seeing double digit sooner than later... in full quarters, we will definitely see it coming back to double digits.",
+   "speaker": "Anil Rai Gupta",
+   "target_low": 10.0,
+   "target_high": null,
+   "unit": "%",
+   "verdict": "behind",
+   "actual": "Q2 FY27 OPM remained at 9.0%",
+   "note": "Margin fell short of double digits due to softer cable contribution margins.",
+   "checked_by": "model"
+  },
+  {
+   "id": "G10",
+   "call": "Q1 FY27",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=5e39e029-d034-49cf-b1b7-14523890ac2a.pdf",
+   "page": 10,
+   "metric": "capex",
+   "horizon": "FY27",
+   "quote": "For the capex for FY27, we should expect at about INR14 billion, right? Anil Rai Gupta: INR1,400 crores, yes.",
+   "speaker": "Anil Rai Gupta",
+   "target_low": 1400.0,
+   "target_high": 1400.0,
+   "unit": "₹ cr",
+   "verdict": "on_track",
+   "actual": "FY27 capex budget maintained at ₹1,400 crore",
+   "note": "Reiterated in Q2 FY27 call.",
+   "checked_by": "model"
+  },
+  {
+   "id": "G11",
+   "call": "Q1 FY27",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=5e39e029-d034-49cf-b1b7-14523890ac2a.pdf",
+   "page": 9,
+   "metric": "capex",
+   "horizon": "FY27",
+   "quote": "cables and wires business, almost about INR800 crores. About INR200 crores is going into the new R&D center.",
+   "speaker": "Anil Rai Gupta",
+   "target_low": 800.0,
+   "target_high": 800.0,
+   "unit": "₹ cr",
+   "verdict": "on_track",
+   "actual": "Allocated ₹800 cr to C&W and ₹200 cr to R&D",
+   "note": "Execution underway in FY27.",
+   "checked_by": "model"
+  },
+  {
+   "id": "G12",
+   "call": "Q1 FY27",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=5e39e029-d034-49cf-b1b7-14523890ac2a.pdf",
+   "page": 14,
+   "metric": "gross_margin",
+   "horizon": "long-term",
+   "quote": "normalized margins are somewhere between 37% to 40% contribution margin.",
+   "speaker": "Anil Rai Gupta",
+   "target_low": 37.0,
+   "target_high": 40.0,
+   "unit": "%",
+   "verdict": "too_early",
+   "actual": "Target normalized contribution margin is 37% to 40%",
+   "note": "Refers to long-term contribution margin targets.",
+   "checked_by": "model"
+  },
+  {
+   "id": "G13",
+   "call": "Q4 FY26",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=d6d676cf-d73c-4a15-a3dd-8c2bf8213110.pdf",
+   "page": 5,
+   "metric": "gross_margin",
+   "horizon": "long-term",
+   "quote": "long-term would be 30% to 32%.",
+   "speaker": "Anil Rai Gupta",
+   "target_low": 30.0,
+   "target_high": 32.0,
+   "unit": "%",
+   "verdict": "delivered",
+   "actual": "Lighting contribution margin reached 37% in Q4 FY26",
+   "note": "Exceeded the 30% to 32% long-term baseline.",
+   "checked_by": "model"
+  },
+  {
+   "id": "G14",
+   "call": "Q4 FY26",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=d6d676cf-d73c-4a15-a3dd-8c2bf8213110.pdf",
+   "page": 10,
+   "metric": "capex",
+   "horizon": "FY27-FY28",
+   "quote": "by '27-'28 major capex would go into cables and wires... INR800 crores.",
+   "speaker": "Anil Rai Gupta",
+   "target_low": 800.0,
+   "target_high": 800.0,
+   "unit": "₹ cr",
+   "verdict": "on_track",
+   "actual": "₹800 crore allocated for FY27-FY28 C&W capex",
+   "note": "Expenditure is planned across FY27 and FY28.",
+   "checked_by": "model"
+  },
+  {
+   "id": "G15",
+   "call": "Q4 FY26",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=d6d676cf-d73c-4a15-a3dd-8c2bf8213110.pdf",
+   "page": 14,
+   "metric": "ebitda_margin",
+   "horizon": "medium term",
+   "quote": "possibility of over 2 percentage point improvement in margins over the medium term... that remains as is",
+   "speaker": "Anil Rai Gupta",
+   "target_low": 2.0,
+   "target_high": null,
+   "unit": "bps",
+   "verdict": "behind",
+   "actual": "FY25 and FY26 OPM stayed flat at 10.0%",
+   "note": "Medium-term 2 percentage point margin expansion has not materialized yet.",
+   "checked_by": "model"
+  },
+  {
+   "id": "G16",
+   "call": "Q3 FY26",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=2292e7c9-0098-4067-a7a1-b5c2a5b755b6.pdf",
+   "page": 6,
+   "metric": "capex",
+   "horizon": "FY27",
+   "quote": "overall, it should be in the range of another INR1,000 crores in the coming year.",
+   "speaker": "Anil Rai Gupta",
+   "target_low": 1000.0,
+   "target_high": 1000.0,
+   "unit": "₹ cr",
+   "verdict": "partly",
+   "actual": "Capex estimate revised upward from ₹1,000 cr to ₹1,400 cr",
+   "note": "Initial guidance of ₹1,000 crore was later increased.",
+   "checked_by": "model"
+  }
+ ],
+ "tally": {
+  "on_track": 5,
+  "too_early": 5,
+  "delivered": 3,
+  "behind": 2,
+  "partly": 1
+ },
+ "narrative_vs_numbers": [
+  {
+   "claim": "Management expected margin improvement over the medium term",
+   "reality": "Annual OPM remained flat at 10.0% from FY23 to FY26",
+   "agree": false,
+   "cite": "G15 and FY23-FY26 opm"
+  },
+  {
+   "claim": "Management stated front-loaded A&P spent in Q1 FY27 would normalize",
+   "reality": "OPM improved from 7.0% in Q1 FY27 to 9.0% in Q2 FY27",
+   "agree": true,
+   "cite": "G4 and Q1 FY27 opm, Q2 FY27 opm"
+  },
+  {
+   "claim": "Management promised good switchgear and revenue growth in Q2 FY27",
+   "reality": "Q2 FY27 sales grew 34.6% YoY to ₹6,432 crore",
+   "agree": true,
+   "cite": "G5 and Q2 FY27 sales_yoy"
+  }
+ ],
+ "bull": [
+  {
+   "point": "Q2 FY27 revenue rebounded sharply with a 34.6% YoY increase to ₹6,432 crore",
+   "cite": "Q2 FY27 sales_yoy"
+  },
+  {
+   "point": "Annual sales consistently expanded from ₹13,938 crore in FY22 to ₹22,528 crore in FY26",
+   "cite": "FY22 sales, FY26 sales"
+  },
+  {
+   "point": "Lighting segment contribution margin outperformed long-term target reaching 37% in Q4 FY26",
+   "cite": "G13 and Q4 FY26 call p5"
+  }
+ ],
+ "bear": [
+  {
+   "point": "Q1 FY27 OPM dropped to 7.0%, generating a 16.7% decline in PAT YoY",
+   "cite": "Q1 FY27 opm, Q1 FY27 pat_yoy"
+  },
+  {
+   "point": "FY26 sales growth decelerated significantly to 3.4% compared to 17.1% in FY25",
+   "cite": "FY26 sales_growth, FY25 sales_growth"
+  },
+  {
+   "point": "Operating margin expansion of 2 percentage points remains unachieved with Q2 FY27 OPM at 9.0%",
+   "cite": "G15 and Q2 FY27 opm"
+  }
+ ],
+ "verdict": "Havells delivers top-line volume growth and sales recovery, but operating margins consistently lag behind medium-term margin expansion promises.",
+ "sources": [
+  {
+   "type": "financials",
+   "label": "screener.in (consolidated)",
+   "url": "https://www.screener.in/company/HAVELLS/consolidated/"
+  },
+  {
+   "type": "transcript",
+   "label": "Q2 FY27 call (Oct 2026)",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=160d9e40-34d9-4f66-8c1f-e1c50f663569.pdf"
+  },
+  {
+   "type": "transcript",
+   "label": "Q1 FY27 call (Jul 2026)",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=5e39e029-d034-49cf-b1b7-14523890ac2a.pdf"
+  },
+  {
+   "type": "transcript",
+   "label": "Q4 FY26 call (Apr 2026)",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=d6d676cf-d73c-4a15-a3dd-8c2bf8213110.pdf"
+  },
+  {
+   "type": "transcript",
+   "label": "Q3 FY26 call (Jan 2026)",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=2292e7c9-0098-4067-a7a1-b5c2a5b755b6.pdf"
+  }
+ ],
+ "cost": {
+  "calls": 5,
+  "cached": 0,
+  "tokens_in": 39459,
+  "tokens_out": 5567,
+  "by_model": {
+   "gemini-3.5-flash": {
+    "calls": 5,
+    "tokens_in": 39459,
+    "tokens_out": 5567
+   }
+  },
+  "seconds": 81.9
+ },
+ "discipline": "Primary sources only: company filings via screener.in, earnings-call transcripts. No news, broker notes or model memory."
+}

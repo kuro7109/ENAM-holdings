@@ -1,0 +1,1083 @@
+{
+ "symbol": "PIDILITIND",
+ "name": "Pidilite Industries Ltd",
+ "generated_at": "2026-11-15T04:00:59+05:30",
+ "as_of": "2026-11-15",
+ "business": {
+  "about": "Pidilite Industries Limited is a leading manufacturer of adhesives and sealants, construction chemicals, craftsmen products, DIY  products and polymer emulsions in India. Most of the products have been developed through strong in-house R&D. Our brand name Fevicol has become synonymous with adhesives to millions in India and is ranked amongst the most trusted brands in the country. Some of our other major brands are M-Seal, Fevikwik, Fevistik, Roff, Dr. Fixit, Fevicryl, Motomax, Hobby Ideas, Araldite. [1]",
+  "key_points": "Revenue Breakup Company earns about 53% of its revenues from adhesives & sealants category, followed by Construction & paint chemicals (20%), industrial resins & construction chemicals (7%), art & craft materials (6%), industrial adhesives (6%), and pigment & preparation (6%).. It has its business divided into 2 divisions, consumer & bazaar products which account for ~80% of revenues, and B2B products segment which accounts for ~20% of revenues [1] In total, the company produces ~650 products for its brands. [2]",
+  "segments": [
+   {
+    "name": "Consumer and Bazaar UVG (Q2)",
+    "share_or_growth": "11.1%",
+    "page": 3
+   },
+   {
+    "name": "B2B UVG (Q2)",
+    "share_or_growth": "9.2%",
+    "page": 3
+   },
+   {
+    "name": "International Subsidiaries Revenue Growth (Q2)",
+    "share_or_growth": "21.8%",
+    "page": 3
+   },
+   {
+    "name": "Domestic Subsidiaries Revenue Growth (Q2)",
+    "share_or_growth": "22.2%",
+    "page": 4
+   }
+  ]
+ },
+ "snapshot": {
+  "market_cap_cr": 155399.0,
+  "price": 1526.0,
+  "pe": 57.9,
+  "roce": 31.0,
+  "roe": 23.9,
+  "div_yield": 0.75,
+  "ttm_sales": 16142.0,
+  "ttm_pat": 2718.0,
+  "last_q": "Q2 FY27",
+  "last_q_sales_yoy": 20.9,
+  "last_q_pat_yoy": 7.0,
+  "last_q_opm": 20.0,
+  "fy_opm": 24.0,
+  "fy": "FY26"
+ },
+ "trajectory": {
+  "sales_cagr_3y": 7.4,
+  "sales_cagr_5y": 14.9,
+  "pat_cagr_3y": 24.2,
+  "pat_cagr_5y": 17.0,
+  "opm_change_3y": 7.0,
+  "quarterly": [
+   {
+    "period": "Dec 2023",
+    "q": "Q3 FY24",
+    "sales": 3130.0,
+    "op_profit": 742.0,
+    "opm": 24.0,
+    "pat": 511.0
+   },
+   {
+    "period": "Mar 2024",
+    "q": "Q4 FY24",
+    "sales": 2902.0,
+    "op_profit": 575.0,
+    "opm": 20.0,
+    "pat": 304.0
+   },
+   {
+    "period": "Jun 2024",
+    "q": "Q1 FY25",
+    "sales": 3395.0,
+    "op_profit": 812.0,
+    "opm": 24.0,
+    "pat": 571.0
+   },
+   {
+    "period": "Sep 2024",
+    "q": "Q2 FY25",
+    "sales": 3235.0,
+    "op_profit": 768.0,
+    "opm": 24.0,
+    "pat": 540.0,
+    "sales_yoy": 5.2,
+    "pat_yoy": 17.6
+   },
+   {
+    "period": "Dec 2024",
+    "q": "Q3 FY25",
+    "sales": 3369.0,
+    "op_profit": 798.0,
+    "opm": 24.0,
+    "pat": 557.0,
+    "sales_yoy": 7.6,
+    "pat_yoy": 9.0
+   },
+   {
+    "period": "Mar 2025",
+    "q": "Q4 FY25",
+    "sales": 3141.0,
+    "op_profit": 632.0,
+    "opm": 20.0,
+    "pat": 428.0,
+    "sales_yoy": 8.2,
+    "pat_yoy": 40.8
+   },
+   {
+    "period": "Jun 2025",
+    "q": "Q1 FY26",
+    "sales": 3753.0,
+    "op_profit": 941.0,
+    "opm": 25.0,
+    "pat": 678.0,
+    "sales_yoy": 10.5,
+    "pat_yoy": 18.7
+   },
+   {
+    "period": "Sep 2025",
+    "q": "Q2 FY26",
+    "sales": 3554.0,
+    "op_profit": 850.0,
+    "opm": 24.0,
+    "pat": 585.0,
+    "sales_yoy": 9.9,
+    "pat_yoy": 8.3
+   },
+   {
+    "period": "Dec 2025",
+    "q": "Q3 FY26",
+    "sales": 3710.0,
+    "op_profit": 894.0,
+    "opm": 24.0,
+    "pat": 624.0,
+    "sales_yoy": 10.1,
+    "pat_yoy": 12.0
+   },
+   {
+    "period": "Mar 2026",
+    "q": "Q4 FY26",
+    "sales": 3583.0,
+    "op_profit": 831.0,
+    "opm": 23.0,
+    "pat": 584.0,
+    "sales_yoy": 14.1,
+    "pat_yoy": 36.4
+   },
+   {
+    "period": "Jun 2026",
+    "q": "Q1 FY27",
+    "sales": 4552.0,
+    "op_profit": 1194.0,
+    "opm": 26.0,
+    "pat": 884.0,
+    "sales_yoy": 21.3,
+    "pat_yoy": 30.4
+   },
+   {
+    "period": "Sep 2026",
+    "q": "Q2 FY27",
+    "sales": 4298.0,
+    "op_profit": 877.0,
+    "opm": 20.0,
+    "pat": 626.0,
+    "sales_yoy": 20.9,
+    "pat_yoy": 7.0
+   }
+  ],
+  "annual": [
+   {
+    "period": "Mar 2017",
+    "fy": "FY17",
+    "sales": 5617.0,
+    "opm": 22.0,
+    "pat": 863.0,
+    "borrowings": 98.0,
+    "equity": 3471.0,
+    "de": 0.03,
+    "cfo": 794.0,
+    "cfi": -879.0,
+    "sales_growth": 4.8
+   },
+   {
+    "period": "Mar 2018",
+    "fy": "FY18",
+    "sales": 6078.0,
+    "opm": 22.0,
+    "pat": 966.0,
+    "borrowings": 125.0,
+    "equity": 3574.0,
+    "de": 0.03,
+    "cfo": 796.0,
+    "cfi": 39.0,
+    "sales_growth": 8.2
+   },
+   {
+    "period": "Mar 2019",
+    "fy": "FY19",
+    "sales": 7078.0,
+    "opm": 19.0,
+    "pat": 928.0,
+    "borrowings": 113.0,
+    "equity": 4148.0,
+    "de": 0.03,
+    "cfo": 845.0,
+    "cfi": -513.0,
+    "sales_growth": 16.5
+   },
+   {
+    "period": "Mar 2020",
+    "fy": "FY20",
+    "sales": 7294.0,
+    "opm": 22.0,
+    "pat": 1122.0,
+    "borrowings": 288.0,
+    "equity": 4456.0,
+    "de": 0.06,
+    "cfo": 1280.0,
+    "cfi": 103.0,
+    "sales_growth": 3.1
+   },
+   {
+    "period": "Mar 2021",
+    "fy": "FY21",
+    "sales": 7293.0,
+    "opm": 23.0,
+    "pat": 1126.0,
+    "borrowings": 331.0,
+    "equity": 5593.0,
+    "de": 0.06,
+    "cfo": 1392.0,
+    "cfi": -1688.0,
+    "sales_growth": -0.0
+   },
+   {
+    "period": "Mar 2022",
+    "fy": "FY22",
+    "sales": 9921.0,
+    "opm": 19.0,
+    "pat": 1207.0,
+    "borrowings": 416.0,
+    "equity": 6404.0,
+    "de": 0.06,
+    "cfo": 955.0,
+    "cfi": -558.0,
+    "sales_growth": 36.0
+   },
+   {
+    "period": "Mar 2023",
+    "fy": "FY23",
+    "sales": 11799.0,
+    "opm": 17.0,
+    "pat": 1289.0,
+    "borrowings": 391.0,
+    "equity": 7212.0,
+    "de": 0.05,
+    "cfo": 1558.0,
+    "cfi": -899.0,
+    "sales_growth": 18.9
+   },
+   {
+    "period": "Mar 2024",
+    "fy": "FY24",
+    "sales": 12383.0,
+    "opm": 22.0,
+    "pat": 1747.0,
+    "borrowings": 382.0,
+    "equity": 8407.0,
+    "de": 0.05,
+    "cfo": 2724.0,
+    "cfi": -1769.0,
+    "sales_growth": 4.9
+   },
+   {
+    "period": "Mar 2025",
+    "fy": "FY25",
+    "sales": 13140.0,
+    "opm": 23.0,
+    "pat": 2096.0,
+    "borrowings": 454.0,
+    "equity": 9755.0,
+    "de": 0.05,
+    "cfo": 2287.0,
+    "cfi": -1542.0,
+    "sales_growth": 6.1
+   },
+   {
+    "period": "Mar 2026",
+    "fy": "FY26",
+    "sales": 14601.0,
+    "opm": 24.0,
+    "pat": 2471.0,
+    "borrowings": 417.0,
+    "equity": 10832.0,
+    "de": 0.04,
+    "cfo": 2828.0,
+    "cfi": -1224.0,
+    "sales_growth": 11.1
+   }
+  ]
+ },
+ "balance": {
+  "borrowings": 417.0,
+  "equity": 10832.0,
+  "de": 0.04,
+  "de_3y_ago": 0.05,
+  "working_capital": {
+   "Debtor Days": [
+    {
+     "period": "Mar 2021",
+     "value": 66.0
+    },
+    {
+     "period": "Mar 2022",
+     "value": 53.0
+    },
+    {
+     "period": "Mar 2023",
+     "value": 47.0
+    },
+    {
+     "period": "Mar 2024",
+     "value": 49.0
+    },
+    {
+     "period": "Mar 2025",
+     "value": 50.0
+    },
+    {
+     "period": "Mar 2026",
+     "value": 55.0
+    }
+   ],
+   "Inventory Days": [
+    {
+     "period": "Mar 2021",
+     "value": 133.0
+    },
+    {
+     "period": "Mar 2022",
+     "value": 114.0
+    },
+    {
+     "period": "Mar 2023",
+     "value": 98.0
+    },
+    {
+     "period": "Mar 2024",
+     "value": 86.0
+    },
+    {
+     "period": "Mar 2025",
+     "value": 103.0
+    },
+    {
+     "period": "Mar 2026",
+     "value": 98.0
+    }
+   ],
+   "Days Payable": [
+    {
+     "period": "Mar 2021",
+     "value": 109.0
+    },
+    {
+     "period": "Mar 2022",
+     "value": 70.0
+    },
+    {
+     "period": "Mar 2023",
+     "value": 57.0
+    },
+    {
+     "period": "Mar 2024",
+     "value": 70.0
+    },
+    {
+     "period": "Mar 2025",
+     "value": 85.0
+    },
+    {
+     "period": "Mar 2026",
+     "value": 86.0
+    }
+   ],
+   "Cash Conversion Cycle": [
+    {
+     "period": "Mar 2021",
+     "value": 91.0
+    },
+    {
+     "period": "Mar 2022",
+     "value": 96.0
+    },
+    {
+     "period": "Mar 2023",
+     "value": 88.0
+    },
+    {
+     "period": "Mar 2024",
+     "value": 66.0
+    },
+    {
+     "period": "Mar 2025",
+     "value": 68.0
+    },
+    {
+     "period": "Mar 2026",
+     "value": 66.0
+    }
+   ],
+   "Working Capital Days": [
+    {
+     "period": "Mar 2021",
+     "value": 23.0
+    },
+    {
+     "period": "Mar 2022",
+     "value": 43.0
+    },
+    {
+     "period": "Mar 2023",
+     "value": 40.0
+    },
+    {
+     "period": "Mar 2024",
+     "value": 19.0
+    },
+    {
+     "period": "Mar 2025",
+     "value": 19.0
+    },
+    {
+     "period": "Mar 2026",
+     "value": 18.0
+    }
+   ],
+   "ROCE %": [
+    {
+     "period": "Mar 2021",
+     "value": 28.0
+    },
+    {
+     "period": "Mar 2022",
+     "value": 25.0
+    },
+    {
+     "period": "Mar 2023",
+     "value": 24.0
+    },
+    {
+     "period": "Mar 2024",
+     "value": 30.0
+    },
+    {
+     "period": "Mar 2025",
+     "value": 30.0
+    },
+    {
+     "period": "Mar 2026",
+     "value": 31.0
+    }
+   ]
+  }
+ },
+ "cash": {
+  "cfo_to_pat_3y": 1.24,
+  "years": [
+   {
+    "fy": "FY21",
+    "cfo": 1392.0,
+    "pat": 1126.0,
+    "cfi": -1688.0
+   },
+   {
+    "fy": "FY22",
+    "cfo": 955.0,
+    "pat": 1207.0,
+    "cfi": -558.0
+   },
+   {
+    "fy": "FY23",
+    "cfo": 1558.0,
+    "pat": 1289.0,
+    "cfi": -899.0
+   },
+   {
+    "fy": "FY24",
+    "cfo": 2724.0,
+    "pat": 1747.0,
+    "cfi": -1769.0
+   },
+   {
+    "fy": "FY25",
+    "cfo": 2287.0,
+    "pat": 2096.0,
+    "cfi": -1542.0
+   },
+   {
+    "fy": "FY26",
+    "cfo": 2828.0,
+    "pat": 2471.0,
+    "cfi": -1224.0
+   }
+  ]
+ },
+ "calls": [
+  {
+   "month": "Nov 2026",
+   "quarter": "Q2 FY27",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=4ba30191-cee1-420b-a1c5-8e1864b29711.pdf",
+   "status": "ok",
+   "tone": "Management remains confident in sustaining double-digit volume growth and defending margins despite significant raw material cost volatility.",
+   "pushback": [
+    "Margin hit and delayed pricing response to VAM inflation",
+    "Passing on cost increases vs protecting percentage margins",
+    "Competition setting up captive VAM manufacturing capacity"
+   ],
+   "delivery_comments": [
+    {
+     "topic": "EBITDA Margins",
+     "quote": "our EBITDA was lower by 430 basis points and came in at the lower end of our range, at 20.4%.",
+     "speaker": "Sandeep Batra, ED & CFO",
+     "page": 3
+    },
+    {
+     "topic": "Volume Growth",
+     "quote": "In the current quarter, our stand-alone revenue was under INR4,000 crores with a growth of 21.7% in nominal terms and underpinned by underlying volume growth of 10.7%",
+     "speaker": "Sandeep Batra, ED & CFO",
+     "page": 3
+    }
+   ],
+   "segments": [
+    {
+     "name": "Consumer and Bazaar UVG (Q2)",
+     "share_or_growth": "11.1%",
+     "page": 3
+    },
+    {
+     "name": "B2B UVG (Q2)",
+     "share_or_growth": "9.2%",
+     "page": 3
+    },
+    {
+     "name": "International Subsidiaries Revenue Growth (Q2)",
+     "share_or_growth": "21.8%",
+     "page": 3
+    },
+    {
+     "name": "Domestic Subsidiaries Revenue Growth (Q2)",
+     "share_or_growth": "22.2%",
+     "page": 4
+    }
+   ]
+  },
+  {
+   "month": "Aug 2026",
+   "quarter": "Q1 FY27",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=6d811437-b5ad-4bff-8b33-92b5b7032db3.pdf",
+   "status": "ok",
+   "tone": "Confident and optimistic regarding strong volume growth, effective proactive pricing execution, and maintaining stable operational margins.",
+   "pushback": [
+    "Sustainability of double-digit price hikes following sharp RM cost drops.",
+    "Potential moderation in high margins due to inventory cost unravelling.",
+    "Impact of raw material volatility and competitors' expansion actions."
+   ],
+   "delivery_comments": [
+    {
+     "topic": "price hikes and raw material volatility",
+     "quote": "this time we were more proactive more than the quantum, we are proactive. And I think that really helped, and you can see that in the numbers as well.",
+     "page": 7
+    },
+    {
+     "topic": "inventory cost benefits",
+     "quote": "combination of all 3 gave us the advantage here. And I think some of it will correct in the second quarter.",
+     "page": 12
+    }
+   ],
+   "segments": [
+    {
+     "name": "Consumer and Bazaar (Standalone UVG)",
+     "share_or_growth": "12.2%",
+     "page": 3
+    },
+    {
+     "name": "B2B (Standalone UVG)",
+     "share_or_growth": "7.3%",
+     "page": 3
+    },
+    {
+     "name": "B2B Exports (UVG)",
+     "share_or_growth": "-8.4%",
+     "page": 3
+    },
+    {
+     "name": "Domestic Subsidiaries Revenue Growth",
+     "share_or_growth": "11.5%",
+     "page": 4
+    },
+    {
+     "name": "International Subsidiaries Revenue Growth",
+     "share_or_growth": "12%",
+     "page": 4
+    }
+   ]
+  },
+  {
+   "month": "May 2026",
+   "quarter": "Q4 FY26",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=badde5e7-23d3-4f3f-8c8f-4075465709a8.pdf",
+   "status": "ok",
+   "tone": "Management is confident in demand buoyancy and operational leverage while remaining vigilant regarding raw material cost inflation.",
+   "pushback": [
+    "Impact of West Asia conflict and surging VAM input costs",
+    "Demand compression due to price hikes across product portfolio",
+    "Sustainability of 15% volume growth and FY27 volume guidance"
+   ],
+   "delivery_comments": [
+    {
+     "topic": "Volume Growth Acceleration",
+     "quote": "In the Current quarter, our stand-alone revenue at INR 3,272 crores grew by 15.3% in value terms and was underpinned by underlying volume growth of 15.3%. This compares to underlying volume growth of 9.8%... till December",
+     "page": 3
+    },
+    {
+     "topic": "EBITDA Margin Expansion",
+     "quote": "EBITDA margin at 23.4% expanded by 280 bps versus same period last year... 100 of that is coming through gross margin... balance is also coming through operating leverage.",
+     "page": 3
+    },
+    {
+     "topic": "Export Disruption",
+     "quote": "I think the only area line of business that saw some disruption was in exports... where in the month of March because of the conflict in Gulf and West Asia, supply chains were disrupted",
+     "page": 3
+    },
+    {
+     "topic": "Full Year Performance",
+     "quote": "For the full year... underlying volume growth... has come in at about 100, 120 bps higher than the previous year.",
+     "page": 7
+    }
+   ],
+   "segments": [
+    {
+     "name": "Consumer and Bazaar (C&B)",
+     "share_or_growth": "UVG of 15.4% in Q4 FY26",
+     "page": 3
+    },
+    {
+     "name": "B2B",
+     "share_or_growth": "UVG of 14.8% in Q4 FY26",
+     "page": 3
+    },
+    {
+     "name": "International Subsidiaries",
+     "share_or_growth": "grew by 8% in Q4 FY26",
+     "page": 4
+    },
+    {
+     "name": "Domestic Subsidiaries",
+     "share_or_growth": "grew by 5.3% in Q4 FY26",
+     "page": 4
+    },
+    {
+     "name": "Nina Waterproofing Business (Subsidiary)",
+     "share_or_growth": "declined by 16% in Q4 FY26",
+     "page": 4
+    },
+    {
+     "name": "Pigments & Preparations (B2B Exports)",
+     "share_or_growth": "Major export exposure, impacted by West Asia conflict",
+     "page": 16
+    }
+   ]
+  },
+  {
+   "month": "Feb 2026",
+   "quarter": "Q3 FY26",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=ecbc316a-5f8d-4143-8061-df7980b55a66.pdf",
+   "status": "ok",
+   "tone": "Management expressed strong confidence in domestic momentum and market share gains while actively reinvesting margin gains into growth.",
+   "pushback": [
+    "Geopolitical impact and sharp export declines continuing into future quarters",
+    "Reason for moderate volume growth despite higher gross margin reinvestment in A&SP",
+    "Exceeding 20% to 24% EBITDA margin corridor given benign input costs"
+   ],
+   "delivery_comments": [
+    {
+     "topic": "Exports slowdown",
+     "quote": "the challenge that we faced in this quarter was on account of exports... our exports in totality declined by 13.5%",
+     "page": 3
+    },
+    {
+     "topic": "Gross margins",
+     "quote": "gross margins at a stand-alone level improved by about 200 basis points as input prices remained benign.",
+     "page": 4
+    },
+    {
+     "topic": "Wage Code impact",
+     "quote": "this benefit in the material cost was offset because of a one-time provision that we took on account of the new Wage Code.",
+     "page": 4
+    },
+    {
+     "topic": "Domestic business growth",
+     "quote": "the domestic franchise remains strong and the underlying volume growth there have been inching up over the last 8 quarters.",
+     "page": 3
+    }
+   ],
+   "segments": [
+    {
+     "name": "Consumer and Bazaar business (UVG)",
+     "share_or_growth": "9.7% underlying volume growth",
+     "page": 3
+    },
+    {
+     "name": "B2B business (UVG)",
+     "share_or_growth": "7.4% underlying volume growth",
+     "page": 3
+    },
+    {
+     "name": "Domestic business (UVG)",
+     "share_or_growth": "11% underlying volume growth",
+     "page": 3
+    },
+    {
+     "name": "Exports",
+     "share_or_growth": "13.5% decline",
+     "page": 3
+    },
+    {
+     "name": "Domestic Subsidiaries",
+     "share_or_growth": "4% sales growth",
+     "page": 4
+    },
+    {
+     "name": "International Subsidiaries",
+     "share_or_growth": "6% topline growth",
+     "page": 4
+    }
+   ]
+  }
+ ],
+ "promises": [
+  {
+   "id": "G1",
+   "call": "Q2 FY27",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=4ba30191-cee1-420b-a1c5-8e1864b29711.pdf",
+   "page": 6,
+   "metric": "ebitda_margin",
+   "horizon": "H2 FY27",
+   "quote": " deliver in our EBITDA margin corridor of 20% to 24%, ideally in the slightly higher end of the corridor.",
+   "speaker": "Sudhanshu Vats, MD",
+   "target_low": 20.0,
+   "target_high": 24.0,
+   "unit": "%",
+   "verdict": "too_early",
+   "actual": null,
+   "note": null,
+   "checked_by": "code"
+  },
+  {
+   "id": "G2",
+   "call": "Q2 FY27",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=4ba30191-cee1-420b-a1c5-8e1864b29711.pdf",
+   "page": 11,
+   "metric": "volume_growth",
+   "horizon": "FY27",
+   "quote": "If the country's growth is in the 6.5, 7 range in real terms, our UVG growth should remain double digit",
+   "speaker": "Sudhanshu Vats, MD",
+   "target_low": 10.0,
+   "target_high": null,
+   "unit": "%",
+   "verdict": "delivered",
+   "actual": "Underlying volume growth 10.7% in Q2 FY27",
+   "note": "Met double‑digit target",
+   "checked_by": "model"
+  },
+  {
+   "id": "G3",
+   "call": "Q2 FY27",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=4ba30191-cee1-420b-a1c5-8e1864b29711.pdf",
+   "page": 16,
+   "metric": "volume_growth",
+   "horizon": "medium term",
+   "quote": "we want to take this from classic double digit to early teens. I think that's the desire over a period of time.",
+   "speaker": "Sudhanshu Vats, MD",
+   "target_low": null,
+   "target_high": null,
+   "unit": "%",
+   "verdict": "on_track",
+   "actual": "Q4 FY26 volume growth 15.3% (early teens)",
+   "note": "Early‑teens growth observed",
+   "checked_by": "model"
+  },
+  {
+   "id": "G4",
+   "call": "Q1 FY27",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=6d811437-b5ad-4bff-8b33-92b5b7032db3.pdf",
+   "page": 7,
+   "metric": "ebitda_margin",
+   "horizon": "FY27",
+   "quote": "So no need to change it at this stage.",
+   "speaker": "Sandeep Batra",
+   "target_low": 20.0,
+   "target_high": 24.0,
+   "unit": "%",
+   "verdict": "on_track",
+   "actual": "EBITDA margin 23.4% (Q1 + Q2 FY27 so far)",
+   "note": null,
+   "checked_by": "code"
+  },
+  {
+   "id": "G5",
+   "call": "Q1 FY27",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=6d811437-b5ad-4bff-8b33-92b5b7032db3.pdf",
+   "page": 20,
+   "metric": "ebitda_margin",
+   "horizon": "FY27",
+   "quote": "And it is quite possible that we could be middle to higher end of the band, easily.",
+   "speaker": "Sudhanshu Vats",
+   "target_low": null,
+   "target_high": null,
+   "unit": "%",
+   "verdict": "delivered",
+   "actual": "EBITDA margin 26.0% in Q1 FY27 (above band)",
+   "note": "Exceeded margin corridor",
+   "checked_by": "model"
+  },
+  {
+   "id": "G6",
+   "call": "Q1 FY27",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=6d811437-b5ad-4bff-8b33-92b5b7032db3.pdf",
+   "page": 20,
+   "metric": "volume_growth",
+   "horizon": "medium-term 3-4 years",
+   "quote": "I think we have always maintained that we will deliver double digit.",
+   "speaker": "Sudhanshu Vats",
+   "target_low": 10.0,
+   "target_high": null,
+   "unit": "%",
+   "verdict": "delivered",
+   "actual": "Underlying volume growth 10.7% in Q2 FY27",
+   "note": "Double‑digit growth achieved",
+   "checked_by": "model"
+  },
+  {
+   "id": "G7",
+   "call": "Q4 FY26",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=badde5e7-23d3-4f3f-8c8f-4075465709a8.pdf",
+   "page": 15,
+   "metric": "capex",
+   "horizon": "ongoing / FY27",
+   "quote": "Our capex tends to be actually 3% to 5% of our revenue turnover... suffice to say the band is 3% to 5%. And I think we'll remain in that band.",
+   "speaker": "Sudhanshu Vats",
+   "target_low": 3.0,
+   "target_high": 5.0,
+   "unit": "%",
+   "verdict": "unverifiable",
+   "actual": "Capex % of revenue not disclosed in data",
+   "note": "No capex figure provided",
+   "checked_by": "model"
+  },
+  {
+   "id": "G8",
+   "call": "Q4 FY26",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=badde5e7-23d3-4f3f-8c8f-4075465709a8.pdf",
+   "page": 12,
+   "metric": "ebitda_margin",
+   "horizon": "FY27",
+   "quote": "we have guided a corridor of 20% to 24%. We stay committed to that guidance.",
+   "speaker": "Sudhanshu Vats",
+   "target_low": 20.0,
+   "target_high": 24.0,
+   "unit": "%",
+   "verdict": "on_track",
+   "actual": "EBITDA margin 23.4% (Q1 + Q2 FY27 so far)",
+   "note": null,
+   "checked_by": "code"
+  },
+  {
+   "id": "G9",
+   "call": "Q4 FY26",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=badde5e7-23d3-4f3f-8c8f-4075465709a8.pdf",
+   "page": 11,
+   "metric": "volume_growth",
+   "horizon": "FY27",
+   "quote": "our focus is on continuing to remain steadfast on delivering double-digit underlying volume growth",
+   "speaker": "Sudhanshu Vats",
+   "target_low": 10.0,
+   "target_high": null,
+   "unit": "%",
+   "verdict": "delivered",
+   "actual": "Underlying volume growth 10.7% in Q2 FY27",
+   "note": "Double‑digit volume delivered",
+   "checked_by": "model"
+  },
+  {
+   "id": "G10",
+   "call": "Q4 FY26",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=badde5e7-23d3-4f3f-8c8f-4075465709a8.pdf",
+   "page": 16,
+   "metric": "volume_growth",
+   "horizon": "FY27",
+   "quote": "we have expanded by about 100, 120 bps in FY '26 in terms of UVG. So therefore yes, I think this about 100-odd bps expansion as we go forward is something we are planning for",
+   "speaker": "Sudhanshu Vats",
+   "target_low": null,
+   "target_high": null,
+   "unit": "bps",
+   "verdict": "unverifiable",
+   "actual": "UVG expansion 100-120 bps in FY26 mentioned only",
+   "note": "Only qualitative statement",
+   "checked_by": "model"
+  },
+  {
+   "id": "G11",
+   "call": "Q3 FY26",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=ecbc316a-5f8d-4143-8061-df7980b55a66.pdf",
+   "page": 5,
+   "metric": "volume_growth",
+   "horizon": "future quarters",
+   "quote": "our plans in place to, therefore, bring back our entire B2B back into at least mid-teens, so double digit and mid-teens.",
+   "speaker": "Sudhanshu Vats",
+   "target_low": 10.0,
+   "target_high": 15.0,
+   "unit": "%",
+   "verdict": "delivered",
+   "actual": "Underlying volume growth 15.3% in Q4 FY26",
+   "note": "Mid‑teens B2B growth realized",
+   "checked_by": "model"
+  },
+  {
+   "id": "G12",
+   "call": "Q3 FY26",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=ecbc316a-5f8d-4143-8061-df7980b55a66.pdf",
+   "page": 10,
+   "metric": "ebitda_margin",
+   "horizon": "ongoing",
+   "quote": "EBITDA corridor which we have shared is 20% to 24%.",
+   "speaker": "Sudhanshu Vats",
+   "target_low": 20.0,
+   "target_high": 24.0,
+   "unit": "%",
+   "verdict": "delivered",
+   "actual": "EBITDA margin 24.0% in Q3 FY26",
+   "note": "At top of corridor",
+   "checked_by": "model"
+  },
+  {
+   "id": "G13",
+   "call": "Q3 FY26",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=ecbc316a-5f8d-4143-8061-df7980b55a66.pdf",
+   "page": 15,
+   "metric": "other",
+   "horizon": "next 2-3 years",
+   "quote": "penetration of tile adhesive and tile laying is growing pretty fast, at least we believe in high double digits in terms of about 18%, 20%",
+   "speaker": "Kavinder Singh",
+   "target_low": 18.0,
+   "target_high": 20.0,
+   "unit": "%",
+   "verdict": "unverifiable",
+   "actual": "Tile adhesive penetration 18-20% cited, no data",
+   "note": "No quantitative evidence",
+   "checked_by": "model"
+  },
+  {
+   "id": "G14",
+   "call": "Q3 FY26",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=ecbc316a-5f8d-4143-8061-df7980b55a66.pdf",
+   "page": 21,
+   "metric": "ebitda_margin",
+   "horizon": "FY26 full year",
+   "quote": "if you look at full year, we are confident that we will be at the upper end of this 20%, 24% range.",
+   "speaker": "Sandeep Batra",
+   "target_low": 24.0,
+   "target_high": 24.0,
+   "unit": "%",
+   "verdict": "delivered",
+   "actual": "FY26 EBITDA margin 24.0% (full year)",
+   "note": "Full‑year margin at upper target",
+   "checked_by": "model"
+  }
+ ],
+ "tally": {
+  "too_early": 1,
+  "delivered": 7,
+  "on_track": 3,
+  "unverifiable": 3
+ },
+ "narrative_vs_numbers": [
+  {
+   "claim": "Management promises EBITDA margin 20‑24% corridor",
+   "reality": "Q1+Q2 FY27 margin 23.4% within corridor",
+   "agree": true,
+   "cite": "G4 and Q1 FY27, Q2 FY27"
+  },
+  {
+   "claim": "Management says double‑digit volume growth will continue",
+   "reality": "Q2 FY27 underlying volume growth 10.7% (double‑digit)",
+   "agree": true,
+   "cite": "G2 and Q2 FY27 call p3"
+  },
+  {
+   "claim": "Management asserts capex will stay 3‑5% of revenue",
+   "reality": "Capex % not provided in numbers, cannot verify",
+   "agree": false,
+   "cite": "G7"
+  }
+ ],
+ "bull": [
+  {
+   "point": "EBITDA margin hit upper band 24% in FY26 full year",
+   "cite": "G14"
+  },
+  {
+   "point": "Underlying volume growth reached 15.3% in Q4 FY26, exceeding double‑digit goal",
+   "cite": "G11"
+  },
+  {
+   "point": "Sales surged 21.3% YoY in Q1 FY27, showing strong demand",
+   "cite": "Q1 FY27 sales_yoy"
+  }
+ ],
+ "bear": [
+  {
+   "point": "EBITDA margin slipped to 20.4% in Q2 FY27, lower end of range",
+   "cite": "Q2 FY27 call p3"
+  },
+  {
+   "point": "Capex target lacks disclosed data, making compliance unclear",
+   "cite": "G7"
+  },
+  {
+   "point": "PAT growth slowed to 7% YoY in Q2 FY27 despite sales rise",
+   "cite": "Q2 FY27 pat_yoy"
+  }
+ ],
+ "verdict": "Management largely meets its EBITDA and volume targets, but capex transparency and margin pressure in Q2 FY27 raise concerns.",
+ "sources": [
+  {
+   "type": "financials",
+   "label": "screener.in (consolidated)",
+   "url": "https://www.screener.in/company/PIDILITIND/consolidated/"
+  },
+  {
+   "type": "transcript",
+   "label": "Q2 FY27 call (Nov 2026)",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=4ba30191-cee1-420b-a1c5-8e1864b29711.pdf"
+  },
+  {
+   "type": "transcript",
+   "label": "Q1 FY27 call (Aug 2026)",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=6d811437-b5ad-4bff-8b33-92b5b7032db3.pdf"
+  },
+  {
+   "type": "transcript",
+   "label": "Q4 FY26 call (May 2026)",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=badde5e7-23d3-4f3f-8c8f-4075465709a8.pdf"
+  },
+  {
+   "type": "transcript",
+   "label": "Q3 FY26 call (Feb 2026)",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=ecbc316a-5f8d-4143-8061-df7980b55a66.pdf"
+  }
+ ],
+ "cost": {
+  "calls": 2,
+  "cached": 4,
+  "tokens_in": 5052,
+  "tokens_out": 4240,
+  "by_model": {
+   "gemini-3.5-flash": {
+    "calls": 1,
+    "tokens_in": 2633,
+    "tokens_out": 1032
+   },
+   "openai/gpt-oss-120b": {
+    "calls": 1,
+    "tokens_in": 2419,
+    "tokens_out": 3208
+   }
+  },
+  "seconds": 173.5
+ },
+ "discipline": "Primary sources only: company filings via screener.in, earnings-call transcripts. No news, broker notes or model memory."
+}

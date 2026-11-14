@@ -1,0 +1,1262 @@
+{
+ "symbol": "ASTRAL",
+ "name": "Astral Ltd",
+ "generated_at": "2026-11-15T04:08:26+05:30",
+ "as_of": "2026-11-15",
+ "business": {
+  "about": "Astral Poly Technik Ltd was established in 1996, with the aim to manufacture pro-India plumbing and drainage systems in the country. The company is into manufacturing of Pipes, water tanks, bathware, specialised valves, paints, adhesives and sealants, infrastructure solutions, specialised fittings and construction chemicals. [1]",
+  "key_points": "Business Segments: a) Plumbing (71% in FY26 vs 73% in FY24): [1] The company offers PVC, CPVC and lead-free PVC plumbing systems and fittings including drainage systems, agriculture systems, fire sprinkler systems, Industrial and urban infrastructure piping systems, specialized fittings, water tanks, cable protection system etc. It is among India's leading players in the high-margin CPVC pipes and fittings business . [2] b) Paints and Adhesives (29% in FY26 vs 27% in FY24): The company offers adhesives, sealants, specialized valves, construction chemicals, and other infrastructure products. It also offers a range of paints including Interior Emulsion, Exterior Emulsion, Primers, Putty bags Wall putty, Stainers & Colorants, etc under the Astral Paints brand. The company has also entered the D2C segment with DIY segment with brand name BondTite and BondCraft. [3] The company also offers flooring solutions like waterproffing, grouting etc. c) Bathware : The company has started manufacturing for bathware as well. It manufactures premium as well as mid-range toilet seats, wash basins, faucets and premium range diverters and body jets. [4] The segment delivered 27.3% sales growth in FY26",
+  "segments": [
+   {
+    "name": "Plumbing",
+    "share_or_growth": "25% YoY revenue growth in Q2 FY27 to INR 1,398 crores",
+    "page": 5
+   },
+   {
+    "name": "Adhesive India",
+    "share_or_growth": "25.3% YoY revenue growth in Q2 FY27 to INR 382 crores",
+    "page": 5
+   },
+   {
+    "name": "Adhesive UK",
+    "share_or_growth": "30% YoY revenue growth in Q2 FY27 to INR 126 crores",
+    "page": 5
+   },
+   {
+    "name": "Paint",
+    "share_or_growth": "43.9% YoY revenue growth in Q2 FY27 to INR 82 crores",
+    "page": 5
+   }
+  ]
+ },
+ "snapshot": {
+  "market_cap_cr": 33689.0,
+  "price": 1254.0,
+  "pe": 56.9,
+  "roce": 19.2,
+  "roe": 13.9,
+  "div_yield": 0.32,
+  "ttm_sales": 7196.0,
+  "ttm_pat": 568.0,
+  "last_q": "Q2 FY27",
+  "last_q_sales_yoy": 26.1,
+  "last_q_pat_yoy": -5.9,
+  "last_q_opm": 13.0,
+  "fy_opm": 16.0,
+  "fy": "FY26"
+ },
+ "trajectory": {
+  "sales_cagr_3y": 8.4,
+  "sales_cagr_5y": 15.6,
+  "pat_cagr_3y": 4.3,
+  "pat_cagr_5y": 5.6,
+  "opm_change_3y": 0.0,
+  "quarterly": [
+   {
+    "period": "Dec 2023",
+    "q": "Q3 FY24",
+    "sales": 1370.0,
+    "op_profit": 205.0,
+    "opm": 15.0,
+    "pat": 113.0
+   },
+   {
+    "period": "Mar 2024",
+    "q": "Q4 FY24",
+    "sales": 1625.0,
+    "op_profit": 291.0,
+    "opm": 18.0,
+    "pat": 181.0
+   },
+   {
+    "period": "Jun 2024",
+    "q": "Q1 FY25",
+    "sales": 1384.0,
+    "op_profit": 214.0,
+    "opm": 16.0,
+    "pat": 120.0
+   },
+   {
+    "period": "Sep 2024",
+    "q": "Q2 FY25",
+    "sales": 1370.0,
+    "op_profit": 210.0,
+    "opm": 15.0,
+    "pat": 109.0,
+    "sales_yoy": 0.5,
+    "pat_yoy": -17.4
+   },
+   {
+    "period": "Dec 2024",
+    "q": "Q3 FY25",
+    "sales": 1397.0,
+    "op_profit": 219.0,
+    "opm": 16.0,
+    "pat": 113.0,
+    "sales_yoy": 2.0,
+    "pat_yoy": 0.0
+   },
+   {
+    "period": "Mar 2025",
+    "q": "Q4 FY25",
+    "sales": 1681.0,
+    "op_profit": 302.0,
+    "opm": 18.0,
+    "pat": 178.0,
+    "sales_yoy": 3.4,
+    "pat_yoy": -1.7
+   },
+   {
+    "period": "Jun 2025",
+    "q": "Q1 FY26",
+    "sales": 1361.0,
+    "op_profit": 185.0,
+    "opm": 14.0,
+    "pat": 79.0,
+    "sales_yoy": -1.7,
+    "pat_yoy": -34.2
+   },
+   {
+    "period": "Sep 2025",
+    "q": "Q2 FY26",
+    "sales": 1577.0,
+    "op_profit": 257.0,
+    "opm": 16.0,
+    "pat": 135.0,
+    "sales_yoy": 15.1,
+    "pat_yoy": 23.9
+   },
+   {
+    "period": "Dec 2025",
+    "q": "Q3 FY26",
+    "sales": 1542.0,
+    "op_profit": 237.0,
+    "opm": 15.0,
+    "pat": 108.0,
+    "sales_yoy": 10.4,
+    "pat_yoy": -4.4
+   },
+   {
+    "period": "Mar 2026",
+    "q": "Q4 FY26",
+    "sales": 2088.0,
+    "op_profit": 383.0,
+    "opm": 18.0,
+    "pat": 213.0,
+    "sales_yoy": 24.2,
+    "pat_yoy": 19.7
+   },
+   {
+    "period": "Jun 2026",
+    "q": "Q1 FY27",
+    "sales": 1578.0,
+    "op_profit": 231.0,
+    "opm": 15.0,
+    "pat": 120.0,
+    "sales_yoy": 15.9,
+    "pat_yoy": 51.9
+   },
+   {
+    "period": "Sep 2026",
+    "q": "Q2 FY27",
+    "sales": 1988.0,
+    "op_profit": 260.0,
+    "opm": 13.0,
+    "pat": 127.0,
+    "sales_yoy": 26.1,
+    "pat_yoy": -5.9
+   }
+  ],
+  "annual": [
+   {
+    "period": "Mar 2017",
+    "fy": "FY17",
+    "sales": 1895.0,
+    "opm": 14.0,
+    "pat": 145.0,
+    "borrowings": 229.0,
+    "equity": 847.0,
+    "de": 0.27,
+    "cfo": 114.0,
+    "cfi": -158.0,
+    "sales_growth": 12.9
+   },
+   {
+    "period": "Mar 2018",
+    "fy": "FY18",
+    "sales": 2073.0,
+    "opm": 15.0,
+    "pat": 176.0,
+    "borrowings": 189.0,
+    "equity": 1018.0,
+    "de": 0.19,
+    "cfo": 282.0,
+    "cfi": -185.0,
+    "sales_growth": 9.4
+   },
+   {
+    "period": "Mar 2019",
+    "fy": "FY19",
+    "sales": 2507.0,
+    "opm": 15.0,
+    "pat": 197.0,
+    "borrowings": 275.0,
+    "equity": 1278.0,
+    "de": 0.22,
+    "cfo": 342.0,
+    "cfi": -291.0,
+    "sales_growth": 20.9
+   },
+   {
+    "period": "Mar 2020",
+    "fy": "FY20",
+    "sales": 2578.0,
+    "opm": 17.0,
+    "pat": 250.0,
+    "borrowings": 191.0,
+    "equity": 1503.0,
+    "de": 0.13,
+    "cfo": 405.0,
+    "cfi": -318.0,
+    "sales_growth": 2.8
+   },
+   {
+    "period": "Mar 2021",
+    "fy": "FY21",
+    "sales": 3176.0,
+    "opm": 20.0,
+    "pat": 408.0,
+    "borrowings": 80.0,
+    "equity": 1896.0,
+    "de": 0.04,
+    "cfo": 664.0,
+    "cfi": -454.0,
+    "sales_growth": 23.2
+   },
+   {
+    "period": "Mar 2022",
+    "fy": "FY22",
+    "sales": 4394.0,
+    "opm": 17.0,
+    "pat": 490.0,
+    "borrowings": 98.0,
+    "equity": 2336.0,
+    "de": 0.04,
+    "cfo": 543.0,
+    "cfi": 72.0,
+    "sales_growth": 38.4
+   },
+   {
+    "period": "Mar 2023",
+    "fy": "FY23",
+    "sales": 5158.0,
+    "opm": 16.0,
+    "pat": 472.0,
+    "borrowings": 87.0,
+    "equity": 2711.0,
+    "de": 0.03,
+    "cfo": 557.0,
+    "cfi": -478.0,
+    "sales_growth": 17.4
+   },
+   {
+    "period": "Mar 2024",
+    "fy": "FY24",
+    "sales": 5641.0,
+    "opm": 16.0,
+    "pat": 546.0,
+    "borrowings": 119.0,
+    "equity": 3188.0,
+    "de": 0.04,
+    "cfo": 823.0,
+    "cfi": -541.0,
+    "sales_growth": 9.4
+   },
+   {
+    "period": "Mar 2025",
+    "fy": "FY25",
+    "sales": 5832.0,
+    "opm": 16.0,
+    "pat": 519.0,
+    "borrowings": 233.0,
+    "equity": 3617.0,
+    "de": 0.06,
+    "cfo": 630.0,
+    "cfi": -513.0,
+    "sales_growth": 3.4
+   },
+   {
+    "period": "Mar 2026",
+    "fy": "FY26",
+    "sales": 6569.0,
+    "opm": 16.0,
+    "pat": 535.0,
+    "borrowings": 250.0,
+    "equity": 4058.0,
+    "de": 0.06,
+    "cfo": 1117.0,
+    "cfi": -506.0,
+    "sales_growth": 12.6
+   }
+  ]
+ },
+ "balance": {
+  "borrowings": 250.0,
+  "equity": 4058.0,
+  "de": 0.06,
+  "de_3y_ago": 0.03,
+  "working_capital": {
+   "Debtor Days": [
+    {
+     "period": "Mar 2021",
+     "value": 32.0
+    },
+    {
+     "period": "Mar 2022",
+     "value": 22.0
+    },
+    {
+     "period": "Mar 2023",
+     "value": 25.0
+    },
+    {
+     "period": "Mar 2024",
+     "value": 24.0
+    },
+    {
+     "period": "Mar 2025",
+     "value": 27.0
+    },
+    {
+     "period": "Mar 2026",
+     "value": 26.0
+    }
+   ],
+   "Inventory Days": [
+    {
+     "period": "Mar 2021",
+     "value": 88.0
+    },
+    {
+     "period": "Mar 2022",
+     "value": 91.0
+    },
+    {
+     "period": "Mar 2023",
+     "value": 96.0
+    },
+    {
+     "period": "Mar 2024",
+     "value": 100.0
+    },
+    {
+     "period": "Mar 2025",
+     "value": 109.0
+    },
+    {
+     "period": "Mar 2026",
+     "value": 107.0
+    }
+   ],
+   "Days Payable": [
+    {
+     "period": "Mar 2021",
+     "value": 96.0
+    },
+    {
+     "period": "Mar 2022",
+     "value": 93.0
+    },
+    {
+     "period": "Mar 2023",
+     "value": 88.0
+    },
+    {
+     "period": "Mar 2024",
+     "value": 95.0
+    },
+    {
+     "period": "Mar 2025",
+     "value": 92.0
+    },
+    {
+     "period": "Mar 2026",
+     "value": 110.0
+    }
+   ],
+   "Cash Conversion Cycle": [
+    {
+     "period": "Mar 2021",
+     "value": 23.0
+    },
+    {
+     "period": "Mar 2022",
+     "value": 20.0
+    },
+    {
+     "period": "Mar 2023",
+     "value": 33.0
+    },
+    {
+     "period": "Mar 2024",
+     "value": 29.0
+    },
+    {
+     "period": "Mar 2025",
+     "value": 44.0
+    },
+    {
+     "period": "Mar 2026",
+     "value": 23.0
+    }
+   ],
+   "Working Capital Days": [
+    {
+     "period": "Mar 2021",
+     "value": 12.0
+    },
+    {
+     "period": "Mar 2022",
+     "value": 13.0
+    },
+    {
+     "period": "Mar 2023",
+     "value": 17.0
+    },
+    {
+     "period": "Mar 2024",
+     "value": 16.0
+    },
+    {
+     "period": "Mar 2025",
+     "value": 25.0
+    },
+    {
+     "period": "Mar 2026",
+     "value": 11.0
+    }
+   ],
+   "ROCE %": [
+    {
+     "period": "Mar 2021",
+     "value": 29.0
+    },
+    {
+     "period": "Mar 2022",
+     "value": 29.0
+    },
+    {
+     "period": "Mar 2023",
+     "value": 24.0
+    },
+    {
+     "period": "Mar 2024",
+     "value": 23.0
+    },
+    {
+     "period": "Mar 2025",
+     "value": 20.0
+    },
+    {
+     "period": "Mar 2026",
+     "value": 19.0
+    }
+   ]
+  }
+ },
+ "cash": {
+  "cfo_to_pat_3y": 1.61,
+  "years": [
+   {
+    "fy": "FY21",
+    "cfo": 664.0,
+    "pat": 408.0,
+    "cfi": -454.0
+   },
+   {
+    "fy": "FY22",
+    "cfo": 543.0,
+    "pat": 490.0,
+    "cfi": 72.0
+   },
+   {
+    "fy": "FY23",
+    "cfo": 557.0,
+    "pat": 472.0,
+    "cfi": -478.0
+   },
+   {
+    "fy": "FY24",
+    "cfo": 823.0,
+    "pat": 546.0,
+    "cfi": -541.0
+   },
+   {
+    "fy": "FY25",
+    "cfo": 630.0,
+    "pat": 519.0,
+    "cfi": -513.0
+   },
+   {
+    "fy": "FY26",
+    "cfo": 1117.0,
+    "pat": 535.0,
+    "cfi": -506.0
+   }
+  ]
+ },
+ "calls": [
+  {
+   "month": "Nov 2026",
+   "quarter": "Q2 FY27",
+   "url": "https://www.astralltd.com/wp-content/uploads/2026/11/Equirus-Astral-Nov05-2026-1.pdf",
+   "status": "ok",
+   "tone": "Management remains optimistic and confident, emphasizing robust volume growth and market share expansion while addressing margin recovery.",
+   "pushback": [
+    "Margin pressure in adhesive and paint businesses due to cost inflation",
+    "Capex exceeding initial annual guidance despite prior commitments to lower spending",
+    "High inventory holding days and slow operating cost reduction"
+   ],
+   "delivery_comments": [
+    {
+     "topic": "volume_growth",
+     "quote": "demonstrated in this quarter with a 19.10% volume growth and 10.1% volume growth for H1... against the company's guidance of double-digit volume growth",
+     "page": 2
+    },
+    {
+     "topic": "ebitda_margin",
+     "quote": "healthy EBITDA margin of 17.4% in H1 against the company's guidance of double-digit volume growth and 16%-18% margin.",
+     "page": 2
+    },
+    {
+     "topic": "ebitda_margin",
+     "quote": "India we guided 14%-15% normal EBITDA we are delivering, but in H1 it is 11.5% kind of we have delivered. So we are short by 2.5%",
+     "page": 12
+    }
+   ],
+   "segments": [
+    {
+     "name": "Plumbing",
+     "share_or_growth": "25% YoY revenue growth in Q2 FY27 to INR 1,398 crores",
+     "page": 5
+    },
+    {
+     "name": "Adhesive India",
+     "share_or_growth": "25.3% YoY revenue growth in Q2 FY27 to INR 382 crores",
+     "page": 5
+    },
+    {
+     "name": "Adhesive UK",
+     "share_or_growth": "30% YoY revenue growth in Q2 FY27 to INR 126 crores",
+     "page": 5
+    },
+    {
+     "name": "Paint",
+     "share_or_growth": "43.9% YoY revenue growth in Q2 FY27 to INR 82 crores",
+     "page": 5
+    }
+   ]
+  },
+  {
+   "month": "Aug 2026",
+   "quarter": "Q1 FY27",
+   "url": "https://www.astralltd.com/wp-content/uploads/2026/08/Equirus-Astral-Aug12-2026-1.pdf",
+   "status": "ok",
+   "tone": "Management is confident and optimistic, highlighting market share gains while maintaining a cautious approach toward upgrading guidance.",
+   "pushback": [
+    "Upgrading full year plumbing margin guidance above 16-18%",
+    "Revising annual volume and revenue growth guidance after strong July"
+   ],
+   "delivery_comments": [
+    {
+     "topic": "Margins and Cost Pressures",
+     "quote": "During the quarter, the margins were under pressure due to high cost of inventories and previous quarter, inventories which we had with previous quarters.",
+     "page": 4
+    },
+    {
+     "topic": "Pipes Performance",
+     "quote": "this quarter also we have delivered a very healthy 10.1% value growth in pipe and flat volume growth in pipe, and again the negative growth of industry by roughly 9% to 10%.",
+     "page": 6
+    },
+    {
+     "topic": "Paint Growth",
+     "quote": "history we have first time delivered a highest 48.7% growth in paint after acquisition of Gem.",
+     "page": 6
+    },
+    {
+     "topic": "Adhesive Business Growth",
+     "quote": "adhesive business, the quarter was once again an excellent quarter for Adhesive India business. We have delivered a robust growth of 24.9%.",
+     "page": 4
+    }
+   ],
+   "segments": [
+    {
+     "name": "Plumbing / Pipe",
+     "share_or_growth": "10.1% value growth, flat volume growth",
+     "page": 6
+    },
+    {
+     "name": "Bathware",
+     "share_or_growth": "18.1% growth",
+     "page": 4
+    },
+    {
+     "name": "Adhesive India",
+     "share_or_growth": "24.9% growth",
+     "page": 4
+    },
+    {
+     "name": "Adhesive U.K.",
+     "share_or_growth": "26% growth",
+     "page": 4
+    },
+    {
+     "name": "Paint",
+     "share_or_growth": "48.7% growth",
+     "page": 4
+    },
+    {
+     "name": "Adhesive and Paint (Consolidated)",
+     "share_or_growth": "29.5% growth",
+     "page": 6
+    }
+   ]
+  },
+  {
+   "month": "May 2026",
+   "quarter": "Q4 FY26",
+   "url": "https://www.astralltd.com/wp-content/uploads/2026/05/Analysts-Meet-2026-Transcript.pdf",
+   "status": "ok",
+   "tone": "Management is highly confident and bullish on scaling business verticals and improving profitability.",
+   "pushback": [
+    "Conservative EBITDA margin guidance for piping despite high expected revenue growth.",
+    "Lower return ratios compared to industry leaders due to recent capex."
+   ],
+   "delivery_comments": [
+    {
+     "topic": "Paint Business Growth",
+     "quote": "first time after acquisition we have delivered 23% growth into the paint industry for the full year and the last quarter it was 31%.",
+     "page": 11
+    },
+    {
+     "topic": "UK Business Performance",
+     "quote": "last quarter we have delivered 22.9% growth in bond product in UK and not only that but we were into the negative Zone of EBITA we have converted into 6.5% positive EBITA",
+     "page": 11
+    },
+    {
+     "topic": "Guidance Track Record",
+     "quote": "last year number also if you can check number we have delivered what we have guided across the board I think whatever we have given the guidance we have achieved that guidance",
+     "page": 16
+    }
+   ],
+   "segments": [
+    {
+     "name": "Piping",
+     "share_or_growth": "72% contribution",
+     "page": 16
+    },
+    {
+     "name": "Paint and Adhesive",
+     "share_or_growth": "28% contribution",
+     "page": 16
+    }
+   ]
+  },
+  {
+   "month": "Feb 2026",
+   "quarter": "Q3 FY26",
+   "url": "https://nsearchives.nseindia.com/corporate/ASTRAL_05022026201047_Earning_Call.pdf",
+   "status": "ok",
+   "tone": "No management commentary, guidance, or financial results were provided in the transcript.",
+   "pushback": [],
+   "delivery_comments": [],
+   "segments": []
+  }
+ ],
+ "promises": [
+  {
+   "id": "G1",
+   "call": "Q2 FY27",
+   "call_url": "https://www.astralltd.com/wp-content/uploads/2026/11/Equirus-Astral-Nov05-2026-1.pdf",
+   "page": 7,
+   "metric": "volume_growth",
+   "horizon": "FY27",
+   "quote": "targeting anywhere full year basis, anywhere between, you can say 290,000-to-300,000-ton type of total volume number.",
+   "speaker": "Kairav Engineer",
+   "target_low": 290000.0,
+   "target_high": 300000.0,
+   "unit": "other",
+   "verdict": "on_track",
+   "actual": "H1 FY27 volume growth was 10.1%",
+   "note": "Management reported 10.1% volume growth in H1 FY27 towards full year volume targets.",
+   "checked_by": "model"
+  },
+  {
+   "id": "G2",
+   "call": "Q2 FY27",
+   "call_url": "https://www.astralltd.com/wp-content/uploads/2026/11/Equirus-Astral-Nov05-2026-1.pdf",
+   "page": 3,
+   "metric": "ebitda_margin",
+   "horizon": "FY27",
+   "quote": "bringing this EBITDA margin back to the normal level in this quarter, and by the end of this fiscal year, again, to the margins of 13%, 14%, or up to 15%.",
+   "speaker": "Sandeep Engineer",
+   "target_low": 13.0,
+   "target_high": 15.0,
+   "unit": "%",
+   "verdict": "on_track",
+   "actual": "EBITDA margin 13.8% (Q1 + Q2 FY27 so far)",
+   "note": null,
+   "checked_by": "code"
+  },
+  {
+   "id": "G3",
+   "call": "Q2 FY27",
+   "call_url": "https://www.astralltd.com/wp-content/uploads/2026/11/Equirus-Astral-Nov05-2026-1.pdf",
+   "page": 12,
+   "metric": "ebitda_margin",
+   "horizon": "FY27",
+   "quote": "UK... Our target is to reach somewhere around 9%-10% kind of level.",
+   "speaker": "Hiranand Savlani",
+   "target_low": 9.0,
+   "target_high": 10.0,
+   "unit": "%",
+   "verdict": "on_track",
+   "actual": "EBITDA margin 13.8% (Q1 + Q2 FY27 so far)",
+   "note": null,
+   "checked_by": "code"
+  },
+  {
+   "id": "G4",
+   "call": "Q2 FY27",
+   "call_url": "https://www.astralltd.com/wp-content/uploads/2026/11/Equirus-Astral-Nov05-2026-1.pdf",
+   "page": 12,
+   "metric": "ebitda_margin",
+   "horizon": "FY27",
+   "quote": "by this year-end, we will be positive EBITDA around 3%-4%. By next year, I think we should be anywhere between 8%, 9%, and 10%.",
+   "speaker": "Sandeep Engineer",
+   "target_low": 3.0,
+   "target_high": 4.0,
+   "unit": "%",
+   "verdict": "on_track",
+   "actual": "EBITDA margin 13.8% (Q1 + Q2 FY27 so far)",
+   "note": null,
+   "checked_by": "code"
+  },
+  {
+   "id": "G5",
+   "call": "Q2 FY27",
+   "call_url": "https://www.astralltd.com/wp-content/uploads/2026/11/Equirus-Astral-Nov05-2026-1.pdf",
+   "page": 9,
+   "metric": "capex",
+   "horizon": "FY27",
+   "quote": "by year end, we should be completing around INR400 crores kind of capex.",
+   "speaker": "Hiranand Savlani",
+   "target_low": 400.0,
+   "target_high": 400.0,
+   "unit": "₹ cr",
+   "verdict": "too_early",
+   "actual": "Targeting INR 400 crore by year end",
+   "note": "Full year FY27 capex completion cannot be verified until full year results.",
+   "checked_by": "model"
+  },
+  {
+   "id": "G6",
+   "call": "Q2 FY27",
+   "call_url": "https://www.astralltd.com/wp-content/uploads/2026/11/Equirus-Astral-Nov05-2026-1.pdf",
+   "page": 18,
+   "metric": "ebitda_margin",
+   "horizon": "FY27",
+   "quote": "year-end, we will be closer to 13%-14% kind of run rate.",
+   "speaker": "Hiranand Savlani",
+   "target_low": 13.0,
+   "target_high": 14.0,
+   "unit": "%",
+   "verdict": "on_track",
+   "actual": "EBITDA margin 13.8% (Q1 + Q2 FY27 so far)",
+   "note": null,
+   "checked_by": "code"
+  },
+  {
+   "id": "G7",
+   "call": "Q1 FY27",
+   "call_url": "https://www.astralltd.com/wp-content/uploads/2026/08/Equirus-Astral-Aug12-2026-1.pdf",
+   "page": 3,
+   "metric": "capacity",
+   "horizon": "Q4 FY27",
+   "quote": "CPVC resin plant construction is going on... expecting to complete it by December end. And we will take the trial runs... in Q4.",
+   "speaker": "Management",
+   "target_low": null,
+   "target_high": null,
+   "unit": null,
+   "verdict": "too_early",
+   "actual": "CPVC plant trial runs planned in Q4 FY27",
+   "note": "Target completion December end with trials in Q4 FY27.",
+   "checked_by": "model"
+  },
+  {
+   "id": "G8",
+   "call": "Q1 FY27",
+   "call_url": "https://www.astralltd.com/wp-content/uploads/2026/08/Equirus-Astral-Aug12-2026-1.pdf",
+   "page": 4,
+   "metric": "capacity",
+   "horizon": "Q2 FY27",
+   "quote": "adding PEX -Aluminum-PEX machines... complete the same in mid -September. And by end of September, all trials will be over and the commercial production... will be made.",
+   "speaker": "Management",
+   "target_low": null,
+   "target_high": null,
+   "unit": null,
+   "verdict": "unverifiable",
+   "actual": "No specific update provided in calls",
+   "note": "Commercial production target end of September Q2 FY27 lacks specific reported confirmation.",
+   "checked_by": "model"
+  },
+  {
+   "id": "G9",
+   "call": "Q1 FY27",
+   "call_url": "https://www.astralltd.com/wp-content/uploads/2026/08/Equirus-Astral-Aug12-2026-1.pdf",
+   "page": 4,
+   "metric": "revenue_growth",
+   "horizon": "FY27",
+   "quote": "confident that by the year -end, not only we will achieve our targeted revenue, but also de liver the guided margins.",
+   "speaker": "Management",
+   "target_low": null,
+   "target_high": null,
+   "unit": "%",
+   "verdict": "on_track",
+   "actual": "H1 FY27 sales grew 21.4%",
+   "note": "Strong top-line growth in Q1 and Q2 FY27 keeps revenue guidance on track.",
+   "checked_by": "model"
+  },
+  {
+   "id": "G10",
+   "call": "Q1 FY27",
+   "call_url": "https://www.astralltd.com/wp-content/uploads/2026/08/Equirus-Astral-Aug12-2026-1.pdf",
+   "page": 6,
+   "metric": "revenue_growth",
+   "horizon": "FY27",
+   "quote": "guided in last call that we will be closing full year with 20%, 25% kind of growth... we will be definitely crossing the guided number.",
+   "speaker": "Hiranand Savlani",
+   "target_low": 20.0,
+   "target_high": 25.0,
+   "unit": "%",
+   "verdict": "on_track",
+   "actual": "sales growth 21.4% (Q1 + Q2 FY27 so far)",
+   "note": null,
+   "checked_by": "code"
+  },
+  {
+   "id": "G11",
+   "call": "Q1 FY27",
+   "call_url": "https://www.astralltd.com/wp-content/uploads/2026/08/Equirus-Astral-Aug12-2026-1.pdf",
+   "page": 6,
+   "metric": "volume_growth",
+   "horizon": "FY27",
+   "quote": "given the guidance of double-digit growth, so we will be definitely going to achieve on a full year basis.",
+   "speaker": "Hiranand Savlani",
+   "target_low": 10.0,
+   "target_high": null,
+   "unit": "%",
+   "verdict": "on_track",
+   "actual": "H1 FY27 volume growth at 10.1%",
+   "note": "Delivered double-digit volume growth in H1 FY27 matching double-digit target.",
+   "checked_by": "model"
+  },
+  {
+   "id": "G12",
+   "call": "Q1 FY27",
+   "call_url": "https://www.astralltd.com/wp-content/uploads/2026/08/Equirus-Astral-Aug12-2026-1.pdf",
+   "page": 7,
+   "metric": "revenue_growth",
+   "horizon": "FY27",
+   "quote": "value growth for the full year will be more than 20%, in top line.",
+   "speaker": "Hiranand Savlani",
+   "target_low": 20.0,
+   "target_high": null,
+   "unit": "%",
+   "verdict": "on_track",
+   "actual": "sales growth 21.4% (Q1 + Q2 FY27 so far)",
+   "note": null,
+   "checked_by": "code"
+  },
+  {
+   "id": "G13",
+   "call": "Q1 FY27",
+   "call_url": "https://www.astralltd.com/wp-content/uploads/2026/08/Equirus-Astral-Aug12-2026-1.pdf",
+   "page": 7,
+   "metric": "revenue_growth",
+   "horizon": "FY27",
+   "quote": "U.K. will definitely going to surpass the double -digit mark.",
+   "speaker": "Hiranand Savlani",
+   "target_low": 10.0,
+   "target_high": null,
+   "unit": "%",
+   "verdict": "on_track",
+   "actual": "sales growth 21.4% (Q1 + Q2 FY27 so far)",
+   "note": null,
+   "checked_by": "code"
+  },
+  {
+   "id": "G14",
+   "call": "Q1 FY27",
+   "call_url": "https://www.astralltd.com/wp-content/uploads/2026/08/Equirus-Astral-Aug12-2026-1.pdf",
+   "page": 16,
+   "metric": "capex",
+   "horizon": "FY27",
+   "quote": "300 to 350 level kind of level will be there.",
+   "speaker": "Hiranand Savlani",
+   "target_low": 300.0,
+   "target_high": 350.0,
+   "unit": "₹ cr",
+   "verdict": "too_early",
+   "actual": "Targeting 300 to 350 crore capex",
+   "note": "Capex execution spans full fiscal year FY27.",
+   "checked_by": "model"
+  },
+  {
+   "id": "G15",
+   "call": "Q1 FY27",
+   "call_url": "https://www.astralltd.com/wp-content/uploads/2026/08/Equirus-Astral-Aug12-2026-1.pdf",
+   "page": 16,
+   "metric": "ebitda_margin",
+   "horizon": "FY27",
+   "quote": "U.K. for full year... 8% to 10% kind of margin we can build in? Hiranand Savlani: Yes, yes. We are targeting that only.",
+   "speaker": "Hiranand Savlani",
+   "target_low": 8.0,
+   "target_high": 10.0,
+   "unit": "%",
+   "verdict": "on_track",
+   "actual": "EBITDA margin 13.8% (Q1 + Q2 FY27 so far)",
+   "note": null,
+   "checked_by": "code"
+  },
+  {
+   "id": "G16",
+   "call": "Q1 FY27",
+   "call_url": "https://www.astralltd.com/wp-content/uploads/2026/08/Equirus-Astral-Aug12-2026-1.pdf",
+   "page": 17,
+   "metric": "ebitda_margin",
+   "horizon": "FY27",
+   "quote": "guidance of minimum double -digit growth for volume. And EBITDA, we have given 16% to 18%.",
+   "speaker": "Hiranand Savlani",
+   "target_low": 16.0,
+   "target_high": 18.0,
+   "unit": "%",
+   "verdict": "behind",
+   "actual": "EBITDA margin 13.8% (Q1 + Q2 FY27 so far)",
+   "note": null,
+   "checked_by": "code"
+  },
+  {
+   "id": "G17",
+   "call": "Q1 FY27",
+   "call_url": "https://www.astralltd.com/wp-content/uploads/2026/08/Equirus-Astral-Aug12-2026-1.pdf",
+   "page": 17,
+   "metric": "revenue_growth",
+   "horizon": "FY27",
+   "quote": "Paint, we have given guidance of 20% to 25% kind of top line growth. And adhesive we have given 15% to 20% kind of growth.",
+   "speaker": "Hiranand Savlani",
+   "target_low": 15.0,
+   "target_high": 25.0,
+   "unit": "%",
+   "verdict": "on_track",
+   "actual": "sales growth 21.4% (Q1 + Q2 FY27 so far)",
+   "note": null,
+   "checked_by": "code"
+  },
+  {
+   "id": "G18",
+   "call": "Q1 FY27",
+   "call_url": "https://www.astralltd.com/wp-content/uploads/2026/08/Equirus-Astral-Aug12-2026-1.pdf",
+   "page": 17,
+   "metric": "ebitda_margin",
+   "horizon": "FY27",
+   "quote": "Paint, we have given lower single -digit guidance. And adhesive, we have given 15% kind of guidance.",
+   "speaker": "Hiranand Savlani",
+   "target_low": 15.0,
+   "target_high": 15.0,
+   "unit": "%",
+   "verdict": "behind",
+   "actual": "EBITDA margin 13.8% (Q1 + Q2 FY27 so far)",
+   "note": null,
+   "checked_by": "code"
+  },
+  {
+   "id": "G19",
+   "call": "Q1 FY27",
+   "call_url": "https://www.astralltd.com/wp-content/uploads/2026/08/Equirus-Astral-Aug12-2026-1.pdf",
+   "page": 27,
+   "metric": "volume_growth",
+   "horizon": "FY28",
+   "quote": "CPVC plant will be there by Q4 this year, FY28... Not only growth will be higher, but the margin expansion will also be there.",
+   "speaker": "Hiranand Savlani",
+   "target_low": null,
+   "target_high": null,
+   "unit": "%",
+   "verdict": "too_early",
+   "actual": "CPVC plant online by Q4 FY27 / FY28",
+   "note": "Project completion and margin expansion expected in FY28.",
+   "checked_by": "model"
+  },
+  {
+   "id": "G20",
+   "call": "Q4 FY26",
+   "call_url": "https://www.astralltd.com/wp-content/uploads/2026/05/Analysts-Meet-2026-Transcript.pdf",
+   "page": 11,
+   "metric": "volume_growth",
+   "horizon": "FY27",
+   "quote": "next year we are expecting more than 25% growth into the paint",
+   "speaker": "Management",
+   "target_low": 25.0,
+   "target_high": null,
+   "unit": "%",
+   "verdict": "on_track",
+   "actual": "Paint segment grew 48.7% in Q1 FY27",
+   "note": "Strong Q1 growth supports full year >25% paint volume guidance.",
+   "checked_by": "model"
+  },
+  {
+   "id": "G21",
+   "call": "Q4 FY26",
+   "call_url": "https://www.astralltd.com/wp-content/uploads/2026/05/Analysts-Meet-2026-Transcript.pdf",
+   "page": 11,
+   "metric": "other",
+   "horizon": "FY27",
+   "quote": "coming year FY27 we will be growing at least minimum double digit kind of growth in a economy like UK",
+   "speaker": "Management",
+   "target_low": 10.0,
+   "target_high": null,
+   "unit": "%",
+   "verdict": "on_track",
+   "actual": "UK delivered 22.9% growth in Q4 FY26",
+   "note": "UK business performance supports double-digit growth expectations.",
+   "checked_by": "model"
+  },
+  {
+   "id": "G22",
+   "call": "Q4 FY26",
+   "call_url": "https://www.astralltd.com/wp-content/uploads/2026/05/Analysts-Meet-2026-Transcript.pdf",
+   "page": 15,
+   "metric": "volume_growth",
+   "horizon": "FY27",
+   "quote": "FY27 we are expecting that the volume should be in the range of 10 to 15%",
+   "speaker": "Management",
+   "target_low": 10.0,
+   "target_high": 15.0,
+   "unit": "%",
+   "verdict": "on_track",
+   "actual": "H1 FY27 volume growth was 10.1%",
+   "note": "Achieved 10.1% volume growth in H1 FY27, meeting lower end of guidance range.",
+   "checked_by": "model"
+  },
+  {
+   "id": "G23",
+   "call": "Q4 FY26",
+   "call_url": "https://www.astralltd.com/wp-content/uploads/2026/05/Analysts-Meet-2026-Transcript.pdf",
+   "page": 15,
+   "metric": "revenue_growth",
+   "horizon": "FY27",
+   "quote": "in India we are targeting to grow minimum 15 to 20% kind of run rate",
+   "speaker": "Management",
+   "target_low": 15.0,
+   "target_high": 20.0,
+   "unit": "%",
+   "verdict": "on_track",
+   "actual": "sales growth 21.4% (Q1 + Q2 FY27 so far)",
+   "note": null,
+   "checked_by": "code"
+  },
+  {
+   "id": "G24",
+   "call": "Q4 FY26",
+   "call_url": "https://www.astralltd.com/wp-content/uploads/2026/05/Analysts-Meet-2026-Transcript.pdf",
+   "page": 15,
+   "metric": "revenue_growth",
+   "horizon": "FY27",
+   "quote": "paint we are expecting to grow minimum 25 to 30% kind of run rate for the FY27",
+   "speaker": "Management",
+   "target_low": 25.0,
+   "target_high": 30.0,
+   "unit": "%",
+   "verdict": "behind",
+   "actual": "sales growth 21.4% (Q1 + Q2 FY27 so far)",
+   "note": null,
+   "checked_by": "code"
+  },
+  {
+   "id": "G25",
+   "call": "Q4 FY26",
+   "call_url": "https://www.astralltd.com/wp-content/uploads/2026/05/Analysts-Meet-2026-Transcript.pdf",
+   "page": 16,
+   "metric": "revenue_growth",
+   "horizon": "FY27",
+   "quote": "FY27 we are targeting at least 15 to 20% kind of growth into this category as a whole.",
+   "speaker": "Management",
+   "target_low": 15.0,
+   "target_high": 20.0,
+   "unit": "%",
+   "verdict": "on_track",
+   "actual": "sales growth 21.4% (Q1 + Q2 FY27 so far)",
+   "note": null,
+   "checked_by": "code"
+  },
+  {
+   "id": "G26",
+   "call": "Q4 FY26",
+   "call_url": "https://www.astralltd.com/wp-content/uploads/2026/05/Analysts-Meet-2026-Transcript.pdf",
+   "page": 16,
+   "metric": "ebitda_margin",
+   "horizon": "FY27",
+   "quote": "This full year we are expecting 8 to 10% kind of margin.",
+   "speaker": "Management",
+   "target_low": 8.0,
+   "target_high": 10.0,
+   "unit": "%",
+   "verdict": "on_track",
+   "actual": "EBITDA margin 13.8% (Q1 + Q2 FY27 so far)",
+   "note": null,
+   "checked_by": "code"
+  },
+  {
+   "id": "G27",
+   "call": "Q4 FY26",
+   "call_url": "https://www.astralltd.com/wp-content/uploads/2026/05/Analysts-Meet-2026-Transcript.pdf",
+   "page": 18,
+   "metric": "capex",
+   "horizon": "FY27",
+   "quote": "this year we are targeting somewhere around 300 cr.",
+   "speaker": "Hiranand Savlani",
+   "target_low": 300.0,
+   "target_high": 300.0,
+   "unit": "₹ cr",
+   "verdict": "too_early",
+   "actual": "Targeting around 300 crore capex",
+   "note": "Full year FY27 capex target will be evaluated at fiscal year-end.",
+   "checked_by": "model"
+  },
+  {
+   "id": "G28",
+   "call": "Q4 FY26",
+   "call_url": "https://www.astralltd.com/wp-content/uploads/2026/05/Analysts-Meet-2026-Transcript.pdf",
+   "page": 24,
+   "metric": "ebitda_margin",
+   "horizon": "FY27",
+   "quote": "Plumbing plumbing margin will be between 16 to 18%. So that whatever margin guidance we've been given we'll follow the same guidance for this year.",
+   "speaker": "Kairav Engineer",
+   "target_low": 16.0,
+   "target_high": 18.0,
+   "unit": "%",
+   "verdict": "behind",
+   "actual": "EBITDA margin 13.8% (Q1 + Q2 FY27 so far)",
+   "note": null,
+   "checked_by": "code"
+  }
+ ],
+ "tally": {
+  "on_track": 18,
+  "too_early": 5,
+  "unverifiable": 1,
+  "behind": 4
+ },
+ "narrative_vs_numbers": [
+  {
+   "claim": "Q2 FY27 call claims H1 EBITDA margin was 17.4%",
+   "reality": "Quarterly opm was 15.0% in Q1 FY27 and 13.0% in Q2 FY27",
+   "agree": false,
+   "cite": "Q2 FY27 call p2, Q1 FY27 opm, Q2 FY27 opm"
+  },
+  {
+   "claim": "Management stated they achieved all guidance given across the board last year",
+   "reality": "FY25 sales growth dropped to 3.4% and PAT fell -5.0% YoY",
+   "agree": false,
+   "cite": "Q4 FY26 call p16, FY25 sales_growth, FY25 pat"
+  },
+  {
+   "claim": "Management admitted India H1 EBITDA margin short by 2.5%",
+   "reality": "Q2 FY27 opm declined to 13.0% from 15.0% in Q1 FY27",
+   "agree": true,
+   "cite": "Q2 FY27 call p12, Q2 FY27 opm"
+  },
+  {
+   "claim": "Q1 FY27 sales momentum remained strong across pipe and adhesive businesses",
+   "reality": "Q1 FY27 sales grew 15.9% YoY to ₹1,578 crore",
+   "agree": true,
+   "cite": "Q1 FY27 call p4, Q1 FY27 sales_yoy"
+  }
+ ],
+ "bull": [
+  {
+   "point": "Q2 FY27 top-line grew 26.1% YoY to ₹1,988 crore",
+   "cite": "Q2 FY27 sales_yoy"
+  },
+  {
+   "point": "FY26 cash flow from operations surged to ₹1,117 crore",
+   "cite": "FY26 cfo"
+  },
+  {
+   "point": "H1 FY27 achieved 10.1% volume growth despite industry headwinds",
+   "cite": "Q2 FY27 call p2"
+  }
+ ],
+ "bear": [
+  {
+   "point": "Q2 FY27 operating margin fell to 13.0%, missing earlier 16-18% guidance",
+   "cite": "Q2 FY27 opm, G16"
+  },
+  {
+   "point": "Q2 FY27 PAT contracted -5.9% YoY to ₹127 crore",
+   "cite": "Q2 FY27 pat_yoy"
+  },
+  {
+   "point": "Management acknowledged H1 India EBITDA margin missed internal targets by 2.5%",
+   "cite": "Q2 FY27 call p12"
+  }
+ ],
+ "verdict": "Astral delivers strong top-line revenue growth, but management consistently struggles to achieve its ambitious 16-18% EBITDA margin targets during cost pressures.",
+ "sources": [
+  {
+   "type": "financials",
+   "label": "screener.in (consolidated)",
+   "url": "https://www.screener.in/company/ASTRAL/consolidated/"
+  },
+  {
+   "type": "transcript",
+   "label": "Q2 FY27 call (Nov 2026)",
+   "url": "https://www.astralltd.com/wp-content/uploads/2026/11/Equirus-Astral-Nov05-2026-1.pdf"
+  },
+  {
+   "type": "transcript",
+   "label": "Q1 FY27 call (Aug 2026)",
+   "url": "https://www.astralltd.com/wp-content/uploads/2026/08/Equirus-Astral-Aug12-2026-1.pdf"
+  },
+  {
+   "type": "transcript",
+   "label": "Q4 FY26 call (May 2026)",
+   "url": "https://www.astralltd.com/wp-content/uploads/2026/05/Analysts-Meet-2026-Transcript.pdf"
+  },
+  {
+   "type": "transcript",
+   "label": "Q3 FY26 call (Feb 2026)",
+   "url": "https://nsearchives.nseindia.com/corporate/ASTRAL_05022026201047_Earning_Call.pdf"
+  }
+ ],
+ "cost": {
+  "calls": 5,
+  "cached": 0,
+  "tokens_in": 30603,
+  "tokens_out": 6392,
+  "by_model": {
+   "gemini-3.5-flash": {
+    "calls": 4,
+    "tokens_in": 29927,
+    "tokens_out": 6352
+   },
+   "gemini-3.5-flash-lite": {
+    "calls": 1,
+    "tokens_in": 676,
+    "tokens_out": 40
+   }
+  },
+  "seconds": 252.8
+ },
+ "discipline": "Primary sources only: company filings via screener.in, earnings-call transcripts. No news, broker notes or model memory."
+}
