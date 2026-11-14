@@ -27,6 +27,7 @@ from . import pdftext
 from .llm import LLM, LLMUnavailable, tavily_search
 
 log = logging.getLogger(__name__)
+IST = __import__("zoneinfo").ZoneInfo("Asia/Kolkata")
 
 CATEGORIES = ["results", "M&A", "fund_raise", "management_change", "litigation", "insider_trading",
               "earnings_call", "investor_meetings", "credit_rating", "dividend", "bonus_split", "capex",
@@ -599,5 +600,5 @@ def build_feed(ann: dict, alerts: dict, store: dict, names: dict, sectors: dict)
     counts = defaultdict(int)
     for f in feed:
         counts[f["tier"]] += 1
-    return {"generated_at": datetime.now().isoformat(timespec="seconds"), "window": ann.get("window"),
+    return {"generated_at": datetime.now(IST).isoformat(timespec="seconds"), "window": ann.get("window"),
             "weights": WEIGHTS, "tiers": {"top": TOP, "worth": WORTH}, "counts": dict(counts), "items": feed}

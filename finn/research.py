@@ -30,6 +30,7 @@ from .config import ROOT
 from .llm import LLM
 
 log = logging.getLogger(__name__)
+IST = __import__("zoneinfo").ZoneInfo("Asia/Kolkata")
 SCREENER = "https://www.screener.in/company/{sym}/{view}"
 RESEARCH_DIR = ROOT / "data" / "research"
 
@@ -510,7 +511,7 @@ def research(symbol: str, llm: LLM | None = None, n_calls: int = 4, with_ar: boo
         tally[p["verdict"]] = tally.get(p["verdict"], 0) + 1
 
     return {
-        "symbol": symbol, "name": company, "generated_at": datetime.now().isoformat(timespec="seconds"),
+        "symbol": symbol, "name": company, "generated_at": datetime.now(IST).isoformat(timespec="seconds"),
         "as_of": date.today().isoformat(), "business": business, **nums,
         "calls": calls, "promises": promises, "tally": tally,
         "narrative_vs_numbers": analysis.get("narrative_vs_numbers") or [],
