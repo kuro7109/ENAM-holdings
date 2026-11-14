@@ -63,7 +63,7 @@ python run_enrich.py --dry-run            # see the call plan before spending
 python run_enrich.py                      # results cards, people, one-liners -> feed.json
 python run_research.py --demo             # precompute research for the companies in portfolio.yaml
 python run_research.py HAVELLS --probe    # check what was parsed from screener.in (no LLM)
-python -m pytest -q                       # 64 offline tests
+python -m pytest -q                       # 70 offline tests
 
 cd web && npm install && npm run dev      # app on http://localhost:5173
 ```
@@ -76,6 +76,13 @@ pipeline (`scripts/make_sample_data.py`), so the UI can be built offline.
   `VITE_API_URL` = the Render URL below. Every data push redeploys.
 - **Live research API:** Render → New → Blueprint → this repo (`render.yaml`), add the keys.
 - **Daily refresh:** add the three keys as GitHub Actions secrets.
+
+## On real data (30 days to 13 Nov 2026)
+
+241 filings across 18 holdings → ~35 ranked as needing attention, 146 folded as routine.
+12 results cards with QoQ/YoY; 17 management changes with who-is-this; 94 one-liners.
+Research: Pidilite, Havells, Astral, Kaynes, with 14–28 tracked promises each.
+Total model spend for all of it: ~0.5M input tokens on free tiers (₹0).
 
 ## Decisions
 
