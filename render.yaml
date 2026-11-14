@@ -1,0 +1,17 @@
+# Render blueprint for the on-demand research API (free plan).
+# Dashboard -> New -> Blueprint -> pick this repo, then paste the three keys when asked.
+services:
+  - type: web
+    name: finn-api
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn api.server:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /api/health
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.11.9"
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: GROQ_API_KEY
+        sync: false
