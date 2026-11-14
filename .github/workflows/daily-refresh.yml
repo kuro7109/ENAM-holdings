@@ -1,7 +1,8 @@
-# Refreshes data/out/*.json every weekday after market close and commits it,
-# so the deployed frontend always reads precomputed, instant-loading data.
+# Refreshes data/out/*.json every weekday after market close and commits it.
+# Vercel redeploys on the push, so the app always reads fresh, precomputed, instant-loading data.
 # Note: NSE often blocks cloud/datacenter IPs. The BSE fallback usually still works;
 # if both are blocked from Actions, run `python run_daily.py` locally and push.
+# Add GEMINI_API_KEY / GROQ_API_KEY / TAVILY_API_KEY under Settings -> Secrets -> Actions.
 name: daily-refresh
 on:
   schedule:
@@ -19,11 +20,16 @@ jobs:
           python-version: "3.11"
           cache: pip
       - run: pip install -r requirements.txt
-      - run: python run_daily.py --days 30 || true   # partial data beats no data
+      - run: python run_daily.py --days 30 || true          # partial data beats no data
+      - run: python run_enrich.py --max-calls 60 || true     # only new filings cost anything
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          TAVILY_API_KEY: ${{ secrets.TAVILY_API_KEY }}
       - name: Commit refreshed data
         run: |
           git config user.name "finn-bot"
           git config user.email "finn-bot@users.noreply.github.com"
-          git add data/out
+          git add data/out data/research
           git diff --cached --quiet || git commit -m "data: refresh $(date -u +%F)"
           git push

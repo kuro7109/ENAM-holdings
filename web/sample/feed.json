@@ -1,0 +1,691 @@
+{
+ "generated_at": "2026-11-14T21:04:07",
+ "window": {
+  "from": "2026-10-14",
+  "to": "2026-11-13",
+  "days": 30
+ },
+ "weights": {
+  "results": 80,
+  "M&A": 75,
+  "litigation": 65,
+  "management_change": 55,
+  "fund_raise": 60,
+  "pledging": 55,
+  "credit_rating": 45,
+  "capex": 50,
+  "insider_trading": 40,
+  "bonus_split": 40,
+  "dividend": 30,
+  "press_release": 30,
+  "earnings_call": 15,
+  "investor_meetings": 8,
+  "agm_egm": 8,
+  "postal_ballot": 8,
+  "unclassified": 5
+ },
+ "tiers": {
+  "top": 70,
+  "worth": 40
+ },
+ "counts": {
+  "top": 8,
+  "routine": 12,
+  "worth": 2
+ },
+ "items": [
+  {
+   "id": "s04",
+   "symbol": "DIXON",
+   "name": "Dixon Technologies",
+   "sector": "Electronics Mfg",
+   "filed_at": "2026-11-12T19:10:00+05:30",
+   "source": "NSE",
+   "category": "M&A",
+   "tags": [],
+   "title": "Acquisition of 51% stake in a display module maker",
+   "exchange_category": "Acquisition",
+   "pdf_url": "https://www.nseindia.com/companies-listing/corporate-filings-announcements",
+   "summary": "Buys 51% of a display-module maker for ₹410 cr; adds backward integration for TVs",
+   "score": 100,
+   "tier": "top",
+   "why": [
+    "Stock moved on it"
+   ],
+   "enriched": "ok",
+   "related": [],
+   "alert": {
+    "date": "2026-11-13",
+    "pct_change": 5.97,
+    "vol_ratio": 4.17,
+    "sigma": 3.28,
+    "headline": "+6.0% on the day, 4.2x its 20-day avg volume, a 3.3σ move for this stock",
+    "severity": "high"
+   }
+  },
+  {
+   "id": "s14",
+   "symbol": "ASIANPAINT",
+   "name": "Asian Paints",
+   "sector": "Paints",
+   "filed_at": "2026-11-12T18:00:00+05:30",
+   "source": "NSE",
+   "category": "results",
+   "tags": [
+    "newspaper_ad",
+    "routine"
+   ],
+   "title": "Copy of newspaper publication of financial results",
+   "exchange_category": "Newspaper Publication",
+   "pdf_url": "https://www.nseindia.com/companies-listing/corporate-filings-announcements",
+   "summary": null,
+   "score": 16.0,
+   "tier": "routine",
+   "why": [],
+   "enriched": null,
+   "related": []
+  },
+  {
+   "id": "s00",
+   "symbol": "TRENT",
+   "name": "Trent",
+   "sector": "Retail",
+   "filed_at": "2026-11-12T17:40:00+05:30",
+   "source": "NSE",
+   "category": "results",
+   "tags": [],
+   "title": "Financial Results for the quarter ended September 30, 2026",
+   "exchange_category": "Financial Results",
+   "pdf_url": "https://www.nseindia.com/companies-listing/corporate-filings-announcements",
+   "summary": "Revenue +25% YoY, PAT +5% YoY, EBITDA margin 16.9% (-150 bps)",
+   "score": 100.0,
+   "tier": "top",
+   "why": [
+    "Stock moved on it"
+   ],
+   "enriched": "ok",
+   "related": [
+    {
+     "id": "s01",
+     "title": "Press release on financial results for Q2 FY27",
+     "pdf_url": "https://www.nseindia.com/companies-listing/corporate-filings-announcements",
+     "filed_at": "2026-11-12T17:52:00+05:30"
+    },
+    {
+     "id": "s02",
+     "title": "Investor presentation Q2 FY27",
+     "pdf_url": "https://www.nseindia.com/companies-listing/corporate-filings-announcements",
+     "filed_at": "2026-11-12T18:05:00+05:30"
+    }
+   ],
+   "results": {
+    "statement": "consolidated",
+    "unit": "₹ crore",
+    "is_lender": false,
+    "labels": {
+     "current": "Q2 FY27",
+     "previous_quarter": "Q1 FY27",
+     "year_ago_quarter": "Q2 FY26"
+    },
+    "rows": [
+     {
+      "metric": "Revenue",
+      "key": "revenue",
+      "current": 5210.0,
+      "previous_quarter": 5080.0,
+      "year_ago_quarter": 4157.0,
+      "qoq": 2.6,
+      "yoy": 25.3
+     },
+     {
+      "metric": "EBITDA",
+      "key": "ebitda",
+      "current": 878.0,
+      "previous_quarter": 905.0,
+      "year_ago_quarter": 766.0,
+      "qoq": -3.0,
+      "yoy": 14.6
+     },
+     {
+      "metric": "PBT",
+      "key": "pbt",
+      "current": 482.0,
+      "previous_quarter": 541.0,
+      "year_ago_quarter": 450.0,
+      "qoq": -10.9,
+      "yoy": 7.1
+     },
+     {
+      "metric": "PAT",
+      "key": "pat",
+      "current": 352.0,
+      "previous_quarter": 401.0,
+      "year_ago_quarter": 335.0,
+      "qoq": -12.2,
+      "yoy": 5.1
+     }
+    ],
+    "margins": {
+     "ebitda": {
+      "current": 16.9,
+      "previous_quarter": 17.8,
+      "year_ago_quarter": 18.4
+     },
+     "pat": {
+      "current": 6.8,
+      "previous_quarter": 7.9,
+      "year_ago_quarter": 8.1
+     }
+    },
+    "checks": [],
+    "headline": "Revenue +25% YoY, PAT +5% YoY, EBITDA margin 16.9% (-150 bps)",
+    "ebitda_note": "EBITDA = PBT + finance costs + D&A − other income"
+   },
+   "alert": {
+    "date": "2026-11-13",
+    "pct_change": -6.85,
+    "vol_ratio": 3.51,
+    "sigma": -6.63,
+    "headline": "-6.9% on the day, 3.5x its 20-day avg volume, a 6.6σ move for this stock",
+    "severity": "high"
+   }
+  },
+  {
+   "id": "s19",
+   "symbol": "IRFC",
+   "name": "IRFC",
+   "sector": "PSU Finance",
+   "filed_at": "2026-11-12T12:30:00+05:30",
+   "source": "NSE",
+   "category": "postal_ballot",
+   "tags": [],
+   "title": "Voting results of postal ballot",
+   "exchange_category": "Shareholders meeting",
+   "pdf_url": "https://www.nseindia.com/companies-listing/corporate-filings-announcements",
+   "summary": null,
+   "score": 8.0,
+   "tier": "routine",
+   "why": [],
+   "enriched": null,
+   "related": []
+  },
+  {
+   "id": "s05",
+   "symbol": "POLYCAB",
+   "name": "Polycab India",
+   "sector": "Cables & Wires",
+   "filed_at": "2026-11-12T11:05:00+05:30",
+   "source": "NSE",
+   "category": "management_change",
+   "tags": [
+    "auditor_resignation",
+    "red_flag"
+   ],
+   "title": "Resignation of Statutory Auditor",
+   "exchange_category": "Change in Auditors",
+   "pdf_url": "https://www.nseindia.com/companies-listing/corporate-filings-announcements",
+   "summary": "Statutory auditor resigns mid-term citing 'pre-occupation'; no other reason given",
+   "score": 100,
+   "tier": "top",
+   "why": [
+    "Red flag",
+    "Stock moved on it"
+   ],
+   "enriched": "ok",
+   "related": [],
+   "alert": {
+    "date": "2026-11-13",
+    "pct_change": -2.76,
+    "vol_ratio": 2.86,
+    "sigma": -2.48,
+    "headline": "-2.8% on the day, 2.9x its 20-day avg volume, a 2.5σ move for this stock",
+    "severity": "medium"
+   }
+  },
+  {
+   "id": "s13",
+   "symbol": "MARUTI",
+   "name": "Maruti Suzuki",
+   "sector": "Auto",
+   "filed_at": "2026-11-12T09:00:00+05:30",
+   "source": "NSE",
+   "category": "results",
+   "tags": [
+    "intimation"
+   ],
+   "title": "Board meeting intimation to consider financial results",
+   "exchange_category": "Board Meeting",
+   "pdf_url": "https://www.nseindia.com/companies-listing/corporate-filings-announcements",
+   "summary": null,
+   "score": 16.0,
+   "tier": "routine",
+   "why": [],
+   "enriched": null,
+   "related": []
+  },
+  {
+   "id": "s03",
+   "symbol": "TITAN",
+   "name": "Titan Company",
+   "sector": "Consumer",
+   "filed_at": "2026-11-11T16:20:00+05:30",
+   "source": "NSE",
+   "category": "management_change",
+   "tags": [
+    "top_role"
+   ],
+   "title": "Appointment of Mr. Arvind Rao as Chief Financial Officer",
+   "exchange_category": "Change in Management",
+   "pdf_url": "https://www.nseindia.com/companies-listing/corporate-filings-announcements",
+   "summary": "Arvind Rao named CFO from 1 Dec; succeeds Ashok Sonthalia, retiring",
+   "score": 100.0,
+   "tier": "top",
+   "why": [
+    "Top-role change",
+    "Stock moved on it"
+   ],
+   "enriched": "ok",
+   "related": [],
+   "management": {
+    "people": [
+     {
+      "name": "Arvind Rao",
+      "role": "Chief Financial Officer",
+      "change": "appointed",
+      "effective": "1 December 2026",
+      "top_role": true,
+      "profile": null,
+      "bio": "Finance leader with 22 years across consumer and retail; previously CFO of a listed consumer-durables maker and finance head at a multinational FMCG company. Chartered Accountant.",
+      "previous_employers": [
+       "Consumer durables (listed)",
+       "MNC FMCG"
+      ],
+      "bio_sources": [
+       "https://www.linkedin.com/"
+      ]
+     },
+     {
+      "name": "Ashok Sonthalia",
+      "role": "Chief Financial Officer",
+      "change": "retired",
+      "effective": "30 November 2026",
+      "top_role": true,
+      "profile": null
+     }
+    ]
+   },
+   "alert": {
+    "date": "2026-11-12",
+    "pct_change": 2.12,
+    "vol_ratio": 3.33,
+    "sigma": 1.94,
+    "headline": "+2.1% on the day, 3.3x its 20-day avg volume",
+    "severity": "medium"
+   }
+  },
+  {
+   "id": "s10",
+   "symbol": "ITC",
+   "name": "ITC",
+   "sector": "FMCG",
+   "filed_at": "2026-11-11T15:00:00+05:30",
+   "source": "NSE",
+   "category": "dividend",
+   "tags": [],
+   "title": "Record date for interim dividend of Rs 6.50 per share",
+   "exchange_category": "Dividend",
+   "pdf_url": "https://www.nseindia.com/companies-listing/corporate-filings-announcements",
+   "summary": "Interim dividend ₹6.50/share; record date 20 Nov",
+   "score": 20.0,
+   "tier": "routine",
+   "why": [],
+   "enriched": "ok",
+   "related": []
+  },
+  {
+   "id": "s15",
+   "symbol": "RELIANCE",
+   "name": "Reliance Industries",
+   "sector": "Energy & Conglomerate",
+   "filed_at": "2026-11-11T14:00:00+05:30",
+   "source": "NSE",
+   "category": "unclassified",
+   "tags": [
+    "routine"
+   ],
+   "title": "Closure of trading window",
+   "exchange_category": "Trading Window",
+   "pdf_url": "https://www.nseindia.com/companies-listing/corporate-filings-announcements",
+   "summary": null,
+   "score": 1.0,
+   "tier": "routine",
+   "why": [],
+   "enriched": null,
+   "related": []
+  },
+  {
+   "id": "s17",
+   "symbol": "PERSISTENT",
+   "name": "Persistent Systems",
+   "sector": "IT Services",
+   "filed_at": "2026-11-11T13:00:00+05:30",
+   "source": "NSE",
+   "category": "unclassified",
+   "tags": [
+    "routine"
+   ],
+   "title": "Allotment of equity shares under ESOP scheme",
+   "exchange_category": "ESOP",
+   "pdf_url": "https://www.nseindia.com/companies-listing/corporate-filings-announcements",
+   "summary": null,
+   "score": 1.0,
+   "tier": "routine",
+   "why": [],
+   "enriched": null,
+   "related": []
+  },
+  {
+   "id": "s07",
+   "symbol": "LT",
+   "name": "Larsen & Toubro",
+   "sector": "Capital Goods",
+   "filed_at": "2026-11-11T09:15:00+05:30",
+   "source": "NSE",
+   "category": "press_release",
+   "tags": [],
+   "title": "L&T bags 'mega' order for a hydro power project in the Middle East",
+   "exchange_category": "Press Release",
+   "pdf_url": "https://www.nseindia.com/companies-listing/corporate-filings-announcements",
+   "summary": "'Mega' order (₹10,000–15,000 cr band) for a Middle East hydro project",
+   "score": 40.0,
+   "tier": "worth",
+   "why": [],
+   "enriched": "ok",
+   "related": []
+  },
+  {
+   "id": "s06",
+   "symbol": "HDFCBANK",
+   "name": "HDFC Bank",
+   "sector": "Private Bank",
+   "filed_at": "2026-11-10T18:30:00+05:30",
+   "source": "NSE",
+   "category": "results",
+   "tags": [],
+   "title": "Unaudited financial results for the quarter ended 30 September 2026",
+   "exchange_category": "Financial Results",
+   "pdf_url": "https://www.nseindia.com/companies-listing/corporate-filings-announcements",
+   "summary": "Total income +7% YoY, PAT +11% YoY",
+   "score": 80.0,
+   "tier": "top",
+   "why": [],
+   "enriched": "ok",
+   "related": [],
+   "results": {
+    "statement": "standalone",
+    "unit": "₹ crore",
+    "is_lender": true,
+    "labels": {
+     "current": "Q2 FY27",
+     "previous_quarter": "Q1 FY27",
+     "year_ago_quarter": "Q2 FY26"
+    },
+    "rows": [
+     {
+      "metric": "Total income",
+      "key": "revenue",
+      "current": 91200.0,
+      "previous_quarter": 89400.0,
+      "year_ago_quarter": 85500.0,
+      "qoq": 2.0,
+      "yoy": 6.7
+     },
+     {
+      "metric": "PBT",
+      "key": "pbt",
+      "current": 22900.0,
+      "previous_quarter": 22100.0,
+      "year_ago_quarter": 20600.0,
+      "qoq": 3.6,
+      "yoy": 11.2
+     },
+     {
+      "metric": "PAT",
+      "key": "pat",
+      "current": 18700.0,
+      "previous_quarter": 18150.0,
+      "year_ago_quarter": 16820.0,
+      "qoq": 3.0,
+      "yoy": 11.2
+     }
+    ],
+    "margins": {
+     "pat": {
+      "current": 20.5,
+      "previous_quarter": 20.3,
+      "year_ago_quarter": 19.7
+     }
+    },
+    "checks": [],
+    "headline": "Total income +7% YoY, PAT +11% YoY",
+    "ebitda_note": null
+   }
+  },
+  {
+   "id": "s16",
+   "symbol": "HAL",
+   "name": "Hindustan Aeronautics",
+   "sector": "Defence",
+   "filed_at": "2026-11-10T17:00:00+05:30",
+   "source": "NSE",
+   "category": "investor_meetings",
+   "tags": [
+    "intimation"
+   ],
+   "title": "Schedule of analyst / institutional investor meet",
+   "exchange_category": "Investor Meet",
+   "pdf_url": "https://www.nseindia.com/companies-listing/corporate-filings-announcements",
+   "summary": null,
+   "score": 1.6,
+   "tier": "routine",
+   "why": [],
+   "enriched": null,
+   "related": []
+  },
+  {
+   "id": "s12",
+   "symbol": "SUZLON",
+   "name": "Suzlon Energy",
+   "sector": "Renewables",
+   "filed_at": "2026-11-10T10:30:00+05:30",
+   "source": "NSE",
+   "category": "press_release",
+   "tags": [],
+   "title": "Suzlon secures 381 MW order from a leading IPP",
+   "exchange_category": "Press Release",
+   "pdf_url": "https://www.nseindia.com/companies-listing/corporate-filings-announcements",
+   "summary": "381 MW wind turbine order from an independent power producer",
+   "score": 50.0,
+   "tier": "worth",
+   "why": [
+    "Stock moved on it"
+   ],
+   "enriched": "ok",
+   "related": [],
+   "alert": {
+    "date": "2026-11-11",
+    "pct_change": 7.47,
+    "vol_ratio": 4.25,
+    "sigma": 2.95,
+    "headline": "+7.5% on the day, 4.2x its 20-day avg volume, a 3.0σ move for this stock",
+    "severity": "high"
+   }
+  },
+  {
+   "id": "s18",
+   "symbol": "BHARTIARTL",
+   "name": "Bharti Airtel",
+   "sector": "Telecom",
+   "filed_at": "2026-11-09T18:00:00+05:30",
+   "source": "NSE",
+   "category": "earnings_call",
+   "tags": [],
+   "title": "Transcript of the earnings call for Q2 FY27",
+   "exchange_category": "Earnings Call",
+   "pdf_url": "https://www.nseindia.com/companies-listing/corporate-filings-announcements",
+   "summary": null,
+   "score": 15.0,
+   "tier": "routine",
+   "why": [],
+   "enriched": null,
+   "related": []
+  },
+  {
+   "id": "s08",
+   "symbol": "BAJFINANCE",
+   "name": "Bajaj Finance",
+   "sector": "NBFC",
+   "filed_at": "2026-11-09T12:00:00+05:30",
+   "source": "NSE",
+   "category": "credit_rating",
+   "tags": [],
+   "title": "CRISIL reaffirms AAA/Stable rating on NCDs",
+   "exchange_category": "Credit Rating",
+   "pdf_url": "https://www.nseindia.com/companies-listing/corporate-filings-announcements",
+   "summary": "CRISIL reaffirms AAA/Stable on NCDs; no change",
+   "score": 35.0,
+   "tier": "routine",
+   "why": [],
+   "enriched": "ok",
+   "related": []
+  },
+  {
+   "id": "s20",
+   "symbol": "LT",
+   "name": "Larsen & Toubro",
+   "sector": "Capital Goods",
+   "filed_at": "2026-11-09T11:00:00+05:30",
+   "source": "NSE",
+   "category": "unclassified",
+   "tags": [
+    "routine"
+   ],
+   "title": "Compliance certificate under Regulation 74(5)",
+   "exchange_category": "Compliance",
+   "pdf_url": "https://www.nseindia.com/companies-listing/corporate-filings-announcements",
+   "summary": null,
+   "score": 1.0,
+   "tier": "routine",
+   "why": [],
+   "enriched": null,
+   "related": []
+  },
+  {
+   "id": "s09",
+   "symbol": "SUNPHARMA",
+   "name": "Sun Pharma",
+   "sector": "Pharma",
+   "filed_at": "2026-11-08T20:00:00+05:30",
+   "source": "NSE",
+   "category": "litigation",
+   "tags": [],
+   "title": "Receipt of warning letter from USFDA for Halol facility",
+   "exchange_category": "Regulatory",
+   "pdf_url": "https://www.nseindia.com/companies-listing/corporate-filings-announcements",
+   "summary": "USFDA warning letter for Halol plant; supplies from the site at risk",
+   "score": 85.0,
+   "tier": "top",
+   "why": [],
+   "enriched": "ok",
+   "related": []
+  },
+  {
+   "id": "s21",
+   "symbol": "TITAN",
+   "name": "Titan Company",
+   "sector": "Consumer",
+   "filed_at": "2026-11-08T10:00:00+05:30",
+   "source": "NSE",
+   "category": "investor_meetings",
+   "tags": [],
+   "title": "Intimation of investor conference participation",
+   "exchange_category": "Analysts/Institutional Investor Meet",
+   "pdf_url": "https://www.nseindia.com/companies-listing/corporate-filings-announcements",
+   "summary": null,
+   "score": 28.0,
+   "tier": "routine",
+   "why": [
+    "Stock moved on it"
+   ],
+   "enriched": null,
+   "related": [],
+   "alert": {
+    "date": "2026-11-12",
+    "pct_change": 2.12,
+    "vol_ratio": 3.33,
+    "sigma": 1.94,
+    "headline": "+2.1% on the day, 3.3x its 20-day avg volume",
+    "severity": "medium"
+   }
+  },
+  {
+   "id": "s22",
+   "symbol": "POLYCAB",
+   "name": "Polycab India",
+   "sector": "Cables & Wires",
+   "filed_at": "2026-11-07T17:00:00+05:30",
+   "source": "NSE",
+   "category": "results",
+   "tags": [],
+   "title": "Audited financial results for the quarter ended September 30, 2026",
+   "exchange_category": "Financial Results",
+   "pdf_url": "https://www.nseindia.com/companies-listing/corporate-filings-announcements",
+   "summary": null,
+   "score": 80.0,
+   "tier": "top",
+   "why": [],
+   "enriched": null,
+   "related": []
+  },
+  {
+   "id": "s11",
+   "symbol": "INFY",
+   "name": "Infosys",
+   "sector": "IT Services",
+   "filed_at": "2026-11-07T16:00:00+05:30",
+   "source": "NSE",
+   "category": "fund_raise",
+   "tags": [],
+   "title": "Board approves buyback of equity shares through tender offer",
+   "exchange_category": "Buyback",
+   "pdf_url": "https://www.nseindia.com/companies-listing/corporate-filings-announcements",
+   "summary": "Buyback via tender offer approved; size and price to follow",
+   "score": 70.0,
+   "tier": "top",
+   "why": [],
+   "enriched": "ok",
+   "related": []
+  },
+  {
+   "id": "s23",
+   "symbol": "ITC",
+   "name": "ITC",
+   "sector": "FMCG",
+   "filed_at": "2026-11-06T16:00:00+05:30",
+   "source": "NSE",
+   "category": "unclassified",
+   "tags": [
+    "routine"
+   ],
+   "title": "Shareholding pattern for the quarter ended September 2026",
+   "exchange_category": "Shareholding",
+   "pdf_url": "https://www.nseindia.com/companies-listing/corporate-filings-announcements",
+   "summary": null,
+   "score": 1.0,
+   "tier": "routine",
+   "why": [],
+   "enriched": null,
+   "related": []
+  }
+ ]
+}

@@ -97,7 +97,8 @@ def run_prices(cfg: Config, store: Store, force: bool = False, out_dir: Path = O
     })
     # Raw per-day signals so the app can re-apply *the user's* thresholds instantly, on the phone.
     write_json(out_dir, "signals.json", {"generated_at": generated, "as_of": as_of,
-                                         "defaults": cfg.alerts_for(""), "stocks": signals})
+                                         "defaults": cfg.alerts_for(""), "stocks": signals,
+                                         "overrides": {s: c.alerts for s, c in names.items() if c.alerts}})
     today = [a for a in alerts if a["date"] == as_of]
     return {"stocks": len(snapshots), "failed": failed, "alerts_today": len(today),
             "alerts_total": len(alerts), "as_of": as_of}
