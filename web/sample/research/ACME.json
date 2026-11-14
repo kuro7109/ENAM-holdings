@@ -1,23 +1,12 @@
 {
  "symbol": "ACME",
  "name": "Acme Adhesives (sample)",
- "generated_at": "2026-11-14T21:04:07",
+ "generated_at": "2026-11-15T03:57:17+05:30",
  "as_of": "2026-11-14",
  "business": {
   "about": "Acme makes adhesives and sealants.",
   "key_points": null,
-  "segments": [
-   {
-    "name": "Consumer & bazaar",
-    "share_or_growth": "~78% of sales",
-    "page": 3
-   },
-   {
-    "name": "B2B",
-    "share_or_growth": "~22%, growing faster",
-    "page": 3
-   }
-  ]
+  "segments": []
  },
  "snapshot": {
   "market_cap_cr": 150000.0,
@@ -311,129 +300,17 @@
    "month": "Nov 2026",
    "quarter": "Q2 FY27",
    "url": "https://x/t1.pdf",
-   "status": "ok",
-   "tone": "Measured; leaning on rural recovery and lower input costs.",
-   "pushback": [
-    "Rural demand durability",
-    "Pricing versus new entrants"
-   ],
-   "delivery_comments": [],
-   "segments": [
-    {
-     "name": "Consumer & bazaar",
-     "share_or_growth": "~78% of sales",
-     "page": 3
-    },
-    {
-     "name": "B2B",
-     "share_or_growth": "~22%, growing faster",
-     "page": 3
-    }
-   ]
+   "status": "unreadable"
   },
   {
    "month": "Aug 2026",
    "quarter": "Q1 FY27",
    "url": "https://x/t2.pdf",
-   "status": "ok",
-   "tone": "Upbeat on demand; defensive on pricing.",
-   "pushback": [],
-   "delivery_comments": [],
-   "segments": []
+   "status": "unreadable"
   }
  ],
- "promises": [
-  {
-   "id": "G1",
-   "call": "Q2 FY27",
-   "call_url": "https://x/t1.pdf",
-   "page": 5,
-   "metric": "revenue_growth",
-   "horizon": "H2 FY27",
-   "quote": "We remain confident of low-teens volume-led growth through the second half",
-   "speaker": "MD",
-   "target_low": 12,
-   "target_high": null,
-   "unit": "%",
-   "verdict": "too_early",
-   "actual": "H2 FY27 has not started",
-   "note": "Recheck after the Q3 call",
-   "checked_by": "model"
-  },
-  {
-   "id": "G2",
-   "call": "Q2 FY27",
-   "call_url": "https://x/t1.pdf",
-   "page": 7,
-   "metric": "ebitda_margin",
-   "horizon": "FY27",
-   "quote": "We should operate in a 20 to 24 percent EBITDA band for the year",
-   "speaker": "CFO",
-   "target_low": 20,
-   "target_high": 24,
-   "unit": "%",
-   "verdict": "too_early",
-   "actual": null,
-   "note": null,
-   "checked_by": "code"
-  },
-  {
-   "id": "G3",
-   "call": "Q1 FY27",
-   "call_url": "https://x/t2.pdf",
-   "page": 4,
-   "metric": "revenue_growth",
-   "horizon": "Q2 FY27",
-   "quote": "We expect double-digit growth in the September quarter",
-   "speaker": "MD",
-   "target_low": 10,
-   "target_high": null,
-   "unit": "%",
-   "verdict": "delivered",
-   "actual": "10.0% (Q2 FY27 sales_yoy)",
-   "note": null,
-   "checked_by": "code"
-  },
-  {
-   "id": "G4",
-   "call": "Q1 FY27",
-   "call_url": "https://x/t2.pdf",
-   "page": 6,
-   "metric": "ebitda_margin",
-   "horizon": "Q2 FY27",
-   "quote": "Margins should move up to about 22 percent by the second quarter",
-   "speaker": "CFO",
-   "target_low": 22,
-   "target_high": null,
-   "unit": "%",
-   "verdict": "partly",
-   "actual": "21.0% (Q2 FY27 opm)",
-   "note": null,
-   "checked_by": "code"
-  },
-  {
-   "id": "G5",
-   "call": "Q1 FY27",
-   "call_url": "https://x/t2.pdf",
-   "page": 9,
-   "metric": "capex",
-   "horizon": "FY27",
-   "quote": "Capex of roughly 400 crore this year, mostly the new adhesives plant",
-   "speaker": "CFO",
-   "target_low": 400,
-   "target_high": null,
-   "unit": "₹ cr",
-   "verdict": "too_early",
-   "actual": "H1 capex not split out yet",
-   "note": "Check the H1 cash-flow statement in the Q2 filing",
-   "checked_by": "model"
-  }
- ],
- "tally": {
-  "too_early": 3,
-  "delivered": 1,
-  "partly": 1
- },
+ "promises": [],
+ "tally": {},
  "narrative_vs_numbers": [
   {
    "claim": "Margins expanding on lower input costs",
@@ -488,16 +365,6 @@
    "type": "financials",
    "label": "screener.in (consolidated)",
    "url": "https://www.screener.in/company/ACME/consolidated/"
-  },
-  {
-   "type": "transcript",
-   "label": "Q2 FY27 call (Nov 2026)",
-   "url": "https://x/t1.pdf"
-  },
-  {
-   "type": "transcript",
-   "label": "Q1 FY27 call (Aug 2026)",
-   "url": "https://x/t2.pdf"
   }
  ],
  "cost": {

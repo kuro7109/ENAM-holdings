@@ -341,14 +341,20 @@ GUIDANCE given on the last calls (id, call, metric, horizon, target, quote):
 ALREADY CHECKED IN CODE (do not contradict these verdicts; you may add a note):
 {checked}
 
+WHAT MANAGEMENT LATER REPORTED on subsequent calls (use these to verify guidance the numbers table
+can't show, e.g. volume growth, capacity, launches; cite as "<call> p<page>"):
+{later}
+
 Return JSON:
-{{"promises": [{{"id": "G#", "verdict": "delivered|partly|missed|too_early|unverifiable",
+{{"promises": [{{"id": "G#", "verdict": "delivered|partly|missed|on_track|behind|too_early|unverifiable",
     "actual": "<=15 words with the number", "note": "<=20 words"}}],
   "narrative_vs_numbers": [{{"claim": "<=18 words, what management says", "reality": "<=18 words, what numbers show",
     "agree": true|false, "cite": "G# and/or numbers row"}}],
   "bull": [{{"point": "<=18 words", "cite": "..."}}],
   "bear": [{{"point": "<=18 words", "cite": "..."}}],
   "verdict": "<=28 words: does management do what it says?"}}
+Use "unverifiable" only when neither the numbers nor a later management statement speaks to it.
+Use on_track / behind when the promised period is partly reported.
 Give one promises entry per G# not already checked in code; 2-4 narrative items; 3 bull and 3 bear points."""
 
 AR_SYSTEM = """You describe a company's business from its own annual report text only. Return JSON only."""
@@ -373,49 +379,75 @@ def _fy_of_quarter(qlabel: str) -> str | None:
     return f"FY{m.group(1)}" if m else None
 
 
+def horizon_quarters(horizon: str) -> tuple[list[str], str] | None:
+    """'Q3 FY27' -> (['Q3 FY27'], 'Q3 FY27'); 'H2 FY27' -> (['Q3 FY27','Q4 FY27'], ...); 'FY27' -> all four."""
+    h = (horizon or "").upper().replace(" ", "").replace("'", "")
+    m = re.fullmatch(r"(Q[1-4])FY(\d{2})", h)
+    if m:
+        return [f"{m.group(1)} FY{m.group(2)}"], f"{m.group(1)} FY{m.group(2)}"
+    m = re.fullmatch(r"(H[12])FY(\d{2})", h)
+    if m:
+        qs = ["Q1", "Q2"] if m.group(1) == "H1" else ["Q3", "Q4"]
+        return [f"{q} FY{m.group(2)}" for q in qs], f"{m.group(1)} FY{m.group(2)}"
+    m = re.fullmatch(r"FY(\d{2})", h)
+    if m:
+        return [f"Q{i} FY{m.group(1)}" for i in range(1, 5)], f"FY{m.group(1)}"
+    return None
+
+
+def _prior(qlabel: str) -> str:
+    q, fy = qlabel.split(" FY")
+    return f"{q} FY{int(fy) - 1:02d}"
+
+
 def check_in_code(g: dict, q: list[dict], a: list[dict]) -> dict | None:
-    """Verdict for promises we can verify arithmetically. Returns None when it needs judgment."""
+    """Verdict for promises arithmetic can settle. For a period still in progress, judges the
+    quarters reported so far: on_track / behind. Returns None when it needs judgment."""
     metric, lo, hi = g.get("metric"), g.get("target_low"), g.get("target_high")
-    horizon = (g.get("horizon") or "").upper().replace(" ", "")
     if lo is None and hi is None:
         return None
     lo = lo if lo is not None else hi
     if metric not in ("revenue_growth", "ebitda_margin", "pat_growth"):
         return None
-    actual, where = None, None
-    mq = re.fullmatch(r"(Q[1-4])FY(\d{2})", horizon)
-    mf = re.fullmatch(r"FY(\d{2})", horizon)
-    if mq:
-        row = next((r for r in q if r.get("q") == f"{mq.group(1)} FY{mq.group(2)}"), None)
-        if row is None:
-            return {"verdict": "too_early", "actual": None, "where": None}
-        key = {"revenue_growth": "sales_yoy", "ebitda_margin": "opm", "pat_growth": "pat_yoy"}[metric]
-        actual, where = row.get(key), f"{row['q']} {key}"
-    elif mf:
-        fy = f"FY{mf.group(1)}"
-        row = next((r for r in a if r.get("fy") == fy), None)
-        if row is None:
-            return {"verdict": "too_early", "actual": None, "where": None}
-        if metric == "revenue_growth":
-            actual, where = row.get("sales_growth"), f"{fy} sales_growth"
-        elif metric == "ebitda_margin":
-            actual, where = row.get("opm"), f"{fy} opm"
-        else:
+    hz = horizon_quarters(g.get("horizon") or "")
+    if not hz:
+        return None
+    wanted, label = hz
+    by_q = {r.get("q"): r for r in q}
+    got = [by_q[x] for x in wanted if x in by_q and by_q[x].get("sales") is not None]
+    if not got:
+        return {"verdict": "too_early", "actual": None, "where": None}
+    complete = len(got) == len(wanted)
+    span = label if complete else f"{' + '.join(r['q'].split(' ')[0] for r in got)} {label.split(' ')[-1]} so far"
+
+    if metric == "ebitda_margin":
+        sales = sum(r["sales"] for r in got)
+        op = sum(r.get("op_profit") or 0 for r in got)
+        if not sales or any(r.get("op_profit") is None for r in got):
             return None
+        actual = round(op / sales * 100, 1)
+        hit, partly = actual >= lo - 0.5, actual >= lo - 1.5
     else:
-        return None
-    if actual is None:
-        return None
-    slack_partly = 1.5 if metric == "ebitda_margin" else max(2.0, abs(lo) * 0.2)
-    slack_hit = 0.5 if metric == "ebitda_margin" else 0.0
-    verdict = ("delivered" if actual >= lo - slack_hit else "partly" if actual >= lo - slack_partly else "missed")
-    unit = "%"
-    return {"verdict": verdict, "actual": f"{actual:.1f}{unit} ({where})", "actual_value": actual, "where": where}
+        key = "sales" if metric == "revenue_growth" else "pat"
+        prev = [by_q.get(_prior(r["q"])) for r in got]
+        if any(p is None or p.get(key) in (None, 0) for p in prev) or any(r.get(key) is None for r in got):
+            return None
+        now_v, then_v = sum(r[key] for r in got), sum(p[key] for p in prev)
+        if then_v <= 0:
+            return None
+        actual = round((now_v - then_v) / then_v * 100, 1)
+        hit, partly = actual >= lo, actual >= lo - max(2.0, abs(lo) * 0.2)
+    if complete:
+        verdict = "delivered" if hit else "partly" if partly else "missed"
+    else:
+        verdict = "on_track" if hit else "behind"
+    what = "EBITDA margin" if metric == "ebitda_margin" else "sales growth" if metric == "revenue_growth" else "PAT growth"
+    return {"verdict": verdict, "actual": f"{what} {actual:.1f}% ({span})", "actual_value": actual, "where": span}
 
 
 def _numbers_text(q: list[dict], a: list[dict]) -> str:
     lines = ["quarter | sales | sales_yoy | opm | pat | pat_yoy"]
-    for r in q[-8:]:
+    for r in q[-12:]:
         lines.append(f"{r.get('q')} | {r.get('sales')} | {r.get('sales_yoy')} | {r.get('opm')} | {r.get('pat')} | {r.get('pat_yoy')}")
     lines.append("year | sales | sales_growth | opm | pat | cfo | borrowings")
     for r in a[-5:]:
@@ -489,9 +521,12 @@ def research(symbol: str, llm: LLM | None = None, n_calls: int = 4, with_ar: boo
                           f"{g.get('target_low')}-{g.get('target_high')} {g.get('unit') or ''} | \"{g.get('quote')}\""
                           for g in guidance) or "(no transcripts available)"
         ctext = "\n".join(f"{k}: {v['verdict']} ({v.get('actual')})" for k, v in checked.items()) or "(none)"
+        later = "\n".join(f"{c['quarter']} call p{d.get('page')}: [{d.get('topic', '')}] \"{d.get('quote')}\""
+                          for c in calls for d in (c.get("delivery_comments") or [])) or "(none)"
         progress("Weighing narrative against numbers")
         analysis = llm.json("reason", VERDICT_SYSTEM, VERDICT_USER.format(
-            company=company, numbers=_numbers_text(q, a), guidance=gtext, checked=ctext), max_tokens=2500) or {}
+            company=company, numbers=_numbers_text(q, a), guidance=gtext, checked=ctext, later=later),
+            max_tokens=2500) or {}
 
     model_v = {p.get("id"): p for p in analysis.get("promises") or []}
     promises = []

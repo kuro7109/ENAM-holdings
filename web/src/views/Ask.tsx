@@ -95,7 +95,8 @@ export function Ask({ data, symbol, setSymbol }: { data: Data; symbol: string | 
 }
 
 const VERDICTS: [string, string, string][] = [
-  ["delivered", "Delivered", "var(--up)"], ["partly", "Partly", "var(--amber)"], ["missed", "Missed", "var(--down)"],
+  ["delivered", "Delivered", "var(--up)"], ["on_track", "On track", "#6aa486"], ["partly", "Partly", "var(--amber)"],
+  ["behind", "Behind", "#d08a3c"], ["missed", "Missed", "var(--down)"],
   ["too_early", "Too early", "#9aa3b2"], ["unverifiable", "Can't verify", "#c4cad3"],
 ];
 
@@ -135,7 +136,7 @@ function Research({ r }: { r: any }) {
                 {p.note && <span className="muted"> {p.note}</span>}
               </div>
               <div className="tiny faint" style={{ marginTop: 4 }}>
-                {p.checked_by === "code" ? "Checked against reported numbers" : "Judged by the model from the numbers table"}
+                {p.checked_by === "code" ? "Checked against reported numbers" : "Judged from the numbers and what management reported later"}
                 {transcriptUrl(p) && <> · <a href={transcriptUrl(p)!} target="_blank" rel="noreferrer">Transcript p.{p.page}</a></>}
               </div>
             </div>

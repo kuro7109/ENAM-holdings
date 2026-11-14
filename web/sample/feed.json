@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-14T21:04:07",
+ "generated_at": "2026-11-15T03:57:17+05:30",
  "window": {
   "from": "2026-10-14",
   "to": "2026-11-13",
@@ -106,16 +106,16 @@
    "enriched": "ok",
    "related": [
     {
-     "id": "s01",
-     "title": "Press release on financial results for Q2 FY27",
-     "pdf_url": "https://www.nseindia.com/companies-listing/corporate-filings-announcements",
-     "filed_at": "2026-11-12T17:52:00+05:30"
-    },
-    {
      "id": "s02",
      "title": "Investor presentation Q2 FY27",
      "pdf_url": "https://www.nseindia.com/companies-listing/corporate-filings-announcements",
      "filed_at": "2026-11-12T18:05:00+05:30"
+    },
+    {
+     "id": "s01",
+     "title": "Press release on financial results for Q2 FY27",
+     "pdf_url": "https://www.nseindia.com/companies-listing/corporate-filings-announcements",
+     "filed_at": "2026-11-12T17:52:00+05:30"
     }
    ],
    "results": {
@@ -179,7 +179,8 @@
     },
     "checks": [],
     "headline": "Revenue +25% YoY, PAT +5% YoY, EBITDA margin 16.9% (-150 bps)",
-    "ebitda_note": "EBITDA = PBT + finance costs + D&A − other income"
+    "complete": true,
+    "ebitda_note": "EBITDA = PBT + finance costs + D&A − other income − one-offs"
    },
    "alert": {
     "date": "2026-11-13",
@@ -468,6 +469,7 @@
     },
     "checks": [],
     "headline": "Total income +7% YoY, PAT +11% YoY",
+    "complete": true,
     "ebitda_note": null
    }
   },

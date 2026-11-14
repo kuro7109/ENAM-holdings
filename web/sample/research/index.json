@@ -2,10 +2,6 @@
  "ACME": {
   "name": "Acme Adhesives (sample)",
   "as_of": "2026-11-14",
-  "tally": {
-   "too_early": 3,
-   "delivered": 1,
-   "partly": 1
-  }
+  "tally": {}
  }
 }

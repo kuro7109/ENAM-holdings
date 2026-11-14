@@ -84,8 +84,12 @@ def test_promise_checks_in_code():
     miss = R.check_in_code({"metric": "revenue_growth", "target_low": 18, "horizon": "Q2 FY27"}, q, a)
     margin = R.check_in_code({"metric": "ebitda_margin", "target_low": 22, "horizon": "Q2 FY27"}, q, a)
     later = R.check_in_code({"metric": "revenue_growth", "target_low": 12, "horizon": "Q4 FY27"}, q, a)
+    ytd = R.check_in_code({"metric": "ebitda_margin", "target_low": 20, "horizon": "FY27"}, q, a)
+    h1 = R.check_in_code({"metric": "revenue_growth", "target_low": 8, "horizon": "H1 FY27"}, q, a)
+    assert ytd["verdict"] == "on_track" and "so far" in ytd["actual"]
+    assert h1["verdict"] == "delivered" and h1["actual_value"] == round((1260 + 1210 - 1150 - 1100) / 2250 * 100, 1)
     assert hit["verdict"] == "delivered" and miss["verdict"] == "missed"
-    assert margin["verdict"] == "partly"  # 21% vs 22% guided
+    assert margin["verdict"] == "partly"  # 21% vs 22% guided (254/1210 = 21.0%)
     assert later["verdict"] == "too_early"
     assert R.check_in_code({"metric": "capex", "target_low": 500, "horizon": "FY27"}, q, a) is None
 
@@ -129,7 +133,7 @@ def test_research_pipeline_end_to_end(tmp_path):
     p = {x["id"]: x for x in data["promises"]}
     assert p["G1"]["verdict"] == "delivered" and p["G1"]["checked_by"] == "code"  # code overrides model
     assert p["G3"]["verdict"] == "delivered"  # second call's copy of the same guidance
-    assert p["G2"]["checked_by"] == "model" and p["G2"]["verdict"] == "too_early"
+    assert p["G2"]["checked_by"] == "model" and p["G2"]["verdict"] == "too_early"  # capex: model judges
     assert "No news" in data["discipline"]
     path = R.save(data, tmp_path / "research")
     assert path.exists() and (tmp_path / "research" / "index.json").exists()
