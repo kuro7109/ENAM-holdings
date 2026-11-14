@@ -61,6 +61,8 @@ for losses; null if the line is not in the table):
   other_income   "Other income"
   finance_costs  "Finance costs" / "Interest expense" (lenders: null)
   depreciation   "Depreciation and amortisation expense"
+  exceptional    "Exceptional items" as printed (positive = gain/income, negative = loss/expense; null if none)
+  associates     "Share of profit/(loss) of associates and joint ventures" (null if none)
   pbt            "Profit before tax" (after exceptional items)
   pat            "Net profit for the period" / "Profit after tax" (total, before OCI)
 
@@ -68,10 +70,12 @@ JSON shape:
 {{"statement": "consolidated|standalone", "unit": "as printed, e.g. ₹ crore / ₹ lakh / ₹ million",
   "is_lender": true|false,
   "labels": {{"current": "e.g. Q2 FY27 (30-Sep-2026)", "previous_quarter": "...", "year_ago_quarter": "..."}},
-  "current": {{"revenue": 0, "other_income": 0, "finance_costs": 0, "depreciation": 0, "pbt": 0, "pat": 0}},
+  "current": {{"revenue": 0, "other_income": 0, "finance_costs": 0, "depreciation": 0, "exceptional": null,
+              "associates": null, "pbt": 0, "pat": 0}},
   "previous_quarter": {{...same keys...}},
   "year_ago_quarter": {{...same keys...}},
   "found": true}}
+Columns are often headed "Quarter ended" / "3 months ended" with dates like 30.09.2026, 30.06.2026, 30.09.2025.
 If this document has no quarterly results table, return {{"found": false}}.
 
 --- filing text ---
@@ -98,12 +102,15 @@ def growth(cur, base):
 
 
 def ebitda(q: dict, lender: bool):
+    """Operating EBITDA: PBT + finance costs + D&A − other income, with one-offs stripped out
+    (exceptional items and share of associates/JVs sit inside PBT but aren't operations)."""
     if lender:
         return None
-    pbt, fin, dep, oth = (_num(q.get(k)) for k in ("pbt", "finance_costs", "depreciation", "other_income"))
+    pbt, fin, dep, oth, exc, assoc = (_num(q.get(k)) for k in
+                                      ("pbt", "finance_costs", "depreciation", "other_income", "exceptional", "associates"))
     if pbt is None or dep is None:
         return None
-    return round(pbt + (fin or 0) + dep - (oth or 0), 2)
+    return round(pbt + (fin or 0) + dep - (oth or 0) - (exc or 0) - (assoc or 0), 2)
 
 
 def build_results_card(raw: dict) -> dict | None:
@@ -114,7 +121,8 @@ def build_results_card(raw: dict) -> dict | None:
     quarters = {}
     for key in ("current", "previous_quarter", "year_ago_quarter"):
         q = raw.get(key) or {}
-        vals = {k: _num(q.get(k)) for k in ("revenue", "other_income", "finance_costs", "depreciation", "pbt", "pat")}
+        vals = {k: _num(q.get(k)) for k in ("revenue", "other_income", "finance_costs", "depreciation", "exceptional",
+                                            "associates", "pbt", "pat")}
         vals["ebitda"] = ebitda(vals, lender)
         quarters[key] = vals
     cur, prev, yago = quarters["current"], quarters["previous_quarter"], quarters["year_ago_quarter"]
@@ -150,6 +158,10 @@ def build_results_card(raw: dict) -> dict | None:
     if cur.get("revenue") and cur.get("pbt") and cur["pbt"] > cur["revenue"] * 1.2:
         checks.append("PBT above revenue: likely a column mix-up, verify against the filing")
 
+    if yago.get("revenue") is None and yago.get("pat") is None:
+        checks.append("year-ago quarter not found in this filing")
+    if cur.get("exceptional"):
+        checks.append(f"PBT includes exceptional items of {cur['exceptional']:,.0f}; EBITDA excludes them")
     pat_yoy = next((r["yoy"] for r in rows if r["key"] == "pat"), None)
     rev_yoy = next((r["yoy"] for r in rows if r["key"] == "revenue"), None)
     bits = []
@@ -157,7 +169,7 @@ def build_results_card(raw: dict) -> dict | None:
         bits.append(f"{'Total income' if lender else 'Revenue'} {rev_yoy:+.0f}% YoY")
     if pat_yoy is not None:
         bits.append(f"PAT {pat_yoy:+.0f}% YoY")
-    elif cur.get("pat") is not None and (yago.get("pat") or 0) <= 0 < cur["pat"]:
+    elif cur.get("pat") is not None and yago.get("pat") is not None and yago["pat"] <= 0 < cur["pat"]:
         bits.append("back to profit")
     em = margins.get("ebitda") or {}
     if em.get("current") is not None and em.get("year_ago_quarter") is not None:
@@ -167,7 +179,8 @@ def build_results_card(raw: dict) -> dict | None:
         "statement": raw.get("statement"), "unit": raw.get("unit"), "is_lender": lender,
         "labels": raw.get("labels") or {}, "rows": rows, "margins": margins, "checks": checks,
         "headline": ", ".join(bits),
-        "ebitda_note": None if lender else "EBITDA = PBT + finance costs + D&A − other income",
+        "complete": yago.get("revenue") is not None or yago.get("pat") is not None,
+        "ebitda_note": None if lender else "EBITDA = PBT + finance costs + D&A − other income − one-offs",
     }
 
 
@@ -228,6 +241,7 @@ class Enricher:
         self.sectors, self.names = sectors, names
         self.fetch, self.search = fetch, search
         self.store = self._load()
+        self.candidates: dict[str, list[dict]] = {}
 
     # ---------- persistence ----------
     def _load(self) -> dict:
@@ -324,8 +338,25 @@ class Enricher:
                 "importance": _clamp(raw.get("importance")), "category": cat, "routine": bool(raw.get("routine"))}
 
     # ---------- plan + run ----------
+    def results_best(self, item: dict, max_tries: int = 3) -> dict:
+        """Try the primary results filing, then the next-best ones, until a complete card appears."""
+        tries = [item] + [c for c in self.candidates.get(item["symbol"], []) if c["id"] != item["id"]]
+        best, errors = None, []
+        for cand in tries[:max_tries]:
+            out = self.results(cand)
+            if out.get("status") == "ok":
+                out["source_id"] = cand["id"]
+                out["pdf_url"] = cand.get("pdf_url")
+                if out["results"].get("complete"):
+                    return out
+                best = best or out
+            else:
+                errors.append(out.get("error"))
+        return best or {"status": "failed", "kind": "results", "error": "; ".join(e for e in errors if e)[:200]}
+
     def plan(self, items: list[dict]) -> list[tuple[str, dict]]:
         """Which filings deserve a call, in priority order. Results first (most value per call)."""
+        self.candidates = results_candidates(items)
         jobs: list[tuple[str, dict]] = []
         for it in pick_results_primaries(items):
             jobs.append(("results", it))
@@ -343,12 +374,13 @@ class Enricher:
                 jobs.append(("generic", it))
         return jobs
 
-    def run(self, items: list[dict], retry_failed: bool = False, only: str | None = None) -> dict:
+    def run(self, items: list[dict], retry_failed: bool = False, only: str | None = None,
+            redo: str | None = None) -> dict:
         stats = defaultdict(int)
         for kind, it in self.plan(items):
             if only and kind != only:
                 continue
-            if self.done(it["id"], retry_failed):
+            if redo != kind and self.done(it["id"], retry_failed):
                 stats["skipped_cached"] += 1
                 continue
             if self.llm.dry_run:  # no PDF downloads, no calls: just the plan
@@ -358,7 +390,7 @@ class Enricher:
                 stats[f"planned_{kind}"] += 1
                 continue
             try:
-                out = getattr(self, kind)(it)
+                out = self.results_best(it) if kind == "results" else getattr(self, kind)(it)
             except LLMUnavailable as e:
                 log.warning("stopping LLM pass: %s", e)
                 stats["stopped"] = 1
@@ -409,20 +441,26 @@ RESULTS_SIDE = re.compile(r"press release|presentation|newspaper|earnings releas
                           r"investor|monitoring agency|limited review", re.I)
 
 
-def pick_results_primaries(items: list[dict]) -> list[dict]:
-    """One results filing per company: the one most likely to hold the P&L table."""
-    best: dict[str, tuple] = {}
+def results_candidates(items: list[dict]) -> dict[str, list[dict]]:
+    """Per company, results filings ranked by how likely they hold the P&L table."""
+    by: dict[str, list[tuple]] = defaultdict(list)
     for it in items:
         if it["category"] != "results" or set(it.get("tags") or []) & LOW_SIGNAL:
             continue
-        subj = it.get("subject") or ""
+        subj = f"{it.get('subject') or ''} {it.get('exchange_category') or ''}"
         rank = (0 if RESULTS_MAIN.search(subj) and not RESULTS_SIDE.search(subj) else
                 1 if not RESULTS_SIDE.search(subj) else 2)
-        key = (rank, it.get("filed_at") or "")
-        cur = best.get(it["symbol"])
-        if cur is None or key[0] < cur[0][0] or (key[0] == cur[0][0] and key[1] > cur[0][1]):
-            best[it["symbol"]] = (key, it)
-    return [v[1] for v in best.values()]
+        by[it["symbol"]].append((rank, _neg(it.get("filed_at") or ""), it))
+    return {s: [x[2] for x in sorted(v, key=lambda x: (x[0], x[1]))] for s, v in by.items()}
+
+
+def _neg(s: str) -> str:  # newest first within a rank
+    return "".join(chr(0x10FFFF - ord(c)) for c in s)
+
+
+def pick_results_primaries(items: list[dict]) -> list[dict]:
+    """One results filing per company: the one most likely to hold the P&L table."""
+    return [v[0] for v in results_candidates(items).values()]
 
 
 # =========================================================================== scoring + feed
@@ -505,7 +543,7 @@ def build_feed(ann: dict, alerts: dict, store: dict, names: dict, sectors: dict)
             "id": lead["id"], "symbol": lead["symbol"], "name": names.get(lead["symbol"], lead.get("company")),
             "sector": sectors.get(lead["symbol"], ""), "filed_at": lead.get("filed_at"), "source": lead.get("source"),
             "category": cat, "tags": lead.get("tags") or [], "title": lead.get("subject") or lead.get("exchange_category"),
-            "exchange_category": lead.get("exchange_category"), "pdf_url": lead.get("pdf_url"),
+            "exchange_category": lead.get("exchange_category"), "pdf_url": enr.get("pdf_url") or lead.get("pdf_url"),
             "summary": (enr.get("summary") if enr.get("status") in ("ok", "partial") else None)
                        or first_sentence(lead.get("exchange_summary")),
             "score": sc, "tier": "top" if sc >= TOP else "worth" if sc >= WORTH else "routine", "why": why,

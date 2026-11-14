@@ -179,3 +179,25 @@ def test_exchange_summary_is_free_fallback_and_cheap_input(tmp_path):
     enr = E.Enricher(llm, tmp_path / "e.json", {}, {}, fetch=lambda u: (_ for _ in ()).throw(AssertionError("no PDF")))
     enr.generic(it)
     assert "exchange's own summary" in seen[0]
+
+
+def test_missing_year_ago_is_not_back_to_profit_and_one_offs_leave_ebitda():
+    raw = json.loads(json.dumps(RAW))
+    raw["year_ago_quarter"] = {}
+    card = E.build_results_card(raw)
+    assert "back to profit" not in card["headline"] and not card["complete"]
+    raw = json.loads(json.dumps(RAW))
+    raw["current"].update(exceptional=-100, pbt=100)  # a 100 cr one-off loss inside PBT
+    card = E.build_results_card(raw)
+    assert next(r for r in card["rows"] if r["key"] == "ebitda")["current"] == 100 + 10 + 40 - 20 + 100
+
+
+def test_results_falls_back_to_next_filing(tmp_path):
+    items = [_item("a", "MARUTI", "results", "Financial results for the quarter ended Sep 2026"),
+             _item("b", "MARUTI", "results", "Outcome of board meeting - results", filed="2026-11-09T16:00:00+05:30")]
+    calls = []
+    llm = FakeLLM(tmp_path / "c", {"extract": lambda u: calls.append(u) or ({"found": False} if len(calls) == 1 else RAW)})
+    enr = E.Enricher(llm, tmp_path / "e.json", {}, {})
+    enr._pages = lambda it: ["Revenue from operations Profit before tax quarter ended"]
+    enr.run(items)
+    assert enr.store["a"]["status"] == "ok" and enr.store["a"]["source_id"] == "b" and len(calls) == 2
