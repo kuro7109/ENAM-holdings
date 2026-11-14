@@ -25,7 +25,8 @@ export function Ask({ data, symbol, setSymbol }: { data: Data; symbol: string | 
         }
       } catch { /* fall through to the live API */ }
       if (!API) {
-        setState({ status: "error", error: `No saved research for ${symbol}, and the live research service isn't connected to this build. Run python run_research.py ${symbol} and push, or set VITE_API_URL.` });
+        const ready = Object.keys(data.researchIndex).join(", ");
+        setState({ status: "error", error: `${symbol} isn't precomputed in this demo. The engine works on any NSE symbol: run python run_research.py ${symbol} in the repo (about a minute), or connect the live research API. Ready now: ${ready}.` });
         return;
       }
       const started = Date.now();
@@ -100,6 +101,9 @@ const VERDICTS: [string, string, string][] = [
   ["too_early", "Too early", "#9aa3b2"], ["unverifiable", "Can't verify", "#c4cad3"],
 ];
 
+// Settled verdicts first: what was missed or is behind matters more than what's pending.
+const ORDER = ["missed", "behind", "partly", "delivered", "on_track", "too_early", "unverifiable"];
+
 function Research({ r }: { r: any }) {
   const s = r.snapshot || {}, tr = r.trajectory || {}, bal = r.balance || {}, cash = r.cash || {};
   const total = r.promises?.length || 0;
@@ -124,7 +128,7 @@ function Research({ r }: { r: any }) {
             {VERDICTS.map(([k, , c]) => r.tally?.[k] ? <i key={k} style={{ width: `${(r.tally[k] / total) * 100}%`, background: c }} /> : null)}
           </div>
           <div className="legend">{VERDICTS.filter(([k]) => r.tally?.[k]).map(([k, l, c]) => <span key={k}><b style={{ background: c }} />{r.tally[k]} {l.toLowerCase()}</span>)}</div>
-          {r.promises.map((p: any) => (
+          {[...r.promises].sort((x: any, y: any) => ORDER.indexOf(x.verdict) - ORDER.indexOf(y.verdict)).map((p: any) => (
             <div className="promise" key={p.id}>
               <div className="head">
                 <span>{p.call} call · for {p.horizon || "unspecified"}{p.speaker ? ` · ${p.speaker}` : ""}</span>
@@ -132,7 +136,7 @@ function Research({ r }: { r: any }) {
               </div>
               <q>{p.quote}</q>
               <div className="got">
-                {p.actual ? <>Actual: <span className="num">{p.actual}</span></> : <span className="faint">No number to check yet</span>}
+                {p.actual ? <>Actual: <b style={{ fontWeight: 600 }}>{p.actual}</b></> : <span className="faint">No number to check yet</span>}
                 {p.note && <span className="muted"> {p.note}</span>}
               </div>
               <div className="tiny faint" style={{ marginTop: 4 }}>
