@@ -12,7 +12,7 @@ from company filings and earnings-call transcripts. Never use outside knowledge 
   (Brief, Alerts, Holdings, Research).
 - Do not recommend buying or selling. Describe what the data shows.`;
 
-import { memoryCommand, memoryOn, notes, saveMessages, validUser } from "./_supabase.js";
+import { health, memoryCommand, memoryOn, notes, saveMessages, validUser } from "./_supabase.js";
 
 type M = { role: "user" | "assistant"; content: string };
 
@@ -30,7 +30,11 @@ function chain(): [string, string, string][] {
 }
 
 export default async function handler(req: any, res: any) {
-  if (req.method === "GET") return res.status(200).json({ ai: chain().length > 0, memory: memoryOn() });
+  if (req.method === "GET") {
+    // "memory" is true only when a real read of both tables succeeds, so the badge never lies.
+    const h = memoryOn() ? await health() : { ok: false };
+    return res.status(200).json({ ai: chain().length > 0, memory: h.ok, ...(req.query?.diag ? { memory_check: h } : {}) });
+  }
   if (req.method !== "POST") return res.status(405).json({ error: "POST only" });
   const user = req.headers["x-finn-user"];
   const mem = memoryOn() && validUser(user);
@@ -54,7 +58,11 @@ export default async function handler(req: any, res: any) {
         await saveMessages(user, [{ role: "user", content: question }, { role: "assistant", content: r, mode: "memory" }]).catch(() => {});
         return res.status(200).json({ reply: r, model: "memory", memory: true });
       }
-    } catch { /* memory store down: carry on without it */ }
+    } catch (e: any) {
+      // Say so, rather than letting a model improvise an answer to "remember that …".
+      if (/^(please\s+)?(remember|note|keep in mind|forget|what do you remember)/i.test(question))
+        return res.status(200).json({ reply: `I couldn't reach the memory store, so nothing was saved. (${String(e?.message || e).slice(0, 120)})`, model: "memory", memory: false });
+    }
   }
   if (!models.length) return res.status(503).json({ error: "no model key configured", memory: mem });
 

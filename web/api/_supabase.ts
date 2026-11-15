@@ -71,3 +71,28 @@ export async function memoryCommand(user: string, q: string): Promise<string | n
   }
   return null;
 }
+
+/** Is memory actually usable? Checks both tables with the real key. Never returns the key. */
+export async function health(): Promise<{ ok: boolean; error?: string; host?: string; key?: string; hint?: string }> {
+  const raw = URL_(), key = KEY();
+  let host = "";
+  try { host = new URL(raw).host; } catch { /* reported below */ }
+  const keyType = !key ? "missing" : key.startsWith("eyJ") ? "legacy JWT" : key.startsWith("sb_secret_") ? "secret (sb_secret_)"
+    : key.startsWith("sb_publishable_") ? "publishable (wrong one)" : "unrecognised";
+  if (!raw || !key) return { ok: false, error: "SUPABASE_URL or SUPABASE_SERVICE_ROLE_KEY not set", host, key: keyType };
+  if (!/^https:\/\/[a-z0-9-]+\.supabase\.(co|in)$/i.test(raw))
+    return { ok: false, host, key: keyType, error: "SUPABASE_URL should look exactly like https://<project-ref>.supabase.co (no path, no trailing slash)" };
+  if (keyType === "publishable (wrong one)")
+    return { ok: false, host, key: keyType, error: "This is the publishable key. Use the secret key (sb_secret_…) or the legacy service_role key." };
+  try {
+    await rest("finn_messages?select=id&limit=1");
+    await rest("finn_memories?select=id&limit=1");
+    return { ok: true, host, key: keyType };
+  } catch (e: any) {
+    const msg = String(e?.message || e);
+    const hint = /PGRST205|does not exist|schema cache/i.test(msg) ? "Tables missing: run supabase/schema.sql in the Supabase SQL Editor."
+      : /401|Invalid API key|JWT/i.test(msg) ? "Key rejected: copy the secret (or service_role) key again."
+      : /404/.test(msg) ? "Wrong project URL." : undefined;
+    return { ok: false, host, key: keyType, error: msg.slice(0, 200), hint };
+  }
+}
