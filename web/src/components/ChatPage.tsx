@@ -124,14 +124,6 @@ export function ChatPage({ data, t, focus, onOpen }: {
       <header className="chat-top">
         <div>
           <h1 className="chat-title">Ask FINN</h1>
-          <div className="chat-badges">
-            <span className={`ai-badge ${st?.ai ? "on" : ""}`} title={st?.ai ? "Answers written by a model, using only FINN's data" : "No model connected: answers come straight from saved data"}>
-              {st == null ? "…" : st.ai ? "AI" : "Offline answers"}
-            </span>
-            <span className={`ai-badge ${st?.memory ? "on" : ""}`} title={st?.memory ? "Chat history and notes are saved in Supabase" : "History and notes are kept on this device"}>
-              {st == null ? "…" : st.memory ? "Memory on" : "Memory on this device"}
-            </span>
-          </div>
         </div>
         {msgs.length > 0 && <button className="linkbtn" onClick={clear}>Clear chat</button>}
       </header>

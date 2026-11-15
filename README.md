@@ -28,7 +28,7 @@ back into the dashboard instead of replacing it. It knows which company you're l
   the slice the question needs (named companies, recent brief, alerts; ≤24k chars) to
   `web/api/chat.ts`, which adds the rules and calls a Flash-Lite-class model, falling through
   models with separate free quotas. The key never leaves the server.
-- **Honest status:** a badge says *AI* or *Offline*. With no key or no quota, an offline
+- **Honest status:** each answer is labelled *AI* or *from saved data*. With no key or no quota, an offline
   answerer handles the common questions (the brief, a company, alerts, comparisons) straight
   from the data, so the feature never dead-ends in a demo.
 - **Memory (Supabase):** chat history is saved server-side, and "remember that I care most about
