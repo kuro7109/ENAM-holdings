@@ -1,7 +1,11 @@
 // Minimal Supabase (PostgREST) client for the server functions. No SDK: plain fetch.
 // Needs SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY in Vercel env. Never sent to the browser.
 
-const URL_ = () => (process.env.SUPABASE_URL || "").replace(/\/$/, "");
+// Accept whatever was pasted (".../rest/v1/", a trailing slash, spaces): keep only the origin.
+const URL_ = () => {
+  const raw = (process.env.SUPABASE_URL || "").trim();
+  try { return new URL(raw).origin; } catch { return raw.replace(/\/+$/, ""); }
+};
 const KEY = () => process.env.SUPABASE_SERVICE_ROLE_KEY || "";
 export const memoryOn = () => Boolean(URL_() && KEY());
 
