@@ -22,9 +22,9 @@ function Readout({ text }: { text: string }) {
 }
 
 /** Columns over time (one series). Negative values hang below a zero line. */
-export function Columns({ labels, values, fmt, height = 92, title, highlight = "last", vw = W }: {
+export function Columns({ labels, values, fmt, height = 92, title, highlight = "last", vw = W, onPick, selected }: {
   labels: string[]; values: (number | null)[]; fmt: Fmt; height?: number; title: string;
-  highlight?: "last" | "none"; vw?: number;
+  highlight?: "last" | "none"; vw?: number; onPick?: (i: number) => void; selected?: number | null;
 }) {
   const W = vw;
   const n = values.length;
@@ -44,9 +44,10 @@ export function Columns({ labels, values, fmt, height = 92, title, highlight = "
         <line x1="0" x2={W} y1={y(0)} y2={y(0)} className="axis" />
         {values.map((v, i) => {
           const x = i * band + (band - bw) / 2;
-          const on = i === active || (highlight === "last" && i === n - 1);
+          const on = selected != null ? i === selected || i === active : i === active || (highlight === "last" && i === n - 1);
           return (
-            <g key={labels[i] + i} onPointerEnter={() => setActive(i)} onClick={() => setActive(i)}>
+            <g key={labels[i] + i} onPointerEnter={() => setActive(i)} onClick={() => { setActive(i); onPick?.(i); }}
+              style={onPick ? { cursor: "pointer" } : undefined}>
               {v != null && <path d={barPath(x, y(0), y(v), bw)} fill={v < 0 ? "var(--down)" : SERIES}
                 opacity={on ? 1 : 0.55} />}
               <rect x={i * band} y="0" width={band} height={H} fill="transparent" />

@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { Row, Spark } from "../components/Cards";
 import { HBars } from "../components/Charts";
+import { PageSize, Pager, usePageSize } from "../components/Pager";
 import type { Data, Stock, Thresholds } from "../lib";
 import { applyThresholds, dayLabel, num, pct, times, tone } from "../lib";
 
@@ -8,7 +9,21 @@ export function Holdings({ data, t, onResearch }: { data: Data; t: Thresholds; o
   const [open, setOpen] = useState<Stock | null>(null);
   const hits = useMemo(() => applyThresholds(data.signals?.stocks || {}, t, data.signals?.overrides, data.signals?.defaults), [data.signals, t]);
   const flagged = new Set(hits.filter((h) => h.date === data.signals?.as_of).map((h) => h.symbol));
+  const [sizeSaved, saveSize] = usePageSize("holdings", 10);
+  const [size, setSize] = useState(sizeSaved);
+  const [page, setPage] = useState(1);
+  const [sort, setSort] = useState<"move" | "az" | "volume" | "high">("move");
   const stocks = [...(data.market?.stocks || [])].sort((a, b) => Math.abs(b.pct_change || 0) - Math.abs(a.pct_change || 0));
+  const sorted = [...stocks].sort((a, b) =>
+    sort === "az" ? a.symbol.localeCompare(b.symbol)
+      : sort === "volume" ? (b.vol_ratio || 0) - (a.vol_ratio || 0)
+        : sort === "high" ? (b.pct_from_52w_high || -999) - (a.pct_from_52w_high || -999)
+          : Math.abs(b.pct_change || 0) - Math.abs(a.pct_change || 0));
+  const pages = Math.max(1, Math.ceil(sorted.length / size));
+  const pg = Math.min(page, pages);
+  const visible = sorted.slice((pg - 1) * size, pg * size);
+  const changeSize = (n: number) => { setSize(n); saveSize(n); setPage(1); };
+  const turn = (p: number) => { setPage(p); document.querySelector(".holdings-list")?.scrollIntoView({ block: "start", behavior: "smooth" }); };
   const up = stocks.filter((s) => (s.pct_change || 0) > 0).length;
 
   if (!data.market) return <div className="screen empty"><h2>No prices yet</h2>Run <code>python run_daily.py</code>.</div>;
@@ -22,8 +37,14 @@ export function Holdings({ data, t, onResearch }: { data: Data; t: Thresholds; o
       <HBars title="Biggest moves at the last close" diverging polarity fmt={(v) => pct(v)}
         rows={stocks.slice(0, 6).map((x) => ({ key: x.symbol, label: x.symbol, value: x.pct_change }))}
         onPick={(k) => setOpen(stocks.find((x) => x.symbol === k) || null)} />
-      <div className="section-title">All holdings <span className="faint">30-day trend</span></div>
-      {stocks.map((s) => (
+      <div className="section-title holdings-list">All holdings <span className="faint">30-day trend</span></div>
+      <div className="cats" role="group" aria-label="Sort holdings">
+        {([["move", "Biggest move"], ["volume", "Volume"], ["high", "Nearest 52-wk high"], ["az", "A–Z"]] as const).map(([k, l]) => (
+          <button key={k} className="chip sm" aria-pressed={sort === k} onClick={() => { setSort(k); setPage(1); }}>{l}</button>
+        ))}
+      </div>
+      <PageSize value={size} options={[10, 25, 9999]} onChange={changeSize} total={sorted.length} />
+      {visible.map((s) => (
         <button key={s.symbol} className="holding" onClick={() => setOpen(s)}>
           <span style={{ minWidth: 0 }}>
             <span className="sym" style={{ fontSize: 15 }}>{s.symbol}</span>{flagged.has(s.symbol) && <span className="dot" aria-label="flagged" />}
@@ -36,6 +57,7 @@ export function Holdings({ data, t, onResearch }: { data: Data; t: Thresholds; o
           </span>
         </button>
       ))}
+      <Pager page={pg} pages={pages} onPage={turn} />
       {open && <StockSheet s={open} data={data} hits={hits.filter((h) => h.symbol === open.symbol)}
         onClose={() => setOpen(null)} onResearch={() => { setOpen(null); onResearch(open.symbol); }} />}
     </div>
