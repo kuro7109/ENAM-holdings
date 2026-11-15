@@ -30,6 +30,7 @@ Here is my submission for the FINN build challenge.
 - **App (open on a phone):** https://enamholdingsbyroku.vercel.app
 - **Repository:** https://github.com/kuro7109/ENAM-holdings
 - **AI build history:** <Claude session share link> <any other chat links>
+- **2-minute walkthrough (optional):** <video link>
 
 **A 60-second tour:** open the app on a phone and start on **Brief** (what needs you today, with
 results and management changes already read). Then **Research → KAYNES**: management promised
@@ -37,9 +38,10 @@ results and management changes already read). Then **Research → KAYNES**: mana
 and promised positive operating cash flow and got −₹600 cr. Each claim links to its transcript page.
 
 **One thing to know upfront:** the research engine works on any NSE symbol, but the deployed app
-serves four precomputed companies (Pidilite, Havells, Astral, Kaynes). NSE and screener.in block
-cloud servers, so I didn't host the live research API. Any other ticker runs from the repo in
-about a minute: `python run_research.py SYMBOL`.
+serves 16 precomputed companies (the four demo names plus most of the portfolio). NSE and
+screener.in block cloud servers, so I didn't host the live research API. Any other ticker runs
+from the repo in about a minute: `python run_research.py SYMBOL`. Then try the **Ask** tab:
+"Did Kaynes keep its promises?" or "Any management changes this month?".
 
 **What I built**
 
