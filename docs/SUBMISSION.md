@@ -28,6 +28,16 @@ Here is my submission for the FINN build challenge.
 - **Repository:** https://github.com/kuro7109/ENAM-holdings
 - **AI build history:** <Claude session share link> <any other chat links>
 
+**A 60-second tour:** open the app on a phone and start on **Brief** (what needs you today, with
+results and management changes already read). Then **Research → KAYNES**: management promised
+₹4,100 cr of FY26 revenue and delivered ₹3,626 cr, promised 85 working-capital days and reached 122,
+and promised positive operating cash flow and got −₹600 cr. Each claim links to its transcript page.
+
+**One thing to know upfront:** the research engine works on any NSE symbol, but the deployed app
+serves four precomputed companies (Pidilite, Havells, Astral, Kaynes). NSE and screener.in block
+cloud servers, so I didn't host the live research API. Any other ticker runs from the repo in
+about a minute: `python run_research.py SYMBOL`.
+
 **What I built**
 
 FINN is a mobile-first triage tool for an 18-stock Indian portfolio, with two modes:
@@ -51,7 +61,7 @@ FINN is a mobile-first triage tool for an 18-stock Indian portfolio, with two mo
 
 **What I left out on purpose**
 
-Real push notifications (the Brief and Alerts model them), voice, intraday data, per-user portfolios, and news or broker data (excluded by design). The live research API (FastAPI, `render.yaml` included) isn't hosted, so in the deployed app any ticker outside the demo set runs locally: `python run_research.py SYMBOL`.
+Real push notifications (the Brief and Alerts model them), voice, intraday data, per-user portfolios, and news or broker data (excluded by design). A hosted live research API (the FastAPI service and `render.yaml` are in the repo, not deployed).
 
 **Where I'd take it next**
 
