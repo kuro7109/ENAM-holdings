@@ -15,7 +15,7 @@ export function Ask({ data, symbol, setSymbol }: { data: Data; symbol: string | 
   const run = useRef(0);
 
   useEffect(() => {
-    if (!symbol) return;
+    if (!symbol) { run.current++; setState({ status: "idle" }); setQ(""); return; }
     setQ(symbol);
     const id = ++run.current;
     (async () => {
@@ -60,6 +60,11 @@ export function Ask({ data, symbol, setSymbol }: { data: Data; symbol: string | 
 
   return (
     <div className="screen">
+      {state.status !== "idle" && (
+        <button className="backbtn" onClick={() => setSymbol(null)} aria-label="Back to all research">
+          <span aria-hidden="true">‹</span> All research
+        </button>
+      )}
       <form className="ask" onSubmit={submit} role="search">
         <input value={q} onChange={(e) => setQ(e.target.value)} placeholder="Any NSE symbol, e.g. HAVELLS" aria-label="NSE symbol"
           autoCapitalize="characters" autoCorrect="off" spellCheck={false} />

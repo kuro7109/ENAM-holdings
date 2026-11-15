@@ -12,6 +12,8 @@ from company filings and earnings-call transcripts. Never use outside knowledge 
   (Brief, Alerts, Holdings, Research).
 - Do not recommend buying or selling. Describe what the data shows.`;
 
+import { memoryCommand, memoryOn, notes, saveMessages, validUser } from "./_supabase";
+
 type M = { role: "user" | "assistant"; content: string };
 
 const GEMINI = "https://generativelanguage.googleapis.com/v1beta/openai/chat/completions";
@@ -28,10 +30,11 @@ function chain(): [string, string, string][] {
 }
 
 export default async function handler(req: any, res: any) {
-  if (req.method === "GET") return res.status(200).json({ ai: chain().length > 0 });
+  if (req.method === "GET") return res.status(200).json({ ai: chain().length > 0, memory: memoryOn() });
   if (req.method !== "POST") return res.status(405).json({ error: "POST only" });
+  const user = req.headers["x-finn-user"];
+  const mem = memoryOn() && validUser(user);
   const models = chain();
-  if (!models.length) return res.status(503).json({ error: "no model key configured" });
 
   const body = typeof req.body === "string" ? JSON.parse(req.body || "{}") : req.body || {};
   const context = String(body.context || "").slice(0, 24000);
@@ -40,8 +43,29 @@ export default async function handler(req: any, res: any) {
     .slice(-12)
     .map((m: any) => ({ role: m.role, content: m.content.slice(0, 2000) }));
   if (!history.length || history[history.length - 1].role !== "user") return res.status(400).json({ error: "no question" });
+  const question = history[history.length - 1].content;
+  const symbols: string[] = Array.isArray(body.symbols) ? body.symbols.slice(0, 8) : [];
 
-  const messages = [{ role: "system", content: `${SYSTEM}\n\nCONTEXT\n${context}` }, ...history];
+  // Memory commands ("remember that …", "what do you remember", "forget …") need no model.
+  if (mem) {
+    try {
+      const r = await memoryCommand(user, question);
+      if (r) {
+        await saveMessages(user, [{ role: "user", content: question }, { role: "assistant", content: r, mode: "memory" }]).catch(() => {});
+        return res.status(200).json({ reply: r, model: "memory", memory: true });
+      }
+    } catch { /* memory store down: carry on without it */ }
+  }
+  if (!models.length) return res.status(503).json({ error: "no model key configured", memory: mem });
+
+  let remembered = "";
+  if (mem) {
+    try {
+      const n = await notes(user);
+      if (n.length) remembered = `\n\nWHAT THE USER ASKED YOU TO REMEMBER (use when relevant):\n${n.map((x) => `- ${x.note}`).join("\n")}`;
+    } catch { /* ignore */ }
+  }
+  const messages = [{ role: "system", content: `${SYSTEM}${remembered}\n\nCONTEXT\n${context}` }, ...history];
   let last = "";
   for (const [url, key, model] of models) {
     try {
@@ -55,7 +79,11 @@ export default async function handler(req: any, res: any) {
       if (!r.ok) { last = `${model}: ${r.status}`; continue; }
       const j: any = await r.json();
       const reply = j?.choices?.[0]?.message?.content?.trim();
-      if (reply) return res.status(200).json({ reply, model });
+      if (reply) {
+        if (mem) await saveMessages(user, [{ role: "user", content: question },
+          { role: "assistant", content: reply, mode: "ai", symbols }]).catch(() => {});
+        return res.status(200).json({ reply, model, memory: mem });
+      }
       last = `${model}: empty`;
     } catch (e: any) {
       last = `${model}: ${e?.name || "error"}`;

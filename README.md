@@ -17,7 +17,8 @@ why it matters, and **pulls** research on any NSE company from primary sources o
 ## Interaction model: dashboard first, chat as a layer
 
 A PM's morning is triage, not conversation, so FINN opens on a ranked brief rather than a chat
-box. Chat (**Ask FINN**, on every screen) is for the question the screens didn't anticipate:
+box. Chat (**Ask**, its own tab, and a button on every screen) is for asking for exactly what you
+want instead of hunting for it:
 *"Did Kaynes keep its promises?"*, *"What did HAL file this week?"*. Every answer is built only
 from FINN's own data (filings, prices, your alerts, research), leads with the number, stays
 under ~90 words, and ends with buttons that open the companies it mentions, so chat routes you
@@ -30,6 +31,11 @@ back into the dashboard instead of replacing it. It knows which company you're l
 - **Honest status:** a badge says *AI* or *Offline*. With no key or no quota, an offline
   answerer handles the common questions (the brief, a company, alerts, comparisons) straight
   from the data, so the feature never dead-ends in a demo.
+- **Memory (Supabase):** chat history is saved server-side, and "remember that I care most about
+  margins" becomes a note FINN adds to its instructions in later answers; "what do you remember?"
+  and "forget …" work too. Tables have row-level security on with no policies, so only the
+  server (service-role key, Vercel env) can read or write them (`supabase/schema.sql`). Without
+  Supabase, history and notes stay on the device.
 - Voice was left out on purpose: dense numbers read better than they sound.
 
 ## Architecture
@@ -91,8 +97,10 @@ pipeline (`scripts/make_sample_data.py`), so the UI can be built offline.
 
 ### Deploy
 - **App:** Vercel → import repo → Root Directory `web` (framework: Vite). Every data push redeploys.
-  For AI answers in **Ask FINN**, add `GEMINI_API_KEY` (and optionally `GROQ_API_KEY`) under
-  Project → Settings → Environment Variables, then redeploy. Without it, chat runs in offline mode.
+  For AI answers in **Ask**, add `GEMINI_API_KEY` (and optionally `GROQ_API_KEY`) under
+  Project → Settings → Environment Variables. For memory, run `supabase/schema.sql` in your
+  Supabase project and add `SUPABASE_URL` and `SUPABASE_SERVICE_ROLE_KEY`. Redeploy after adding.
+  Without them, chat answers from saved data and keeps memory on the device.
 - **Live research API:** Render → New → Blueprint → this repo (`render.yaml`), add the keys.
 - **Daily refresh:** add the three keys as GitHub Actions secrets.
 
