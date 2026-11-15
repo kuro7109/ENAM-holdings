@@ -8,8 +8,9 @@ export const memoryOn = () => Boolean(URL_() && KEY());
 async function rest(path: string, init: RequestInit = {}): Promise<any> {
   const r = await fetch(`${URL_()}/rest/v1/${path}`, {
     ...init,
-    headers: { apikey: KEY(), Authorization: `Bearer ${KEY()}`, "Content-Type": "application/json",
-      Prefer: "return=minimal", ...(init.headers || {}) },
+    // Legacy service_role keys are JWTs and go in both headers; new sb_secret_ keys go in apikey only.
+    headers: { apikey: KEY(), ...(KEY().startsWith("eyJ") ? { Authorization: `Bearer ${KEY()}` } : {}),
+      "Content-Type": "application/json", Prefer: "return=minimal", ...(init.headers || {}) },
     signal: AbortSignal.timeout(8000),
   });
   if (!r.ok) throw new Error(`supabase ${r.status}: ${(await r.text()).slice(0, 160)}`);
