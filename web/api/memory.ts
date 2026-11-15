@@ -2,7 +2,7 @@
 // POST   /api/memory   -> append messages {messages:[...]} (used for offline answers)
 //                         or run a memory command {command:"remember that …"}
 // DELETE /api/memory   -> clear this user's chat history (notes stay unless asked)
-import { clearHistory, history, memoryCommand, memoryOn, notes, saveMessages, validUser } from "./_supabase";
+import { clearHistory, history, memoryCommand, memoryOn, notes, saveMessages, validUser } from "./_supabase.js";
 
 export default async function handler(req: any, res: any) {
   const user = req.headers["x-finn-user"];

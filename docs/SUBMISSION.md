@@ -1,12 +1,15 @@
 # Submission kit
 
-## Morning checklist (about 20 minutes)
+## Checklist (about 20 minutes)
 
-1. **Deploy the app on Vercel** (2 min). vercel.com → *Add New…* → *Project* → import
-   `kuro7109/ENAM-holdings` → **Root Directory: `web`** (click *Edit*) → Framework: **Vite** → *Deploy*.
-   Copy the `https://….vercel.app` link and open it on your phone.
-2. **Put the link in the README.** Replace `https://enamholdingsbyroku.vercel.app` near the top of `README.md`
-   (GitHub → README → pencil icon → *Commit changes*).
+1. **App is live:** https://enamholdingsbyroku.vercel.app. Open it on your phone once:
+   Brief, then Research → KAYNES, then the Ask tab.
+2. **Turn on chat memory (Supabase, ~5 min):** supabase.com → New project → wait until it's ready →
+   SQL Editor → New query → paste `supabase/schema.sql` → Run. Then Project Settings → API:
+   copy the **Project URL** and the **service_role** secret key.
+3. **Add 3 env vars in Vercel:** your project → Settings → Environment Variables (Production):
+   `GEMINI_API_KEY`, `SUPABASE_URL`, `SUPABASE_SERVICE_ROLE_KEY`. Save, then Deployments → latest →
+   ⋯ → *Redeploy*. In the Ask tab the badges switch to "AI" and "Memory on".
 4. **Share the build history.** Open this Claude session, then *Share* → copy the link.
    Do the same for any other AI chats you used.
 5. **Optional: daily refresh.** GitHub repo → *Settings* → *Secrets and variables* → *Actions* →

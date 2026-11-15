@@ -12,7 +12,7 @@ from company filings and earnings-call transcripts. Never use outside knowledge 
   (Brief, Alerts, Holdings, Research).
 - Do not recommend buying or selling. Describe what the data shows.`;
 
-import { memoryCommand, memoryOn, notes, saveMessages, validUser } from "./_supabase";
+import { memoryCommand, memoryOn, notes, saveMessages, validUser } from "./_supabase.js";
 
 type M = { role: "user" | "assistant"; content: string };
 
