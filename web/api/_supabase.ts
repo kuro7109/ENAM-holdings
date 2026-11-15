@@ -30,9 +30,10 @@ export async function history(user: string, limit = 30) {
 }
 export async function saveMessages(user: string, msgs: { role: string; content: string; mode?: string; symbols?: string[] }[]) {
   if (!msgs.length) return;
-  await rest("finn_messages", { method: "POST", body: JSON.stringify(msgs.map((m) => ({
+  const t0 = Date.now();  // explicit, increasing timestamps keep question-then-answer order on reload
+  await rest("finn_messages", { method: "POST", body: JSON.stringify(msgs.map((m, i) => ({
     user_id: user, role: m.role, content: String(m.content).slice(0, 4000), mode: m.mode || null,
-    symbols: (m.symbols || []).slice(0, 8) }))) });
+    symbols: (m.symbols || []).slice(0, 8), created_at: new Date(t0 + i).toISOString() }))) });
 }
 export async function notes(user: string): Promise<{ id: number; note: string }[]> {
   return (await rest(`finn_memories?user_id=eq.${enc(user)}&select=id,note&order=created_at.asc&limit=50`)) || [];

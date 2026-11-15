@@ -2,7 +2,7 @@
    answering from saved data when no model is connected, so it always works. */
 import { useEffect, useRef, useState } from "react";
 import type { Msg } from "../chat";
-import { buildContext, localMemoryCommand, localNotes, offlineAnswer, suggestions } from "../chat";
+import { buildContext, localMemoryCommand, localNotes, mentioned, offlineAnswer, suggestions } from "../chat";
 import type { Data, Thresholds } from "../lib";
 import { store } from "../lib";
 import { buzz } from "../press";
@@ -91,7 +91,9 @@ export function ChatPage({ data, t, focus, onOpen }: {
         if (r.ok) {
           const j = await r.json();
           const isMem = j.model === "memory";
-          reply = { role: "assistant", content: j.reply, mode: isMem ? "offline" : "ai", symbols: isMem ? [] : ctx.symbols };
+          // Buttons for every company the answer names, not just the ones in the question.
+          const named = isMem ? [] : [...new Set([...mentioned(data, j.reply), ...ctx.symbols])];
+          reply = { role: "assistant", content: j.reply, mode: isMem ? "offline" : "ai", symbols: named };
           if (isMem) refreshNotes(true);
         }
       } catch { /* fall back below */ }
