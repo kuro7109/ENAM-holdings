@@ -7,11 +7,11 @@
    Copy the `https://….vercel.app` link and open it on your phone.
 2. **Put the link in the README.** Replace `https://enamholdingsbyroku.vercel.app` near the top of `README.md`
    (GitHub → README → pencil icon → *Commit changes*).
-3. **Share the build history.** Open this Claude session, then *Share* → copy the link.
+4. **Share the build history.** Open this Claude session, then *Share* → copy the link.
    Do the same for any other AI chats you used.
-4. **Optional: daily refresh.** GitHub repo → *Settings* → *Secrets and variables* → *Actions* →
+5. **Optional: daily refresh.** GitHub repo → *Settings* → *Secrets and variables* → *Actions* →
    add `GEMINI_API_KEY`, `GROQ_API_KEY`, `TAVILY_API_KEY`.
-5. **Send the email below** to assessment@enam.com, subject **IIT Delhi – AI Engineer - 2027**.
+6. **Send the email below** to assessment@enam.com, subject **IIT Delhi – AI Engineer - 2027**.
 
 ---
 
