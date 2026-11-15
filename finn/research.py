@@ -27,7 +27,7 @@ from . import pdftext
 from .announcements import BROWSER_HEADERS
 from .cache import JsonCache
 from .config import ROOT
-from .llm import LLM
+from .llm import LLM, LLMUnavailable
 
 log = logging.getLogger(__name__)
 IST = __import__("zoneinfo").ZoneInfo("Asia/Kolkata")
@@ -499,8 +499,13 @@ def research(symbol: str, llm: LLM | None = None, n_calls: int = 4, with_ar: boo
             calls.append({"month": t["month"], "quarter": quarter, "url": t["url"], "status": "unreadable"})
             continue
         sources.append({"type": "transcript", "label": f"{quarter} call ({t['month']})", "url": t["url"]})
-        out = llm.json("extract", GUIDANCE_SYSTEM, GUIDANCE_USER.format(
-            company=company, month=t["month"], quarter=quarter, text=text), max_tokens=3000) or {}
+        try:
+            out = llm.json("extract", GUIDANCE_SYSTEM, GUIDANCE_USER.format(
+                company=company, month=t["month"], quarter=quarter, text=text), max_tokens=3000) or {}
+        except LLMUnavailable as e:  # out of free quota: keep the numbers, mark the call unread
+            log.warning("guidance extraction skipped for %s %s: %s", symbol, quarter, str(e)[:120])
+            calls.append({"month": t["month"], "quarter": quarter, "url": t["url"], "status": "no_model"})
+            continue
         calls.append({"month": t["month"], "quarter": quarter, "url": t["url"], "status": "ok",
                       "tone": out.get("tone"), "pushback": out.get("pushback") or [],
                       "delivery_comments": out.get("delivery_comments") or [], "segments": out.get("segments") or []})
@@ -520,7 +525,10 @@ def research(symbol: str, llm: LLM | None = None, n_calls: int = 4, with_ar: boo
         text = pdftext.best_pages(pages, [(r"segment", 2), (r"revenue (?:mix|share)", 3), (r"business overview", 3),
                                           (r"management discussion", 2), (r"product portfolio", 2)], k=6)
         if text:
-            out = llm.json("extract", AR_SYSTEM, AR_USER.format(company=company, text=text), max_tokens=900) or {}
+            try:
+                out = llm.json("extract", AR_SYSTEM, AR_USER.format(company=company, text=text), max_tokens=900) or {}
+            except LLMUnavailable:
+                out = {}
             business.update(what_it_does=out.get("what_it_does"), ar_segments=out.get("segments") or [],
                             ar_pages=out.get("page_refs") or [], ar_url=ar["url"])
             sources.append({"type": "annual_report", "label": ar["label"], "url": ar["url"]})
@@ -533,7 +541,7 @@ def research(symbol: str, llm: LLM | None = None, n_calls: int = 4, with_ar: boo
         if c:
             checked[g["id"]] = c
     analysis = {}
-    if guidance or q:
+    if guidance and llm.available("reason") and llm.max_calls != 0:
         gtext = "\n".join(f"{g['id']} | {g['call']} | {g.get('metric')} | {g.get('horizon')} | "
                           f"{g.get('target_low')}-{g.get('target_high')} {g.get('unit') or ''} | \"{g.get('quote')}\""
                           for g in guidance) or "(no transcripts available)"
@@ -541,9 +549,13 @@ def research(symbol: str, llm: LLM | None = None, n_calls: int = 4, with_ar: boo
         later = "\n".join(f"{c['quarter']} call p{d.get('page')}: [{d.get('topic', '')}] \"{d.get('quote')}\""
                           for c in calls for d in (c.get("delivery_comments") or [])) or "(none)"
         progress("Weighing narrative against numbers")
-        analysis = llm.json("reason", VERDICT_SYSTEM, VERDICT_USER.format(
-            company=company, numbers=_numbers_text(q, a), guidance=gtext, checked=ctext, later=later),
-            max_tokens=2500) or {}
+        try:
+            analysis = llm.json("reason", VERDICT_SYSTEM, VERDICT_USER.format(
+                company=company, numbers=_numbers_text(q, a), guidance=gtext, checked=ctext, later=later),
+                max_tokens=2500) or {}
+        except LLMUnavailable as e:
+            log.warning("verdict step skipped for %s: %s", symbol, str(e)[:120])
+            analysis = {}
 
     model_v = {p.get("id"): p for p in analysis.get("promises") or []}
     promises = []
@@ -569,6 +581,7 @@ def research(symbol: str, llm: LLM | None = None, n_calls: int = 4, with_ar: boo
         "narrative_vs_numbers": analysis.get("narrative_vs_numbers") or [],
         "bull": analysis.get("bull") or [], "bear": analysis.get("bear") or [],
         "verdict": analysis.get("verdict"), "sources": sources,
+        "complete": bool(guidance) and bool(analysis),
         "cost": {**llm.usage.as_dict(), "seconds": round(time.time() - t0, 1)},
         "discipline": "Primary sources only: company filings via screener.in, earnings-call transcripts"
                       + (", annual report" if with_ar else "") + ". No news, broker notes or model memory.",

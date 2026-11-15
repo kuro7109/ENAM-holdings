@@ -1,10 +1,11 @@
 import { useEffect, useRef, useState } from "react";
+import { Row } from "../components/Cards";
 import type { Data } from "../lib";
-import { num, pct } from "../lib";
+import { dayLabel, num, pct, tone } from "../lib";
 
 const API = (import.meta.env.VITE_API_URL as string | undefined)?.replace(/\/$/, "");
 type State = { status: "idle" } | { status: "running"; stage: string; symbol: string } | { status: "ready"; data: any }
-  | { status: "error"; error: string };
+  | { status: "error"; error: string } | { status: "missing"; symbol: string };
 
 export function Ask({ data, symbol, setSymbol }: { data: Data; symbol: string | null; setSymbol: (s: string | null) => void }) {
   const [q, setQ] = useState(symbol || "");
@@ -25,8 +26,7 @@ export function Ask({ data, symbol, setSymbol }: { data: Data; symbol: string | 
         }
       } catch { /* fall through to the live API */ }
       if (!API) {
-        const ready = Object.keys(data.researchIndex).join(", ");
-        setState({ status: "error", error: `${symbol} isn't precomputed in this demo. The engine works on any NSE symbol: run python run_research.py ${symbol} in the repo (about a minute), or connect the live research API. Ready now: ${ready}.` });
+        setState({ status: "missing", symbol });
         return;
       }
       const started = Date.now();
@@ -90,7 +90,46 @@ export function Ask({ data, symbol, setSymbol }: { data: Data; symbol: string | 
         </div>
       )}
       {state.status === "error" && <div className="empty"><h2>Couldn't research that</h2>{state.error}</div>}
+      {state.status === "missing" && <Missing symbol={state.symbol} data={data} onPick={setSymbol} />}
       {state.status === "ready" && <Research r={state.data} />}
+    </div>
+  );
+}
+
+/** A symbol with no saved research: show what FINN already knows, and where to go next. */
+function Missing({ symbol, data, onPick }: { symbol: string; data: Data; onPick: (s: string) => void }) {
+  const s = data.market?.stocks.find((x) => x.symbol === symbol);
+  const filings = (data.feed?.items || []).filter((i) => i.symbol === symbol).slice(0, 4);
+  const ready = Object.entries(data.researchIndex);
+  return (
+    <div className="empty" aria-live="polite">
+      <h2>{symbol} hasn't been researched yet</h2>
+      {s ? (
+        <>
+          <p className="small" style={{ margin: "4px 0 10px" }}>
+            {s.name}: ₹{num(s.close, 1)} at the close of {dayLabel(s.date)},{" "}
+            <span className={tone(s.pct_change)}>{pct(s.pct_change)}</span> on the day, {pct(s.pct_from_52w_high)} from its 52-week high.
+          </p>
+          {filings.length > 0 && (
+            <>
+              <div className="section-title">Its latest filings</div>
+              <ul className="rows">{filings.map((i) => <Row key={i.id} item={i} />)}</ul>
+            </>
+          )}
+        </>
+      ) : (
+        <p className="small" style={{ margin: "4px 0 10px" }}>It isn't in this portfolio, so there's no saved data for it here.</p>
+      )}
+      <p className="small muted" style={{ marginTop: 14 }}>
+        The research engine works on any NSE symbol. In the repo, <code>python run_research.py {symbol}</code> builds this
+        page in about a minute, from filings and earnings calls only.
+      </p>
+      {ready.length > 0 && (
+        <>
+          <div className="section-title">Ready now</div>
+          <div className="cats">{ready.map(([k, v]) => <button key={k} className="chip" onClick={() => onPick(k)}>{k} <span className="faint">· {v.name}</span></button>)}</div>
+        </>
+      )}
     </div>
   );
 }
@@ -122,6 +161,12 @@ function Research({ r }: { r: any }) {
       <div className="muted small">{r.name}</div>
       {r.verdict && <p className="verdict">{r.verdict}</p>}
 
+      {total === 0 && (
+        <p className="small muted" style={{ marginTop: 6 }}>
+          Promise tracking hasn't run for this company yet{r.calls?.some((c: any) => c.status === "no_model") ? " (the free model quota ran out)" : ""}.
+          The numbers below are complete.
+        </p>
+      )}
       {total > 0 && (
         <>
           <div className="section-title">Promised vs delivered <span className="faint">last {r.calls?.length} calls, {total} promises</span></div>

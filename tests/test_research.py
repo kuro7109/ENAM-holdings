@@ -99,6 +99,9 @@ class FakeLLM(LLM):
         super().__init__(cache_dir=tmp)
         self.prompts = []
 
+    def available(self, tier):
+        return True
+
     def json(self, tier, system, user, **kw):
         self.prompts.append((tier, system))
         if tier == "extract":
@@ -155,3 +158,22 @@ def test_absolute_revenue_target_compares_rupees_not_growth():
     q, a = n["trajectory"]["quarterly"], n["trajectory"]["annual"]
     c = R.check_in_code({"metric": "revenue_growth", "target_low": 5000, "unit": "₹ cr", "horizon": "FY26"}, q, a)
     assert c["verdict"] == "partly" and "₹4,620 cr of sales vs ₹5,000 cr" in c["actual"]  # Q1..Q4 FY26 = 1150+1100+1160+1210
+
+
+def test_research_keeps_numbers_when_models_run_out(tmp_path):
+    from finn.llm import LLMUnavailable
+    import finn.pdftext as P
+
+    class Broke(FakeLLM):
+        def json(self, tier, system, user, **kw):
+            raise LLMUnavailable("quota")
+    orig = P.pages_text
+    P.pages_text = lambda blob, **kw: ["We expect double-digit growth"]
+    try:
+        d = R.research("acme", llm=Broke(tmp_path), n_calls=2,
+                       screener=lambda s: R.parse_screener(HTML, "u") | {"view": "consolidated"},
+                       fetch_pdf=lambda url: b"%PDF")
+    finally:
+        P.pages_text = orig
+    assert d["snapshot"]["ttm_sales"] == 4840 and d["promises"] == [] and not d["complete"]
+    assert [c["status"] for c in d["calls"]] == ["no_model", "no_model"]

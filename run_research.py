@@ -23,6 +23,8 @@ def main(argv=None) -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("symbols", nargs="*")
     ap.add_argument("--demo", action="store_true")
+    ap.add_argument("--holdings", action="store_true", help="every company in the portfolio")
+    ap.add_argument("--skip-existing", action="store_true", help="skip symbols already researched today")
     ap.add_argument("--with-ar", action="store_true")
     ap.add_argument("--calls", type=int, default=4, help="how many recent earnings calls to read")
     ap.add_argument("--numbers-only", action="store_true")
@@ -34,6 +36,18 @@ def main(argv=None) -> int:
     syms = [s.upper() for s in a.symbols]
     if a.demo:
         syms += [c.symbol for c in load_config().research]
+    if a.holdings:
+        syms += [c.symbol for c in load_config().companies]
+    syms = list(dict.fromkeys(syms))
+    if a.skip_existing:
+        from finn.research import RESEARCH_DIR
+        def fresh(s):
+            p = RESEARCH_DIR / f"{s}.json"
+            return p.exists() and json.loads(p.read_text(encoding="utf-8")).get("promises")
+        skipped = [s for s in syms if fresh(s)]
+        syms = [s for s in syms if s not in skipped]
+        if skipped:
+            print(f"skipping (already researched): {', '.join(skipped)}")
     if not syms:
         ap.error("give a symbol or --demo")
 
@@ -51,7 +65,7 @@ def main(argv=None) -> int:
                 print(f"  annual reports {len(sc['annual_reports'])} · e.g. {sc['annual_reports'][:1]}")
                 print(json.dumps(compute_numbers(sc)["snapshot"], indent=1))
                 continue
-            llm = LLM(max_calls=0 if a.numbers_only else 40)
+            llm = LLM(max_calls=0 if a.numbers_only else 12)
             n = 0 if a.numbers_only else a.calls
             data = research(sym, llm=llm, n_calls=n, with_ar=a.with_ar and not a.numbers_only,
                             progress=lambda s: print(f"  · {s}"))
@@ -59,8 +73,8 @@ def main(argv=None) -> int:
             c = data["cost"]
             print(f"{sym}: {len(data['promises'])} promises {data['tally']} · {c['calls']} LLM calls · "
                   f"{c['tokens_in']:,} tokens in · {c['seconds']}s -> {p}")
-        except ResearchError as e:
-            print(f"{sym}: {e}")
+        except Exception as e:  # one company failing must not stop the batch
+            print(f"{sym}: skipped ({str(e)[:140]})")
             rc = 1
     return rc
 
