@@ -152,7 +152,7 @@ export function ChatPage({ data, t, focus, onOpen }: {
             <div className="bubble">{m.content}</div>
             {m.role === "assistant" && (
               <div className="msg-meta">
-                {(m.symbols || []).slice(0, 3).map((s) => <button key={s} className="chip sm" onClick={() => onOpen(s)}>Open {s}</button>)}
+                {[...new Set(m.symbols || [])].slice(0, 3).map((s) => <button key={s} className="chip sm" onClick={() => onOpen(s)}>Open {s}</button>)}
                 <span className="faint tiny">{m.mode === "ai" ? "AI · from FINN's data" : "From saved data"}</span>
               </div>
             )}
