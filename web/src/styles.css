@@ -42,7 +42,8 @@ input[type="range"] { accent-color: var(--ink); }
 .tiny { font-size: 12px; }
 
 /* ---------------------------------------------------------------- frame */
-.app { max-width: 520px; margin: 0 auto; padding: 0 0 calc(var(--tab-h) + 24px + env(safe-area-inset-bottom)); }
+/* bottom padding clears the tab bar AND the floating Ask button, so the last row is always tappable */
+.app { max-width: 520px; margin: 0 auto; padding: 0 0 calc(var(--tab-h) + 96px + env(safe-area-inset-bottom)); }
 .top {
   position: sticky; top: 0; z-index: 5; background: color-mix(in srgb, var(--paper) 92%, transparent);
   backdrop-filter: blur(8px); padding: calc(10px + env(safe-area-inset-top)) var(--pad) 10px;
