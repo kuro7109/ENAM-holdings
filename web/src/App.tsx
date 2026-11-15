@@ -5,6 +5,7 @@ import { Alerts } from "./views/Alerts";
 import { Ask } from "./views/Ask";
 import { Brief } from "./views/Brief";
 import { Holdings } from "./views/Holdings";
+import { Chat } from "./components/Chat";
 
 type Tab = "brief" | "alerts" | "holdings" | "ask";
 const DEFAULT_CARE = ["results", "M&A", "management_change", "litigation", "fund_raise", "pledging", "capex"];
@@ -36,6 +37,7 @@ export default function App() {
   const [care, setCare] = useState<string[]>(() => store.get("care", DEFAULT_CARE));
   const [t, setT] = useState<Thresholds | null>(() => store.get<Thresholds | null>("thresholds", null));
   const [symbol, setSymbol] = useState<string | null>(null);
+  const [chat, setChat] = useState(false);
 
   useEffect(() => {
     loadData().then(setData);
@@ -78,6 +80,16 @@ export default function App() {
           {tab === "holdings" && <Holdings data={data} t={thresholds} onResearch={research} />}
           {tab === "ask" && <Ask data={data} symbol={symbol} setSymbol={setSymbol} />}
         </main>
+      )}
+      {data && !chat && (
+        <button className="fab" onClick={() => setChat(true)} aria-label="Ask FINN a question">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinejoin="round" /></svg>
+          Ask FINN
+        </button>
+      )}
+      {data && chat && (
+        <Chat data={data} t={thresholds} tab={tab} focus={tab === "ask" ? symbol : null}
+          onOpen={(s) => research(s)} onClose={() => setChat(false)} />
       )}
       <nav className="tabs" aria-label="Sections">
         <div className="tabs-inner">

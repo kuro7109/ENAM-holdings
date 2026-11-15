@@ -14,6 +14,24 @@ why it matters, and **pulls** research on any NSE company from primary sources o
 | **Holdings** | 18 stocks, biggest move first, sparkline, volume ×; tap for 52-week range, flagged days and filings. |
 | **Research** | Any NSE symbol. The centrepiece is **promised vs delivered**: every guidance statement from the last four earnings calls, checked against reported numbers, each linking to its transcript page. Also narrative vs numbers, trajectory, balance sheet, cash conversion and bull / bear. |
 
+## Interaction model: dashboard first, chat as a layer
+
+A PM's morning is triage, not conversation, so FINN opens on a ranked brief rather than a chat
+box. Chat (**Ask FINN**, on every screen) is for the question the screens didn't anticipate:
+*"Did Kaynes keep its promises?"*, *"What did HAL file this week?"*. Every answer is built only
+from FINN's own data (filings, prices, your alerts, research), leads with the number, stays
+under ~90 words, and ends with buttons that open the companies it mentions, so chat routes you
+back into the dashboard instead of replacing it. It knows which company you're looking at.
+
+- **Grounded retrieval, cheaply:** the app already holds every number, so the client sends only
+  the slice the question needs (named companies, recent brief, alerts; ≤24k chars) to
+  `web/api/chat.ts`, which adds the rules and calls a Flash-Lite-class model, falling through
+  models with separate free quotas. The key never leaves the server.
+- **Honest status:** a badge says *AI* or *Offline*. With no key or no quota, an offline
+  answerer handles the common questions (the brief, a company, alerts, comparisons) straight
+  from the data, so the feature never dead-ends in a demo.
+- Voice was left out on purpose: dense numbers read better than they sound.
+
 ## Architecture
 
 ```
@@ -72,8 +90,9 @@ If `data/out` is empty the app falls back to clearly labelled sample data made b
 pipeline (`scripts/make_sample_data.py`), so the UI can be built offline.
 
 ### Deploy
-- **App:** Vercel → import repo → Root Directory `web` (framework: Vite). Optional env
-  `VITE_API_URL` = the Render URL below. Every data push redeploys.
+- **App:** Vercel → import repo → Root Directory `web` (framework: Vite). Every data push redeploys.
+  For AI answers in **Ask FINN**, add `GEMINI_API_KEY` (and optionally `GROQ_API_KEY`) under
+  Project → Settings → Environment Variables, then redeploy. Without it, chat runs in offline mode.
 - **Live research API:** Render → New → Blueprint → this repo (`render.yaml`), add the keys.
 - **Daily refresh:** add the three keys as GitHub Actions secrets.
 

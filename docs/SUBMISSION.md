@@ -40,6 +40,9 @@ about a minute: `python run_research.py SYMBOL`.
 
 **What I built**
 
+Interaction model, in one line: the dashboard leads and chat is a layer on top. The app opens on a ranked brief, because a PM's morning is triage. **Ask FINN** answers the question the screens didn't anticipate, using only FINN's own data, and routes you back into the right screen.
+
+
 FINN is a mobile-first triage tool for an 18-stock Indian portfolio, with two modes:
 
 - **Brief (push).** It opens with one sentence, e.g. *"2 things need you. 12 filings don't."* By default it covers the time since you last looked or the last 24 hours, and you can pick 3, 7 or 30 days. On a quiet day it widens itself and says so instead of showing an empty screen.
@@ -61,7 +64,7 @@ FINN is a mobile-first triage tool for an 18-stock Indian portfolio, with two mo
 
 **What I left out on purpose**
 
-Real push notifications (the Brief and Alerts model them), voice, intraday data, per-user portfolios, and news or broker data (excluded by design). A hosted live research API (the FastAPI service and `render.yaml` are in the repo, not deployed).
+Real push notifications (the Brief and Alerts model them), voice (dense numbers read better than they sound), intraday data, per-user portfolios, and news or broker data (excluded by design). A hosted live research API (the FastAPI service and `render.yaml` are in the repo, not deployed).
 
 **Where I'd take it next**
 
