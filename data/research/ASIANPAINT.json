@@ -1,0 +1,1501 @@
+{
+ "symbol": "ASIANPAINT",
+ "name": "Asian Paints Ltd",
+ "generated_at": "2026-11-15T16:02:58+05:30",
+ "as_of": "2026-11-15",
+ "business": {
+  "about": "Asian Paints is the largest home decor company in India. The 80+yr old company has major brands like Asian Paints, Apco, etc under its umbrella. The co. is into wall paints, wall coverings, waterproofing, texture painting, wall stickers, mechanized tools, adhesives, modular kitchens, sanitaryware, lightings, soft furnishings, and uPVC windows.",
+  "key_points": "Business Segments - FY26: [1]",
+  "segments": [
+   {
+    "name": "Decorative business",
+    "share_or_growth": "6.4% volume growth, 14.5% value growth (Q2)",
+    "page": 14
+   },
+   {
+    "name": "Bath and Kitchen",
+    "share_or_growth": "strong growth (Q2)",
+    "page": 18
+   },
+   {
+    "name": "Weatherseal",
+    "share_or_growth": "good growth (Q2)",
+    "page": 18
+   },
+   {
+    "name": "White Teak",
+    "share_or_growth": "slower growth (Q2)",
+    "page": 18
+   },
+   {
+    "name": "Industrial (PPGAP - Auto OE Refinishes)",
+    "share_or_growth": "34% growth (Q2)",
+    "page": 18
+   },
+   {
+    "name": "Industrial (JV2 - General Industrial)",
+    "share_or_growth": "28% growth (Q2)",
+    "page": 18
+   },
+   {
+    "name": "International markets",
+    "share_or_growth": "30% growth (Q2), 28% growth (H1)",
+    "page": 20
+   }
+  ]
+ },
+ "snapshot": {
+  "market_cap_cr": 244595.0,
+  "price": 2550.0,
+  "pe": 49.4,
+  "roce": 26.3,
+  "roe": 21.8,
+  "div_yield": 1.08,
+  "ttm_sales": 38632.0,
+  "ttm_pat": 4904.0,
+  "last_q": "Q2 FY27",
+  "last_q_sales_yoy": 16.9,
+  "last_q_pat_yoy": 6.6,
+  "last_q_opm": 16.0,
+  "fy_opm": 19.0,
+  "fy": "FY26"
+ },
+ "trajectory": {
+  "sales_cagr_3y": 1.0,
+  "sales_cagr_5y": 10.4,
+  "pat_cagr_3y": 1.6,
+  "pat_cagr_5y": 6.5,
+  "opm_change_3y": 1.0,
+  "quarterly": [
+   {
+    "period": "Dec 2023",
+    "q": "Q3 FY24",
+    "sales": 9103.0,
+    "op_profit": 2056.0,
+    "opm": 23.0,
+    "pat": 1475.0
+   },
+   {
+    "period": "Mar 2024",
+    "q": "Q4 FY24",
+    "sales": 8731.0,
+    "op_profit": 1691.0,
+    "opm": 19.0,
+    "pat": 1275.0
+   },
+   {
+    "period": "Jun 2024",
+    "q": "Q1 FY25",
+    "sales": 8970.0,
+    "op_profit": 1694.0,
+    "opm": 19.0,
+    "pat": 1187.0
+   },
+   {
+    "period": "Sep 2024",
+    "q": "Q2 FY25",
+    "sales": 8028.0,
+    "op_profit": 1240.0,
+    "opm": 15.0,
+    "pat": 694.0,
+    "sales_yoy": -5.3,
+    "pat_yoy": -43.7
+   },
+   {
+    "period": "Dec 2024",
+    "q": "Q3 FY25",
+    "sales": 8549.0,
+    "op_profit": 1637.0,
+    "opm": 19.0,
+    "pat": 1128.0,
+    "sales_yoy": -6.1,
+    "pat_yoy": -23.5
+   },
+   {
+    "period": "Mar 2025",
+    "q": "Q4 FY25",
+    "sales": 8359.0,
+    "op_profit": 1436.0,
+    "opm": 17.0,
+    "pat": 701.0,
+    "sales_yoy": -4.3,
+    "pat_yoy": -45.0
+   },
+   {
+    "period": "Jun 2025",
+    "q": "Q1 FY26",
+    "sales": 8939.0,
+    "op_profit": 1625.0,
+    "opm": 18.0,
+    "pat": 1117.0,
+    "sales_yoy": -0.3,
+    "pat_yoy": -5.9
+   },
+   {
+    "period": "Sep 2025",
+    "q": "Q2 FY26",
+    "sales": 8531.0,
+    "op_profit": 1503.0,
+    "opm": 18.0,
+    "pat": 1018.0,
+    "sales_yoy": 6.3,
+    "pat_yoy": 46.7
+   },
+   {
+    "period": "Dec 2025",
+    "q": "Q3 FY26",
+    "sales": 8867.0,
+    "op_profit": 1781.0,
+    "opm": 20.0,
+    "pat": 1074.0,
+    "sales_yoy": 3.7,
+    "pat_yoy": -4.8
+   },
+   {
+    "period": "Mar 2026",
+    "q": "Q4 FY26",
+    "sales": 9247.0,
+    "op_profit": 1787.0,
+    "opm": 19.0,
+    "pat": 1185.0,
+    "sales_yoy": 10.6,
+    "pat_yoy": 69.0
+   },
+   {
+    "period": "Jun 2026",
+    "q": "Q1 FY27",
+    "sales": 10542.0,
+    "op_profit": 2169.0,
+    "opm": 21.0,
+    "pat": 1559.0,
+    "sales_yoy": 17.9,
+    "pat_yoy": 39.6
+   },
+   {
+    "period": "Sep 2026",
+    "q": "Q2 FY27",
+    "sales": 9977.0,
+    "op_profit": 1557.0,
+    "opm": 16.0,
+    "pat": 1085.0,
+    "sales_yoy": 16.9,
+    "pat_yoy": 6.6
+   }
+  ],
+  "annual": [
+   {
+    "period": "Mar 2017",
+    "fy": "FY17",
+    "sales": 15062.0,
+    "opm": 20.0,
+    "pat": 2016.0,
+    "borrowings": 560.0,
+    "equity": 7604.0,
+    "de": 0.07,
+    "cfo": 1527.0,
+    "cfi": -681.0,
+    "sales_growth": 5.5
+   },
+   {
+    "period": "Mar 2018",
+    "fy": "FY18",
+    "sales": 16825.0,
+    "opm": 19.0,
+    "pat": 2098.0,
+    "borrowings": 533.0,
+    "equity": 8410.0,
+    "de": 0.06,
+    "cfo": 2113.0,
+    "cfi": -1556.0,
+    "sales_growth": 11.7
+   },
+   {
+    "period": "Mar 2019",
+    "fy": "FY19",
+    "sales": 19240.0,
+    "opm": 20.0,
+    "pat": 2208.0,
+    "borrowings": 1320.0,
+    "equity": 9471.0,
+    "de": 0.14,
+    "cfo": 2470.0,
+    "cfi": -918.0,
+    "sales_growth": 14.4
+   },
+   {
+    "period": "Mar 2020",
+    "fy": "FY20",
+    "sales": 20211.0,
+    "opm": 21.0,
+    "pat": 2774.0,
+    "borrowings": 1118.0,
+    "equity": 10130.0,
+    "de": 0.11,
+    "cfo": 3038.0,
+    "cfi": -518.0,
+    "sales_growth": 5.0
+   },
+   {
+    "period": "Mar 2021",
+    "fy": "FY21",
+    "sales": 21713.0,
+    "opm": 22.0,
+    "pat": 3207.0,
+    "borrowings": 1093.0,
+    "equity": 12806.0,
+    "de": 0.09,
+    "cfo": 3683.0,
+    "cfi": -541.0,
+    "sales_growth": 7.4
+   },
+   {
+    "period": "Mar 2022",
+    "fy": "FY22",
+    "sales": 29101.0,
+    "opm": 17.0,
+    "pat": 3085.0,
+    "borrowings": 1587.0,
+    "equity": 13812.0,
+    "de": 0.11,
+    "cfo": 986.0,
+    "cfi": -317.0,
+    "sales_growth": 34.0
+   },
+   {
+    "period": "Mar 2023",
+    "fy": "FY23",
+    "sales": 34489.0,
+    "opm": 18.0,
+    "pat": 4195.0,
+    "borrowings": 1933.0,
+    "equity": 15992.0,
+    "de": 0.12,
+    "cfo": 4193.0,
+    "cfi": -1282.0,
+    "sales_growth": 18.5
+   },
+   {
+    "period": "Mar 2024",
+    "fy": "FY24",
+    "sales": 35495.0,
+    "opm": 21.0,
+    "pat": 5558.0,
+    "borrowings": 2474.0,
+    "equity": 18728.0,
+    "de": 0.13,
+    "cfo": 6104.0,
+    "cfi": -2548.0,
+    "sales_growth": 2.9
+   },
+   {
+    "period": "Mar 2025",
+    "fy": "FY25",
+    "sales": 33906.0,
+    "opm": 18.0,
+    "pat": 3710.0,
+    "borrowings": 2290.0,
+    "equity": 19400.0,
+    "de": 0.12,
+    "cfo": 4424.0,
+    "cfi": -941.0,
+    "sales_growth": -4.5
+   },
+   {
+    "period": "Mar 2026",
+    "fy": "FY26",
+    "sales": 35584.0,
+    "opm": 19.0,
+    "pat": 4395.0,
+    "borrowings": 3929.0,
+    "equity": 21372.0,
+    "de": 0.18,
+    "cfo": 7088.0,
+    "cfi": -1328.0,
+    "sales_growth": 4.9
+   }
+  ]
+ },
+ "balance": {
+  "borrowings": 3929.0,
+  "equity": 21372.0,
+  "de": 0.18,
+  "de_3y_ago": 0.12,
+  "working_capital": {
+   "Debtor Days": [
+    {
+     "period": "Mar 2021",
+     "value": 44.0
+    },
+    {
+     "period": "Mar 2022",
+     "value": 49.0
+    },
+    {
+     "period": "Mar 2023",
+     "value": 49.0
+    },
+    {
+     "period": "Mar 2024",
+     "value": 50.0
+    },
+    {
+     "period": "Mar 2025",
+     "value": 46.0
+    },
+    {
+     "period": "Mar 2026",
+     "value": 46.0
+    }
+   ],
+   "Inventory Days": [
+    {
+     "period": "Mar 2021",
+     "value": 134.0
+    },
+    {
+     "period": "Mar 2022",
+     "value": 142.0
+    },
+    {
+     "period": "Mar 2023",
+     "value": 121.0
+    },
+    {
+     "period": "Mar 2024",
+     "value": 122.0
+    },
+    {
+     "period": "Mar 2025",
+     "value": 142.0
+    },
+    {
+     "period": "Mar 2026",
+     "value": 118.0
+    }
+   ],
+   "Days Payable": [
+    {
+     "period": "Mar 2021",
+     "value": 119.0
+    },
+    {
+     "period": "Mar 2022",
+     "value": 96.0
+    },
+    {
+     "period": "Mar 2023",
+     "value": 71.0
+    },
+    {
+     "period": "Mar 2024",
+     "value": 79.0
+    },
+    {
+     "period": "Mar 2025",
+     "value": 81.0
+    },
+    {
+     "period": "Mar 2026",
+     "value": 79.0
+    }
+   ],
+   "Cash Conversion Cycle": [
+    {
+     "period": "Mar 2021",
+     "value": 59.0
+    },
+    {
+     "period": "Mar 2022",
+     "value": 94.0
+    },
+    {
+     "period": "Mar 2023",
+     "value": 99.0
+    },
+    {
+     "period": "Mar 2024",
+     "value": 93.0
+    },
+    {
+     "period": "Mar 2025",
+     "value": 107.0
+    },
+    {
+     "period": "Mar 2026",
+     "value": 84.0
+    }
+   ],
+   "Working Capital Days": [
+    {
+     "period": "Mar 2021",
+     "value": 37.0
+    },
+    {
+     "period": "Mar 2022",
+     "value": 57.0
+    },
+    {
+     "period": "Mar 2023",
+     "value": 54.0
+    },
+    {
+     "period": "Mar 2024",
+     "value": 49.0
+    },
+    {
+     "period": "Mar 2025",
+     "value": 52.0
+    },
+    {
+     "period": "Mar 2026",
+     "value": 38.0
+    }
+   ],
+   "ROCE %": [
+    {
+     "period": "Mar 2021",
+     "value": 34.0
+    },
+    {
+     "period": "Mar 2022",
+     "value": 29.0
+    },
+    {
+     "period": "Mar 2023",
+     "value": 34.0
+    },
+    {
+     "period": "Mar 2024",
+     "value": 38.0
+    },
+    {
+     "period": "Mar 2025",
+     "value": 26.0
+    },
+    {
+     "period": "Mar 2026",
+     "value": 26.0
+    }
+   ]
+  }
+ },
+ "cash": {
+  "cfo_to_pat_3y": 1.29,
+  "years": [
+   {
+    "fy": "FY21",
+    "cfo": 3683.0,
+    "pat": 3207.0,
+    "cfi": -541.0
+   },
+   {
+    "fy": "FY22",
+    "cfo": 986.0,
+    "pat": 3085.0,
+    "cfi": -317.0
+   },
+   {
+    "fy": "FY23",
+    "cfo": 4193.0,
+    "pat": 4195.0,
+    "cfi": -1282.0
+   },
+   {
+    "fy": "FY24",
+    "cfo": 6104.0,
+    "pat": 5558.0,
+    "cfi": -2548.0
+   },
+   {
+    "fy": "FY25",
+    "cfo": 4424.0,
+    "pat": 3710.0,
+    "cfi": -941.0
+   },
+   {
+    "fy": "FY26",
+    "cfo": 7088.0,
+    "pat": 4395.0,
+    "cfi": -1328.0
+   }
+  ]
+ },
+ "calls": [
+  {
+   "month": "Nov 2026",
+   "quarter": "Q2 FY27",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=ee7e6efe-1f9b-4b5e-bff7-1da18902ffeb.pdf",
+   "status": "ok",
+   "tone": "Management expressed confidence in H1 performance and future outlook, despite Q2 inflationary pressures.",
+   "pushback": [
+    "Impact of inventory on Q2 volumes and normalization in October.",
+    "Outlook for gross margin in H2, given price hikes and product mix.",
+    "Risk to 18-20% EBITDA margin band given current trends."
+   ],
+   "delivery_comments": [
+    {
+     "quote": "overall volumes despite a very high inflationary environment and the steep price hikes... we have been able to grow at a good volume of about 6.4%",
+     "topic": "Q2 FY27 volume growth",
+     "page": 14
+    },
+    {
+     "quote": "the value growth has also been very strong at 14.5%.",
+     "topic": "Q2 FY27 value growth",
+     "page": 14
+    },
+    {
+     "quote": "From a point of view of H1, the picture is even far brighter, given the top line is closer to about 16%, given the run in quarter one of what we had.",
+     "topic": "H1 FY27 top line growth",
+     "page": 22
+    },
+    {
+     "quote": "The great thing to look at is that the PBDIT margin growth at a half-year level is very good and the PBDIT margin is in the higher range of the overall band of what we have been speaking at 19.6%.",
+     "topic": "H1 FY27 PBDIT margin",
+     "page": 22
+    }
+   ],
+   "segments": [
+    {
+     "name": "Decorative business",
+     "share_or_growth": "6.4% volume growth, 14.5% value growth (Q2)",
+     "page": 14
+    },
+    {
+     "name": "Bath and Kitchen",
+     "share_or_growth": "strong growth (Q2)",
+     "page": 18
+    },
+    {
+     "name": "Weatherseal",
+     "share_or_growth": "good growth (Q2)",
+     "page": 18
+    },
+    {
+     "name": "White Teak",
+     "share_or_growth": "slower growth (Q2)",
+     "page": 18
+    },
+    {
+     "name": "Industrial (PPGAP - Auto OE Refinishes)",
+     "share_or_growth": "34% growth (Q2)",
+     "page": 18
+    },
+    {
+     "name": "Industrial (JV2 - General Industrial)",
+     "share_or_growth": "28% growth (Q2)",
+     "page": 18
+    },
+    {
+     "name": "International markets",
+     "share_or_growth": "30% growth (Q2), 28% growth (H1)",
+     "page": 20
+    }
+   ]
+  },
+  {
+   "month": "Aug 2026",
+   "quarter": "Q1 FY27",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=6e0d5627-2b8b-4bf1-a7ce-9d0160833a0f.pdf",
+   "status": "ok",
+   "tone": "Management expressed cautious optimism, highlighting strong Q1 performance while acknowledging raw material volatility and competitive intensity.",
+   "pushback": [
+    "Sustainability of volume growth given adverse base.",
+    "Impact of raw material volatility on future margins.",
+    "Quantifying low-cost inventory benefit on gross margin."
+   ],
+   "delivery_comments": [
+    {
+     "topic": "Industrial PBT margins",
+     "quote": "The PBT margins have been a little bit stressed here, about 15.7%, lower by 119 bps.",
+     "page": 13
+    },
+    {
+     "topic": "Gross margin trend",
+     "quote": "the overall gross margin trend has also been fairly strong. There was some pressure on gross margin; we were at about 45.6% in the last quarter. However, we are still higher if you look at it on a YoY basis.",
+     "page": 16
+    },
+    {
+     "topic": "Consolidated top line and PBDIT margins",
+     "quote": "Consolidated financials almost follow the same route. In fact, it improved to about an 18% top line growth. ... PBDIT margins stand at about 20.6%, almost 240 bps higher YoY.",
+     "page": 17
+    },
+    {
+     "topic": "Volume growth",
+     "quote": "We seem to be quite happy of what we had predicted last quarter, that we should be in that band of about 8% to 10%.",
+     "page": 19
+    }
+   ],
+   "segments": [
+    {
+     "name": "PPGAP (Automotive OE business)",
+     "share_or_growth": "13% top line growth, 5% PBT growth, 15.7% PBT margins (lower by 119 bps)",
+     "page": 13
+    },
+    {
+     "name": "General Industrial business",
+     "share_or_growth": "21% overall growth, 6.9% PBT margins (lower YoY), 4% PBT growth",
+     "page": 13
+    },
+    {
+     "name": "Standalone financials",
+     "share_or_growth": "17% top line growth, PBDIT/PBT/PAT growth >30%, 22% PBDIT margin",
+     "page": 16
+    },
+    {
+     "name": "Consolidated financials",
+     "share_or_growth": "18% top line growth, PBDIT/PBT/PAT growth higher than standalone, 20.6% PBDIT margin (240 bps higher YoY)",
+     "page": 17
+    },
+    {
+     "name": "Innovation (new products within 3 years)",
+     "share_or_growth": "17% of revenue",
+     "page": 18
+    }
+   ]
+  },
+  {
+   "month": "Jun 2026",
+   "quarter": "Q4 FY26",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=2a71cf39-800d-4765-8131-5d78e54925ce.pdf",
+   "status": "ok",
+   "tone": "Management is confident about growth and margins, despite acknowledging high competitive intensity and inflationary pressures.",
+   "pushback": [
+    "Impact of price hikes on demand and volume growth",
+    "Sustainability of margin guidance amidst inflation and competition",
+    "Competitive intensity and discounting levels in the market"
+   ],
+   "delivery_comments": [
+    {
+     "topic": "Volume Growth",
+     "quote": "The volume growth is back in double digits in this quarter, and we can see that the trajectory has been steadily good over the four quarters this year.",
+     "page": 11
+    },
+    {
+     "topic": "Rural vs Urban Demand",
+     "quote": "We got good growth both in rural and urban centers across... Rural was a little bit ahead of urban growth.",
+     "page": 12
+    },
+    {
+     "topic": "Premiumization Strategy",
+     "quote": "The premiumization strategy has been working very well. It improved the mix, and the PreLux categories have moved quite well.",
+     "page": 12
+    },
+    {
+     "topic": "Gross Margins",
+     "quote": "We have seen deflation in the market across the four quarters and even in Q4 we saw a deflation of about 1.4%, taking our Gross Margins to almost an all-time high of about 45.6%.",
+     "page": 16
+    }
+   ],
+   "segments": [
+    {
+     "name": "Decorative Business",
+     "share_or_growth": "12.4% volume growth, 10.2% value growth (Q4)",
+     "page": 11
+    },
+    {
+     "name": "Full Coatings (Decorative + Industrial)",
+     "share_or_growth": "12.7% volume growth, 11% value growth (Q4)",
+     "page": 11
+    },
+    {
+     "name": "New Products",
+     "share_or_growth": "17% of revenues",
+     "page": 12
+    },
+    {
+     "name": "Industrial Coatings",
+     "share_or_growth": "expected to grow much higher than decorative",
+     "page": 19
+    },
+    {
+     "name": "International Business",
+     "share_or_growth": "expected to continue to grow",
+     "page": 19
+    },
+    {
+     "name": "PreLux Category",
+     "share_or_growth": "strong strategic focus on driving growth",
+     "page": 27
+    },
+    {
+     "name": "Economy Emulsions Segment",
+     "share_or_growth": "continues to grow",
+     "page": 27
+    }
+   ]
+  },
+  {
+   "month": "Feb 2026",
+   "quarter": "Q3 FY26",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=8bc8c7dd-23d0-4cf2-bcdf-620769ed0d1a.pdf",
+   "status": "ok",
+   "tone": "Management acknowledged a challenging quarter but expressed confidence in strategic initiatives and cost efficiencies.",
+   "pushback": [
+    "Why is industry growth muted despite company efforts?",
+    "When will volume growth move to double digits?",
+    "Will margins sustain at current high levels given competitive intensity?",
+    "What is constraining domestic business growth this quarter?"
+   ],
+   "delivery_comments": [
+    {
+     "topic": "Q3 festive season and monsoon impact",
+     "quote": "therefore we got only about 15 odd days in October which was festive. We also had a prolonged monsoon which stepped into October as well. So, it was not great.",
+     "page": 15
+    },
+    {
+     "topic": "Q3 volume growth",
+     "quote": "overall, November and December, were good, which helped us basically prop the entire Q3 volume to about 7.9% growth.",
+     "page": 15
+    },
+    {
+     "topic": "Q3 Net Sales growth",
+     "quote": "Net Sales growth is about 2.9%, I think a little bit lower here because of the festive season being cut short.",
+     "page": 24
+    },
+    {
+     "topic": "9M performance",
+     "quote": "So, again possibly, strong catch up in Q3 and therefore that is reflecting in the 9M in terms of how we see overall results.",
+     "page": 25
+    }
+   ],
+   "segments": [
+    {
+     "name": "Decorative business",
+     "share_or_growth": "Q3 volume growth 7.9%",
+     "page": 15
+    },
+    {
+     "name": "Industrial business",
+     "share_or_growth": "done quite well and has added a lot of acceleration",
+     "page": 15
+    },
+    {
+     "name": "Coatings business (Decorative and Industrial)",
+     "share_or_growth": "Q3 volume growth 8.3%",
+     "page": 15
+    },
+    {
+     "name": "B2B",
+     "share_or_growth": "continue to grow possibly higher than retail",
+     "page": 27
+    },
+    {
+     "name": "International business",
+     "share_or_growth": "all other countries should do well overall (except Bangladesh)",
+     "page": 27
+    },
+    {
+     "name": "Home Decor",
+     "share_or_growth": "very fragmented market, organized market is very small",
+     "page": 32
+    },
+    {
+     "name": "Rural market (NeoBharat latex paints)",
+     "share_or_growth": "seeing some uptick... digging into some of the unorganized markets",
+     "page": 34
+    },
+    {
+     "name": "Premium-luxury market",
+     "share_or_growth": "contributes to only a certain portion of the entire market",
+     "page": 36
+    },
+    {
+     "name": "Upgradation economy segment",
+     "share_or_growth": "large segment",
+     "page": 36
+    }
+   ]
+  }
+ ],
+ "promises": [
+  {
+   "id": "G1",
+   "call": "Q2 FY27",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=ee7e6efe-1f9b-4b5e-bff7-1da18902ffeb.pdf",
+   "page": 28,
+   "metric": "ebitda_margin",
+   "horizon": "FY27",
+   "quote": "we believe as we go forward, for the year we should be able to maintain the band of what we have spoken of 18% to 20%.",
+   "speaker": "Amit Syngle",
+   "target_low": 18,
+   "target_high": 20,
+   "unit": "%",
+   "verdict": "on_track",
+   "actual": "EBITDA margin 18.2% (Q1 + Q2 FY27 so far)",
+   "note": null,
+   "checked_by": "code"
+  },
+  {
+   "id": "G2",
+   "call": "Q2 FY27",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=ee7e6efe-1f9b-4b5e-bff7-1da18902ffeb.pdf",
+   "page": 28,
+   "metric": "other",
+   "horizon": "full potential (VAE)",
+   "quote": "when it really works to its full potential, it should really give us some advantage of 300 bps to 500 bps on relevant products.",
+   "speaker": "Amit Syngle",
+   "target_low": 300,
+   "target_high": 500,
+   "unit": "bps",
+   "verdict": "unverifiable",
+   "actual": "N/A",
+   "note": "No data on VAE advantage",
+   "checked_by": "model"
+  },
+  {
+   "id": "G3",
+   "call": "Q2 FY27",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=ee7e6efe-1f9b-4b5e-bff7-1da18902ffeb.pdf",
+   "page": 29,
+   "metric": "volume_growth",
+   "horizon": "going forward",
+   "quote": "it would be reasonable to expect to see a volume growth of about 8% to 9% going forward.",
+   "speaker": "Amit Syngle",
+   "target_low": 8,
+   "target_high": 9,
+   "unit": "%",
+   "verdict": "missed",
+   "actual": "6.4% volume growth Q2 FY27",
+   "note": "Below 8-9% target",
+   "checked_by": "model"
+  },
+  {
+   "id": "G4",
+   "call": "Q2 FY27",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=ee7e6efe-1f9b-4b5e-bff7-1da18902ffeb.pdf",
+   "page": 33,
+   "metric": "capacity",
+   "horizon": "next year",
+   "quote": "with the full capacity of 150 KT we should be able to utilize in the next year.",
+   "speaker": "management",
+   "target_low": 150,
+   "target_high": null,
+   "unit": "KT",
+   "verdict": "too_early",
+   "actual": "N/A",
+   "note": "Capacity 150 KT not yet reached",
+   "checked_by": "model"
+  },
+  {
+   "id": "G5",
+   "call": "Q2 FY27",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=ee7e6efe-1f9b-4b5e-bff7-1da18902ffeb.pdf",
+   "page": 27,
+   "metric": "gross_margin",
+   "horizon": "going forward",
+   "quote": "This band of about 41% to 43% would really be the band we should be looking forward to.",
+   "speaker": "Amit Syngle",
+   "target_low": 41,
+   "target_high": 43,
+   "unit": "%",
+   "verdict": "delivered",
+   "actual": "45.6% gross margin Q1 FY27",
+   "note": "Exceeds 41-43% band",
+   "checked_by": "model"
+  },
+  {
+   "id": "G6",
+   "call": "Q2 FY27",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=ee7e6efe-1f9b-4b5e-bff7-1da18902ffeb.pdf",
+   "page": 20,
+   "metric": "ebitda_margin",
+   "horizon": "Q3 and Q4 FY27",
+   "quote": "PBT margin will get lifted into quarter three and quarter four.",
+   "speaker": "management",
+   "target_low": null,
+   "target_high": null,
+   "unit": "bps",
+   "verdict": "unverifiable",
+   "actual": "N/A",
+   "note": "No margin target specified",
+   "checked_by": "model"
+  },
+  {
+   "id": "G7",
+   "call": "Q1 FY27",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=6e0d5627-2b8b-4bf1-a7ce-9d0160833a0f.pdf",
+   "page": 19,
+   "metric": "other",
+   "horizon": "ahead",
+   "quote": "Overall, my belief is that industrial will continue to grow at a higher pitch than decorative as we look ahead.",
+   "speaker": "Amit Syngle",
+   "target_low": null,
+   "target_high": null,
+   "unit": "other",
+   "verdict": "unverifiable",
+   "actual": "N/A",
+   "note": "Segment split not disclosed",
+   "checked_by": "model"
+  },
+  {
+   "id": "G8",
+   "call": "Q1 FY27",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=6e0d5627-2b8b-4bf1-a7ce-9d0160833a0f.pdf",
+   "page": 20,
+   "metric": "volume_growth",
+   "horizon": "FY27",
+   "quote": "overall, we have given our direction that we should stay in the volume region of about 8-10%. ... At the current stage, we are looking at the band of 8-10% for the full FY27.",
+   "speaker": "Amit Syngle",
+   "target_low": 8,
+   "target_high": 10,
+   "unit": "%",
+   "verdict": "missed",
+   "actual": "6.4% volume growth Q2 FY27",
+   "note": "Target 8-10% for FY27",
+   "checked_by": "model"
+  },
+  {
+   "id": "G9",
+   "call": "Q1 FY27",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=6e0d5627-2b8b-4bf1-a7ce-9d0160833a0f.pdf",
+   "page": 20,
+   "metric": "ebitda_margin",
+   "horizon": "FY27",
+   "quote": "We are still garnering around the guidance of 18-20% of our PBDIT margins holds.",
+   "speaker": "Amit Syngle",
+   "target_low": 18,
+   "target_high": 20,
+   "unit": "%",
+   "verdict": "on_track",
+   "actual": "EBITDA margin 18.2% (Q1 + Q2 FY27 so far)",
+   "note": null,
+   "checked_by": "code"
+  },
+  {
+   "id": "G10",
+   "call": "Q1 FY27",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=6e0d5627-2b8b-4bf1-a7ce-9d0160833a0f.pdf",
+   "page": 21,
+   "metric": "other",
+   "horizon": "going forward",
+   "quote": "Going forward, this imperative of looking at premiumization, looking at some of the newer innovations, so that we can get higher margins and get the premium for the brand, will be the effort going forward.",
+   "speaker": "Amit Syngle",
+   "target_low": null,
+   "target_high": null,
+   "unit": "other",
+   "verdict": "unverifiable",
+   "actual": "N/A",
+   "note": "Premiumization impact not quantified",
+   "checked_by": "model"
+  },
+  {
+   "id": "G11",
+   "call": "Q1 FY27",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=6e0d5627-2b8b-4bf1-a7ce-9d0160833a0f.pdf",
+   "page": 21,
+   "metric": "other",
+   "horizon": "some quarters",
+   "quote": "Going forward, for some quarters, till the time we don't take pricing corrections, value and volume gap possibly would be on the positive side, as you are seeing in this quarter, and the difference might not be too much.",
+   "speaker": "Amit Syngle",
+   "target_low": null,
+   "target_high": null,
+   "unit": "other",
+   "verdict": "unverifiable",
+   "actual": "N/A",
+   "note": "Value‑volume gap not disclosed",
+   "checked_by": "model"
+  },
+  {
+   "id": "G12",
+   "call": "Q1 FY27",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=6e0d5627-2b8b-4bf1-a7ce-9d0160833a0f.pdf",
+   "page": 25,
+   "metric": "other",
+   "horizon": "future",
+   "quote": "Overall, when we look at this entire thing, the usage can be across any category of products, not limited to only premium. It can go into economy, it can go into other segments as well, like adhesives and powders.",
+   "speaker": "Amit Syngle",
+   "target_low": null,
+   "target_high": null,
+   "unit": "other",
+   "verdict": "unverifiable",
+   "actual": "N/A",
+   "note": "Cross‑category usage not measured",
+   "checked_by": "model"
+  },
+  {
+   "id": "G13",
+   "call": "Q1 FY27",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=6e0d5627-2b8b-4bf1-a7ce-9d0160833a0f.pdf",
+   "page": 25,
+   "metric": "capacity",
+   "horizon": "next 2-2.5 years",
+   "quote": "Our feeling is that possibly over a period of about 2-2.5 years, we should be able to reach basically a capacity which is higher and closer to about 150,000 MT.",
+   "speaker": "Amit Syngle",
+   "target_low": null,
+   "target_high": 150000,
+   "unit": "MT",
+   "verdict": "too_early",
+   "actual": "N/A",
+   "note": "150,000 MT capacity expected in 2‑2.5 yr",
+   "checked_by": "model"
+  },
+  {
+   "id": "G14",
+   "call": "Q1 FY27",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=6e0d5627-2b8b-4bf1-a7ce-9d0160833a0f.pdf",
+   "page": 25,
+   "metric": "gross_margin",
+   "horizon": "future",
+   "quote": "Generally, overall, for the category of products it would translate into that 300-500 basis points band.",
+   "speaker": "Amit Syngle",
+   "target_low": 300,
+   "target_high": 500,
+   "unit": "bps",
+   "verdict": "unverifiable",
+   "actual": "N/A",
+   "note": "300‑500 bps gross‑margin lift not shown",
+   "checked_by": "model"
+  },
+  {
+   "id": "G15",
+   "call": "Q4 FY26",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=2a71cf39-800d-4765-8131-5d78e54925ce.pdf",
+   "page": 12,
+   "metric": "capacity",
+   "horizon": "H1 FY27",
+   "quote": "The VAM-VAE project is a signature project and we expect to commission first phase in the first half of this year.",
+   "speaker": null,
+   "target_low": null,
+   "target_high": null,
+   "unit": "other",
+   "verdict": "too_early",
+   "actual": "N/A",
+   "note": "VAM‑VAE first phase not yet commissioned",
+   "checked_by": "model"
+  },
+  {
+   "id": "G16",
+   "call": "Q4 FY26",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=2a71cf39-800d-4765-8131-5d78e54925ce.pdf",
+   "page": 19,
+   "metric": "other",
+   "horizon": "going forward",
+   "quote": "Industrial coatings will continue to grow much higher than decorative, given the investment happening in the infrastructure and Government spending.",
+   "speaker": null,
+   "target_low": null,
+   "target_high": null,
+   "unit": "other",
+   "verdict": "unverifiable",
+   "actual": "N/A",
+   "note": "Industrial vs decorative growth not broken out",
+   "checked_by": "model"
+  },
+  {
+   "id": "G17",
+   "call": "Q4 FY26",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=2a71cf39-800d-4765-8131-5d78e54925ce.pdf",
+   "page": 19,
+   "metric": "revenue_growth",
+   "horizon": "Q1 FY27",
+   "quote": "International business again is expected to continue to grow and therefore, both industrial and international will strongly contribute to our growth going forward, as far as Q1 is concerned.",
+   "speaker": null,
+   "target_low": null,
+   "target_high": null,
+   "unit": "other",
+   "verdict": "unverifiable",
+   "actual": "N/A",
+   "note": "International contribution not quantified",
+   "checked_by": "model"
+  },
+  {
+   "id": "G18",
+   "call": "Q4 FY26",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=2a71cf39-800d-4765-8131-5d78e54925ce.pdf",
+   "page": 20,
+   "metric": "volume_growth",
+   "horizon": "going forward",
+   "quote": "We basically believe that going forward, we are still looking atleast a high single-digit volume growth in terms of what we would kind of achieve.",
+   "speaker": "Amit Syngle",
+   "target_low": null,
+   "target_high": null,
+   "unit": "%",
+   "verdict": "delivered",
+   "actual": "6.4% volume growth Q2 FY27",
+   "note": "Qualifies as high single‑digit",
+   "checked_by": "model"
+  },
+  {
+   "id": "G19",
+   "call": "Q4 FY26",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=2a71cf39-800d-4765-8131-5d78e54925ce.pdf",
+   "page": 20,
+   "metric": "other",
+   "horizon": "FY27",
+   "quote": "We feel that the competitive intensity will continue to grow in terms of how we see the year ahead.",
+   "speaker": "Amit Syngle",
+   "target_low": null,
+   "target_high": null,
+   "unit": "other",
+   "verdict": "unverifiable",
+   "actual": "N/A",
+   "note": "Competitive intensity not measured",
+   "checked_by": "model"
+  },
+  {
+   "id": "G20",
+   "call": "Q4 FY26",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=2a71cf39-800d-4765-8131-5d78e54925ce.pdf",
+   "page": 21,
+   "metric": "volume_growth",
+   "horizon": "going forward",
+   "quote": "We are still confident that demand conditions should continue giving us closer to high single-digit volume growth in the band of about 8-10%, as we predict going forward.",
+   "speaker": "Amit Syngle",
+   "target_low": 8,
+   "target_high": 10,
+   "unit": "%",
+   "verdict": "missed",
+   "actual": "6.4% volume growth Q2 FY27",
+   "note": "Target 8-10%",
+   "checked_by": "model"
+  },
+  {
+   "id": "G21",
+   "call": "Q4 FY26",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=2a71cf39-800d-4765-8131-5d78e54925ce.pdf",
+   "page": 22,
+   "metric": "ebitda_margin",
+   "horizon": "going forward",
+   "quote": "With a set of things which we are doing and some passing of some more price increases, we should see how we can retain our margin guidance going forward.",
+   "speaker": "Amit Syngle",
+   "target_low": null,
+   "target_high": null,
+   "unit": "other",
+   "verdict": "delivered",
+   "actual": "21% EBITDA margin Q1 FY27",
+   "note": "Above 18‑20% guidance",
+   "checked_by": "model"
+  },
+  {
+   "id": "G22",
+   "call": "Q4 FY26",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=2a71cf39-800d-4765-8131-5d78e54925ce.pdf",
+   "page": 23,
+   "metric": "ebitda_margin",
+   "horizon": "FY27",
+   "quote": "Absolutely right. We are maintaining our margin guidance, which is there.",
+   "speaker": "Amit Syngle",
+   "target_low": 18,
+   "target_high": 20,
+   "unit": "%",
+   "verdict": "on_track",
+   "actual": "EBITDA margin 18.2% (Q1 + Q2 FY27 so far)",
+   "note": null,
+   "checked_by": "code"
+  },
+  {
+   "id": "G23",
+   "call": "Q4 FY26",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=2a71cf39-800d-4765-8131-5d78e54925ce.pdf",
+   "page": 23,
+   "metric": "volume_growth",
+   "horizon": "FY27",
+   "quote": "We are looking at the price increases that are happening and trying to see that we get into that area of 8-10% volume growth.",
+   "speaker": "Amit Syngle",
+   "target_low": 8,
+   "target_high": 10,
+   "unit": "%",
+   "verdict": "missed",
+   "actual": "6.4% volume growth Q2 FY27",
+   "note": "Target 8‑10%",
+   "checked_by": "model"
+  },
+  {
+   "id": "G24",
+   "call": "Q4 FY26",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=2a71cf39-800d-4765-8131-5d78e54925ce.pdf",
+   "page": 26,
+   "metric": "other",
+   "horizon": "over a period of time",
+   "quote": "We feel that over a period of time, it is good to maintain that 3-4% gap, which would remain from a point of view of overall direction between volume and value.",
+   "speaker": "Amit Syngle",
+   "target_low": 3,
+   "target_high": 4,
+   "unit": "%",
+   "verdict": "unverifiable",
+   "actual": "N/A",
+   "note": "3‑4% volume‑value gap not disclosed",
+   "checked_by": "model"
+  },
+  {
+   "id": "G25",
+   "call": "Q4 FY26",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=2a71cf39-800d-4765-8131-5d78e54925ce.pdf",
+   "page": 27,
+   "metric": "other",
+   "horizon": "next few quarters",
+   "quote": "This trajectory of 3-4% [volume-value gap] will remain as we go ahead.",
+   "speaker": "Amit Syngle",
+   "target_low": 3,
+   "target_high": 4,
+   "unit": "%",
+   "verdict": "unverifiable",
+   "actual": "N/A",
+   "note": "3‑4% gap for upcoming quarters not shown",
+   "checked_by": "model"
+  },
+  {
+   "id": "G26",
+   "call": "Q3 FY26",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=8bc8c7dd-23d0-4cf2-bcdf-620769ed0d1a.pdf",
+   "page": 27,
+   "metric": "other",
+   "horizon": "going forward",
+   "quote": "From a point of view of industrial segment, I think this is something which will really grow, and I think there would be a strong traction which will come in, along with the B2B.",
+   "speaker": null,
+   "target_low": null,
+   "target_high": null,
+   "unit": "other",
+   "verdict": "unverifiable",
+   "actual": "N/A",
+   "note": "Industrial segment growth not quantified",
+   "checked_by": "model"
+  },
+  {
+   "id": "G27",
+   "call": "Q3 FY26",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=8bc8c7dd-23d0-4cf2-bcdf-620769ed0d1a.pdf",
+   "page": 27,
+   "metric": "other",
+   "horizon": "going forward",
+   "quote": "So, these two, as I said earlier would kind of continue to grow possibly higher than retail, going forward.",
+   "speaker": null,
+   "target_low": null,
+   "target_high": null,
+   "unit": "other",
+   "verdict": "unverifiable",
+   "actual": "N/A",
+   "note": "Industrial vs retail growth not disclosed",
+   "checked_by": "model"
+  },
+  {
+   "id": "G28",
+   "call": "Q3 FY26",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=8bc8c7dd-23d0-4cf2-bcdf-620769ed0d1a.pdf",
+   "page": 27,
+   "metric": "other",
+   "horizon": null,
+   "quote": "International business, again with the exception of Bangladesh, I think all other countries should do well overall, and that momentum should be maintained.",
+   "speaker": null,
+   "target_low": null,
+   "target_high": null,
+   "unit": "other",
+   "verdict": "unverifiable",
+   "actual": "N/A",
+   "note": "International momentum not quantified",
+   "checked_by": "model"
+  },
+  {
+   "id": "G29",
+   "call": "Q3 FY26",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=8bc8c7dd-23d0-4cf2-bcdf-620769ed0d1a.pdf",
+   "page": 32,
+   "metric": "market_share",
+   "horizon": null,
+   "quote": "All our strategies are geared towards the fact that today we would like to possibly grow to some extent higher than the market.",
+   "speaker": "Amit Syngle",
+   "target_low": null,
+   "target_high": null,
+   "unit": "other",
+   "verdict": "unverifiable",
+   "actual": "N/A",
+   "note": "Market‑share outperformance not measured",
+   "checked_by": "model"
+  },
+  {
+   "id": "G30",
+   "call": "Q3 FY26",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=8bc8c7dd-23d0-4cf2-bcdf-620769ed0d1a.pdf",
+   "page": 33,
+   "metric": "volume_growth",
+   "horizon": "Q4 FY26",
+   "quote": "I think as we go ahead, this band would remain, in terms of what we would be able to target for the Q4 as well.",
+   "speaker": "Amit Syngle",
+   "target_low": 8,
+   "target_high": 10,
+   "unit": "%",
+   "verdict": "too_early",
+   "actual": "N/A",
+   "note": "Volume target for Q4 FY27 not yet known",
+   "checked_by": "model"
+  },
+  {
+   "id": "G31",
+   "call": "Q3 FY26",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=8bc8c7dd-23d0-4cf2-bcdf-620769ed0d1a.pdf",
+   "page": 35,
+   "metric": "ebitda_margin",
+   "horizon": "going ahead",
+   "quote": "I would say that we would keep the guidance between that 18 and 20% band as we go ahead and that is something which we will endeavour to maintain.",
+   "speaker": "Amit Syngle",
+   "target_low": 18,
+   "target_high": 20,
+   "unit": "%",
+   "verdict": "partly",
+   "actual": "21% Q1, 16% Q2 EBITDA margin FY27",
+   "note": "Mixed performance vs 18‑20% band",
+   "checked_by": "model"
+  },
+  {
+   "id": "G32",
+   "call": "Q3 FY26",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=8bc8c7dd-23d0-4cf2-bcdf-620769ed0d1a.pdf",
+   "page": 36,
+   "metric": "volume_growth",
+   "horizon": null,
+   "quote": "I have been maintaining that, as I said that, band of 8-10% for volume and gap between the volume and the value is a good indicator.",
+   "speaker": "Amit Syngle",
+   "target_low": 8,
+   "target_high": 10,
+   "unit": "%",
+   "verdict": "missed",
+   "actual": "6.4% volume growth Q2 FY27",
+   "note": "Below 8‑10% range",
+   "checked_by": "model"
+  },
+  {
+   "id": "G33",
+   "call": "Q3 FY26",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=8bc8c7dd-23d0-4cf2-bcdf-620769ed0d1a.pdf",
+   "page": 36,
+   "metric": "other",
+   "horizon": "certain point of time",
+   "quote": "I think it is realistic to assume that this gap [volume-value] will remain for a certain point of time. This structure can’t change strongly, very easily in a very short time.",
+   "speaker": "Amit Syngle",
+   "target_low": 4,
+   "target_high": 5,
+   "unit": "%",
+   "verdict": "unverifiable",
+   "actual": "N/A",
+   "note": "3‑4% gap not quantified",
+   "checked_by": "model"
+  },
+  {
+   "id": "G34",
+   "call": "Q3 FY26",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=8bc8c7dd-23d0-4cf2-bcdf-620769ed0d1a.pdf",
+   "page": 37,
+   "metric": "other",
+   "horizon": "next 1-2 quarters",
+   "quote": "I would believe that possibly, we need to wait for another one or two quarters, before we really see some things changing in the market.",
+   "speaker": "Amit Syngle",
+   "target_low": null,
+   "target_high": null,
+   "unit": "other",
+   "verdict": "too_early",
+   "actual": "N/A",
+   "note": "Change expected after 1‑2 quarters",
+   "checked_by": "model"
+  }
+ ],
+ "tally": {
+  "on_track": 3,
+  "unverifiable": 17,
+  "missed": 5,
+  "too_early": 5,
+  "delivered": 3,
+  "partly": 1
+ },
+ "narrative_vs_numbers": [
+  {
+   "claim": "Management pledged 18‑20% EBITDA margin for FY27 (G1,G9,G22)",
+   "reality": "Q1 FY27 21% and Q2 FY27 16% EBITDA margin",
+   "agree": false,
+   "cite": "G1, Q1 FY27, Q2 FY27"
+  },
+  {
+   "claim": "Volume growth of 8‑10% for FY27 was promised (G8)",
+   "reality": "Q2 FY27 volume grew 6.4%",
+   "agree": false,
+   "cite": "G8, Q2 FY27 call p14"
+  },
+  {
+   "claim": "Gross margin target of 41‑43% (G5)",
+   "reality": "Gross margin was about 45.6% in Q1 FY27",
+   "agree": true,
+   "cite": "G5, Q1 FY27 call p16"
+  },
+  {
+   "claim": "Industrial segment will outpace decorative (G7)",
+   "reality": "No segment‑level data released",
+   "agree": false,
+   "cite": "G7"
+  }
+ ],
+ "bull": [
+  {
+   "point": "EBITDA margin hit 21% in Q1 FY27, above guidance",
+   "cite": "Q1 FY27"
+  },
+  {
+   "point": "Gross margin reached 45.6%, exceeding 41‑43% band",
+   "cite": "Q1 FY27 call p16"
+  },
+  {
+   "point": "H1 FY27 top‑line growth ~16% beats prior expectations",
+   "cite": "Q2 FY27 call p22"
+  }
+ ],
+ "bear": [
+  {
+   "point": "Volume growth 6.4% falls short of 8‑10% promise",
+   "cite": "G8, Q2 FY27 call p14"
+  },
+  {
+   "point": "Q2 FY27 EBITDA margin 16% undercuts lower bound of 18%",
+   "cite": "Q2 FY27"
+  },
+  {
+   "point": "Capacity expansion to 150 KT not yet realized",
+   "cite": "G4, G13"
+  }
+ ],
+ "verdict": "Management largely missed volume and margin consistency targets, though gross margin and Q1 EBITDA exceeded expectations.",
+ "sources": [
+  {
+   "type": "financials",
+   "label": "screener.in (consolidated)",
+   "url": "https://www.screener.in/company/ASIANPAINT/consolidated/"
+  },
+  {
+   "type": "transcript",
+   "label": "Q2 FY27 call (Nov 2026)",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=ee7e6efe-1f9b-4b5e-bff7-1da18902ffeb.pdf"
+  },
+  {
+   "type": "transcript",
+   "label": "Q1 FY27 call (Aug 2026)",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=6e0d5627-2b8b-4bf1-a7ce-9d0160833a0f.pdf"
+  },
+  {
+   "type": "transcript",
+   "label": "Q4 FY26 call (Jun 2026)",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=2a71cf39-800d-4765-8131-5d78e54925ce.pdf"
+  },
+  {
+   "type": "transcript",
+   "label": "Q3 FY26 call (Feb 2026)",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=8bc8c7dd-23d0-4cf2-bcdf-620769ed0d1a.pdf"
+  }
+ ],
+ "complete": true,
+ "cost": {
+  "calls": 7,
+  "cached": 0,
+  "tokens_in": 42711,
+  "tokens_out": 10288,
+  "by_model": {
+   "gemini-2.5-flash": {
+    "calls": 6,
+    "tokens_in": 39021,
+    "tokens_out": 7083
+   },
+   "openai/gpt-oss-120b": {
+    "calls": 1,
+    "tokens_in": 3690,
+    "tokens_out": 3205
+   }
+  },
+  "seconds": 105.3
+ },
+ "discipline": "Primary sources only: company filings via screener.in, earnings-call transcripts. No news, broker notes or model memory."
+}

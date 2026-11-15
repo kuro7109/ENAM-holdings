@@ -1,0 +1,753 @@
+{
+ "symbol": "MARUTI",
+ "name": "Maruti Suzuki India Ltd",
+ "generated_at": "2026-11-15T16:01:12+05:30",
+ "as_of": "2026-11-15",
+ "business": {
+  "about": "The Company was established in 1981. A joint venture agreement was signed between the Government of India and Suzuki Motor Corporation (SMC), Japan in 1982. The Company became a subsidiary of SMC in 2002.It is the market leader in passenger vehicle segment in India. In terms of production volume and sales, the Company is now SMC’s largest subsidiary. SMC currently holds 56.28% of its equity stake. The principal activities of the Company are manufacturing, purchase and sale of motor vehicles, components and spare parts.",
+  "key_points": "Segment wise domestic sales 9M FY26 [1] Compact - 41.6% Utility vehicles - 37.7% Vans - 7.3% Mini - 5.3% Mid Size -  0.1% LCV - 2% Sales to other (OEM) - 6%",
+  "segments": [
+   {
+    "name": "Exports",
+    "share_or_growth": "49% share of India's total passenger vehicle exports in the financial year",
+    "page": 3
+   },
+   {
+    "name": "First-time buyers",
+    "share_or_growth": "51% in Q4 FY26",
+    "page": 10
+   },
+   {
+    "name": "Replacement buyers",
+    "share_or_growth": "18% in Q4 FY26",
+    "page": 10
+   },
+   {
+    "name": "Additional car buyers",
+    "share_or_growth": "31% in Q4 FY26",
+    "page": 10
+   }
+  ]
+ },
+ "snapshot": {
+  "market_cap_cr": 404133.0,
+  "price": 12854.0,
+  "pe": 30.0,
+  "roce": 18.9,
+  "roe": 14.3,
+  "div_yield": 1.09,
+  "ttm_sales": 208192.0,
+  "ttm_pat": 13451.0,
+  "last_q": "Q2 FY27",
+  "last_q_sales_yoy": 26.0,
+  "last_q_pat_yoy": -26.4,
+  "last_q_opm": 9.0,
+  "fy_opm": 12.0,
+  "fy": "FY26"
+ },
+ "trajectory": {
+  "sales_cagr_3y": 15.7,
+  "sales_cagr_5y": 21.1,
+  "pat_cagr_3y": 21.1,
+  "pat_cagr_5y": 27.3,
+  "opm_change_3y": 1.0,
+  "quarterly": [
+   {
+    "period": "Dec 2023",
+    "q": "Q3 FY24",
+    "sales": 33513.0,
+    "op_profit": 4440.0,
+    "opm": 13.0,
+    "pat": 3207.0
+   },
+   {
+    "period": "Mar 2024",
+    "q": "Q4 FY24",
+    "sales": 38471.0,
+    "op_profit": 5221.0,
+    "opm": 14.0,
+    "pat": 3952.0
+   },
+   {
+    "period": "Jun 2024",
+    "q": "Q1 FY25",
+    "sales": 35779.0,
+    "op_profit": 5107.0,
+    "opm": 14.0,
+    "pat": 3760.0
+   },
+   {
+    "period": "Sep 2024",
+    "q": "Q2 FY25",
+    "sales": 37449.0,
+    "op_profit": 4999.0,
+    "opm": 13.0,
+    "pat": 3102.0,
+    "sales_yoy": 0.3,
+    "pat_yoy": -18.1
+   },
+   {
+    "period": "Dec 2024",
+    "q": "Q3 FY25",
+    "sales": 38764.0,
+    "op_profit": 5076.0,
+    "opm": 13.0,
+    "pat": 3727.0,
+    "sales_yoy": 15.7,
+    "pat_yoy": 16.2
+   },
+   {
+    "period": "Mar 2025",
+    "q": "Q4 FY25",
+    "sales": 40920.0,
+    "op_profit": 4844.0,
+    "opm": 12.0,
+    "pat": 3911.0,
+    "sales_yoy": 6.4,
+    "pat_yoy": -1.0
+   },
+   {
+    "period": "Jun 2025",
+    "q": "Q1 FY26",
+    "sales": 38605.0,
+    "op_profit": 4623.0,
+    "opm": 12.0,
+    "pat": 3792.0,
+    "sales_yoy": 7.9,
+    "pat_yoy": 0.9
+   },
+   {
+    "period": "Sep 2025",
+    "q": "Q2 FY26",
+    "sales": 42344.0,
+    "op_profit": 5086.0,
+    "opm": 12.0,
+    "pat": 3349.0,
+    "sales_yoy": 13.1,
+    "pat_yoy": 8.0
+   },
+   {
+    "period": "Dec 2025",
+    "q": "Q3 FY26",
+    "sales": 49904.0,
+    "op_profit": 5573.0,
+    "opm": 11.0,
+    "pat": 3879.0,
+    "sales_yoy": 28.7,
+    "pat_yoy": 4.1
+   },
+   {
+    "period": "Mar 2026",
+    "q": "Q4 FY26",
+    "sales": 52462.0,
+    "op_profit": 6158.0,
+    "opm": 12.0,
+    "pat": 3659.0,
+    "sales_yoy": 28.2,
+    "pat_yoy": -6.4
+   },
+   {
+    "period": "Jun 2026",
+    "q": "Q1 FY27",
+    "sales": 52470.0,
+    "op_profit": 4313.0,
+    "opm": 8.0,
+    "pat": 3447.0,
+    "sales_yoy": 35.9,
+    "pat_yoy": -9.1
+   },
+   {
+    "period": "Sep 2026",
+    "q": "Q2 FY27",
+    "sales": 53356.0,
+    "op_profit": 4764.0,
+    "opm": 9.0,
+    "pat": 2466.0,
+    "sales_yoy": 26.0,
+    "pat_yoy": -26.4
+   }
+  ],
+  "annual": [
+   {
+    "period": "Mar 2017",
+    "fy": "FY17",
+    "sales": 68085.0,
+    "opm": 15.0,
+    "pat": 7511.0,
+    "borrowings": 484.0,
+    "equity": 37075.0,
+    "de": 0.01,
+    "cfo": 10282.0,
+    "cfi": -9173.0,
+    "sales_growth": 18.2
+   },
+   {
+    "period": "Mar 2018",
+    "fy": "FY18",
+    "sales": 79809.0,
+    "opm": 15.0,
+    "pat": 7881.0,
+    "borrowings": 121.0,
+    "equity": 42559.0,
+    "de": 0.0,
+    "cfo": 11788.0,
+    "cfi": -8302.0,
+    "sales_growth": 17.2
+   },
+   {
+    "period": "Mar 2019",
+    "fy": "FY19",
+    "sales": 86068.0,
+    "opm": 13.0,
+    "pat": 7651.0,
+    "borrowings": 160.0,
+    "equity": 47092.0,
+    "de": 0.0,
+    "cfo": 6601.0,
+    "cfi": -3540.0,
+    "sales_growth": 7.8
+   },
+   {
+    "period": "Mar 2020",
+    "fy": "FY20",
+    "sales": 75660.0,
+    "opm": 10.0,
+    "pat": 5678.0,
+    "borrowings": 184.0,
+    "equity": 49413.0,
+    "de": 0.0,
+    "cfo": 3496.0,
+    "cfi": -557.0,
+    "sales_growth": -12.1
+   },
+   {
+    "period": "Mar 2021",
+    "fy": "FY21",
+    "sales": 70372.0,
+    "opm": 8.0,
+    "pat": 4389.0,
+    "borrowings": 541.0,
+    "equity": 52501.0,
+    "de": 0.01,
+    "cfo": 8856.0,
+    "cfi": -7291.0,
+    "sales_growth": -7.0
+   },
+   {
+    "period": "Mar 2022",
+    "fy": "FY22",
+    "sales": 88330.0,
+    "opm": 7.0,
+    "pat": 3880.0,
+    "borrowings": 426.0,
+    "equity": 55333.0,
+    "de": 0.01,
+    "cfo": 1840.0,
+    "cfi": -239.0,
+    "sales_growth": 25.5
+   },
+   {
+    "period": "Mar 2023",
+    "fy": "FY23",
+    "sales": 118410.0,
+    "opm": 11.0,
+    "pat": 8264.0,
+    "borrowings": 1248.0,
+    "equity": 74600.0,
+    "de": 0.02,
+    "cfo": 10815.0,
+    "cfi": -8820.0,
+    "sales_growth": 34.1
+   },
+   {
+    "period": "Mar 2024",
+    "fy": "FY24",
+    "sales": 141858.0,
+    "opm": 13.0,
+    "pat": 13488.0,
+    "borrowings": 119.0,
+    "equity": 85636.0,
+    "de": 0.0,
+    "cfo": 16801.0,
+    "cfi": -11865.0,
+    "sales_growth": 19.8
+   },
+   {
+    "period": "Mar 2025",
+    "fy": "FY25",
+    "sales": 152913.0,
+    "opm": 13.0,
+    "pat": 14500.0,
+    "borrowings": 87.0,
+    "equity": 96240.0,
+    "de": 0.0,
+    "cfo": 16180.0,
+    "cfi": -14500.0,
+    "sales_growth": 7.8
+   },
+   {
+    "period": "Mar 2026",
+    "fy": "FY26",
+    "sales": 183316.0,
+    "opm": 12.0,
+    "pat": 14680.0,
+    "borrowings": 102.0,
+    "equity": 107156.0,
+    "de": 0.0,
+    "cfo": 19100.0,
+    "cfi": -14734.0,
+    "sales_growth": 19.9
+   }
+  ]
+ },
+ "balance": {
+  "borrowings": 102.0,
+  "equity": 107156.0,
+  "de": 0.0,
+  "de_3y_ago": 0.02,
+  "working_capital": {
+   "Debtor Days": [
+    {
+     "period": "Mar 2021",
+     "value": 7.0
+    },
+    {
+     "period": "Mar 2022",
+     "value": 8.0
+    },
+    {
+     "period": "Mar 2023",
+     "value": 10.0
+    },
+    {
+     "period": "Mar 2024",
+     "value": 12.0
+    },
+    {
+     "period": "Mar 2025",
+     "value": 16.0
+    },
+    {
+     "period": "Mar 2026",
+     "value": 11.0
+    }
+   ],
+   "Inventory Days": [
+    {
+     "period": "Mar 2021",
+     "value": 22.0
+    },
+    {
+     "period": "Mar 2022",
+     "value": 20.0
+    },
+    {
+     "period": "Mar 2023",
+     "value": 23.0
+    },
+    {
+     "period": "Mar 2024",
+     "value": 19.0
+    },
+    {
+     "period": "Mar 2025",
+     "value": 23.0
+    },
+    {
+     "period": "Mar 2026",
+     "value": 31.0
+    }
+   ],
+   "Days Payable": [
+    {
+     "period": "Mar 2021",
+     "value": 73.0
+    },
+    {
+     "period": "Mar 2022",
+     "value": 54.0
+    },
+    {
+     "period": "Mar 2023",
+     "value": 58.0
+    },
+    {
+     "period": "Mar 2024",
+     "value": 62.0
+    },
+    {
+     "period": "Mar 2025",
+     "value": 57.0
+    },
+    {
+     "period": "Mar 2026",
+     "value": 61.0
+    }
+   ],
+   "Cash Conversion Cycle": [
+    {
+     "period": "Mar 2021",
+     "value": -44.0
+    },
+    {
+     "period": "Mar 2022",
+     "value": -26.0
+    },
+    {
+     "period": "Mar 2023",
+     "value": -25.0
+    },
+    {
+     "period": "Mar 2024",
+     "value": -31.0
+    },
+    {
+     "period": "Mar 2025",
+     "value": -18.0
+    },
+    {
+     "period": "Mar 2026",
+     "value": -19.0
+    }
+   ],
+   "Working Capital Days": [
+    {
+     "period": "Mar 2021",
+     "value": -50.0
+    },
+    {
+     "period": "Mar 2022",
+     "value": -30.0
+    },
+    {
+     "period": "Mar 2023",
+     "value": -30.0
+    },
+    {
+     "period": "Mar 2024",
+     "value": -26.0
+    },
+    {
+     "period": "Mar 2025",
+     "value": -24.0
+    },
+    {
+     "period": "Mar 2026",
+     "value": -29.0
+    }
+   ],
+   "ROCE %": [
+    {
+     "period": "Mar 2021",
+     "value": 11.0
+    },
+    {
+     "period": "Mar 2022",
+     "value": 6.0
+    },
+    {
+     "period": "Mar 2023",
+     "value": 16.0
+    },
+    {
+     "period": "Mar 2024",
+     "value": 22.0
+    },
+    {
+     "period": "Mar 2025",
+     "value": 22.0
+    },
+    {
+     "period": "Mar 2026",
+     "value": 19.0
+    }
+   ]
+  }
+ },
+ "cash": {
+  "cfo_to_pat_3y": 1.22,
+  "years": [
+   {
+    "fy": "FY21",
+    "cfo": 8856.0,
+    "pat": 4389.0,
+    "cfi": -7291.0
+   },
+   {
+    "fy": "FY22",
+    "cfo": 1840.0,
+    "pat": 3880.0,
+    "cfi": -239.0
+   },
+   {
+    "fy": "FY23",
+    "cfo": 10815.0,
+    "pat": 8264.0,
+    "cfi": -8820.0
+   },
+   {
+    "fy": "FY24",
+    "cfo": 16801.0,
+    "pat": 13488.0,
+    "cfi": -11865.0
+   },
+   {
+    "fy": "FY25",
+    "cfo": 16180.0,
+    "pat": 14500.0,
+    "cfi": -14500.0
+   },
+   {
+    "fy": "FY26",
+    "cfo": 19100.0,
+    "pat": 14680.0,
+    "cfi": -14734.0
+   }
+  ]
+ },
+ "calls": [
+  {
+   "month": "Oct 2026",
+   "quarter": "Q2 FY27",
+   "url": "https://www.marutisuzuki.com/pdf-viewer?pdf=%2Fcontent%2Fdam%2Farena-eds%2Fcorporate%2Fpdf%2Fcompany-reports%2F2026-2027%2FTranscript_earnings_call_Maruti_Suzuki_Q2_FY_27.pdf",
+   "status": "unreadable"
+  },
+  {
+   "month": "Jul 2026",
+   "quarter": "Q1 FY27",
+   "url": "https://www.marutisuzuki.com/pdf-viewer?pdf=%2Fcontent%2Fdam%2Farena-eds%2Fcorporate%2Fpdf%2Fcompany-reports%2F2026-2027%2FTranscript_earnings_call_Maruti_Suzuki_Q1_FY_27.pdf",
+   "status": "unreadable"
+  },
+  {
+   "month": "Apr 2026",
+   "quarter": "Q4 FY26",
+   "url": "https://az-ci-afde-prd-arena-03-efddeyfchzf9akbb.z01.azurefd.net/msilintiwebpdfcopyfromdefault/Transcript_earnings_call_Maruti_Suzuki_Q4_FY_26.pdf",
+   "status": "ok",
+   "tone": "Management is confident about demand and capacity expansion, despite short-term geopolitical cost pressures.",
+   "pushback": [
+    "Commodity cost headwinds and margin outlook for next quarters",
+    "CAFE norms, powertrain mix, EV salience, and flex-fuel cost impact",
+    "Sustainability of ASP increase and balance sheet inventory"
+   ],
+   "delivery_comments": [
+    {
+     "topic": "Industry performance",
+     "quote": "financial year '25-26 was a year of 2 distinct halves for the Indian PV industry. In the first half... declined by about 0.4%... in the second half... growing by a whopping 16.7%.",
+     "page": 2
+    },
+    {
+     "topic": "Company sales volume",
+     "quote": "For Maruti Suzuki, the rebound in the domestic market was even stronger than the industry. While our domestic sales declined by 5.6% in the first half... sales volume grew by 12.3% in the second half.",
+     "page": 2
+    },
+    {
+     "topic": "Production capacity",
+     "quote": "Our domestic sales volume growth during the year was constrained by production capacity. As of the end of the fiscal year, around 190,000 customer orders remained unserved.",
+     "page": 2
+    },
+    {
+     "topic": "EBIT margin",
+     "quote": "the quarter 4 FY26 EBIT margin was in line with estimate.",
+     "page": 11
+    }
+   ],
+   "segments": [
+    {
+     "name": "Exports",
+     "share_or_growth": "49% share of India's total passenger vehicle exports in the financial year",
+     "page": 3
+    },
+    {
+     "name": "First-time buyers",
+     "share_or_growth": "51% in Q4 FY26",
+     "page": 10
+    },
+    {
+     "name": "Replacement buyers",
+     "share_or_growth": "18% in Q4 FY26",
+     "page": 10
+    },
+    {
+     "name": "Additional car buyers",
+     "share_or_growth": "31% in Q4 FY26",
+     "page": 10
+    }
+   ]
+  },
+  {
+   "month": "Jan 2026",
+   "quarter": "Q3 FY26",
+   "url": "https://marutistoragenew.blob.core.windows.net/msilintiwebpdf/Transcript_earnings_call_Maruti_Suzuki_Q3_FY_26.pdf",
+   "status": "unreadable"
+  }
+ ],
+ "promises": [
+  {
+   "id": "G1",
+   "call": "Q4 FY26",
+   "call_url": "https://az-ci-afde-prd-arena-03-efddeyfchzf9akbb.z01.azurefd.net/msilintiwebpdfcopyfromdefault/Transcript_earnings_call_Maruti_Suzuki_Q4_FY_26.pdf",
+   "page": 4,
+   "metric": "capacity",
+   "horizon": "FY27",
+   "quote": "The second plant at the Kharkhoda facility and the fourth production line at the Hansalpur facility in Gujarat is set to become operational within this financial year. Each of these new units will add an annual production capacity of 250,000 vehicles.",
+   "speaker": "Rahul Bharti",
+   "target_low": 500000,
+   "target_high": null,
+   "unit": "units",
+   "verdict": "too_early",
+   "actual": "Guidance for FY27 capacity additions is for the full year.",
+   "note": "The full impact of new units becoming operational within FY27 is yet to be seen.",
+   "checked_by": "model"
+  },
+  {
+   "id": "G2",
+   "call": "Q4 FY26",
+   "call_url": "https://az-ci-afde-prd-arena-03-efddeyfchzf9akbb.z01.azurefd.net/msilintiwebpdfcopyfromdefault/Transcript_earnings_call_Maruti_Suzuki_Q4_FY_26.pdf",
+   "page": 4,
+   "metric": "capacity",
+   "horizon": "medium term",
+   "quote": "Besides, the company has put plans in place to increase the production capacity to 4 million units per annum in the medium term.",
+   "speaker": "Rahul Bharti",
+   "target_low": 4000000,
+   "target_high": null,
+   "unit": "units",
+   "verdict": "unverifiable",
+   "actual": "No specific updates on 4 million unit capacity target.",
+   "note": "The 'medium term' horizon is too vague for verification from provided data.",
+   "checked_by": "model"
+  },
+  {
+   "id": "G3",
+   "call": "Q4 FY26",
+   "call_url": "https://az-ci-afde-prd-arena-03-efddeyfchzf9akbb.z01.azurefd.net/msilintiwebpdfcopyfromdefault/Transcript_earnings_call_Maruti_Suzuki_Q4_FY_26.pdf",
+   "page": 4,
+   "metric": "charging_points",
+   "horizon": "2030",
+   "quote": "Aligned with Suzuki's global vision, we plan to introduce multiple EVs and to support this, our aim is to enable a network of over 1 lakh charging points across India by 2030, along with our dealers and charge point operators.",
+   "speaker": "Rahul Bharti",
+   "target_low": 100000,
+   "target_high": null,
+   "unit": "other",
+   "verdict": "too_early",
+   "actual": "Target for 2030 is far in the future.",
+   "note": "No interim progress reported for 1 lakh charging points by 2030.",
+   "checked_by": "model"
+  },
+  {
+   "id": "G4",
+   "call": "Q4 FY26",
+   "call_url": "https://az-ci-afde-prd-arena-03-efddeyfchzf9akbb.z01.azurefd.net/msilintiwebpdfcopyfromdefault/Transcript_earnings_call_Maruti_Suzuki_Q4_FY_26.pdf",
+   "page": 8,
+   "metric": "volume_growth",
+   "horizon": "FY27",
+   "quote": "The broad expectation, which our Chairman also conveyed, is growth of over 10% this year as compared to the last year.",
+   "speaker": "Rahul Bharti",
+   "target_low": 10,
+   "target_high": null,
+   "unit": "%",
+   "verdict": "on_track",
+   "actual": "Q1 FY27 sales_yoy was 35.9% and Q2 FY27 sales_yoy was 26.0%.",
+   "note": "Sales growth, a proxy for volume, significantly exceeds the >10% target for FY27.",
+   "checked_by": "model"
+  },
+  {
+   "id": "G5",
+   "call": "Q4 FY26",
+   "call_url": "https://az-ci-afde-prd-arena-03-efddeyfchzf9akbb.z01.azurefd.net/msilintiwebpdfcopyfromdefault/Transcript_earnings_call_Maruti_Suzuki_Q4_FY_26.pdf",
+   "page": 11,
+   "metric": "capex",
+   "horizon": "FY27",
+   "quote": "Overall, on the capex for FY 26-27, we are looking at a INR14,000 crores capex for the full year.",
+   "speaker": "Arnab Roy",
+   "target_low": 14000,
+   "target_high": null,
+   "unit": "₹ cr",
+   "verdict": "too_early",
+   "actual": "FY27 capex target is for the full year.",
+   "note": "No capex numbers are available in the provided data for FY27.",
+   "checked_by": "model"
+  }
+ ],
+ "tally": {
+  "too_early": 3,
+  "unverifiable": 1,
+  "on_track": 1
+ },
+ "narrative_vs_numbers": [
+  {
+   "claim": "Company domestic sales volume declined 5.6% in H1 FY26 (Q4 FY26 call p2).",
+   "reality": "Q1 FY26 sales_yoy was 7.9% and Q2 FY26 sales_yoy was 13.1%.",
+   "agree": false,
+   "cite": "Q4 FY26 call p2, Q1 FY26 sales_yoy, Q2 FY26 sales_yoy"
+  },
+  {
+   "claim": "Company domestic sales volume grew 12.3% in H2 FY26 (Q4 FY26 call p2).",
+   "reality": "Q3 FY26 sales_yoy was 28.7% and Q4 FY26 sales_yoy was 28.2%.",
+   "agree": false,
+   "cite": "Q4 FY26 call p2, Q3 FY26 sales_yoy, Q4 FY26 sales_yoy"
+  },
+  {
+   "claim": "Production capacity constrained sales volume growth in FY26 (Q4 FY26 call p2).",
+   "reality": "FY26 sales_growth was 19.9%, with 190,000 unserved orders (Q4 FY26 call p2).",
+   "agree": true,
+   "cite": "Q4 FY26 call p2, FY26 sales_growth"
+  }
+ ],
+ "bull": [
+  {
+   "point": "Robust sales growth in FY26 and early FY27.",
+   "cite": "FY26 sales_growth, Q1 FY27 sales_yoy, Q2 FY27 sales_yoy"
+  },
+  {
+   "point": "Consistent high profit after tax in recent years.",
+   "cite": "FY25 pat, FY26 pat"
+  },
+  {
+   "point": "Strong cash flow from operations in FY26.",
+   "cite": "FY26 cfo"
+  }
+ ],
+ "bear": [
+  {
+   "point": "Significant decline in operating profit margin in FY27.",
+   "cite": "Q1 FY27 opm, Q2 FY27 opm"
+  },
+  {
+   "point": "Steep decline in profit after tax year-on-year in FY27.",
+   "cite": "Q1 FY27 pat_yoy, Q2 FY27 pat_yoy"
+  },
+  {
+   "point": "Management's FY26 H1 volume claim contradicts reported sales growth.",
+   "cite": "Q4 FY26 call p2, Q1 FY26 sales_yoy, Q2 FY26 sales_yoy"
+  }
+ ],
+ "verdict": "While sales growth is strong, declining margins and PAT raise concerns. Management's FY26 volume claims contradict reported sales growth.",
+ "sources": [
+  {
+   "type": "financials",
+   "label": "screener.in (consolidated)",
+   "url": "https://www.screener.in/company/MARUTI/consolidated/"
+  },
+  {
+   "type": "transcript",
+   "label": "Q4 FY26 call (Apr 2026)",
+   "url": "https://az-ci-afde-prd-arena-03-efddeyfchzf9akbb.z01.azurefd.net/msilintiwebpdfcopyfromdefault/Transcript_earnings_call_Maruti_Suzuki_Q4_FY_26.pdf"
+  }
+ ],
+ "complete": true,
+ "cost": {
+  "calls": 3,
+  "cached": 0,
+  "tokens_in": 12763,
+  "tokens_out": 2489,
+  "by_model": {
+   "gemini-2.5-flash": {
+    "calls": 3,
+    "tokens_in": 12763,
+    "tokens_out": 2489
+   }
+  },
+  "seconds": 50.3
+ },
+ "discipline": "Primary sources only: company filings via screener.in, earnings-call transcripts. No news, broker notes or model memory."
+}

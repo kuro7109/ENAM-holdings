@@ -1,0 +1,1142 @@
+{
+ "symbol": "DIXON",
+ "name": "Dixon Technologies (India) Ltd",
+ "generated_at": "2026-11-15T16:45:23+05:30",
+ "as_of": "2026-11-15",
+ "business": {
+  "about": "Dixon Technologies (India) Limited,  incorporated  in  1993 ,  is  a  Electronic  Manufacturing  Services  (EMS)  company  with operations in the electronic products vertical such as consumer electronics, lighting, home appliance, closed-circuit television cameras  (CCTVs), and mobile  phones. It also  undertakes reverse logistics operations.  Besides, it manufactures security surveillance equipment, wearables & audibles, AC-PCBs. Recently, it has entered a JV with Imagine Marketing Private Limited for designing and manufacturing wireless audio solutions in India. [1]",
+  "key_points": "Business Segments: [1] a) Mobile & EMS Division (90% in FY26 vs 85% in FY25) : [2] [3] [4] The company has emerged as the fastest-growing EMS company by revenue and market capitalisation . It manufactures feature phones, smartphones, IT hardware, Telecom, hearables & wearables. Its key client in this segment includes Samsung. b) Consumer Electronics & Appliances (6% in FY26 vs 9% in FY25): [5] [5] [4] The company offers LED TVs (32-98 inches), Smart TVs, Monitors, IFPD Commercial displays, Digital signage PCB & LCM panel assembly, and LED Bar Injection moulding. It is the largest Original Design Manufacturing (OEM & ODM) company in India , and has a 37% share in outsourced manufacturing . Its clients include Xiaomi, Samsung, Hisense, Panasonic, Acer, Toshiba, BPL, Lloyd, VU, Motorola, etc. c) Home Appliances (3% in FY26 vs 4% in FY25): [6] [4] The company is an ODM/OEM in India, manufacturing Semi-Automatic Washing Machines (SAWM) and Fully Automatic Top Load (FATL) models for both domestic and global markets, holding about 35% market share in SAWM and around 15% in the FATL segment . It offers a product range of 175+ SAWM models and 20+ FATL models. Its clientele includes Bosch, G",
+  "segments": [
+   {
+    "name": "Mobile Phones",
+    "share_or_growth": "33-34 million units (ex-Vivo) for FY27",
+    "page": 9
+   },
+   {
+    "name": "IT Hardware",
+    "share_or_growth": "INR 6,000 crores revenue target for FY27",
+    "page": 10
+   },
+   {
+    "name": "Home Appliances",
+    "share_or_growth": "3.9 million units total annual capacity",
+    "page": 7
+   },
+   {
+    "name": "Telecom and Networking",
+    "share_or_growth": "INR 1,837 crores revenue in Q2",
+    "page": 5
+   }
+  ]
+ },
+ "snapshot": {
+  "market_cap_cr": 78334.0,
+  "price": 12798.0,
+  "pe": 50.5,
+  "roce": 29.2,
+  "roe": 25.2,
+  "div_yield": 0.08,
+  "ttm_sales": 58523.0,
+  "ttm_pat": 1747.0,
+  "last_q": "Q2 FY27",
+  "last_q_sales_yoy": 46.7,
+  "last_q_pat_yoy": -44.9,
+  "last_q_opm": 2.7,
+  "fy_opm": 3.8,
+  "fy": "FY26"
+ },
+ "trajectory": {
+  "sales_cagr_3y": 58.9,
+  "sales_cagr_5y": 49.9,
+  "pat_cagr_3y": 86.1,
+  "pat_cagr_5y": 59.4,
+  "opm_change_3y": -0.5,
+  "quarterly": [
+   {
+    "period": "Dec 2023",
+    "q": "Q3 FY24",
+    "sales": 4818.0,
+    "op_profit": 184.0,
+    "opm": 3.8,
+    "pat": 97.0
+   },
+   {
+    "period": "Mar 2024",
+    "q": "Q4 FY24",
+    "sales": 4658.0,
+    "op_profit": 182.0,
+    "opm": 3.9,
+    "pat": 97.0
+   },
+   {
+    "period": "Jun 2024",
+    "q": "Q1 FY25",
+    "sales": 6580.0,
+    "op_profit": 248.0,
+    "opm": 3.8,
+    "pat": 140.0
+   },
+   {
+    "period": "Sep 2024",
+    "q": "Q2 FY25",
+    "sales": 11534.0,
+    "op_profit": 426.0,
+    "opm": 3.7,
+    "pat": 412.0,
+    "sales_yoy": 133.3,
+    "pat_yoy": 264.6
+   },
+   {
+    "period": "Dec 2024",
+    "q": "Q3 FY25",
+    "sales": 10454.0,
+    "op_profit": 391.0,
+    "opm": 3.7,
+    "pat": 216.0,
+    "sales_yoy": 117.0,
+    "pat_yoy": 122.7
+   },
+   {
+    "period": "Mar 2025",
+    "q": "Q4 FY25",
+    "sales": 10293.0,
+    "op_profit": 443.0,
+    "opm": 4.3,
+    "pat": 465.0,
+    "sales_yoy": 121.0,
+    "pat_yoy": 379.4
+   },
+   {
+    "period": "Jun 2025",
+    "q": "Q1 FY26",
+    "sales": 12836.0,
+    "op_profit": 482.0,
+    "opm": 3.8,
+    "pat": 280.0,
+    "sales_yoy": 95.1,
+    "pat_yoy": 100.0
+   },
+   {
+    "period": "Sep 2025",
+    "q": "Q2 FY26",
+    "sales": 14855.0,
+    "op_profit": 561.0,
+    "opm": 3.8,
+    "pat": 746.0,
+    "sales_yoy": 28.8,
+    "pat_yoy": 81.1
+   },
+   {
+    "period": "Dec 2025",
+    "q": "Q3 FY26",
+    "sales": 10672.0,
+    "op_profit": 414.0,
+    "opm": 3.9,
+    "pat": 321.0,
+    "sales_yoy": 2.1,
+    "pat_yoy": 48.6
+   },
+   {
+    "period": "Mar 2026",
+    "q": "Q4 FY26",
+    "sales": 10511.0,
+    "op_profit": 408.0,
+    "opm": 3.9,
+    "pat": 298.0,
+    "sales_yoy": 2.1,
+    "pat_yoy": -35.9
+   },
+   {
+    "period": "Jun 2026",
+    "q": "Q1 FY27",
+    "sales": 15548.0,
+    "op_profit": 463.0,
+    "opm": 3.0,
+    "pat": 718.0,
+    "sales_yoy": 21.1,
+    "pat_yoy": 156.4
+   },
+   {
+    "period": "Sep 2026",
+    "q": "Q2 FY27",
+    "sales": 21794.0,
+    "op_profit": 597.0,
+    "opm": 2.7,
+    "pat": 411.0,
+    "sales_yoy": 46.7,
+    "pat_yoy": -44.9
+   }
+  ],
+  "annual": [
+   {
+    "period": "Mar 2017",
+    "fy": "FY17",
+    "sales": 2457.0,
+    "opm": 3.7,
+    "pat": 48.0,
+    "borrowings": 43.0,
+    "equity": 197.0,
+    "de": 0.22,
+    "cfo": 53.0,
+    "cfi": -43.0,
+    "sales_growth": 76.9
+   },
+   {
+    "period": "Mar 2018",
+    "fy": "FY18",
+    "sales": 2842.0,
+    "opm": 4.0,
+    "pat": 61.0,
+    "borrowings": 45.0,
+    "equity": 315.0,
+    "de": 0.14,
+    "cfo": 68.0,
+    "cfi": -100.0,
+    "sales_growth": 15.7
+   },
+   {
+    "period": "Mar 2019",
+    "fy": "FY19",
+    "sales": 2984.0,
+    "opm": 4.6,
+    "pat": 63.0,
+    "borrowings": 141.0,
+    "equity": 378.0,
+    "de": 0.37,
+    "cfo": -3.0,
+    "cfi": -64.0,
+    "sales_growth": 5.0
+   },
+   {
+    "period": "Mar 2020",
+    "fy": "FY20",
+    "sales": 4400.0,
+    "opm": 5.0,
+    "pat": 120.0,
+    "borrowings": 87.0,
+    "equity": 542.0,
+    "de": 0.16,
+    "cfo": 237.0,
+    "cfi": -99.0,
+    "sales_growth": 47.5
+   },
+   {
+    "period": "Mar 2021",
+    "fy": "FY21",
+    "sales": 6448.0,
+    "opm": 4.5,
+    "pat": 160.0,
+    "borrowings": 295.0,
+    "equity": 738.0,
+    "de": 0.4,
+    "cfo": 170.0,
+    "cfi": -265.0,
+    "sales_growth": 46.5
+   },
+   {
+    "period": "Mar 2022",
+    "fy": "FY22",
+    "sales": 10697.0,
+    "opm": 3.6,
+    "pat": 190.0,
+    "borrowings": 667.0,
+    "equity": 997.0,
+    "de": 0.67,
+    "cfo": 273.0,
+    "cfi": -464.0,
+    "sales_growth": 65.9
+   },
+   {
+    "period": "Mar 2023",
+    "fy": "FY23",
+    "sales": 12192.0,
+    "opm": 4.3,
+    "pat": 255.0,
+    "borrowings": 453.0,
+    "equity": 1285.0,
+    "de": 0.35,
+    "cfo": 726.0,
+    "cfi": -356.0,
+    "sales_growth": 14.0
+   },
+   {
+    "period": "Mar 2024",
+    "fy": "FY24",
+    "sales": 17691.0,
+    "opm": 4.0,
+    "pat": 375.0,
+    "borrowings": 489.0,
+    "equity": 1695.0,
+    "de": 0.29,
+    "cfo": 584.0,
+    "cfi": -531.0,
+    "sales_growth": 45.1
+   },
+   {
+    "period": "Mar 2025",
+    "fy": "FY25",
+    "sales": 38860.0,
+    "opm": 3.9,
+    "pat": 1233.0,
+    "borrowings": 671.0,
+    "equity": 3010.0,
+    "de": 0.22,
+    "cfo": 1150.0,
+    "cfi": -1093.0,
+    "sales_growth": 119.7
+   },
+   {
+    "period": "Mar 2026",
+    "fy": "FY26",
+    "sales": 48873.0,
+    "opm": 3.8,
+    "pat": 1644.0,
+    "borrowings": 994.0,
+    "equity": 4677.0,
+    "de": 0.21,
+    "cfo": 1782.0,
+    "cfi": -1138.0,
+    "sales_growth": 25.8
+   }
+  ]
+ },
+ "balance": {
+  "borrowings": 994.0,
+  "equity": 4677.0,
+  "de": 0.21,
+  "de_3y_ago": 0.35,
+  "working_capital": {
+   "Debtor Days": [
+    {
+     "period": "Mar 2021",
+     "value": 62.0
+    },
+    {
+     "period": "Mar 2022",
+     "value": 46.0
+    },
+    {
+     "period": "Mar 2023",
+     "value": 51.0
+    },
+    {
+     "period": "Mar 2024",
+     "value": 48.0
+    },
+    {
+     "period": "Mar 2025",
+     "value": 65.0
+    },
+    {
+     "period": "Mar 2026",
+     "value": 49.0
+    }
+   ],
+   "Inventory Days": [
+    {
+     "period": "Mar 2021",
+     "value": 47.0
+    },
+    {
+     "period": "Mar 2022",
+     "value": 43.0
+    },
+    {
+     "period": "Mar 2023",
+     "value": 32.0
+    },
+    {
+     "period": "Mar 2024",
+     "value": 39.0
+    },
+    {
+     "period": "Mar 2025",
+     "value": 41.0
+    },
+    {
+     "period": "Mar 2026",
+     "value": 31.0
+    }
+   ],
+   "Days Payable": [
+    {
+     "period": "Mar 2021",
+     "value": 108.0
+    },
+    {
+     "period": "Mar 2022",
+     "value": 86.0
+    },
+    {
+     "period": "Mar 2023",
+     "value": 81.0
+    },
+    {
+     "period": "Mar 2024",
+     "value": 92.0
+    },
+    {
+     "period": "Mar 2025",
+     "value": 111.0
+    },
+    {
+     "period": "Mar 2026",
+     "value": 86.0
+    }
+   ],
+   "Cash Conversion Cycle": [
+    {
+     "period": "Mar 2021",
+     "value": 1.0
+    },
+    {
+     "period": "Mar 2022",
+     "value": 3.0
+    },
+    {
+     "period": "Mar 2023",
+     "value": 2.0
+    },
+    {
+     "period": "Mar 2024",
+     "value": -6.0
+    },
+    {
+     "period": "Mar 2025",
+     "value": -5.0
+    },
+    {
+     "period": "Mar 2026",
+     "value": -7.0
+    }
+   ],
+   "Working Capital Days": [
+    {
+     "period": "Mar 2021",
+     "value": 9.0
+    },
+    {
+     "period": "Mar 2022",
+     "value": 3.0
+    },
+    {
+     "period": "Mar 2023",
+     "value": -2.0
+    },
+    {
+     "period": "Mar 2024",
+     "value": -2.0
+    },
+    {
+     "period": "Mar 2025",
+     "value": 2.0
+    },
+    {
+     "period": "Mar 2026",
+     "value": -3.0
+    }
+   ],
+   "ROCE %": [
+    {
+     "period": "Mar 2021",
+     "value": 30.0
+    },
+    {
+     "period": "Mar 2022",
+     "value": 23.0
+    },
+    {
+     "period": "Mar 2023",
+     "value": 24.0
+    },
+    {
+     "period": "Mar 2024",
+     "value": 29.0
+    },
+    {
+     "period": "Mar 2025",
+     "value": 40.0
+    },
+    {
+     "period": "Mar 2026",
+     "value": 29.0
+    }
+   ]
+  }
+ },
+ "cash": {
+  "cfo_to_pat_3y": 1.08,
+  "years": [
+   {
+    "fy": "FY21",
+    "cfo": 170.0,
+    "pat": 160.0,
+    "cfi": -265.0
+   },
+   {
+    "fy": "FY22",
+    "cfo": 273.0,
+    "pat": 190.0,
+    "cfi": -464.0
+   },
+   {
+    "fy": "FY23",
+    "cfo": 726.0,
+    "pat": 255.0,
+    "cfi": -356.0
+   },
+   {
+    "fy": "FY24",
+    "cfo": 584.0,
+    "pat": 375.0,
+    "cfi": -531.0
+   },
+   {
+    "fy": "FY25",
+    "cfo": 1150.0,
+    "pat": 1233.0,
+    "cfi": -1093.0
+   },
+   {
+    "fy": "FY26",
+    "cfo": 1782.0,
+    "pat": 1644.0,
+    "cfi": -1138.0
+   }
+  ]
+ },
+ "calls": [
+  {
+   "month": "Nov 2026",
+   "quarter": "Q2 FY27",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=995a3a71-4a1e-4c1f-a29a-6c6747e4ca10.pdf",
+   "status": "ok",
+   "tone": "The management maintains a confident and resilient tone, emphasizing volume growth and strategic capacity expansion despite industry headwinds.",
+   "pushback": [
+    "Margin decline and flat revenue growth in Q Tech subsidiary.",
+    "Cash burn of INR 280 crores in H1 working capital.",
+    "Impact of stricter MPMS eligibility criteria on margin incentives."
+   ],
+   "delivery_comments": [
+    {
+     "topic": "Smartphone market",
+     "quote": "Despite a challenging industry environment, with India's smartphone market declining by 26% year-on-year in Q2 FY '26-'27... Dixon has demonstrated resilience by sustaining its smartphone manufacturing volume at broadly stable year-on-year levels.",
+     "page": 5
+    },
+    {
+     "topic": "Working capital",
+     "quote": "We had kept certain strategic inventories of memory... we feel that out of this large part of money which is blocked at the money working capital, we feel that almost 80-85% of that will get released before March.",
+     "page": 17
+    },
+    {
+     "topic": "Q Tech margins",
+     "quote": "Last year their margins got impacted mainly because of the foreign exchange... which we have now been able to get it done from the customers.",
+     "page": 16
+    },
+    {
+     "topic": "IT Hardware revenue",
+     "quote": "from practically minuscule numbers in the current quarter, we have grown to almost 2,100 stores.",
+     "page": 10
+    }
+   ],
+   "segments": [
+    {
+     "name": "Mobile Phones",
+     "share_or_growth": "33-34 million units (ex-Vivo) for FY27",
+     "page": 9
+    },
+    {
+     "name": "IT Hardware",
+     "share_or_growth": "INR 6,000 crores revenue target for FY27",
+     "page": 10
+    },
+    {
+     "name": "Home Appliances",
+     "share_or_growth": "3.9 million units total annual capacity",
+     "page": 7
+    },
+    {
+     "name": "Telecom and Networking",
+     "share_or_growth": "INR 1,837 crores revenue in Q2",
+     "page": 5
+    }
+   ]
+  },
+  {
+   "month": "Aug 2026",
+   "quarter": "Q1 FY27",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=7ce2ca16-3043-48f4-97f9-a62a6a086c2f.pdf",
+   "status": "ok",
+   "tone": "Management expressed confidence in long-term growth and backward integration despite temporary margin compression from rising input costs and incentive changes.",
+   "pushback": [
+    "Working capital increase and cash consumption",
+    "Short-term margin compression and memory price impact",
+    "Timeline and impact of Mobile PLI 2.0 and incentives"
+   ],
+   "delivery_comments": [
+    {
+     "topic": "Mobile margins and percentage profitability",
+     "quote": "While the sunset of Mobile 1 incentives impacted short-term percentage profitability... percentage margins look optically lower, mostly in mobile and IT hardware business.",
+     "page": 3
+    },
+    {
+     "topic": "Working capital",
+     "quote": "Mainly, there has been more working capital deployed for building certain inventories, strategic inventories because there were supply chain challenges because of the memory price hike.",
+     "page": 8
+    },
+    {
+     "topic": "Mobile volume performance",
+     "quote": "Mobile volume performance was aligned with temporary demand contraction seen across the broader smartphone market by 10% to 12%",
+     "page": 4
+    }
+   ],
+   "segments": [
+    {
+     "name": "Mobile and other EMS business",
+     "share_or_growth": "INR14,179 crores revenue",
+     "page": 4
+    },
+    {
+     "name": "Home appliances",
+     "share_or_growth": "INR382 crores revenue",
+     "page": 6
+    },
+    {
+     "name": "Consumer electronics, LED TVs and refrigerators",
+     "share_or_growth": "INR987 crores revenue",
+     "page": 6
+    }
+   ]
+  },
+  {
+   "month": "May 2026",
+   "quarter": "Q4 FY26",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=38b72f07-55a6-4503-91fd-ed3b2c209e96.pdf",
+   "status": "ok",
+   "tone": "Confident about long-term growth and backward integration despite near-term headwinds and margin pressures.",
+   "pushback": [
+    "PLI scheme ending impact on margins",
+    "Vivo JV timeline and volume contribution",
+    "Memory price inflation and ASP impact on revenue"
+   ],
+   "delivery_comments": [
+    {
+     "topic": "Q4 Revenues",
+     "quote": "Q4 revenues remained flat due to geopolitical concerns, softer consumer demand, inventory rationalization by brands, elevated input costs, majorly impacting the smartphone and IT hardware segment.",
+     "page": 3
+    }
+   ],
+   "segments": [
+    {
+     "name": "Mobile and other EMS businesses",
+     "share_or_growth": "INR9,485 crores revenue for the quarter",
+     "page": 4
+    },
+    {
+     "name": "Telecom and Networking products",
+     "share_or_growth": "Grown from INR3,600 crores to INR5,000 crores, targeting INR7,500-8,000 crores in FY27",
+     "page": 9
+    },
+    {
+     "name": "IT hardware products",
+     "share_or_growth": "Targeting more than INR4,000 crores in the current fiscal",
+     "page": 9
+    },
+    {
+     "name": "Home appliances",
+     "share_or_growth": "INR329 crores revenue for the quarter",
+     "page": 6
+    },
+    {
+     "name": "Lighting",
+     "share_or_growth": "Targeting INR1,700 crores (2x) in current fiscal",
+     "page": 9
+    },
+    {
+     "name": "Consumer electronics (LED TV and refrigerators)",
+     "share_or_growth": "INR697 crores revenue for the quarter",
+     "page": 6
+    }
+   ]
+  },
+  {
+   "month": "Feb 2026",
+   "quarter": "Q3 FY26",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=ad6e72f1-b5f8-4a75-8e45-f2e88c7525e0.pdf",
+   "status": "ok",
+   "tone": "Management remains optimistic about long-term growth and integration strategies despite short-term supply chain and memory price headwinds.",
+   "pushback": [
+    "Timing and status of Vivo JV approval",
+    "Impact of memory price inflation on margins",
+    "Visibility on FY27 volumes and growth"
+   ],
+   "delivery_comments": [
+    {
+     "topic": "Smartphone volumes",
+     "quote": "smartphone volumes for Q3 was around 6.9 million.",
+     "page": 7
+    },
+    {
+     "topic": "Export performance",
+     "quote": "We feel we should be closing at almost INR5,500 crores, INR6,000 crores in the current fiscal.",
+     "page": 11
+    },
+    {
+     "topic": "Q Tech revenue",
+     "quote": "Q Tech numbers for quarter 3 was closer to INR400-odd crores.",
+     "page": 11
+    },
+    {
+     "topic": "IT hardware revenue",
+     "quote": "this year, we feel the revenue should be in the range of INR1,500-odd crores.",
+     "page": 16
+    }
+   ],
+   "segments": [
+    {
+     "name": "Mobile and EMS",
+     "share_or_growth": "INR9,750 crores revenue",
+     "page": 4
+    },
+    {
+     "name": "Q Tech",
+     "share_or_growth": "INR400 crores revenue",
+     "page": 11
+    }
+   ]
+  }
+ ],
+ "promises": [
+  {
+   "id": "G1",
+   "call": "Q2 FY27",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=995a3a71-4a1e-4c1f-a29a-6c6747e4ca10.pdf",
+   "page": 9,
+   "metric": "volume_growth",
+   "horizon": "H2 FY27",
+   "quote": "In Q2, we have done approximately 9.7 million. So total in H1... we have done approximately 17.2 million. And with the outlook for H2, we feel we should be somewhere around 33-34 million.",
+   "speaker": "Atul Lall",
+   "target_low": 33,
+   "target_high": 34,
+   "unit": "other",
+   "verdict": "unverifiable",
+   "actual": null,
+   "note": null,
+   "checked_by": "model"
+  },
+  {
+   "id": "G2",
+   "call": "Q2 FY27",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=995a3a71-4a1e-4c1f-a29a-6c6747e4ca10.pdf",
+   "page": 9,
+   "metric": "volume_growth",
+   "horizon": "next financial year",
+   "quote": "We feel that in the JV we should be doing around 20-21 million.",
+   "speaker": "Atul Lall",
+   "target_low": 20,
+   "target_high": 21,
+   "unit": "other",
+   "verdict": "unverifiable",
+   "actual": null,
+   "note": null,
+   "checked_by": "model"
+  },
+  {
+   "id": "G3",
+   "call": "Q2 FY27",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=995a3a71-4a1e-4c1f-a29a-6c6747e4ca10.pdf",
+   "page": 10,
+   "metric": "revenue_growth",
+   "horizon": "FY27",
+   "quote": "this year itself we feel confident that we are going to be somewhere around INR 6,000 crores in this [IT products] category.",
+   "speaker": "Atul Lall",
+   "target_low": 6000,
+   "target_high": 6000,
+   "unit": "₹ cr",
+   "verdict": "too_early",
+   "actual": "₹37,342 cr of sales (Q1 + Q2 FY27 so far)",
+   "note": null,
+   "checked_by": "code"
+  },
+  {
+   "id": "G4",
+   "call": "Q2 FY27",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=995a3a71-4a1e-4c1f-a29a-6c6747e4ca10.pdf",
+   "page": 16,
+   "metric": "ebitda_margin",
+   "horizon": "FY28",
+   "quote": "Ultimately, this business [Q Tech] will generate a 6, 6.5, 7% kind of margins",
+   "speaker": "Saurabh Gupta",
+   "target_low": 6,
+   "target_high": 7,
+   "unit": "%",
+   "verdict": "too_early",
+   "actual": null,
+   "note": null,
+   "checked_by": "code"
+  },
+  {
+   "id": "G5",
+   "call": "Q2 FY27",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=995a3a71-4a1e-4c1f-a29a-6c6747e4ca10.pdf",
+   "page": 18,
+   "metric": "ebitda_margin",
+   "horizon": "next 2 years",
+   "quote": "In telecom also, Rahul, the margins in telecom, the margins are going to be slightly higher. They are going to be in the range of around 3 to 3.2%.",
+   "speaker": "Atul Lall",
+   "target_low": 3,
+   "target_high": 3.2,
+   "unit": "%",
+   "verdict": "unverifiable",
+   "actual": null,
+   "note": null,
+   "checked_by": "model"
+  },
+  {
+   "id": "G6",
+   "call": "Q2 FY27",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=995a3a71-4a1e-4c1f-a29a-6c6747e4ca10.pdf",
+   "page": 10,
+   "metric": "capex",
+   "horizon": "FY27",
+   "quote": "we are upping our CAPEX plans to INR 500 crores [for IT hardware].",
+   "speaker": "Atul Lall",
+   "target_low": 500,
+   "target_high": 500,
+   "unit": "₹ cr",
+   "verdict": "unverifiable",
+   "actual": null,
+   "note": null,
+   "checked_by": "model"
+  },
+  {
+   "id": "G7",
+   "call": "Q1 FY27",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=7ce2ca16-3043-48f4-97f9-a62a6a086c2f.pdf",
+   "page": 4,
+   "metric": "volume_growth",
+   "horizon": "Q2 FY27",
+   "quote": "We expect 20% to 25% volume growth quarter-on-quarter growth as consumer demand strengthens and we have a strong order book.",
+   "speaker": "Atul Lall",
+   "target_low": 20,
+   "target_high": 25,
+   "unit": "%",
+   "verdict": "unverifiable",
+   "actual": null,
+   "note": null,
+   "checked_by": "model"
+  },
+  {
+   "id": "G8",
+   "call": "Q1 FY27",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=7ce2ca16-3043-48f4-97f9-a62a6a086c2f.pdf",
+   "page": 8,
+   "metric": "other",
+   "horizon": "FY27",
+   "quote": "We feel we should be somewhere close to that number [32 million, 33 million].",
+   "speaker": "Atul Lall",
+   "target_low": 32,
+   "target_high": 33,
+   "unit": "other",
+   "verdict": "unverifiable",
+   "actual": null,
+   "note": null,
+   "checked_by": "model"
+  },
+  {
+   "id": "G9",
+   "call": "Q1 FY27",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=7ce2ca16-3043-48f4-97f9-a62a6a086c2f.pdf",
+   "page": 6,
+   "metric": "capacity",
+   "horizon": "FY27",
+   "quote": "Addition of our new manufacturing facility in Tirupati will expand our capacities from 0.6 million units per annum by another 0.3 million units per annum",
+   "speaker": "Atul Lall",
+   "target_low": 0.9,
+   "target_high": 0.9,
+   "unit": "other",
+   "verdict": "unverifiable",
+   "actual": null,
+   "note": null,
+   "checked_by": "model"
+  },
+  {
+   "id": "G10",
+   "call": "Q1 FY27",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=7ce2ca16-3043-48f4-97f9-a62a6a086c2f.pdf",
+   "page": 14,
+   "metric": "capacity",
+   "horizon": "Q4 FY27",
+   "quote": "expanding the capacity from 1.5 million to 3.2-odd million, which is going to be the largest capacity of refrigerators at a single site.",
+   "speaker": "Atul Lall",
+   "target_low": 3.2,
+   "target_high": 3.2,
+   "unit": "other",
+   "verdict": "unverifiable",
+   "actual": null,
+   "note": null,
+   "checked_by": "model"
+  },
+  {
+   "id": "G11",
+   "call": "Q1 FY27",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=7ce2ca16-3043-48f4-97f9-a62a6a086c2f.pdf",
+   "page": 20,
+   "metric": "other",
+   "horizon": "FY27",
+   "quote": "we're going to be somewhere between INR6,700 crores to INR7,000 crores in this fiscal.",
+   "speaker": "Atul Lall",
+   "target_low": 6700,
+   "target_high": 7000,
+   "unit": "₹ cr",
+   "verdict": "unverifiable",
+   "actual": null,
+   "note": null,
+   "checked_by": "model"
+  },
+  {
+   "id": "G12",
+   "call": "Q4 FY26",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=38b72f07-55a6-4503-91fd-ed3b2c209e96.pdf",
+   "page": 4,
+   "metric": "volume_growth",
+   "horizon": "next quarter",
+   "quote": "we expect a high-double-digit growth quarter-on-quarter in the smartphones volume along with growth in selling prices by 12% to 15%.",
+   "speaker": "Atul Lall",
+   "target_low": null,
+   "target_high": null,
+   "unit": "%",
+   "verdict": "unverifiable",
+   "actual": null,
+   "note": null,
+   "checked_by": "model"
+  },
+  {
+   "id": "G13",
+   "call": "Q4 FY26",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=38b72f07-55a6-4503-91fd-ed3b2c209e96.pdf",
+   "page": 5,
+   "metric": "revenue_growth",
+   "horizon": "FY27",
+   "quote": "We expect this vertical to deliver high double-digit revenue growth in the current fiscal.",
+   "speaker": "Atul Lall",
+   "target_low": null,
+   "target_high": null,
+   "unit": "%",
+   "verdict": "unverifiable",
+   "actual": null,
+   "note": null,
+   "checked_by": "model"
+  },
+  {
+   "id": "G14",
+   "call": "Q4 FY26",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=38b72f07-55a6-4503-91fd-ed3b2c209e96.pdf",
+   "page": 5,
+   "metric": "revenue_growth",
+   "horizon": "FY27",
+   "quote": "and we expect 3x growth in the revenues in the current fiscal against last year with a huge uptake in order books from all customers.",
+   "speaker": "Atul Lall",
+   "target_low": 3,
+   "target_high": 3,
+   "unit": "x",
+   "verdict": "on_track",
+   "actual": "sales growth 34.9% (Q1 + Q2 FY27 so far)",
+   "note": null,
+   "checked_by": "code"
+  },
+  {
+   "id": "G15",
+   "call": "Q4 FY26",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=38b72f07-55a6-4503-91fd-ed3b2c209e96.pdf",
+   "page": 6,
+   "metric": "revenue_growth",
+   "horizon": "FY27",
+   "quote": "and we expect the revenues to grow almost to 2x in the current fiscal.",
+   "speaker": "Atul Lall",
+   "target_low": 2,
+   "target_high": 2,
+   "unit": "x",
+   "verdict": "on_track",
+   "actual": "sales growth 34.9% (Q1 + Q2 FY27 so far)",
+   "note": null,
+   "checked_by": "code"
+  },
+  {
+   "id": "G16",
+   "call": "Q4 FY26",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=38b72f07-55a6-4503-91fd-ed3b2c209e96.pdf",
+   "page": 15,
+   "metric": "revenue_growth",
+   "horizon": "FY27",
+   "quote": "Next year, we are targeting almost INR56,000 crores without the Vivo numbers, and mobile volume being flat. If Vivo comes in, then it's a very major trigger. We feel that without the Vivo also, the company will keep growing at almost 15% to 17%.",
+   "speaker": "Atul Lall",
+   "target_low": 15,
+   "target_high": 17,
+   "unit": "%",
+   "verdict": "on_track",
+   "actual": "sales growth 34.9% (Q1 + Q2 FY27 so far)",
+   "note": null,
+   "checked_by": "code"
+  },
+  {
+   "id": "G17",
+   "call": "Q4 FY26",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=38b72f07-55a6-4503-91fd-ed3b2c209e96.pdf",
+   "page": 15,
+   "metric": "ebitda_margin",
+   "horizon": "FY27-FY28",
+   "quote": "Finally, when the component play is completely deployed, there will be a margin expansion from last year's number by almost 40 bps, 50 bps.",
+   "speaker": "Atul Lall",
+   "target_low": 40,
+   "target_high": 50,
+   "unit": "bps",
+   "verdict": "unverifiable",
+   "actual": null,
+   "note": null,
+   "checked_by": "model"
+  },
+  {
+   "id": "G18",
+   "call": "Q3 FY26",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=ad6e72f1-b5f8-4a75-8e45-f2e88c7525e0.pdf",
+   "page": 16,
+   "metric": "capex",
+   "horizon": "FY26",
+   "quote": "we feel that in the overall fiscal, it should be somewhere between INR1,100 crores, INR1,200 crores.",
+   "speaker": "Atul Lall",
+   "target_low": 1100,
+   "target_high": 1200,
+   "unit": "₹ cr",
+   "verdict": "unverifiable",
+   "actual": null,
+   "note": null,
+   "checked_by": "model"
+  },
+  {
+   "id": "G19",
+   "call": "Q3 FY26",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=ad6e72f1-b5f8-4a75-8e45-f2e88c7525e0.pdf",
+   "page": 10,
+   "metric": "ebitda_margin",
+   "horizon": "next 12 months",
+   "quote": "We still feel that we should be able to have a margin of somewhere between 2.8% to 3.1%, 3.2% in our mobile phone business.",
+   "speaker": "Atul Lall",
+   "target_low": 2.8,
+   "target_high": 3.2,
+   "unit": "%",
+   "verdict": "unverifiable",
+   "actual": null,
+   "note": null,
+   "checked_by": "model"
+  },
+  {
+   "id": "G20",
+   "call": "Q3 FY26",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=ad6e72f1-b5f8-4a75-8e45-f2e88c7525e0.pdf",
+   "page": 20,
+   "metric": "revenue_growth",
+   "horizon": "next 3 to 4 years",
+   "quote": "we are still very optimistic. We are aggressive... We are committed to an aggressive growth for Dixon. We feel confident about it.",
+   "speaker": "Atul Lall",
+   "target_low": null,
+   "target_high": null,
+   "unit": "other",
+   "verdict": "unverifiable",
+   "actual": null,
+   "note": null,
+   "checked_by": "model"
+  },
+  {
+   "id": "G21",
+   "call": "Q3 FY26",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=ad6e72f1-b5f8-4a75-8e45-f2e88c7525e0.pdf",
+   "page": 19,
+   "metric": "revenue_growth",
+   "horizon": "H1 FY27",
+   "quote": "we feel that there will be growth in spite of these challenges.",
+   "speaker": "Atul Lall",
+   "target_low": null,
+   "target_high": null,
+   "unit": "%",
+   "verdict": "unverifiable",
+   "actual": null,
+   "note": null,
+   "checked_by": "model"
+  },
+  {
+   "id": "G22",
+   "call": "Q3 FY26",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=ad6e72f1-b5f8-4a75-8e45-f2e88c7525e0.pdf",
+   "page": 16,
+   "metric": "other",
+   "horizon": "FY27",
+   "quote": "we feel that for next year, the numbers are going to be somewhere around INR3,500 crores to INR4,000 crores.",
+   "speaker": "Atul Lall",
+   "target_low": 3500,
+   "target_high": 4000,
+   "unit": "₹ cr",
+   "verdict": "unverifiable",
+   "actual": null,
+   "note": null,
+   "checked_by": "model"
+  }
+ ],
+ "tally": {
+  "unverifiable": 17,
+  "too_early": 2,
+  "on_track": 3
+ },
+ "narrative_vs_numbers": [],
+ "bull": [],
+ "bear": [],
+ "verdict": null,
+ "sources": [
+  {
+   "type": "financials",
+   "label": "screener.in (consolidated)",
+   "url": "https://www.screener.in/company/DIXON/consolidated/"
+  },
+  {
+   "type": "transcript",
+   "label": "Q2 FY27 call (Nov 2026)",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=995a3a71-4a1e-4c1f-a29a-6c6747e4ca10.pdf"
+  },
+  {
+   "type": "transcript",
+   "label": "Q1 FY27 call (Aug 2026)",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=7ce2ca16-3043-48f4-97f9-a62a6a086c2f.pdf"
+  },
+  {
+   "type": "transcript",
+   "label": "Q4 FY26 call (May 2026)",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=38b72f07-55a6-4503-91fd-ed3b2c209e96.pdf"
+  },
+  {
+   "type": "transcript",
+   "label": "Q3 FY26 call (Feb 2026)",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=ad6e72f1-b5f8-4a75-8e45-f2e88c7525e0.pdf"
+  }
+ ],
+ "complete": false,
+ "cost": {
+  "calls": 4,
+  "cached": 0,
+  "tokens_in": 36831,
+  "tokens_out": 4254,
+  "by_model": {
+   "gemini-3.1-flash-lite": {
+    "calls": 2,
+    "tokens_in": 18501,
+    "tokens_out": 2275
+   },
+   "gemini-3.5-flash-lite": {
+    "calls": 2,
+    "tokens_in": 18330,
+    "tokens_out": 1979
+   }
+  },
+  "seconds": 955.6
+ },
+ "discipline": "Primary sources only: company filings via screener.in, earnings-call transcripts. No news, broker notes or model memory."
+}

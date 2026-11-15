@@ -1,0 +1,1017 @@
+{
+ "symbol": "BHARTIARTL",
+ "name": "Bharti Airtel Ltd",
+ "generated_at": "2026-11-15T15:56:49+05:30",
+ "as_of": "2026-11-15",
+ "business": {
+  "about": "Bharti Airtel Ltd is one of the world’s leading providers of telecommunication services with presence in 18 countries representing India, Sri Lanka, 14 countries in Africa. [1]",
+  "key_points": "Segments & Presence [1] Mobile, Broadband, DTH and Bank. The company has operations in India, Africa, Bangladesh and Sri Lanka.",
+  "segments": [
+   {
+    "name": "Africa",
+    "share_or_growth": "30.5% of revenues",
+    "page": 3
+   },
+   {
+    "name": "India mobile",
+    "share_or_growth": "51% of revenues",
+    "page": 3
+   },
+   {
+    "name": "India non-mobile",
+    "share_or_growth": "13% of revenues",
+    "page": 3
+   },
+   {
+    "name": "Indus",
+    "share_or_growth": "6% of revenues",
+    "page": 3
+   },
+   {
+    "name": "Airtel business",
+    "share_or_growth": "11.4% YoY growth",
+    "page": 4
+   }
+  ]
+ },
+ "snapshot": {
+  "market_cap_cr": 1314484.0,
+  "price": 2106.0,
+  "pe": 39.3,
+  "roce": 17.6,
+  "roe": 20.3,
+  "div_yield": 1.14,
+  "ttm_sales": 228781.0,
+  "ttm_pat": 38472.0,
+  "last_q": "Q2 FY27",
+  "last_q_sales_yoy": 16.7,
+  "last_q_pat_yoy": 23.8,
+  "last_q_opm": 57.0,
+  "fy_opm": 55.0,
+  "fy": "FY26"
+ },
+ "trajectory": {
+  "sales_cagr_3y": 14.9,
+  "sales_cagr_5y": 16.0,
+  "pat_cagr_3y": 40.1,
+  "pat_cagr_5y": null,
+  "opm_change_3y": 4.0,
+  "quarterly": [
+   {
+    "period": "Dec 2023",
+    "q": "Q3 FY24",
+    "sales": 37900.0,
+    "op_profit": 19815.0,
+    "opm": 52.0,
+    "pat": 2876.0
+   },
+   {
+    "period": "Mar 2024",
+    "q": "Q4 FY24",
+    "sales": 37599.0,
+    "op_profit": 19365.0,
+    "opm": 52.0,
+    "pat": 2068.0
+   },
+   {
+    "period": "Jun 2024",
+    "q": "Q1 FY25",
+    "sales": 38506.0,
+    "op_profit": 19708.0,
+    "opm": 51.0,
+    "pat": 4718.0
+   },
+   {
+    "period": "Sep 2024",
+    "q": "Q2 FY25",
+    "sales": 41473.0,
+    "op_profit": 21846.0,
+    "opm": 53.0,
+    "pat": 4153.0,
+    "sales_yoy": 12.0,
+    "pat_yoy": 98.4
+   },
+   {
+    "period": "Dec 2024",
+    "q": "Q3 FY25",
+    "sales": 45129.0,
+    "op_profit": 24597.0,
+    "opm": 54.0,
+    "pat": 16135.0,
+    "sales_yoy": 19.1,
+    "pat_yoy": 461.0
+   },
+   {
+    "period": "Mar 2025",
+    "q": "Q4 FY25",
+    "sales": 47876.0,
+    "op_profit": 27009.0,
+    "opm": 56.0,
+    "pat": 12476.0,
+    "sales_yoy": 27.3,
+    "pat_yoy": 503.3
+   },
+   {
+    "period": "Jun 2025",
+    "q": "Q1 FY26",
+    "sales": 49463.0,
+    "op_profit": 27839.0,
+    "opm": 56.0,
+    "pat": 7422.0,
+    "sales_yoy": 28.5,
+    "pat_yoy": 57.3
+   },
+   {
+    "period": "Sep 2025",
+    "q": "Q2 FY26",
+    "sales": 52145.0,
+    "op_profit": 29561.0,
+    "opm": 57.0,
+    "pat": 8651.0,
+    "sales_yoy": 25.7,
+    "pat_yoy": 108.3
+   },
+   {
+    "period": "Dec 2025",
+    "q": "Q3 FY26",
+    "sales": 53982.0,
+    "op_profit": 30783.0,
+    "opm": 57.0,
+    "pat": 8503.0,
+    "sales_yoy": 19.6,
+    "pat_yoy": -47.3
+   },
+   {
+    "period": "Mar 2026",
+    "q": "Q4 FY26",
+    "sales": 55383.0,
+    "op_profit": 31492.0,
+    "opm": 57.0,
+    "pat": 9247.0,
+    "sales_yoy": 15.7,
+    "pat_yoy": -25.9
+   },
+   {
+    "period": "Jun 2026",
+    "q": "Q1 FY27",
+    "sales": 58539.0,
+    "op_profit": 33303.0,
+    "opm": 57.0,
+    "pat": 10012.0,
+    "sales_yoy": 18.3,
+    "pat_yoy": 34.9
+   },
+   {
+    "period": "Sep 2026",
+    "q": "Q2 FY27",
+    "sales": 60878.0,
+    "op_profit": 34946.0,
+    "opm": 57.0,
+    "pat": 10710.0,
+    "sales_yoy": 16.7,
+    "pat_yoy": 23.8
+   }
+  ],
+  "annual": [
+   {
+    "period": "Mar 2017",
+    "fy": "FY17",
+    "sales": 95468.0,
+    "opm": 37.0,
+    "pat": 4241.0,
+    "borrowings": 107288.0,
+    "equity": 67457.0,
+    "de": 1.59,
+    "cfo": 28280.0,
+    "cfi": -30680.0,
+    "sales_growth": -1.1
+   },
+   {
+    "period": "Mar 2018",
+    "fy": "FY18",
+    "sales": 82639.0,
+    "opm": 36.0,
+    "pat": 2184.0,
+    "borrowings": 111334.0,
+    "equity": 69535.0,
+    "de": 1.6,
+    "cfo": 29854.0,
+    "cfi": -27940.0,
+    "sales_growth": -13.4
+   },
+   {
+    "period": "Mar 2019",
+    "fy": "FY19",
+    "sales": 80780.0,
+    "opm": 32.0,
+    "pat": 1688.0,
+    "borrowings": 125428.0,
+    "equity": 71423.0,
+    "de": 1.76,
+    "cfo": 20070.0,
+    "cfi": -28286.0,
+    "sales_growth": -2.2
+   },
+   {
+    "period": "Mar 2020",
+    "fy": "FY20",
+    "sales": 87539.0,
+    "opm": 42.0,
+    "pat": -30664.0,
+    "borrowings": 148228.0,
+    "equity": 77145.0,
+    "de": 1.92,
+    "cfo": 18129.0,
+    "cfi": -29598.0,
+    "sales_growth": 8.4
+   },
+   {
+    "period": "Mar 2021",
+    "fy": "FY21",
+    "sales": 100616.0,
+    "opm": 45.0,
+    "pat": -12364.0,
+    "borrowings": 162785.0,
+    "equity": 58953.0,
+    "de": 2.76,
+    "cfo": 48205.0,
+    "cfi": -27286.0,
+    "sales_growth": 14.9
+   },
+   {
+    "period": "Mar 2022",
+    "fy": "FY22",
+    "sales": 116547.0,
+    "opm": 49.0,
+    "pat": 8305.0,
+    "borrowings": 169678.0,
+    "equity": 66554.0,
+    "de": 2.55,
+    "cfo": 55017.0,
+    "cfi": -41478.0,
+    "sales_growth": 15.8
+   },
+   {
+    "period": "Mar 2023",
+    "fy": "FY23",
+    "sales": 139145.0,
+    "opm": 51.0,
+    "pat": 12287.0,
+    "borrowings": 226020.0,
+    "equity": 77563.0,
+    "de": 2.91,
+    "cfo": 65325.0,
+    "cfi": -39232.0,
+    "sales_growth": 19.4
+   },
+   {
+    "period": "Mar 2024",
+    "fy": "FY24",
+    "sales": 149982.0,
+    "opm": 52.0,
+    "pat": 8558.0,
+    "borrowings": 215592.0,
+    "equity": 82019.0,
+    "de": 2.63,
+    "cfo": 78898.0,
+    "cfi": -51089.0,
+    "sales_growth": 7.8
+   },
+   {
+    "period": "Mar 2025",
+    "fy": "FY25",
+    "sales": 172985.0,
+    "opm": 49.0,
+    "pat": 37481.0,
+    "borrowings": 213642.0,
+    "equity": 113672.0,
+    "de": 1.88,
+    "cfo": 98332.0,
+    "cfi": -60198.0,
+    "sales_growth": 15.3
+   },
+   {
+    "period": "Mar 2026",
+    "fy": "FY26",
+    "sales": 210973.0,
+    "opm": 55.0,
+    "pat": 33823.0,
+    "borrowings": 195412.0,
+    "equity": 149057.0,
+    "de": 1.31,
+    "cfo": 122230.0,
+    "cfi": -56205.0,
+    "sales_growth": 22.0
+   }
+  ]
+ },
+ "balance": {
+  "borrowings": 195412.0,
+  "equity": 149057.0,
+  "de": 1.31,
+  "de_3y_ago": 2.91,
+  "working_capital": {
+   "Debtor Days": [
+    {
+     "period": "Mar 2021",
+     "value": 13.0
+    },
+    {
+     "period": "Mar 2022",
+     "value": 13.0
+    },
+    {
+     "period": "Mar 2023",
+     "value": 10.0
+    },
+    {
+     "period": "Mar 2024",
+     "value": 12.0
+    },
+    {
+     "period": "Mar 2025",
+     "value": 16.0
+    },
+    {
+     "period": "Mar 2026",
+     "value": 14.0
+    }
+   ],
+   "Inventory Days": [
+    {
+     "period": "Mar 2021",
+     "value": null
+    },
+    {
+     "period": "Mar 2022",
+     "value": null
+    },
+    {
+     "period": "Mar 2023",
+     "value": null
+    },
+    {
+     "period": "Mar 2024",
+     "value": null
+    },
+    {
+     "period": "Mar 2025",
+     "value": null
+    },
+    {
+     "period": "Mar 2026",
+     "value": null
+    }
+   ],
+   "Days Payable": [
+    {
+     "period": "Mar 2021",
+     "value": null
+    },
+    {
+     "period": "Mar 2022",
+     "value": null
+    },
+    {
+     "period": "Mar 2023",
+     "value": null
+    },
+    {
+     "period": "Mar 2024",
+     "value": null
+    },
+    {
+     "period": "Mar 2025",
+     "value": null
+    },
+    {
+     "period": "Mar 2026",
+     "value": null
+    }
+   ],
+   "Cash Conversion Cycle": [
+    {
+     "period": "Mar 2021",
+     "value": 13.0
+    },
+    {
+     "period": "Mar 2022",
+     "value": 13.0
+    },
+    {
+     "period": "Mar 2023",
+     "value": 10.0
+    },
+    {
+     "period": "Mar 2024",
+     "value": 12.0
+    },
+    {
+     "period": "Mar 2025",
+     "value": 16.0
+    },
+    {
+     "period": "Mar 2026",
+     "value": 14.0
+    }
+   ],
+   "Working Capital Days": [
+    {
+     "period": "Mar 2021",
+     "value": -270.0
+    },
+    {
+     "period": "Mar 2022",
+     "value": -239.0
+    },
+    {
+     "period": "Mar 2023",
+     "value": -217.0
+    },
+    {
+     "period": "Mar 2024",
+     "value": -236.0
+    },
+    {
+     "period": "Mar 2025",
+     "value": -277.0
+    },
+    {
+     "period": "Mar 2026",
+     "value": -222.0
+    }
+   ],
+   "ROCE %": [
+    {
+     "period": "Mar 2021",
+     "value": 7.0
+    },
+    {
+     "period": "Mar 2022",
+     "value": 11.0
+    },
+    {
+     "period": "Mar 2023",
+     "value": 12.0
+    },
+    {
+     "period": "Mar 2024",
+     "value": 13.0
+    },
+    {
+     "period": "Mar 2025",
+     "value": 13.0
+    },
+    {
+     "period": "Mar 2026",
+     "value": 18.0
+    }
+   ]
+  }
+ },
+ "cash": {
+  "cfo_to_pat_3y": 3.75,
+  "years": [
+   {
+    "fy": "FY21",
+    "cfo": 48205.0,
+    "pat": -12364.0,
+    "cfi": -27286.0
+   },
+   {
+    "fy": "FY22",
+    "cfo": 55017.0,
+    "pat": 8305.0,
+    "cfi": -41478.0
+   },
+   {
+    "fy": "FY23",
+    "cfo": 65325.0,
+    "pat": 12287.0,
+    "cfi": -39232.0
+   },
+   {
+    "fy": "FY24",
+    "cfo": 78898.0,
+    "pat": 8558.0,
+    "cfi": -51089.0
+   },
+   {
+    "fy": "FY25",
+    "cfo": 98332.0,
+    "pat": 37481.0,
+    "cfi": -60198.0
+   },
+   {
+    "fy": "FY26",
+    "cfo": 122230.0,
+    "pat": 33823.0,
+    "cfi": -56205.0
+   }
+  ]
+ },
+ "calls": [
+  {
+   "month": "Nov 2026",
+   "quarter": "Q2 FY27",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=1ff3e14f-7e97-4074-89c7-049408721c5e.pdf",
+   "status": "ok",
+   "tone": "Management expressed confident optimism about long-term growth and sustained ARPU expansion across key segments.",
+   "pushback": [
+    "Scaling back FWA expansion strategy",
+    "Home broadband ARPU decline and lower margins",
+    "Data center capex plans and funding"
+   ],
+   "delivery_comments": [
+    {
+     "topic": "Home Broadband ARPU and Quality",
+     "quote": "ARPU this quarter is just a pull-through of what we had spoken about in terms of acquisition at certain low ARPU commissions, wrong sales practices, etc., that we had to correct last quarter",
+     "page": 12
+    }
+   ],
+   "segments": [
+    {
+     "name": "Africa",
+     "share_or_growth": "30.5% of revenues",
+     "page": 3
+    },
+    {
+     "name": "India mobile",
+     "share_or_growth": "51% of revenues",
+     "page": 3
+    },
+    {
+     "name": "India non-mobile",
+     "share_or_growth": "13% of revenues",
+     "page": 3
+    },
+    {
+     "name": "Indus",
+     "share_or_growth": "6% of revenues",
+     "page": 3
+    },
+    {
+     "name": "Airtel business",
+     "share_or_growth": "11.4% YoY growth",
+     "page": 4
+    }
+   ]
+  },
+  {
+   "month": "Aug 2026",
+   "quarter": "Q1 FY27",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=ca87613b-39c3-4571-8ea9-8f77df1b6428.pdf",
+   "status": "ok",
+   "tone": "Management expressed strong confidence in multiyear growth drivers despite short-term operational recalibrations in fixed wireless.",
+   "pushback": [
+    "FWA churn rate and customer acquisition strategy impact",
+    "B2B EBITDA margins trend and capex spend cadence",
+    "Capex funding strategy for Nxtra data center expansion"
+   ],
+   "delivery_comments": [
+    {
+     "topic": "Home net additions",
+     "quote": "delivered a net adds of 473,000 which is a moderation over our previous few quarters’ trajectory.",
+     "speaker": "Shashwat Sharma",
+     "page": 4
+    },
+    {
+     "topic": "FWA acquisition outcomes",
+     "quote": "low entry level pricing helped attract customers, the outcomes were not consistent with the quality of customers franchise we wanted to build with a higher churn and weaker continuity",
+     "speaker": "Shashwat Sharma",
+     "page": 5
+    }
+   ],
+   "segments": [
+    {
+     "name": "Consolidated Revenue",
+     "share_or_growth": "Rs.58,500 Crores, 5.7% QoQ growth",
+     "page": 3
+    },
+    {
+     "name": "Africa Revenue",
+     "share_or_growth": "5.7% constant currency QoQ growth",
+     "page": 3
+    },
+    {
+     "name": "Airtel Business (B2B)",
+     "share_or_growth": "Rs.5670 Crores, 3.2% QoQ, nearly 12% YoY",
+     "page": 4
+    },
+    {
+     "name": "Airtel Money",
+     "share_or_growth": "Q1 revenue over $400 million, 26% YoY constant currency",
+     "page": 3
+    }
+   ]
+  },
+  {
+   "month": "May 2026",
+   "quarter": "Q4 FY26",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=e76d0ca2-740a-4e0f-986a-2ad0ad39d515.pdf",
+   "status": "ok",
+   "tone": "Management expressed confidence in organic drivers and new bets despite macro headwinds and ARPU softness.",
+   "pushback": [
+    "ARPU expansion pace and rationale for future tariff hikes",
+    "Capital allocation priorities and dividend payout policy vs free cash flow",
+    "Fiber vs FWA deployment strategy for home segment market share"
+   ],
+   "delivery_comments": [
+    {
+     "topic": "ARPU Growth",
+     "quote": "We are not happy with the ARPU increase of Rs.3, part of this issue was linked to West Asia crisis and international roaming revenues",
+     "page": 3
+    }
+   ],
+   "segments": [
+    {
+     "name": "Africa",
+     "share_or_growth": "29% of revenues",
+     "page": 3
+    },
+    {
+     "name": "India mobile",
+     "share_or_growth": "52% of revenues",
+     "page": 3
+    },
+    {
+     "name": "India non-mobile",
+     "share_or_growth": "13% of revenues",
+     "page": 3
+    },
+    {
+     "name": "Indus",
+     "share_or_growth": "6% of revenues",
+     "page": 3
+    },
+    {
+     "name": "Airtel Business (B2B)",
+     "share_or_growth": "Revenue Rs 5,500 Cr, 2.6% QoQ growth",
+     "page": 4
+    },
+    {
+     "name": "Digital businesses",
+     "share_or_growth": "27% revenue growth in FY26",
+     "page": 4
+    }
+   ]
+  },
+  {
+   "month": "Feb 2026",
+   "quarter": "Q3 FY26",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=1fbe1f35-07ac-4458-9799-d075511bcd53.pdf",
+   "status": "ok",
+   "tone": "Management remains highly confident, highlighting strong execution across digital portfolios, operational efficiency, and expanding B2B digital opportunities.",
+   "pushback": [
+    "Wireless revenue growth slowing down below ten percent without tariff repair",
+    "Data Center capex plans and expansion strategy",
+    "Overall capex trajectory over the next three years post 5G rollout",
+    "Churn rate and monetization in 5G Fixed Wireless Access"
+   ],
+   "delivery_comments": [
+    {
+     "topic": "Consolidated Financial Performance",
+     "quote": "We delivered another quarter of strong performance across India and Africa. Consolidated revenue came in at about Rs.54,000 crores, growing 3.5% sequentially.",
+     "speaker": "Soumen Ray",
+     "page": 3
+    },
+    {
+     "topic": "Broadband and FWA Momentum",
+     "quote": "On broadband, we delivered another strong quarter with our highest ever quarterly net adds of 1.2 million customers.",
+     "speaker": "Shashwat Sharma",
+     "page": 4
+    },
+    {
+     "topic": "Digital Portfolio Growth",
+     "quote": "Our digital portfolio delivered robust revenue growth and grew 39% over last year.",
+     "speaker": "Shashwat Sharma",
+     "page": 4
+    },
+    {
+     "topic": "International Roaming Performance",
+     "quote": "Our efforts are yielding strong outcomes in international roaming revenues, and they are growing at over 30% year-over-year.",
+     "speaker": "Shashwat Sharma",
+     "page": 4
+    }
+   ],
+   "segments": [
+    {
+     "name": "Africa",
+     "share_or_growth": "27% share of revenues; constant currency revenue growth of 5.8% QoQ",
+     "page": 3
+    },
+    {
+     "name": "India Mobile",
+     "share_or_growth": "53% share of revenues",
+     "page": 4
+    },
+    {
+     "name": "India Non-mobile",
+     "share_or_growth": "13% share of revenues",
+     "page": 4
+    },
+    {
+     "name": "Indus",
+     "share_or_growth": "7% share of revenues",
+     "page": 4
+    },
+    {
+     "name": "Airtel Business (B2B)",
+     "share_or_growth": "Rs.5,350 crores revenue, up 1.5% sequentially",
+     "page": 4
+    },
+    {
+     "name": "Digital Portfolio",
+     "share_or_growth": "grew 39% YoY",
+     "page": 4
+    }
+   ]
+  }
+ ],
+ "promises": [
+  {
+   "id": "G1",
+   "call": "Q2 FY27",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=1ff3e14f-7e97-4074-89c7-049408721c5e.pdf",
+   "page": 4,
+   "metric": "capacity",
+   "horizon": "next few years",
+   "quote": "ambition to build one gigawatt capacity over the next few years.",
+   "speaker": "Soumen Ray",
+   "target_low": 1.0,
+   "target_high": 1.0,
+   "unit": "other",
+   "verdict": "too_early",
+   "actual": "Targeting 1GW capacity over next few years",
+   "note": "Multi-year horizon not yet elapsed",
+   "checked_by": "model"
+  },
+  {
+   "id": "G2",
+   "call": "Q2 FY27",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=1ff3e14f-7e97-4074-89c7-049408721c5e.pdf",
+   "page": 7,
+   "metric": "revenue_growth",
+   "horizon": "years to come",
+   "quote": "what we say, double-digit growth consistently, for the years to come.",
+   "speaker": "Soumen Ray",
+   "target_low": null,
+   "target_high": null,
+   "unit": "%",
+   "verdict": "on_track",
+   "actual": "Sales grew 16.7% YoY in Q2 FY27",
+   "note": "Double-digit revenue growth delivered consistently",
+   "checked_by": "model"
+  },
+  {
+   "id": "G3",
+   "call": "Q1 FY27",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=ca87613b-39c3-4571-8ea9-8f77df1b6428.pdf",
+   "page": 4,
+   "metric": "capacity",
+   "horizon": "next few years",
+   "quote": "We are working towards our ambition to build one gigawatt in the next few years.",
+   "speaker": "Gopal Vittal",
+   "target_low": 1.0,
+   "target_high": 1.0,
+   "unit": "other",
+   "verdict": "too_early",
+   "actual": "Targeting 1GW capacity over next few years",
+   "note": "Multi-year horizon not yet elapsed",
+   "checked_by": "model"
+  },
+  {
+   "id": "G4",
+   "call": "Q1 FY27",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=ca87613b-39c3-4571-8ea9-8f77df1b6428.pdf",
+   "page": 4,
+   "metric": "other",
+   "horizon": "H2 2026",
+   "quote": "Airtel Money is now preparing for a London listing in the second half of 2026.",
+   "speaker": "Gopal Vittal",
+   "target_low": null,
+   "target_high": null,
+   "unit": "other",
+   "verdict": "too_early",
+   "actual": "Listing planned for H2 2026",
+   "note": "Target timeframe H2 2026 not yet completed",
+   "checked_by": "model"
+  },
+  {
+   "id": "G5",
+   "call": "Q4 FY26",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=e76d0ca2-740a-4e0f-986a-2ad0ad39d515.pdf",
+   "page": 4,
+   "metric": "capacity",
+   "horizon": "next few years",
+   "quote": "In data centers, we continue to make steady progress against our ambition of building 1 gigawatt capacity over the next few years.",
+   "speaker": "Soumen Ray",
+   "target_low": 1.0,
+   "target_high": 1.0,
+   "unit": "other",
+   "verdict": "too_early",
+   "actual": "Targeting 1GW capacity over next few years",
+   "note": "Multi-year horizon not yet elapsed",
+   "checked_by": "model"
+  },
+  {
+   "id": "G6",
+   "call": "Q4 FY26",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=e76d0ca2-740a-4e0f-986a-2ad0ad39d515.pdf",
+   "page": 8,
+   "metric": "capex",
+   "horizon": "FY27",
+   "quote": "our sense is that we will be in the ballpark of this year, give or take a little bit.",
+   "speaker": "Gopal Vittal",
+   "target_low": null,
+   "target_high": null,
+   "unit": "other",
+   "verdict": "too_early",
+   "actual": "Capex guidance given for FY27",
+   "note": "Full FY27 capex numbers not yet available",
+   "checked_by": "model"
+  },
+  {
+   "id": "G7",
+   "call": "Q3 FY26",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=1fbe1f35-07ac-4458-9799-d075511bcd53.pdf",
+   "page": 5,
+   "metric": "capacity",
+   "horizon": "next 3-4 years",
+   "quote": "Our plan is to reach 1 gigawatt capacity in the next three to four years and grow significantly ahead of the market.",
+   "speaker": "Shashwat Sharma",
+   "target_low": 1.0,
+   "target_high": 1.0,
+   "unit": "other",
+   "verdict": "too_early",
+   "actual": "Targeting 1GW capacity in 3-4 years",
+   "note": "Multi-year horizon not yet elapsed",
+   "checked_by": "model"
+  },
+  {
+   "id": "G8",
+   "call": "Q3 FY26",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=1fbe1f35-07ac-4458-9799-d075511bcd53.pdf",
+   "page": 5,
+   "metric": "capex",
+   "horizon": "medium term",
+   "quote": "our incremental spends will be directed towards growth areas including acceleration in Data centers and some pullback of 5G capex with growing device adoption.",
+   "speaker": "Shashwat Sharma",
+   "target_low": null,
+   "target_high": null,
+   "unit": null,
+   "verdict": "unverifiable",
+   "actual": "Capex shift to growth areas planned",
+   "note": "No segment capex breakdown reported",
+   "checked_by": "model"
+  },
+  {
+   "id": "G9",
+   "call": "Q3 FY26",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=1fbe1f35-07ac-4458-9799-d075511bcd53.pdf",
+   "page": 4,
+   "metric": "other",
+   "horizon": "medium term",
+   "quote": "Our strategy is to upgrade 90 million credit scored customers to our postpaid services.",
+   "speaker": "Shashwat Sharma",
+   "target_low": 90.0,
+   "target_high": 90.0,
+   "unit": "other",
+   "verdict": "too_early",
+   "actual": "Targeting 90M postpaid upgrades over medium term",
+   "note": "Medium term horizon not yet elapsed",
+   "checked_by": "model"
+  },
+  {
+   "id": "G10",
+   "call": "Q3 FY26",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=1fbe1f35-07ac-4458-9799-d075511bcd53.pdf",
+   "page": 4,
+   "metric": "other",
+   "horizon": "medium term",
+   "quote": "we see large opportunity ahead of us in this market with a potential of 100 million connected homes over the medium term.",
+   "speaker": "Shashwat Sharma",
+   "target_low": 100.0,
+   "target_high": 100.0,
+   "unit": "other",
+   "verdict": "too_early",
+   "actual": "Targeting 100M connected homes medium term",
+   "note": "Medium term horizon not yet elapsed",
+   "checked_by": "model"
+  },
+  {
+   "id": "G11",
+   "call": "Q3 FY26",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=1fbe1f35-07ac-4458-9799-d075511bcd53.pdf",
+   "page": 10,
+   "metric": "revenue_growth",
+   "horizon": "next 3 years",
+   "quote": "the consequence of all of that is that we end up with double digit growth.",
+   "speaker": "Gopal Vittal",
+   "target_low": null,
+   "target_high": null,
+   "unit": "%",
+   "verdict": "on_track",
+   "actual": "Sales YoY grew 15.7%-28.5% across FY26",
+   "note": "Double-digit revenue growth sustained",
+   "checked_by": "model"
+  }
+ ],
+ "tally": {
+  "too_early": 8,
+  "on_track": 2,
+  "unverifiable": 1
+ },
+ "narrative_vs_numbers": [
+  {
+   "claim": "Management promised double-digit revenue growth consistently",
+   "reality": "Quarterly sales YoY grew between 15.7% and 28.5% throughout FY26 and FY27",
+   "agree": true,
+   "cite": "G2 and Q2 FY27 sales_yoy"
+  },
+  {
+   "claim": "Management touted strong quarterly performance in Q3 FY26",
+   "reality": "PAT fell 47.3% YoY in Q3 FY26 despite 19.6% sales growth",
+   "agree": false,
+   "cite": "Q3 FY26 pat_yoy"
+  },
+  {
+   "claim": "Management admitted to home broadband acquisition issues and higher churn",
+   "reality": "Operating profit margins remained flat and stable at 57.0% in Q1 FY27",
+   "agree": true,
+   "cite": "Q1 FY27 opm"
+  }
+ ],
+ "bull": [
+  {
+   "point": "Top-line revenue grew double-digits continuously, reaching 16.7% YoY in Q2 FY27",
+   "cite": "Q2 FY27 sales_yoy"
+  },
+  {
+   "point": "Operating profit margin expanded from 49.0% in FY22 to 57.0% by Q2 FY27",
+   "cite": "Q2 FY27 opm"
+  },
+  {
+   "point": "Annual cash flow from operations expanded steadily to reach ₹1,22,230 crore in FY26",
+   "cite": "FY26 cfo"
+  }
+ ],
+ "bear": [
+  {
+   "point": "Net profit dropped YoY in Q3 FY26 (-47.3%) and Q4 FY26 (-25.9%)",
+   "cite": "Q4 FY26 pat_yoy"
+  },
+  {
+   "point": "Total borrowings remain high at ₹1,95,412 crore in FY26",
+   "cite": "FY26 borrowings"
+  },
+  {
+   "point": "Broadband FWA acquisition faced customer quality issues, wrong sales practices, and higher churn",
+   "cite": "Q1 FY27 call p5"
+  }
+ ],
+ "verdict": "Management delivers on double-digit top-line growth promises and margin expansion, but bottom-line volatility and broadband sales quality issues remain concerns.",
+ "sources": [
+  {
+   "type": "financials",
+   "label": "screener.in (consolidated)",
+   "url": "https://www.screener.in/company/BHARTIARTL/consolidated/"
+  },
+  {
+   "type": "transcript",
+   "label": "Q2 FY27 call (Nov 2026)",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=1ff3e14f-7e97-4074-89c7-049408721c5e.pdf"
+  },
+  {
+   "type": "transcript",
+   "label": "Q1 FY27 call (Aug 2026)",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=ca87613b-39c3-4571-8ea9-8f77df1b6428.pdf"
+  },
+  {
+   "type": "transcript",
+   "label": "Q4 FY26 call (May 2026)",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=e76d0ca2-740a-4e0f-986a-2ad0ad39d515.pdf"
+  },
+  {
+   "type": "transcript",
+   "label": "Q3 FY26 call (Feb 2026)",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=1fbe1f35-07ac-4458-9799-d075511bcd53.pdf"
+  }
+ ],
+ "complete": true,
+ "cost": {
+  "calls": 6,
+  "cached": 0,
+  "tokens_in": 48270,
+  "tokens_out": 5533,
+  "by_model": {
+   "gemini-3.5-flash": {
+    "calls": 6,
+    "tokens_in": 48270,
+    "tokens_out": 5533
+   }
+  },
+  "seconds": 53.9
+ },
+ "discipline": "Primary sources only: company filings via screener.in, earnings-call transcripts. No news, broker notes or model memory."
+}

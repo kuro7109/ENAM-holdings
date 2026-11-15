@@ -1,0 +1,511 @@
+{
+ "symbol": "ITC",
+ "name": "ITC Ltd",
+ "generated_at": "2026-11-15T15:55:55+05:30",
+ "as_of": "2026-11-15",
+ "business": {
+  "about": "Established in 1910, ITC is the largest cigarette manufacturer and seller in the country. ITC operates in four business segments at present — FMCG Cigarettes, FMCG Others, Paperboards, Paper and Packaging, and Agri Business. [1]",
+  "key_points": "Business Segments FY26 [1]",
+  "segments": []
+ },
+ "snapshot": {
+  "market_cap_cr": 357160.0,
+  "price": 285.0,
+  "pe": 18.9,
+  "roce": 38.9,
+  "roe": 29.3,
+  "div_yield": 5.09,
+  "ttm_sales": 77255.0,
+  "ttm_pat": 19226.0,
+  "last_q": "Q2 FY27",
+  "last_q_sales_yoy": 3.9,
+  "last_q_pat_yoy": -18.5,
+  "last_q_opm": 28.0,
+  "fy_opm": 35.0,
+  "fy": "FY26"
+ },
+ "trajectory": {
+  "sales_cagr_3y": 3.6,
+  "sales_cagr_5y": 9.9,
+  "pat_cagr_3y": 2.6,
+  "pat_cagr_5y": 9.4,
+  "opm_change_3y": -1.0,
+  "quarterly": [
+   {
+    "period": "Dec 2023",
+    "q": "Q3 FY24",
+    "sales": 17195.0,
+    "op_profit": 6210.0,
+    "opm": 36.0,
+    "pat": 5407.0
+   },
+   {
+    "period": "Mar 2024",
+    "q": "Q4 FY24",
+    "sales": 17038.0,
+    "op_profit": 6302.0,
+    "opm": 37.0,
+    "pat": 5191.0
+   },
+   {
+    "period": "Jun 2024",
+    "q": "Q1 FY25",
+    "sales": 17778.0,
+    "op_profit": 6545.0,
+    "opm": 37.0,
+    "pat": 5177.0
+   },
+   {
+    "period": "Sep 2024",
+    "q": "Q2 FY25",
+    "sales": 19990.0,
+    "op_profit": 6552.0,
+    "opm": 33.0,
+    "pat": 5054.0,
+    "sales_yoy": 12.5,
+    "pat_yoy": 1.8
+   },
+   {
+    "period": "Dec 2024",
+    "q": "Q3 FY25",
+    "sales": 18790.0,
+    "op_profit": 6362.0,
+    "opm": 34.0,
+    "pat": 5013.0,
+    "sales_yoy": 9.3,
+    "pat_yoy": -7.3
+   },
+   {
+    "period": "Mar 2025",
+    "q": "Q4 FY25",
+    "sales": 18765.0,
+    "op_profit": 6519.0,
+    "opm": 35.0,
+    "pat": 19808.0,
+    "sales_yoy": 10.1,
+    "pat_yoy": 281.6
+   },
+   {
+    "period": "Jun 2025",
+    "q": "Q1 FY26",
+    "sales": 21495.0,
+    "op_profit": 6816.0,
+    "opm": 32.0,
+    "pat": 5343.0,
+    "sales_yoy": 20.9,
+    "pat_yoy": 3.2
+   },
+   {
+    "period": "Sep 2025",
+    "q": "Q2 FY26",
+    "sales": 19502.0,
+    "op_profit": 6695.0,
+    "opm": 34.0,
+    "pat": 5187.0,
+    "sales_yoy": -2.4,
+    "pat_yoy": 2.6
+   },
+   {
+    "period": "Dec 2025",
+    "q": "Q3 FY26",
+    "sales": 20047.0,
+    "op_profit": 6883.0,
+    "opm": 34.0,
+    "pat": 5018.0,
+    "sales_yoy": 6.7,
+    "pat_yoy": 0.1
+   },
+   {
+    "period": "Mar 2026",
+    "q": "Q4 FY26",
+    "sales": 17825.0,
+    "op_profit": 6924.0,
+    "opm": 39.0,
+    "pat": 5470.0,
+    "sales_yoy": -5.0,
+    "pat_yoy": -72.4
+   },
+   {
+    "period": "Jun 2026",
+    "q": "Q1 FY27",
+    "sales": 19114.0,
+    "op_profit": 5181.0,
+    "opm": 27.0,
+    "pat": 4509.0,
+    "sales_yoy": -11.1,
+    "pat_yoy": -15.6
+   },
+   {
+    "period": "Sep 2026",
+    "q": "Q2 FY27",
+    "sales": 20269.0,
+    "op_profit": 5645.0,
+    "opm": 28.0,
+    "pat": 4229.0,
+    "sales_yoy": 3.9,
+    "pat_yoy": -18.5
+   }
+  ],
+  "annual": [
+   {
+    "period": "Mar 2017",
+    "fy": "FY17",
+    "sales": 42768.0,
+    "opm": 36.0,
+    "pat": 10477.0,
+    "borrowings": 46.0,
+    "equity": 46413.0,
+    "de": 0.0,
+    "cfo": 10627.0,
+    "cfi": -3251.0,
+    "sales_growth": 9.1
+   },
+   {
+    "period": "Mar 2018",
+    "fy": "FY18",
+    "sales": 43449.0,
+    "opm": 38.0,
+    "pat": 11493.0,
+    "borrowings": 36.0,
+    "equity": 52510.0,
+    "de": 0.0,
+    "cfo": 13169.0,
+    "cfi": -7114.0,
+    "sales_growth": 1.6
+   },
+   {
+    "period": "Mar 2019",
+    "fy": "FY19",
+    "sales": 48340.0,
+    "opm": 38.0,
+    "pat": 12836.0,
+    "borrowings": 13.0,
+    "equity": 59141.0,
+    "de": 0.0,
+    "cfo": 12583.0,
+    "cfi": -5546.0,
+    "sales_growth": 11.3
+   },
+   {
+    "period": "Mar 2020",
+    "fy": "FY20",
+    "sales": 49388.0,
+    "opm": 39.0,
+    "pat": 15593.0,
+    "borrowings": 277.0,
+    "equity": 65273.0,
+    "de": 0.0,
+    "cfo": 14690.0,
+    "cfi": -6174.0,
+    "sales_growth": 2.2
+   },
+   {
+    "period": "Mar 2021",
+    "fy": "FY21",
+    "sales": 49257.0,
+    "opm": 35.0,
+    "pat": 13383.0,
+    "borrowings": 271.0,
+    "equity": 60347.0,
+    "de": 0.0,
+    "cfo": 12527.0,
+    "cfi": 5740.0,
+    "sales_growth": -0.3
+   },
+   {
+    "period": "Mar 2022",
+    "fy": "FY22",
+    "sales": 60645.0,
+    "opm": 34.0,
+    "pat": 15503.0,
+    "borrowings": 249.0,
+    "equity": 62455.0,
+    "de": 0.0,
+    "cfo": 15776.0,
+    "cfi": -2238.0,
+    "sales_growth": 23.1
+   },
+   {
+    "period": "Mar 2023",
+    "fy": "FY23",
+    "sales": 70919.0,
+    "opm": 36.0,
+    "pat": 19477.0,
+    "borrowings": 306.0,
+    "equity": 69155.0,
+    "de": 0.0,
+    "cfo": 18878.0,
+    "cfi": -5732.0,
+    "sales_growth": 16.9
+   },
+   {
+    "period": "Mar 2024",
+    "fy": "FY24",
+    "sales": 67932.0,
+    "opm": 37.0,
+    "pat": 20751.0,
+    "borrowings": 303.0,
+    "equity": 74507.0,
+    "de": 0.0,
+    "cfo": 17179.0,
+    "cfi": 1563.0,
+    "sales_growth": -4.2
+   },
+   {
+    "period": "Mar 2025",
+    "fy": "FY25",
+    "sales": 75323.0,
+    "opm": 34.0,
+    "pat": 35052.0,
+    "borrowings": 285.0,
+    "equity": 70030.0,
+    "de": 0.0,
+    "cfo": 17627.0,
+    "cfi": -564.0,
+    "sales_growth": 10.9
+   },
+   {
+    "period": "Mar 2026",
+    "fy": "FY26",
+    "sales": 78868.0,
+    "opm": 35.0,
+    "pat": 21018.0,
+    "borrowings": 2399.0,
+    "equity": 72507.0,
+    "de": 0.03,
+    "cfo": 18464.0,
+    "cfi": -2321.0,
+    "sales_growth": 4.7
+   }
+  ]
+ },
+ "balance": {
+  "borrowings": 2399.0,
+  "equity": 72507.0,
+  "de": 0.03,
+  "de_3y_ago": 0.0,
+  "working_capital": {
+   "Debtor Days": [
+    {
+     "period": "Mar 2021",
+     "value": 19.0
+    },
+    {
+     "period": "Mar 2022",
+     "value": 15.0
+    },
+    {
+     "period": "Mar 2023",
+     "value": 15.0
+    },
+    {
+     "period": "Mar 2024",
+     "value": 22.0
+    },
+    {
+     "period": "Mar 2025",
+     "value": 23.0
+    },
+    {
+     "period": "Mar 2026",
+     "value": 18.0
+    }
+   ],
+   "Inventory Days": [
+    {
+     "period": "Mar 2021",
+     "value": 189.0
+    },
+    {
+     "period": "Mar 2022",
+     "value": 150.0
+    },
+    {
+     "period": "Mar 2023",
+     "value": 148.0
+    },
+    {
+     "period": "Mar 2024",
+     "value": 191.0
+    },
+    {
+     "period": "Mar 2025",
+     "value": 178.0
+    },
+    {
+     "period": "Mar 2026",
+     "value": 209.0
+    }
+   ],
+   "Days Payable": [
+    {
+     "period": "Mar 2021",
+     "value": 78.0
+    },
+    {
+     "period": "Mar 2022",
+     "value": 61.0
+    },
+    {
+     "period": "Mar 2023",
+     "value": 59.0
+    },
+    {
+     "period": "Mar 2024",
+     "value": 65.0
+    },
+    {
+     "period": "Mar 2025",
+     "value": 55.0
+    },
+    {
+     "period": "Mar 2026",
+     "value": 63.0
+    }
+   ],
+   "Cash Conversion Cycle": [
+    {
+     "period": "Mar 2021",
+     "value": 129.0
+    },
+    {
+     "period": "Mar 2022",
+     "value": 104.0
+    },
+    {
+     "period": "Mar 2023",
+     "value": 105.0
+    },
+    {
+     "period": "Mar 2024",
+     "value": 148.0
+    },
+    {
+     "period": "Mar 2025",
+     "value": 146.0
+    },
+    {
+     "period": "Mar 2026",
+     "value": 164.0
+    }
+   ],
+   "Working Capital Days": [
+    {
+     "period": "Mar 2021",
+     "value": 36.0
+    },
+    {
+     "period": "Mar 2022",
+     "value": 31.0
+    },
+    {
+     "period": "Mar 2023",
+     "value": 20.0
+    },
+    {
+     "period": "Mar 2024",
+     "value": 39.0
+    },
+    {
+     "period": "Mar 2025",
+     "value": 45.0
+    },
+    {
+     "period": "Mar 2026",
+     "value": 47.0
+    }
+   ],
+   "ROCE %": [
+    {
+     "period": "Mar 2021",
+     "value": 28.0
+    },
+    {
+     "period": "Mar 2022",
+     "value": 33.0
+    },
+    {
+     "period": "Mar 2023",
+     "value": 39.0
+    },
+    {
+     "period": "Mar 2024",
+     "value": 36.0
+    },
+    {
+     "period": "Mar 2025",
+     "value": 37.0
+    },
+    {
+     "period": "Mar 2026",
+     "value": 39.0
+    }
+   ]
+  }
+ },
+ "cash": {
+  "cfo_to_pat_3y": 0.69,
+  "years": [
+   {
+    "fy": "FY21",
+    "cfo": 12527.0,
+    "pat": 13383.0,
+    "cfi": 5740.0
+   },
+   {
+    "fy": "FY22",
+    "cfo": 15776.0,
+    "pat": 15503.0,
+    "cfi": -2238.0
+   },
+   {
+    "fy": "FY23",
+    "cfo": 18878.0,
+    "pat": 19477.0,
+    "cfi": -5732.0
+   },
+   {
+    "fy": "FY24",
+    "cfo": 17179.0,
+    "pat": 20751.0,
+    "cfi": 1563.0
+   },
+   {
+    "fy": "FY25",
+    "cfo": 17627.0,
+    "pat": 35052.0,
+    "cfi": -564.0
+   },
+   {
+    "fy": "FY26",
+    "cfo": 18464.0,
+    "pat": 21018.0,
+    "cfi": -2321.0
+   }
+  ]
+ },
+ "calls": [],
+ "promises": [],
+ "tally": {},
+ "narrative_vs_numbers": [],
+ "bull": [],
+ "bear": [],
+ "verdict": null,
+ "sources": [
+  {
+   "type": "financials",
+   "label": "screener.in (consolidated)",
+   "url": "https://www.screener.in/company/ITC/consolidated/"
+  }
+ ],
+ "complete": false,
+ "cost": {
+  "calls": 0,
+  "cached": 0,
+  "tokens_in": 0,
+  "tokens_out": 0,
+  "by_model": {},
+  "seconds": 0.4
+ },
+ "discipline": "Primary sources only: company filings via screener.in, earnings-call transcripts. No news, broker notes or model memory."
+}

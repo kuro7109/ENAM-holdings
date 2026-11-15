@@ -1,0 +1,511 @@
+{
+ "symbol": "TRENT",
+ "name": "Trent Ltd",
+ "generated_at": "2026-11-15T16:29:27+05:30",
+ "as_of": "2026-11-15",
+ "business": {
+  "about": "Trent Ltd is engaged in retailing of apparels, footwear, accessories, toys, games, food, grocery & non food products through various of its retail formats/ concepts. [1]",
+  "key_points": "Part of Tata Group: [1] The company is a part of the Tata Group with ~37% of group shareholding, 32.5% with Tata Sons Private Ltd & 4.3% with Tata Investment Corporation Ltd. [2] Tata Group comprises 100 operating companies in 7 business sectors. The group operates in over 80 countries across 6 continents.",
+  "segments": []
+ },
+ "snapshot": {
+  "market_cap_cr": 168779.0,
+  "price": 3165.0,
+  "pe": 88.1,
+  "roce": 28.3,
+  "roe": 27.7,
+  "div_yield": 0.13,
+  "ttm_sales": 22001.0,
+  "ttm_pat": 1909.0,
+  "last_q": "Q2 FY27",
+  "last_q_sales_yoy": 21.9,
+  "last_q_pat_yoy": 25.5,
+  "last_q_opm": 18.0,
+  "fy_opm": 19.0,
+  "fy": "FY26"
+ },
+ "trajectory": {
+  "sales_cagr_3y": 34.5,
+  "sales_cagr_5y": 50.6,
+  "pat_cagr_3y": 63.5,
+  "pat_cagr_5y": null,
+  "opm_change_3y": 5.0,
+  "quarterly": [
+   {
+    "period": "Dec 2023",
+    "q": "Q3 FY24",
+    "sales": 3467.0,
+    "op_profit": 629.0,
+    "opm": 18.0,
+    "pat": 371.0
+   },
+   {
+    "period": "Mar 2024",
+    "q": "Q4 FY24",
+    "sales": 3298.0,
+    "op_profit": 470.0,
+    "opm": 14.0,
+    "pat": 712.0
+   },
+   {
+    "period": "Jun 2024",
+    "q": "Q1 FY25",
+    "sales": 4104.0,
+    "op_profit": 613.0,
+    "opm": 15.0,
+    "pat": 391.0
+   },
+   {
+    "period": "Sep 2024",
+    "q": "Q2 FY25",
+    "sales": 4157.0,
+    "op_profit": 646.0,
+    "opm": 16.0,
+    "pat": 335.0,
+    "sales_yoy": 39.4,
+    "pat_yoy": 46.9
+   },
+   {
+    "period": "Dec 2024",
+    "q": "Q3 FY25",
+    "sales": 4657.0,
+    "op_profit": 847.0,
+    "opm": 18.0,
+    "pat": 497.0,
+    "sales_yoy": 34.3,
+    "pat_yoy": 34.0
+   },
+   {
+    "period": "Mar 2025",
+    "q": "Q4 FY25",
+    "sales": 4217.0,
+    "op_profit": 651.0,
+    "opm": 15.0,
+    "pat": 312.0,
+    "sales_yoy": 27.9,
+    "pat_yoy": -56.2
+   },
+   {
+    "period": "Jun 2025",
+    "q": "Q1 FY26",
+    "sales": 4883.0,
+    "op_profit": 848.0,
+    "opm": 17.0,
+    "pat": 425.0,
+    "sales_yoy": 19.0,
+    "pat_yoy": 8.7
+   },
+   {
+    "period": "Sep 2025",
+    "q": "Q2 FY26",
+    "sales": 4818.0,
+    "op_profit": 816.0,
+    "opm": 17.0,
+    "pat": 373.0,
+    "sales_yoy": 15.9,
+    "pat_yoy": 11.3
+   },
+   {
+    "period": "Dec 2025",
+    "q": "Q3 FY26",
+    "sales": 5345.0,
+    "op_profit": 1081.0,
+    "opm": 20.0,
+    "pat": 510.0,
+    "sales_yoy": 14.8,
+    "pat_yoy": 2.6
+   },
+   {
+    "period": "Mar 2026",
+    "q": "Q4 FY26",
+    "sales": 5028.0,
+    "op_profit": 911.0,
+    "opm": 18.0,
+    "pat": 413.0,
+    "sales_yoy": 19.2,
+    "pat_yoy": 32.4
+   },
+   {
+    "period": "Jun 2026",
+    "q": "Q1 FY27",
+    "sales": 5755.0,
+    "op_profit": 1119.0,
+    "opm": 19.0,
+    "pat": 518.0,
+    "sales_yoy": 17.9,
+    "pat_yoy": 21.9
+   },
+   {
+    "period": "Sep 2026",
+    "q": "Q2 FY27",
+    "sales": 5873.0,
+    "op_profit": 1057.0,
+    "opm": 18.0,
+    "pat": 468.0,
+    "sales_yoy": 21.9,
+    "pat_yoy": 25.5
+   }
+  ],
+  "annual": [
+   {
+    "period": "Mar 2017",
+    "fy": "FY17",
+    "sales": 1812.0,
+    "opm": 7.0,
+    "pat": 85.0,
+    "borrowings": 392.0,
+    "equity": 1547.0,
+    "de": 0.25,
+    "cfo": 102.0,
+    "cfi": -44.0,
+    "sales_growth": 7.5
+   },
+   {
+    "period": "Mar 2018",
+    "fy": "FY18",
+    "sales": 2157.0,
+    "opm": 10.0,
+    "pat": 87.0,
+    "borrowings": 391.0,
+    "equity": 1595.0,
+    "de": 0.25,
+    "cfo": 77.0,
+    "cfi": -4.0,
+    "sales_growth": 19.0
+   },
+   {
+    "period": "Mar 2019",
+    "fy": "FY19",
+    "sales": 2630.0,
+    "opm": 9.0,
+    "pat": 95.0,
+    "borrowings": 494.0,
+    "equity": 1646.0,
+    "de": 0.3,
+    "cfo": 21.0,
+    "cfi": -37.0,
+    "sales_growth": 21.9
+   },
+   {
+    "period": "Mar 2020",
+    "fy": "FY20",
+    "sales": 3486.0,
+    "opm": 15.0,
+    "pat": 106.0,
+    "borrowings": 300.0,
+    "equity": 2388.0,
+    "de": 0.13,
+    "cfo": 361.0,
+    "cfi": -809.0,
+    "sales_growth": 32.5
+   },
+   {
+    "period": "Mar 2021",
+    "fy": "FY21",
+    "sales": 2593.0,
+    "opm": 4.4,
+    "pat": -181.0,
+    "borrowings": 2964.0,
+    "equity": 2313.0,
+    "de": 1.28,
+    "cfo": 285.0,
+    "cfi": 18.0,
+    "sales_growth": -25.6
+   },
+   {
+    "period": "Mar 2022",
+    "fy": "FY22",
+    "sales": 4498.0,
+    "opm": 13.0,
+    "pat": 35.0,
+    "borrowings": 4725.0,
+    "equity": 2364.0,
+    "de": 2.0,
+    "cfo": 58.0,
+    "cfi": 56.0,
+    "sales_growth": 73.5
+   },
+   {
+    "period": "Mar 2023",
+    "fy": "FY23",
+    "sales": 8242.0,
+    "opm": 14.0,
+    "pat": 394.0,
+    "borrowings": 4464.0,
+    "equity": 2596.0,
+    "de": 1.72,
+    "cfo": 595.0,
+    "cfi": -103.0,
+    "sales_growth": 83.2
+   },
+   {
+    "period": "Mar 2024",
+    "fy": "FY24",
+    "sales": 12375.0,
+    "opm": 16.0,
+    "pat": 1477.0,
+    "borrowings": 1753.0,
+    "equity": 4068.0,
+    "de": 0.43,
+    "cfo": 1349.0,
+    "cfi": -508.0,
+    "sales_growth": 50.1
+   },
+   {
+    "period": "Mar 2025",
+    "fy": "FY25",
+    "sales": 17135.0,
+    "opm": 16.0,
+    "pat": 1534.0,
+    "borrowings": 2237.0,
+    "equity": 5462.0,
+    "de": 0.41,
+    "cfo": 1661.0,
+    "cfi": -923.0,
+    "sales_growth": 38.5
+   },
+   {
+    "period": "Mar 2026",
+    "fy": "FY26",
+    "sales": 20074.0,
+    "opm": 19.0,
+    "pat": 1721.0,
+    "borrowings": 2561.0,
+    "equity": 6985.0,
+    "de": 0.37,
+    "cfo": 2668.0,
+    "cfi": -1577.0,
+    "sales_growth": 17.2
+   }
+  ]
+ },
+ "balance": {
+  "borrowings": 2561.0,
+  "equity": 6985.0,
+  "de": 0.37,
+  "de_3y_ago": 1.72,
+  "working_capital": {
+   "Debtor Days": [
+    {
+     "period": "Mar 2021",
+     "value": 3.0
+    },
+    {
+     "period": "Mar 2022",
+     "value": 1.0
+    },
+    {
+     "period": "Mar 2023",
+     "value": 2.0
+    },
+    {
+     "period": "Mar 2024",
+     "value": 2.0
+    },
+    {
+     "period": "Mar 2025",
+     "value": 1.0
+    },
+    {
+     "period": "Mar 2026",
+     "value": 1.0
+    }
+   ],
+   "Inventory Days": [
+    {
+     "period": "Mar 2021",
+     "value": 102.0
+    },
+    {
+     "period": "Mar 2022",
+     "value": 128.0
+    },
+    {
+     "period": "Mar 2023",
+     "value": 105.0
+    },
+    {
+     "period": "Mar 2024",
+     "value": 83.0
+    },
+    {
+     "period": "Mar 2025",
+     "value": 77.0
+    },
+    {
+     "period": "Mar 2026",
+     "value": 74.0
+    }
+   ],
+   "Days Payable": [
+    {
+     "period": "Mar 2021",
+     "value": 65.0
+    },
+    {
+     "period": "Mar 2022",
+     "value": 56.0
+    },
+    {
+     "period": "Mar 2023",
+     "value": 51.0
+    },
+    {
+     "period": "Mar 2024",
+     "value": 41.0
+    },
+    {
+     "period": "Mar 2025",
+     "value": 35.0
+    },
+    {
+     "period": "Mar 2026",
+     "value": 39.0
+    }
+   ],
+   "Cash Conversion Cycle": [
+    {
+     "period": "Mar 2021",
+     "value": 40.0
+    },
+    {
+     "period": "Mar 2022",
+     "value": 74.0
+    },
+    {
+     "period": "Mar 2023",
+     "value": 55.0
+    },
+    {
+     "period": "Mar 2024",
+     "value": 45.0
+    },
+    {
+     "period": "Mar 2025",
+     "value": 43.0
+    },
+    {
+     "period": "Mar 2026",
+     "value": 36.0
+    }
+   ],
+   "Working Capital Days": [
+    {
+     "period": "Mar 2021",
+     "value": -14.0
+    },
+    {
+     "period": "Mar 2022",
+     "value": 42.0
+    },
+    {
+     "period": "Mar 2023",
+     "value": 29.0
+    },
+    {
+     "period": "Mar 2024",
+     "value": 16.0
+    },
+    {
+     "period": "Mar 2025",
+     "value": 15.0
+    },
+    {
+     "period": "Mar 2026",
+     "value": -2.0
+    }
+   ],
+   "ROCE %": [
+    {
+     "period": "Mar 2021",
+     "value": 1.0
+    },
+    {
+     "period": "Mar 2022",
+     "value": 7.0
+    },
+    {
+     "period": "Mar 2023",
+     "value": 12.0
+    },
+    {
+     "period": "Mar 2024",
+     "value": 24.0
+    },
+    {
+     "period": "Mar 2025",
+     "value": 31.0
+    },
+    {
+     "period": "Mar 2026",
+     "value": 28.0
+    }
+   ]
+  }
+ },
+ "cash": {
+  "cfo_to_pat_3y": 1.2,
+  "years": [
+   {
+    "fy": "FY21",
+    "cfo": 285.0,
+    "pat": -181.0,
+    "cfi": 18.0
+   },
+   {
+    "fy": "FY22",
+    "cfo": 58.0,
+    "pat": 35.0,
+    "cfi": 56.0
+   },
+   {
+    "fy": "FY23",
+    "cfo": 595.0,
+    "pat": 394.0,
+    "cfi": -103.0
+   },
+   {
+    "fy": "FY24",
+    "cfo": 1349.0,
+    "pat": 1477.0,
+    "cfi": -508.0
+   },
+   {
+    "fy": "FY25",
+    "cfo": 1661.0,
+    "pat": 1534.0,
+    "cfi": -923.0
+   },
+   {
+    "fy": "FY26",
+    "cfo": 2668.0,
+    "pat": 1721.0,
+    "cfi": -1577.0
+   }
+  ]
+ },
+ "calls": [],
+ "promises": [],
+ "tally": {},
+ "narrative_vs_numbers": [],
+ "bull": [],
+ "bear": [],
+ "verdict": null,
+ "sources": [
+  {
+   "type": "financials",
+   "label": "screener.in (consolidated)",
+   "url": "https://www.screener.in/company/TRENT/consolidated/"
+  }
+ ],
+ "complete": false,
+ "cost": {
+  "calls": 0,
+  "cached": 0,
+  "tokens_in": 0,
+  "tokens_out": 0,
+  "by_model": {},
+  "seconds": 0.6
+ },
+ "discipline": "Primary sources only: company filings via screener.in, earnings-call transcripts. No news, broker notes or model memory."
+}

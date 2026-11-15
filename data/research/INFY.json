@@ -1,0 +1,1062 @@
+{
+ "symbol": "INFY",
+ "name": "Infosys Ltd",
+ "generated_at": "2026-11-15T15:55:55+05:30",
+ "as_of": "2026-11-15",
+ "business": {
+  "about": "Infosys Ltd provides consulting, technology, outsourcing and next-generation digital services to enable clients to execute strategies for their digital transformation. [1] It is the 2nd largest Information Technology company in India behind TCS. [2]",
+  "key_points": "Digital Services: It comprises of services and solution offerings of the group that enables clients to transform their businesses. It includes offerings that enhance customer experience, leverage AI-based analytics and big data, engineer digital products and IoT, modernize legacy tech systems, migrate to cloud applications and implement advanced cyber-security systems. [1]",
+  "segments": [
+   {
+    "name": "AI revenue",
+    "share_or_growth": "10.5% of revenue, growing at 29% sequentially",
+    "page": 4
+   },
+   {
+    "name": "Financial Services",
+    "share_or_growth": "7 large deals won in Q2",
+    "page": 27
+   },
+   {
+    "name": "Manufacturing",
+    "share_or_growth": "5 large deals won in Q2",
+    "page": 27
+   },
+   {
+    "name": "Communications",
+    "share_or_growth": "2 large deals won in Q2",
+    "page": 27
+   },
+   {
+    "name": "EURS",
+    "share_or_growth": "2 large deals won in Q2",
+    "page": 27
+   },
+   {
+    "name": "Life Sciences",
+    "share_or_growth": "2 large deals won in Q2",
+    "page": 27
+   },
+   {
+    "name": "Hi-Tech",
+    "share_or_growth": "1 large deal won in Q2",
+    "page": 27
+   }
+  ]
+ },
+ "snapshot": {
+  "market_cap_cr": 463254.0,
+  "price": 1142.0,
+  "pe": 14.6,
+  "roce": 40.0,
+  "roe": 31.9,
+  "div_yield": 4.2,
+  "ttm_sales": 189336.0,
+  "ttm_pat": 30788.0,
+  "last_q": "Q2 FY27",
+  "last_q_sales_yoy": 10.7,
+  "last_q_pat_yoy": 6.3,
+  "last_q_opm": 24.0,
+  "fy_opm": 24.0,
+  "fy": "FY26"
+ },
+ "trajectory": {
+  "sales_cagr_3y": 6.8,
+  "sales_cagr_5y": 12.2,
+  "pat_cagr_3y": 6.9,
+  "pat_cagr_5y": 8.7,
+  "opm_change_3y": 0.0,
+  "quarterly": [
+   {
+    "period": "Dec 2023",
+    "q": "Q3 FY24",
+    "sales": 38821.0,
+    "op_profit": 9137.0,
+    "opm": 24.0,
+    "pat": 6113.0
+   },
+   {
+    "period": "Mar 2024",
+    "q": "Q4 FY24",
+    "sales": 37923.0,
+    "op_profit": 8784.0,
+    "opm": 23.0,
+    "pat": 7975.0
+   },
+   {
+    "period": "Jun 2024",
+    "q": "Q1 FY25",
+    "sales": 39315.0,
+    "op_profit": 9437.0,
+    "opm": 24.0,
+    "pat": 6374.0
+   },
+   {
+    "period": "Sep 2024",
+    "q": "Q2 FY25",
+    "sales": 40986.0,
+    "op_profit": 9809.0,
+    "opm": 24.0,
+    "pat": 6516.0,
+    "sales_yoy": 5.1,
+    "pat_yoy": 4.8
+   },
+   {
+    "period": "Dec 2024",
+    "q": "Q3 FY25",
+    "sales": 41764.0,
+    "op_profit": 10115.0,
+    "opm": 24.0,
+    "pat": 6822.0,
+    "sales_yoy": 7.6,
+    "pat_yoy": 11.6
+   },
+   {
+    "period": "Mar 2025",
+    "q": "Q4 FY25",
+    "sales": 40925.0,
+    "op_profit": 9874.0,
+    "opm": 24.0,
+    "pat": 7038.0,
+    "sales_yoy": 7.9,
+    "pat_yoy": -11.7
+   },
+   {
+    "period": "Jun 2025",
+    "q": "Q1 FY26",
+    "sales": 42279.0,
+    "op_profit": 9943.0,
+    "opm": 24.0,
+    "pat": 6924.0,
+    "sales_yoy": 7.5,
+    "pat_yoy": 8.6
+   },
+   {
+    "period": "Sep 2025",
+    "q": "Q2 FY26",
+    "sales": 44490.0,
+    "op_profit": 10535.0,
+    "opm": 24.0,
+    "pat": 7375.0,
+    "sales_yoy": 8.5,
+    "pat_yoy": 13.2
+   },
+   {
+    "period": "Dec 2025",
+    "q": "Q3 FY26",
+    "sales": 45479.0,
+    "op_profit": 10634.0,
+    "opm": 23.0,
+    "pat": 6666.0,
+    "sales_yoy": 8.9,
+    "pat_yoy": -2.3
+   },
+   {
+    "period": "Mar 2026",
+    "q": "Q4 FY26",
+    "sales": 46402.0,
+    "op_profit": 11167.0,
+    "opm": 24.0,
+    "pat": 8509.0,
+    "sales_yoy": 13.4,
+    "pat_yoy": 20.9
+   },
+   {
+    "period": "Jun 2026",
+    "q": "Q1 FY27",
+    "sales": 48211.0,
+    "op_profit": 11409.0,
+    "opm": 24.0,
+    "pat": 7775.0,
+    "sales_yoy": 14.0,
+    "pat_yoy": 12.3
+   },
+   {
+    "period": "Sep 2026",
+    "q": "Q2 FY27",
+    "sales": 49244.0,
+    "op_profit": 11689.0,
+    "opm": 24.0,
+    "pat": 7838.0,
+    "sales_yoy": 10.7,
+    "pat_yoy": 6.3
+   }
+  ],
+  "annual": [
+   {
+    "period": "Mar 2017",
+    "fy": "FY17",
+    "sales": 68484.0,
+    "opm": 27.0,
+    "pat": 14353.0,
+    "borrowings": 0.0,
+    "equity": 68982.0,
+    "de": 0.0,
+    "cfo": 11531.0,
+    "cfi": -14664.0,
+    "sales_growth": 9.7
+   },
+   {
+    "period": "Mar 2018",
+    "fy": "FY18",
+    "sales": 70522.0,
+    "opm": 27.0,
+    "pat": 16029.0,
+    "borrowings": 0.0,
+    "equity": 64923.0,
+    "de": 0.0,
+    "cfo": 13218.0,
+    "cfi": 4533.0,
+    "sales_growth": 3.0
+   },
+   {
+    "period": "Mar 2019",
+    "fy": "FY19",
+    "sales": 82675.0,
+    "opm": 24.0,
+    "pat": 15410.0,
+    "borrowings": 0.0,
+    "equity": 64948.0,
+    "de": 0.0,
+    "cfo": 14841.0,
+    "cfi": -632.0,
+    "sales_growth": 17.2
+   },
+   {
+    "period": "Mar 2020",
+    "fy": "FY20",
+    "sales": 90791.0,
+    "opm": 25.0,
+    "pat": 16639.0,
+    "borrowings": 4633.0,
+    "equity": 65450.0,
+    "de": 0.07,
+    "cfo": 17003.0,
+    "cfi": -331.0,
+    "sales_growth": 9.8
+   },
+   {
+    "period": "Mar 2021",
+    "fy": "FY21",
+    "sales": 100472.0,
+    "opm": 28.0,
+    "pat": 19423.0,
+    "borrowings": 5325.0,
+    "equity": 76351.0,
+    "de": 0.07,
+    "cfo": 23224.0,
+    "cfi": -7373.0,
+    "sales_growth": 10.7
+   },
+   {
+    "period": "Mar 2022",
+    "fy": "FY22",
+    "sales": 121641.0,
+    "opm": 26.0,
+    "pat": 22146.0,
+    "borrowings": 5474.0,
+    "equity": 75350.0,
+    "de": 0.07,
+    "cfo": 23885.0,
+    "cfi": -6485.0,
+    "sales_growth": 21.1
+   },
+   {
+    "period": "Mar 2023",
+    "fy": "FY23",
+    "sales": 146767.0,
+    "opm": 24.0,
+    "pat": 24108.0,
+    "borrowings": 8299.0,
+    "equity": 75407.0,
+    "de": 0.11,
+    "cfo": 22467.0,
+    "cfi": -1071.0,
+    "sales_growth": 20.7
+   },
+   {
+    "period": "Mar 2024",
+    "fy": "FY24",
+    "sales": 153670.0,
+    "opm": 24.0,
+    "pat": 26248.0,
+    "borrowings": 8359.0,
+    "equity": 88116.0,
+    "de": 0.09,
+    "cfo": 25210.0,
+    "cfi": -5093.0,
+    "sales_growth": 4.7
+   },
+   {
+    "period": "Mar 2025",
+    "fy": "FY25",
+    "sales": 162990.0,
+    "opm": 24.0,
+    "pat": 26750.0,
+    "borrowings": 8227.0,
+    "equity": 95818.0,
+    "de": 0.09,
+    "cfo": 35694.0,
+    "cfi": -1864.0,
+    "sales_growth": 6.1
+   },
+   {
+    "period": "Mar 2026",
+    "fy": "FY26",
+    "sales": 178650.0,
+    "opm": 24.0,
+    "pat": 29474.0,
+    "borrowings": 9176.0,
+    "equity": 92852.0,
+    "de": 0.1,
+    "cfo": 33986.0,
+    "cfi": 3546.0,
+    "sales_growth": 9.6
+   }
+  ]
+ },
+ "balance": {
+  "borrowings": 9176.0,
+  "equity": 92852.0,
+  "de": 0.1,
+  "de_3y_ago": 0.11,
+  "working_capital": {
+   "Debtor Days": [
+    {
+     "period": "Mar 2021",
+     "value": 70.0
+    },
+    {
+     "period": "Mar 2022",
+     "value": 68.0
+    },
+    {
+     "period": "Mar 2023",
+     "value": 63.0
+    },
+    {
+     "period": "Mar 2024",
+     "value": 72.0
+    },
+    {
+     "period": "Mar 2025",
+     "value": 70.0
+    },
+    {
+     "period": "Mar 2026",
+     "value": 72.0
+    }
+   ],
+   "Inventory Days": [
+    {
+     "period": "Mar 2021",
+     "value": null
+    },
+    {
+     "period": "Mar 2022",
+     "value": null
+    },
+    {
+     "period": "Mar 2023",
+     "value": null
+    },
+    {
+     "period": "Mar 2024",
+     "value": null
+    },
+    {
+     "period": "Mar 2025",
+     "value": null
+    },
+    {
+     "period": "Mar 2026",
+     "value": null
+    }
+   ],
+   "Days Payable": [
+    {
+     "period": "Mar 2021",
+     "value": null
+    },
+    {
+     "period": "Mar 2022",
+     "value": null
+    },
+    {
+     "period": "Mar 2023",
+     "value": null
+    },
+    {
+     "period": "Mar 2024",
+     "value": null
+    },
+    {
+     "period": "Mar 2025",
+     "value": null
+    },
+    {
+     "period": "Mar 2026",
+     "value": null
+    }
+   ],
+   "Cash Conversion Cycle": [
+    {
+     "period": "Mar 2021",
+     "value": 70.0
+    },
+    {
+     "period": "Mar 2022",
+     "value": 68.0
+    },
+    {
+     "period": "Mar 2023",
+     "value": 63.0
+    },
+    {
+     "period": "Mar 2024",
+     "value": 72.0
+    },
+    {
+     "period": "Mar 2025",
+     "value": 70.0
+    },
+    {
+     "period": "Mar 2026",
+     "value": 72.0
+    }
+   ],
+   "Working Capital Days": [
+    {
+     "period": "Mar 2021",
+     "value": 36.0
+    },
+    {
+     "period": "Mar 2022",
+     "value": 28.0
+    },
+    {
+     "period": "Mar 2023",
+     "value": 31.0
+    },
+    {
+     "period": "Mar 2024",
+     "value": 54.0
+    },
+    {
+     "period": "Mar 2025",
+     "value": 39.0
+    },
+    {
+     "period": "Mar 2026",
+     "value": 33.0
+    }
+   ],
+   "ROCE %": [
+    {
+     "period": "Mar 2021",
+     "value": 35.0
+    },
+    {
+     "period": "Mar 2022",
+     "value": 37.0
+    },
+    {
+     "period": "Mar 2023",
+     "value": 40.0
+    },
+    {
+     "period": "Mar 2024",
+     "value": 40.0
+    },
+    {
+     "period": "Mar 2025",
+     "value": 38.0
+    },
+    {
+     "period": "Mar 2026",
+     "value": 40.0
+    }
+   ]
+  }
+ },
+ "cash": {
+  "cfo_to_pat_3y": 1.15,
+  "years": [
+   {
+    "fy": "FY21",
+    "cfo": 23224.0,
+    "pat": 19423.0,
+    "cfi": -7373.0
+   },
+   {
+    "fy": "FY22",
+    "cfo": 23885.0,
+    "pat": 22146.0,
+    "cfi": -6485.0
+   },
+   {
+    "fy": "FY23",
+    "cfo": 22467.0,
+    "pat": 24108.0,
+    "cfi": -1071.0
+   },
+   {
+    "fy": "FY24",
+    "cfo": 25210.0,
+    "pat": 26248.0,
+    "cfi": -5093.0
+   },
+   {
+    "fy": "FY25",
+    "cfo": 35694.0,
+    "pat": 26750.0,
+    "cfi": -1864.0
+   },
+   {
+    "fy": "FY26",
+    "cfo": 33986.0,
+    "pat": 29474.0,
+    "cfi": 3546.0
+   }
+  ]
+ },
+ "calls": [
+  {
+   "month": "Oct 2026",
+   "quarter": "Q2 FY27",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=7982fc61-7765-4981-ab3d-6aec36ba2137.pdf",
+   "status": "ok",
+   "tone": "Management maintained a cautious yet steady tone, balancing lowered growth expectations with strong large deal wins and margin discipline.",
+   "pushback": [
+    "Revenue growth guidance revision drivers and softer Q2 volume",
+    "Pricing pressure, AI productivity demands, and client sharing",
+    "Margin headwinds from wage hikes, acquisitions, and Maximus runway"
+   ],
+   "delivery_comments": [
+    {
+     "topic": "revenue_growth",
+     "quote": "Revenue growth was below our expectations",
+     "page": 27
+    },
+    {
+     "topic": "volume_growth",
+     "quote": "Our Q2 has been softer and our volume continues to remain softer.",
+     "page": 6
+    },
+    {
+     "topic": "ebitda_margin",
+     "quote": "Operating margin was stable at 21%.",
+     "page": 4
+    },
+    {
+     "topic": "pricing",
+     "quote": "price increases were lower than anticipated amidst high competitive intensity.",
+     "page": 27
+    }
+   ],
+   "segments": [
+    {
+     "name": "AI revenue",
+     "share_or_growth": "10.5% of revenue, growing at 29% sequentially",
+     "page": 4
+    },
+    {
+     "name": "Financial Services",
+     "share_or_growth": "7 large deals won in Q2",
+     "page": 27
+    },
+    {
+     "name": "Manufacturing",
+     "share_or_growth": "5 large deals won in Q2",
+     "page": 27
+    },
+    {
+     "name": "Communications",
+     "share_or_growth": "2 large deals won in Q2",
+     "page": 27
+    },
+    {
+     "name": "EURS",
+     "share_or_growth": "2 large deals won in Q2",
+     "page": 27
+    },
+    {
+     "name": "Life Sciences",
+     "share_or_growth": "2 large deals won in Q2",
+     "page": 27
+    },
+    {
+     "name": "Hi-Tech",
+     "share_or_growth": "1 large deal won in Q2",
+     "page": 27
+    }
+   ]
+  },
+  {
+   "month": "Jul 2026",
+   "quarter": "Q1 FY27",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=95f8af86-dc92-49dc-a7cf-ecce287f8cce.pdf",
+   "status": "ok",
+   "tone": "Cautious due to macro uncertainty and Q1 volume softness, yet confident in maintaining operating margin targets.",
+   "pushback": [
+    "Downward revision of revenue growth guidance and lower upper limit",
+    "Softness in volume growth and client project terminations",
+    "Impact of wage hikes and pricing pressure on operating margins"
+   ],
+   "delivery_comments": [
+    {
+     "topic": "revenue growth",
+     "quote": "Q1 revenue growth was lower than our expectations, mainly due to - one-off 50 basis point impact on account of program termination by an EURS client during the quarter.",
+     "page": 30
+    },
+    {
+     "topic": "volumes",
+     "quote": "Volumes were soft and weaker than expectations and also versus the historical Q1 trends",
+     "page": 30
+    },
+    {
+     "topic": "pricing",
+     "quote": "client expectation on productivity, along with high competitive intensity is resulting in softer increase in price versus our expectations.",
+     "page": 30
+    },
+    {
+     "topic": "margins",
+     "quote": "Despite lower-than-expected growth, gross margins improved by 60 bps sequentially. Operating margin improved by 20 bps sequentially to 21.1%.",
+     "page": 30
+    }
+   ],
+   "segments": [
+    {
+     "name": "AI Services",
+     "share_or_growth": "8.2% of overall revenue",
+     "page": 29
+    },
+    {
+     "name": "FS (Financial Services)",
+     "share_or_growth": "Expected to grow higher than the company average",
+     "page": 33
+    },
+    {
+     "name": "EURS",
+     "share_or_growth": "Expected to grow higher than the company average",
+     "page": 33
+    }
+   ]
+  },
+  {
+   "month": "Apr 2026",
+   "quarter": "Q4 FY26",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=2ab7badf-388c-4dab-bfcc-3e128677734c.pdf",
+   "status": "ok",
+   "tone": "Management displayed a cautious yet confident tone, citing strong deal wins despite macro uncertainties and competitive pressures.",
+   "pushback": [
+    "Revenue guidance organic slowdown versus FY26 and key drivers",
+    "AI productivity pass-through and deflationary impact on growth/margins",
+    "INR depreciation benefit reinvestment versus overall operating margin outlook"
+   ],
+   "delivery_comments": [
+    {
+     "topic": "revenue_growth",
+     "quote": "FY26 revenues crossed $20 bn and grew 3.1% in constant currency terms, within the upgraded guidance band given in January.",
+     "page": 28
+    },
+    {
+     "topic": "ebitda_margin",
+     "quote": "Adjusted operating margin was stable at 21%.",
+     "page": 28
+    },
+    {
+     "topic": "large_deals",
+     "quote": "Large deals were very good, $14.9 bn for the full year, $3.2 bn for the fourth quarter. The full year was 28% higher than it was in the previous year.",
+     "page": 4
+    },
+    {
+     "topic": "volume_growth",
+     "quote": "Volumes for the year were flattish, growth was led by increase in realization thanks to Project Maximus.",
+     "page": 28
+    }
+   ],
+   "segments": [
+    {
+     "name": "Financial Services",
+     "share_or_growth": "grew above company average in CC in FY26",
+     "page": 28
+    },
+    {
+     "name": "Energy, Utilities, Resources and Services (EURS)",
+     "share_or_growth": "grew above company average in CC in FY26",
+     "page": 28
+    },
+    {
+     "name": "Communications",
+     "share_or_growth": "grew more than double company average in FY26",
+     "page": 28
+    },
+    {
+     "name": "Manufacturing",
+     "share_or_growth": "grew more than double company average in FY26",
+     "page": 28
+    },
+    {
+     "name": "Europe",
+     "share_or_growth": "grew more than double company average in FY26",
+     "page": 28
+    }
+   ]
+  },
+  {
+   "month": "Feb 2026",
+   "quarter": "Q3 FY26",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=b4632b94-2a41-4103-876d-cdb1f6848d64.pdf",
+   "status": "ok",
+   "tone": "Management expressed strong confidence in scaling AI capabilities while maintaining financial discipline and margin stability.",
+   "pushback": [
+    "AI investment impact on future EBIT margins",
+    "Small average deal sizes and timeline for $50-100mn AI deals",
+    "Evolving pricing models and lean workforce compressed by platform automation",
+    "Net headcount trajectory balancing AI efficiencies and fresher talent utilization"
+   ],
+   "delivery_comments": [
+    {
+     "topic": "Margin Resilience",
+     "quote": "if you look at this year, 9 months into the year, we have been able to maintain our margins stable.",
+     "speaker": "Jayesh Sanghrajka / CFO",
+     "page": 56
+    },
+    {
+     "topic": "AI Revenue Mix",
+     "quote": "This for us today represents 5.5% of our revenue in Q3, and it is growing at a robust pace.",
+     "speaker": "Salil Parekh / CEO",
+     "page": 10
+    },
+    {
+     "topic": "Headcount Addition",
+     "quote": "For the year, we have added ~13,000 net headcount for the first three quarters.",
+     "speaker": "Salil Parekh / CEO",
+     "page": 63
+    }
+   ],
+   "segments": [
+    {
+     "name": "AI Work (across 90% of large 200 clients)",
+     "share_or_growth": "5.5% of revenue in Q3",
+     "page": 10
+    },
+    {
+     "name": "Financial Services",
+     "share_or_growth": "Strong growth expected next year",
+     "page": 56
+    },
+    {
+     "name": "Energy, Utilities, Resources and Services",
+     "share_or_growth": "Strong growth expected next year",
+     "page": 56
+    }
+   ]
+  }
+ ],
+ "promises": [
+  {
+   "id": "G1",
+   "call": "Q2 FY27",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=7982fc61-7765-4981-ab3d-6aec36ba2137.pdf",
+   "page": 4,
+   "metric": "revenue_growth",
+   "horizon": "FY27",
+   "quote": "our revenue growth guidance is 1% to 2% YoY.in constant currency terms.",
+   "speaker": "Salil Parekh",
+   "target_low": 1.0,
+   "target_high": 2.0,
+   "unit": "%",
+   "verdict": "on_track",
+   "actual": "sales growth 12.3% (Q1 + Q2 FY27 so far)",
+   "note": null,
+   "checked_by": "code"
+  },
+  {
+   "id": "G2",
+   "call": "Q2 FY27",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=7982fc61-7765-4981-ab3d-6aec36ba2137.pdf",
+   "page": 4,
+   "metric": "ebitda_margin",
+   "horizon": "FY27",
+   "quote": "Our operating margin guidance remains at 20% to 22% for the year.",
+   "speaker": "Salil Parekh",
+   "target_low": 20.0,
+   "target_high": 22.0,
+   "unit": "%",
+   "verdict": "on_track",
+   "actual": "EBITDA margin 23.7% (Q1 + Q2 FY27 so far)",
+   "note": null,
+   "checked_by": "code"
+  },
+  {
+   "id": "G3",
+   "call": "Q2 FY27",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=7982fc61-7765-4981-ab3d-6aec36ba2137.pdf",
+   "page": 4,
+   "metric": "revenue_growth",
+   "horizon": "FY28",
+   "quote": "This deal is expected to contribute over 1% revenue growth in the coming financial year.",
+   "speaker": "Salil Parekh",
+   "target_low": 1.0,
+   "target_high": null,
+   "unit": "%",
+   "verdict": "too_early",
+   "actual": null,
+   "note": null,
+   "checked_by": "code"
+  },
+  {
+   "id": "G4",
+   "call": "Q1 FY27",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=95f8af86-dc92-49dc-a7cf-ecce287f8cce.pdf",
+   "page": 6,
+   "metric": "revenue_growth",
+   "horizon": "FY27",
+   "quote": "we are changing our revenue growth guidance to 1.5% to 3% Y-on-Y growth in constant currency terms.",
+   "speaker": "Salil Parekh",
+   "target_low": 1.5,
+   "target_high": 3.0,
+   "unit": "%",
+   "verdict": "on_track",
+   "actual": "sales growth 12.3% (Q1 + Q2 FY27 so far)",
+   "note": null,
+   "checked_by": "code"
+  },
+  {
+   "id": "G5",
+   "call": "Q1 FY27",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=95f8af86-dc92-49dc-a7cf-ecce287f8cce.pdf",
+   "page": 6,
+   "metric": "ebitda_margin",
+   "horizon": "FY27",
+   "quote": "Our operating margin guidance remains the same at 20% to 22% operating margin.",
+   "speaker": "Salil Parekh",
+   "target_low": 20.0,
+   "target_high": 22.0,
+   "unit": "%",
+   "verdict": "on_track",
+   "actual": "EBITDA margin 23.7% (Q1 + Q2 FY27 so far)",
+   "note": null,
+   "checked_by": "code"
+  },
+  {
+   "id": "G6",
+   "call": "Q1 FY27",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=95f8af86-dc92-49dc-a7cf-ecce287f8cce.pdf",
+   "page": 29,
+   "metric": "capacity",
+   "horizon": "next few years",
+   "quote": "Our plan is to have 6,000 frontier engineers over the next few years.",
+   "speaker": "Salil Parekh",
+   "target_low": 6000.0,
+   "target_high": 6000.0,
+   "unit": "other",
+   "verdict": "too_early",
+   "actual": "Targeting 6,000 frontier engineers over coming years",
+   "note": "Multi-year initiative not yet completed.",
+   "checked_by": "model"
+  },
+  {
+   "id": "G7",
+   "call": "Q4 FY26",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=2ab7badf-388c-4dab-bfcc-3e128677734c.pdf",
+   "page": 4,
+   "metric": "revenue_growth",
+   "horizon": "FY27",
+   "quote": "Our revenue growth guidance for the financial year 2027 is 1.5% to 3.5% growth year-on-year in constant currency terms.",
+   "speaker": "Salil Parekh",
+   "target_low": 1.5,
+   "target_high": 3.5,
+   "unit": "%",
+   "verdict": "on_track",
+   "actual": "sales growth 12.3% (Q1 + Q2 FY27 so far)",
+   "note": null,
+   "checked_by": "code"
+  },
+  {
+   "id": "G8",
+   "call": "Q4 FY26",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=2ab7badf-388c-4dab-bfcc-3e128677734c.pdf",
+   "page": 4,
+   "metric": "ebitda_margin",
+   "horizon": "FY27",
+   "quote": "Our operating margin guidance for financial year '27 is 20% to 22%.",
+   "speaker": "Salil Parekh",
+   "target_low": 20.0,
+   "target_high": 22.0,
+   "unit": "%",
+   "verdict": "on_track",
+   "actual": "EBITDA margin 23.7% (Q1 + Q2 FY27 so far)",
+   "note": null,
+   "checked_by": "code"
+  },
+  {
+   "id": "G9",
+   "call": "Q4 FY26",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=2ab7badf-388c-4dab-bfcc-3e128677734c.pdf",
+   "page": 8,
+   "metric": "capacity",
+   "horizon": "FY27",
+   "quote": "This year also, we are expecting at least 20,000 freshers to be hired.",
+   "speaker": "Jayesh Sanghrajka",
+   "target_low": 20000.0,
+   "target_high": null,
+   "unit": "other",
+   "verdict": "unverifiable",
+   "actual": "Targeting 20,000 freshers in FY27",
+   "note": "FY27 fresher hiring figures are not reported in provided transcripts.",
+   "checked_by": "model"
+  },
+  {
+   "id": "G10",
+   "call": "Q4 FY26",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=2ab7badf-388c-4dab-bfcc-3e128677734c.pdf",
+   "page": 27,
+   "metric": "other",
+   "horizon": "FY27",
+   "quote": "We expect H1 to be stronger than H2 consistent with our normal seasonality.",
+   "speaker": "Salil Parekh",
+   "target_low": null,
+   "target_high": null,
+   "unit": "other",
+   "verdict": "too_early",
+   "actual": "H1 FY27 sales reached ₹97,455 crore",
+   "note": "H2 FY27 performance is not yet reported.",
+   "checked_by": "model"
+  },
+  {
+   "id": "G11",
+   "call": "Q3 FY26",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=b4632b94-2a41-4103-876d-cdb1f6848d64.pdf",
+   "page": 56,
+   "metric": "ebitda_margin",
+   "horizon": "future",
+   "quote": "our view for the period in the future is we will maintain our margin guidance, and we will take all of that, that we save... and invest that into scaling up AI even faster.",
+   "speaker": "Salil Parekh / CEO",
+   "target_low": null,
+   "target_high": null,
+   "unit": "%",
+   "verdict": "delivered",
+   "actual": "OPM held at 24.0% through H1 FY27",
+   "note": "Operating margins remained stable in subsequent quarters.",
+   "checked_by": "model"
+  },
+  {
+   "id": "G12",
+   "call": "Q3 FY26",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=b4632b94-2a41-4103-876d-cdb1f6848d64.pdf",
+   "page": 56,
+   "metric": "revenue_growth",
+   "horizon": "next year",
+   "quote": "next year, we definitely see in Financial Services a strong growth, we see in Energy and Utilities, a strong growth compared to this year.",
+   "speaker": "Salil Parekh / CEO",
+   "target_low": null,
+   "target_high": null,
+   "unit": "%",
+   "verdict": "unverifiable",
+   "actual": "Segment revenue breakdown not reported",
+   "note": "No specific Financial Services or Energy growth data was provided.",
+   "checked_by": "model"
+  }
+ ],
+ "tally": {
+  "on_track": 6,
+  "too_early": 3,
+  "unverifiable": 2,
+  "delivered": 1
+ },
+ "narrative_vs_numbers": [
+  {
+   "claim": "Management noted Q2 FY27 volume soft and revenue growth below expectations.",
+   "reality": "Q2 FY27 sales grew 10.7% YoY to ₹49,244 crore.",
+   "agree": true,
+   "cite": "Q2 FY27 call p27 and Q2 FY27 sales_yoy"
+  },
+  {
+   "claim": "Management reported FY26 constant currency revenue growth of 3.1%.",
+   "reality": "FY26 rupee sales grew 9.6% YoY to ₹178,650 crore.",
+   "agree": true,
+   "cite": "Q4 FY26 call p28 and FY26 sales_growth"
+  },
+  {
+   "claim": "Management guided FY27 operating margin at 20% to 22%.",
+   "reality": "Reported OPM stayed higher at 24.0% in Q1 and Q2 FY27.",
+   "agree": true,
+   "cite": "G2 and Q2 FY27 opm"
+  }
+ ],
+ "bull": [
+  {
+   "point": "Operating margin consistently held at 24.0% through FY25, FY26, and H1 FY27.",
+   "cite": "FY26 opm and Q2 FY27 opm"
+  },
+  {
+   "point": "Sales growth accelerated to double digits in Q1 FY27 (14.0%) and Q2 FY27 (10.7%).",
+   "cite": "Q1 FY27 sales_yoy and Q2 FY27 sales_yoy"
+  },
+  {
+   "point": "Strong cash flow from operations reached ₹33,986 crore in FY26.",
+   "cite": "FY26 cfo"
+  }
+ ],
+ "bear": [
+  {
+   "point": "PAT growth slowed sharply to 6.3% YoY in Q2 FY27 from 12.3% in Q1 FY27.",
+   "cite": "Q2 FY27 pat_yoy and Q1 FY27 pat_yoy"
+  },
+  {
+   "point": "Borrowings increased to ₹9,176 crore in FY26 from ₹8,227 crore in FY25.",
+   "cite": "FY26 borrowings and FY25 borrowings"
+  },
+  {
+   "point": "Management cited softer volumes and low pricing power in Q2 FY27.",
+   "cite": "Q2 FY27 call p6 and Q2 FY27 call p27"
+  }
+ ],
+ "verdict": "Management consistently beats conservative margin guidance, but qualitative call commentary remains overly cautious despite strong top-line sales performance.",
+ "sources": [
+  {
+   "type": "financials",
+   "label": "screener.in (consolidated)",
+   "url": "https://www.screener.in/company/INFY/consolidated/"
+  },
+  {
+   "type": "transcript",
+   "label": "Q2 FY27 call (Oct 2026)",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=7982fc61-7765-4981-ab3d-6aec36ba2137.pdf"
+  },
+  {
+   "type": "transcript",
+   "label": "Q1 FY27 call (Jul 2026)",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=95f8af86-dc92-49dc-a7cf-ecce287f8cce.pdf"
+  },
+  {
+   "type": "transcript",
+   "label": "Q4 FY26 call (Apr 2026)",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=2ab7badf-388c-4dab-bfcc-3e128677734c.pdf"
+  },
+  {
+   "type": "transcript",
+   "label": "Q3 FY26 call (Feb 2026)",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=b4632b94-2a41-4103-876d-cdb1f6848d64.pdf"
+  }
+ ],
+ "complete": true,
+ "cost": {
+  "calls": 5,
+  "cached": 0,
+  "tokens_in": 33144,
+  "tokens_out": 4416,
+  "by_model": {
+   "gemini-3.5-flash": {
+    "calls": 5,
+    "tokens_in": 33144,
+    "tokens_out": 4416
+   }
+  },
+  "seconds": 75.1
+ },
+ "discipline": "Primary sources only: company filings via screener.in, earnings-call transcripts. No news, broker notes or model memory."
+}

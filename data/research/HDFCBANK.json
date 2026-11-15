@@ -1,0 +1,779 @@
+{
+ "symbol": "HDFCBANK",
+ "name": "HDFC Bank Ltd",
+ "generated_at": "2026-11-15T15:54:40+05:30",
+ "as_of": "2026-11-15",
+ "business": {
+  "about": "HDFC Bank Limited (also known as HDFC) is an Indian banking and financial services company headquartered in Mumbai. It is India's largest private sector bank by assets and the world's tenth-largest bank by market capitalization as of May 2024. As of April 2024, HDFC Bank has a market capitalization of $145 billion, making it the third-largest company on the Indian stock exchanges. [1]",
+  "key_points": "Market Position: The company is India's one of the 3 systemically important banks with a 15% market share in the banking sector’s advances and a 37% market share in the private sector banks’ advances as of FY24. It is also the second-largest bank in India . [1] It is among the top 3 Government Banks collecting direct and indirect taxes for the Government of India. [2] It is a market leader in almost every asset category . [3]",
+  "segments": [
+   {
+    "name": "Retail CASA",
+    "share_or_growth": "11.2% YoY growth",
+    "page": 3
+   },
+   {
+    "name": "Total AUM",
+    "share_or_growth": "15.3% YoY growth",
+    "page": 3
+   },
+   {
+    "name": "Retail Assets ex Agri",
+    "share_or_growth": "11.2% YoY growth",
+    "page": 4
+   },
+   {
+    "name": "MSME and Mid-Market (September 26 EOP)",
+    "share_or_growth": "23.5% YoY growth",
+    "page": 4
+   },
+   {
+    "name": "Business Banking",
+    "share_or_growth": "28% YoY growth",
+    "page": 9
+   },
+   {
+    "name": "Corporate Bank",
+    "share_or_growth": "16.4% YoY growth",
+    "page": 8
+   }
+  ]
+ },
+ "snapshot": {
+  "market_cap_cr": 1240766.0,
+  "price": 804.0,
+  "pe": 15.5,
+  "roce": 7.02,
+  "roe": 13.6,
+  "div_yield": 1.62,
+  "ttm_sales": 359956.0,
+  "ttm_pat": 83685.0,
+  "last_q": "Q2 FY27",
+  "last_q_sales_yoy": 9.4,
+  "last_q_pat_yoy": 5.8,
+  "last_q_opm": -6.0,
+  "fy_opm": -12.0,
+  "fy": "FY26"
+ },
+ "trajectory": {
+  "sales_cagr_3y": 26.9,
+  "sales_cagr_5y": 22.1,
+  "pat_cagr_3y": 19.7,
+  "pat_cagr_5y": 20.0,
+  "opm_change_3y": -30.0,
+  "quarterly": [
+   {
+    "period": "Dec 2023",
+    "q": "Q3 FY24",
+    "sales": 78008.0,
+    "op_profit": -15764.0,
+    "opm": -20.0,
+    "pat": 17718.0
+   },
+   {
+    "period": "Mar 2024",
+    "q": "Q4 FY24",
+    "sales": 79434.0,
+    "op_profit": -27196.0,
+    "opm": -34.0,
+    "pat": 18013.0
+   },
+   {
+    "period": "Jun 2024",
+    "q": "Q1 FY25",
+    "sales": 81546.0,
+    "op_profit": -12723.0,
+    "opm": -16.0,
+    "pat": 17188.0
+   },
+   {
+    "period": "Sep 2024",
+    "q": "Q2 FY25",
+    "sales": 83002.0,
+    "op_profit": -14487.0,
+    "opm": -17.0,
+    "pat": 18627.0,
+    "sales_yoy": 10.6,
+    "pat_yoy": 7.6
+   },
+   {
+    "period": "Dec 2024",
+    "q": "Q3 FY25",
+    "sales": 85040.0,
+    "op_profit": -3181.0,
+    "opm": -4.0,
+    "pat": 18340.0,
+    "sales_yoy": 9.0,
+    "pat_yoy": 3.5
+   },
+   {
+    "period": "Mar 2025",
+    "q": "Q4 FY25",
+    "sales": 86779.0,
+    "op_profit": -7916.0,
+    "opm": -9.0,
+    "pat": 19285.0,
+    "sales_yoy": 9.2,
+    "pat_yoy": 7.1
+   },
+   {
+    "period": "Jun 2025",
+    "q": "Q1 FY26",
+    "sales": 87372.0,
+    "op_profit": -24833.0,
+    "opm": -28.0,
+    "pat": 17090.0,
+    "sales_yoy": 7.1,
+    "pat_yoy": -0.6
+   },
+   {
+    "period": "Sep 2025",
+    "q": "Q2 FY26",
+    "sales": 86994.0,
+    "op_profit": -4908.0,
+    "opm": -6.0,
+    "pat": 20364.0,
+    "sales_yoy": 4.8,
+    "pat_yoy": 9.3
+   },
+   {
+    "period": "Dec 2025",
+    "q": "Q3 FY26",
+    "sales": 87067.0,
+    "op_profit": -12899.0,
+    "opm": -15.0,
+    "pat": 20691.0,
+    "sales_yoy": 2.4,
+    "pat_yoy": 12.8
+   },
+   {
+    "period": "Mar 2026",
+    "q": "Q4 FY26",
+    "sales": 87182.0,
+    "op_profit": -2066.0,
+    "opm": -2.0,
+    "pat": 21074.0,
+    "sales_yoy": 0.5,
+    "pat_yoy": 9.3
+   },
+   {
+    "period": "Jun 2026",
+    "q": "Q1 FY27",
+    "sales": 90575.0,
+    "op_profit": -15342.0,
+    "opm": -17.0,
+    "pat": 20383.0,
+    "sales_yoy": 3.7,
+    "pat_yoy": 19.3
+   },
+   {
+    "period": "Sep 2026",
+    "q": "Q2 FY27",
+    "sales": 95132.0,
+    "op_profit": -5565.0,
+    "opm": -6.0,
+    "pat": 21537.0,
+    "sales_yoy": 9.4,
+    "pat_yoy": 5.8
+   }
+  ],
+  "annual": [
+   {
+    "period": "Mar 2017",
+    "fy": "FY17",
+    "sales": 73271.0,
+    "opm": 16.0,
+    "pat": 15317.0,
+    "borrowings": null,
+    "equity": 91794.0,
+    "de": null,
+    "cfo": 17282.0,
+    "cfi": -1146.0,
+    "sales_growth": 16.0
+   },
+   {
+    "period": "Mar 2018",
+    "fy": "FY18",
+    "sales": 85288.0,
+    "opm": 16.0,
+    "pat": 18561.0,
+    "borrowings": null,
+    "equity": 109599.0,
+    "de": null,
+    "cfo": 17214.0,
+    "cfi": -842.0,
+    "sales_growth": 16.4
+   },
+   {
+    "period": "Mar 2019",
+    "fy": "FY19",
+    "sales": 105161.0,
+    "opm": 16.0,
+    "pat": 22446.0,
+    "borrowings": null,
+    "equity": 153673.0,
+    "de": null,
+    "cfo": -62872.0,
+    "cfi": -1503.0,
+    "sales_growth": 23.3
+   },
+   {
+    "period": "Mar 2020",
+    "fy": "FY20",
+    "sales": 122189.0,
+    "opm": 12.0,
+    "pat": 27296.0,
+    "borrowings": null,
+    "equity": 176358.0,
+    "de": null,
+    "cfo": -16869.0,
+    "cfi": -1403.0,
+    "sales_growth": 16.2
+   },
+   {
+    "period": "Mar 2021",
+    "fy": "FY21",
+    "sales": 128552.0,
+    "opm": 13.0,
+    "pat": 31857.0,
+    "borrowings": null,
+    "equity": 209810.0,
+    "de": null,
+    "cfo": 42476.0,
+    "cfi": -1823.0,
+    "sales_growth": 5.2
+   },
+   {
+    "period": "Mar 2022",
+    "fy": "FY22",
+    "sales": 135936.0,
+    "opm": 15.0,
+    "pat": 38151.0,
+    "borrowings": null,
+    "equity": 247327.0,
+    "de": null,
+    "cfo": -11960.0,
+    "cfi": -2051.0,
+    "sales_growth": 5.7
+   },
+   {
+    "period": "Mar 2023",
+    "fy": "FY23",
+    "sales": 170754.0,
+    "opm": 18.0,
+    "pat": 46149.0,
+    "borrowings": null,
+    "equity": 289438.0,
+    "de": null,
+    "cfo": 20814.0,
+    "cfi": -2992.0,
+    "sales_growth": 25.6
+   },
+   {
+    "period": "Mar 2024",
+    "fy": "FY24",
+    "sales": 283649.0,
+    "opm": -16.0,
+    "pat": 65446.0,
+    "borrowings": null,
+    "equity": 456396.0,
+    "de": null,
+    "cfo": 19069.0,
+    "cfi": 16600.0,
+    "sales_growth": 66.1
+   },
+   {
+    "period": "Mar 2025",
+    "fy": "FY25",
+    "sales": 336367.0,
+    "opm": -10.0,
+    "pat": 73440.0,
+    "borrowings": null,
+    "equity": 521789.0,
+    "de": null,
+    "cfo": 127242.0,
+    "cfi": -3651.0,
+    "sales_growth": 18.6
+   },
+   {
+    "period": "Mar 2026",
+    "fy": "FY26",
+    "sales": 348615.0,
+    "opm": -12.0,
+    "pat": 79219.0,
+    "borrowings": null,
+    "equity": 586059.0,
+    "de": null,
+    "cfo": 113506.0,
+    "cfi": 7477.0,
+    "sales_growth": 3.6
+   }
+  ]
+ },
+ "balance": {
+  "borrowings": null,
+  "equity": 586059.0,
+  "de": null,
+  "de_3y_ago": null,
+  "working_capital": {}
+ },
+ "cash": {
+  "cfo_to_pat_3y": 1.19,
+  "years": [
+   {
+    "fy": "FY21",
+    "cfo": 42476.0,
+    "pat": 31857.0,
+    "cfi": -1823.0
+   },
+   {
+    "fy": "FY22",
+    "cfo": -11960.0,
+    "pat": 38151.0,
+    "cfi": -2051.0
+   },
+   {
+    "fy": "FY23",
+    "cfo": 20814.0,
+    "pat": 46149.0,
+    "cfi": -2992.0
+   },
+   {
+    "fy": "FY24",
+    "cfo": 19069.0,
+    "pat": 65446.0,
+    "cfi": 16600.0
+   },
+   {
+    "fy": "FY25",
+    "cfo": 127242.0,
+    "pat": 73440.0,
+    "cfi": -3651.0
+   },
+   {
+    "fy": "FY26",
+    "cfo": 113506.0,
+    "pat": 79219.0,
+    "cfi": 7477.0
+   }
+  ]
+ },
+ "calls": [
+  {
+   "month": "Oct 2026",
+   "quarter": "Q2 FY27",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=d7e45614-ae12-4bb9-b92d-623b3a63f166.pdf",
+   "status": "ok",
+   "tone": "Management expressed optimism regarding asset quality and structural momentum while addressing leadership transitions and deposit headwinds.",
+   "pushback": [
+    "Margin compression and rising cost of funds",
+    "Retail deposit proportion moderation and large deposit outflows",
+    "Shortfall in small and marginal farmer PSL compliance"
+   ],
+   "delivery_comments": [
+    {
+     "topic": "Economic Growth",
+     "quote": "The GDP growth in Q2 FY27 has been better than anticipated and high performance indicators such as industrial production, strong e-way bill, cargo activity, credit growth reflects sustained momentum.",
+     "page": 3
+    },
+    {
+     "topic": "Deposit Growth",
+     "quote": "This quarter, we did have kind of an outflow of some of these large deposits in multiple such segments... which is actually masking it.",
+     "page": 6
+    }
+   ],
+   "segments": [
+    {
+     "name": "Retail CASA",
+     "share_or_growth": "11.2% YoY growth",
+     "page": 3
+    },
+    {
+     "name": "Total AUM",
+     "share_or_growth": "15.3% YoY growth",
+     "page": 3
+    },
+    {
+     "name": "Retail Assets ex Agri",
+     "share_or_growth": "11.2% YoY growth",
+     "page": 4
+    },
+    {
+     "name": "MSME and Mid-Market (September 26 EOP)",
+     "share_or_growth": "23.5% YoY growth",
+     "page": 4
+    },
+    {
+     "name": "Business Banking",
+     "share_or_growth": "28% YoY growth",
+     "page": 9
+    },
+    {
+     "name": "Corporate Bank",
+     "share_or_growth": "16.4% YoY growth",
+     "page": 8
+    }
+   ]
+  },
+  {
+   "month": "Jul 2026",
+   "quarter": "Q1 FY27",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=509cc499-6cb1-4d9f-8de9-9c7de6c70eef.pdf",
+   "status": "ok",
+   "tone": "Management expressed confidence in franchise resilience, steady asset quality, and long-term efficiency gains despite short-term margin pressures.",
+   "pushback": [
+    "Deteriorating net interest margins and timeline for recovery",
+    "Falling CASA ratio and market share loss in savings accounts",
+    "PAT growth lagging balance sheet growth"
+   ],
+   "delivery_comments": [
+    {
+     "topic": "PAT Growth",
+     "quote": "adjusted for that, I think in one of our reports that we filed, it shows 9.8% profit growth... lower than the overall balance sheet growth",
+     "page": 11
+    },
+    {
+     "topic": "Deposit Growth",
+     "quote": "the deposit growth continues to be relatively better than the historical Q1 trends.",
+     "page": 3
+    }
+   ],
+   "segments": [
+    {
+     "name": "Corporate and wholesale advances",
+     "share_or_growth": "grew at about 18%",
+     "page": 12
+    },
+    {
+     "name": "Business banking (MSME)",
+     "share_or_growth": "grew at 22.3%",
+     "page": 13
+    },
+    {
+     "name": "Mortgages disbursements",
+     "share_or_growth": "growth of close to 14% YoY",
+     "page": 13
+    },
+    {
+     "name": "Retail mix of assets",
+     "share_or_growth": "52% retail mix",
+     "page": 7
+    }
+   ]
+  },
+  {
+   "month": "Apr 2026",
+   "quarter": "Q4 FY26",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=a77abbbb-954a-4221-8240-67bf0da6ba1c.pdf",
+   "status": "ok",
+   "tone": "Management delivered a confident tone, highlighting resilient balance sheet strength, digital scaling, and long-term operating leverage benefits.",
+   "pushback": [
+    "Growth trailing system credit growth and targets",
+    "Surge in non-retail volatile end-of-period deposits",
+    "Impact of rate cuts on NIMs and loan mix shift"
+   ],
+   "delivery_comments": [
+    {
+     "topic": "Credit and Deposit Growth",
+     "quote": "We had estimated the system credit growth to be around 10.5% to 11.5%. We did 12%, up from 5.5% last year.",
+     "page": 3
+    },
+    {
+     "topic": "Margins and ROA",
+     "quote": "The yield on assets had a faster transmission as against deposits on a full year basis, leading to a NIM drop. Despite the drop in NIMs, the return on assets continue to be stable at 1.9%",
+     "page": 3
+    }
+   ],
+   "segments": [
+    {
+     "name": "Retail loans share",
+     "share_or_growth": "53%, 54%",
+     "page": 6
+    },
+    {
+     "name": "Wholesale loans share",
+     "share_or_growth": "balance coming out of wholesale",
+     "page": 6
+    },
+    {
+     "name": "Corporate loan growth",
+     "share_or_growth": "13%",
+     "page": 7
+    },
+    {
+     "name": "Retail deposits share",
+     "share_or_growth": "80% to 85%",
+     "page": 8
+    }
+   ]
+  },
+  {
+   "month": "Mar 2026",
+   "quarter": "Q3 FY26",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=56739132-e21e-4503-aeb6-85f4f53c1244.pdf",
+   "status": "ok",
+   "tone": "Management expressed strong confidence in institutional governance and continuity despite the Part-Time Chairman's sudden resignation.",
+   "pushback": [
+    "Reasons behind Atanu Chakraborty's sudden scathing resignation letter",
+    "Friction regarding ethics, personal values, and governance lapses mentioned",
+    "Timeline and process for appointing new Chairman and Independent Director"
+   ],
+   "delivery_comments": [],
+   "segments": []
+  }
+ ],
+ "promises": [
+  {
+   "id": "G1",
+   "call": "Q2 FY27",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=d7e45614-ae12-4bb9-b92d-623b3a63f166.pdf",
+   "page": 10,
+   "metric": "ebitda_margin",
+   "horizon": "next quarter onwards",
+   "quote": "net of that, we still think that there can be neutral to positive on the margin as we go forward.",
+   "speaker": "Srinivasan Vaidyanathan/CFO",
+   "target_low": null,
+   "target_high": null,
+   "unit": "other",
+   "verdict": "too_early",
+   "actual": "Guidance set in Q2 FY27 for subsequent quarters.",
+   "note": "Target horizon is next quarter onwards from Q2 FY27.",
+   "checked_by": "model"
+  },
+  {
+   "id": "G2",
+   "call": "Q2 FY27",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=d7e45614-ae12-4bb9-b92d-623b3a63f166.pdf",
+   "page": 10,
+   "metric": "ebitda_margin",
+   "horizon": "next quarter onwards",
+   "quote": "The trajectory will be upward from the next quarter onwards.",
+   "speaker": "Sashidhar Jagdishan/MD & CEO",
+   "target_low": null,
+   "target_high": null,
+   "unit": "other",
+   "verdict": "too_early",
+   "actual": "Guidance set in Q2 FY27 for subsequent quarters.",
+   "note": "Upward trajectory promised starting Q3 FY27.",
+   "checked_by": "model"
+  },
+  {
+   "id": "G3",
+   "call": "Q2 FY27",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=d7e45614-ae12-4bb9-b92d-623b3a63f166.pdf",
+   "page": 15,
+   "metric": "capacity",
+   "horizon": "next 3-4 years",
+   "quote": "I would say that this would be the trajectory where it will remain flat and probably it will start to increase over maybe three, four years' time.",
+   "speaker": "Sashidhar Jagdishan/MD & CEO",
+   "target_low": null,
+   "target_high": null,
+   "unit": "other",
+   "verdict": "too_early",
+   "actual": "Target horizon is 3-4 years from Q2 FY27.",
+   "note": "Capacity trajectory expected to remain flat initially.",
+   "checked_by": "model"
+  },
+  {
+   "id": "G4",
+   "call": "Q1 FY27",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=509cc499-6cb1-4d9f-8de9-9c7de6c70eef.pdf",
+   "page": 11,
+   "metric": "pat_growth",
+   "horizon": "longer term",
+   "quote": "We do think that in the longer term that the profit growth should be at or above the balance sheet growth.",
+   "speaker": "Srinivasan Vaidyanathan/CFO",
+   "target_low": null,
+   "target_high": null,
+   "unit": "%",
+   "verdict": "behind",
+   "actual": "Q1 FY27 profit growth was 9.8%, lower than balance sheet growth.",
+   "note": "Q1 FY27 call p11 confirmed profit growth lagged balance sheet growth.",
+   "checked_by": "model"
+  },
+  {
+   "id": "G5",
+   "call": "Q1 FY27",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=509cc499-6cb1-4d9f-8de9-9c7de6c70eef.pdf",
+   "page": 8,
+   "metric": "other",
+   "horizon": "medium to long term",
+   "quote": "our endeavor and our vision is to reach to somewhere near the pre-merger levels or just around the time of the merger, which was around 38.",
+   "speaker": "Sashidhar Jagdishan/CEO",
+   "target_low": 38.0,
+   "target_high": 38.0,
+   "unit": "%",
+   "verdict": "too_early",
+   "actual": "Medium to long-term endeavor of ~38%.",
+   "note": "Longer term goal towards pre-merger levels.",
+   "checked_by": "model"
+  },
+  {
+   "id": "G6",
+   "call": "Q4 FY26",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=a77abbbb-954a-4221-8240-67bf0da6ba1c.pdf",
+   "page": 9,
+   "metric": "other",
+   "horizon": "ongoing",
+   "quote": "our endeavor for LCR is to be between 110% and 120%. We are somewhere in the middle.",
+   "speaker": "Srinivasan Vaidyanathan",
+   "target_low": 110.0,
+   "target_high": 120.0,
+   "unit": "%",
+   "verdict": "delivered",
+   "actual": "LCR was maintained in the middle of 110%-120% range.",
+   "note": "Q4 FY26 call confirmed LCR was in middle of target band.",
+   "checked_by": "model"
+  },
+  {
+   "id": "G7",
+   "call": "Q4 FY26",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=a77abbbb-954a-4221-8240-67bf0da6ba1c.pdf",
+   "page": 5,
+   "metric": "ebitda_margin",
+   "horizon": "next 1-3 years",
+   "quote": "leadership position will enable us to harness efficiencies across the organization and will be a key driver to enhance return on asset over the next 1, 2, 3 years.",
+   "speaker": "Sashidhar Jagdishan",
+   "target_low": null,
+   "target_high": null,
+   "unit": null,
+   "verdict": "on_track",
+   "actual": "ROA remained stable at 1.9%.",
+   "note": "Q4 FY26 call p3 reported stable ROA of 1.9% despite margin drop.",
+   "checked_by": "model"
+  },
+  {
+   "id": "G8",
+   "call": "Q3 FY26",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=56739132-e21e-4503-aeb6-85f4f53c1244.pdf",
+   "page": 10,
+   "metric": "other",
+   "horizon": "coming quarters",
+   "quote": "what happened yesterday has nothing whatsoever to do with operational profitability of the bank. None of that changes and the bank will commit to do whatever it has said in its calls that it would do.",
+   "speaker": "Keki Mistry",
+   "target_low": null,
+   "target_high": null,
+   "unit": null,
+   "verdict": "missed",
+   "actual": "OPM worsened to -17.0% in Q1 FY27 and -6.0% in Q2 FY27.",
+   "note": "Operational profitability margins remained deeply negative (Q1 FY27 opm, Q2 FY27 opm).",
+   "checked_by": "model"
+  },
+  {
+   "id": "G9",
+   "call": "Q3 FY26",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=56739132-e21e-4503-aeb6-85f4f53c1244.pdf",
+   "page": 13,
+   "metric": "volume_growth",
+   "horizon": "future",
+   "quote": "I think you will see the kind of growth that we have used to pre-merger coming back.",
+   "speaker": "Sashidhar Jagdishan",
+   "target_low": null,
+   "target_high": null,
+   "unit": null,
+   "verdict": "behind",
+   "actual": "Sales growth dropped to 0.5% in Q4 FY26 and 3.7% in Q1 FY27.",
+   "note": "Growth remained well below FY23 pre-merger level of 25.6% (FY23 sales_growth, Q4 FY26 sales_yoy).",
+   "checked_by": "model"
+  }
+ ],
+ "tally": {
+  "too_early": 4,
+  "behind": 2,
+  "delivered": 1,
+  "on_track": 1,
+  "missed": 1
+ },
+ "narrative_vs_numbers": [
+  {
+   "claim": "Management promised operational profitability would not be impacted in coming quarters.",
+   "reality": "OPM remained negative at -17.0% in Q1 FY27 and -6.0% in Q2 FY27.",
+   "agree": false,
+   "cite": "G8 and Q1 FY27 opm"
+  },
+  {
+   "claim": "Management expected pre-merger style growth levels to return in future quarters.",
+   "reality": "Sales YoY growth slowed to 0.5% in Q4 FY26 and 3.7% in Q1 FY27.",
+   "agree": false,
+   "cite": "G9 and Q4 FY26 sales_yoy"
+  },
+  {
+   "claim": "Return on assets continues to be stable despite pressure on NIMs.",
+   "reality": "Q4 FY26 reported stable return on assets at 1.9%.",
+   "agree": true,
+   "cite": "Q4 FY26 call p3"
+  }
+ ],
+ "bull": [
+  {
+   "point": "PAT grew 19.3% YoY in Q1 FY27 and reached ₹21,537 crore in Q2 FY27.",
+   "cite": "Q1 FY27 pat_yoy and Q2 FY27 pat"
+  },
+  {
+   "point": "CFO surged to ₹127,242 crore in FY25 from ₹19,069 crore in FY24.",
+   "cite": "FY25 cfo"
+  },
+  {
+   "point": "Return on assets remained stable at 1.9% through FY26.",
+   "cite": "Q4 FY26 call p3"
+  }
+ ],
+ "bear": [
+  {
+   "point": "OPM has remained negative from FY24 through Q2 FY27.",
+   "cite": "FY24 opm and Q2 FY27 opm"
+  },
+  {
+   "point": "Annual sales growth collapsed from 66.1% in FY24 to 3.6% in FY26.",
+   "cite": "FY24 sales_growth and FY26 sales_growth"
+  },
+  {
+   "point": "Q1 FY27 profit growth of 9.8% lagged overall balance sheet expansion.",
+   "cite": "Q1 FY27 call p11"
+  }
+ ],
+ "verdict": "Management has maintained bottom-line stability and ROA, but fails to deliver on promises of positive operating margins and pre-merger revenue growth.",
+ "sources": [
+  {
+   "type": "financials",
+   "label": "screener.in (consolidated)",
+   "url": "https://www.screener.in/company/HDFCBANK/consolidated/"
+  },
+  {
+   "type": "transcript",
+   "label": "Q2 FY27 call (Oct 2026)",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=d7e45614-ae12-4bb9-b92d-623b3a63f166.pdf"
+  },
+  {
+   "type": "transcript",
+   "label": "Q1 FY27 call (Jul 2026)",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=509cc499-6cb1-4d9f-8de9-9c7de6c70eef.pdf"
+  },
+  {
+   "type": "transcript",
+   "label": "Q4 FY26 call (Apr 2026)",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=a77abbbb-954a-4221-8240-67bf0da6ba1c.pdf"
+  },
+  {
+   "type": "transcript",
+   "label": "Q3 FY26 call (Mar 2026)",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=56739132-e21e-4503-aeb6-85f4f53c1244.pdf"
+  }
+ ],
+ "complete": true,
+ "cost": {
+  "calls": 5,
+  "cached": 0,
+  "tokens_in": 40733,
+  "tokens_out": 3733,
+  "by_model": {
+   "gemini-3.5-flash": {
+    "calls": 5,
+    "tokens_in": 40733,
+    "tokens_out": 3733
+   }
+  },
+  "seconds": 42.0
+ },
+ "discipline": "Primary sources only: company filings via screener.in, earnings-call transcripts. No news, broker notes or model memory."
+}

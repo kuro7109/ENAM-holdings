@@ -1,0 +1,1443 @@
+{
+ "symbol": "SUNPHARMA",
+ "name": "Sun Pharmaceutical Industries Ltd",
+ "generated_at": "2026-11-15T16:00:22+05:30",
+ "as_of": "2026-11-15",
+ "business": {
+  "about": "Sun Pharmaceutical Industries Ltd is engaged in the business of manufacturing, developing and marketing a wide range of branded and generic formulations and Active Pharma Ingredients (APIs). The company and its subsidiaries has various manufacturing facilities spread across the world with trading and other incidental and related activities extending to global market. [1] It is the largest pharmaceutical company in India. [2]",
+  "key_points": "Product Offerings: [1] [2] The company produces a range of generic and specialty medications for chronic and acute conditions. Its product portfolio includes generics, branded generics, specialty pharmaceuticals, advanced technology-based products, antiretrovirals, active pharmaceutical ingredients (APIs), and intermediates. It offers medications in multiple dosage forms, such as injectables, sprays, ointments, creams, liquids, tablets, and capsules. The company offers 27 products in the global specialty market, with a strategic focus on dermatology, ophthalmology, and onco-dermatology segments. [3]",
+  "segments": [
+   {
+    "name": "Innovative Medicines",
+    "share_or_growth": "21.1% of Sun sales",
+    "page": 4
+   },
+   {
+    "name": "India formulations",
+    "share_or_growth": "34.5% of total consolidated sales",
+    "page": 5
+   },
+   {
+    "name": "US business",
+    "share_or_growth": "27% of consolidated sales",
+    "page": 5
+   },
+   {
+    "name": "Emerging Markets",
+    "share_or_growth": "20.7% of total consolidated revenue",
+    "page": 6
+   },
+   {
+    "name": "Rest of the World",
+    "share_or_growth": "14.3% of consolidated revenue",
+    "page": 6
+   }
+  ]
+ },
+ "snapshot": {
+  "market_cap_cr": 451075.0,
+  "price": 1880.0,
+  "pe": 36.7,
+  "roce": 20.5,
+  "roe": 16.0,
+  "div_yield": 0.85,
+  "ttm_sales": 61631.0,
+  "ttm_pat": 10987.0,
+  "last_q": "Q2 FY27",
+  "last_q_sales_yoy": 11.9,
+  "last_q_pat_yoy": -36.2,
+  "last_q_opm": 29.0,
+  "fy_opm": 28.0,
+  "fy": "FY26"
+ },
+ "trajectory": {
+  "sales_cagr_3y": 10.0,
+  "sales_cagr_5y": 11.8,
+  "pat_cagr_3y": 10.6,
+  "pat_cagr_5y": 38.3,
+  "opm_change_3y": 1.0,
+  "quarterly": [
+   {
+    "period": "Dec 2023",
+    "q": "Q3 FY24",
+    "sales": 12381.0,
+    "op_profit": 3477.0,
+    "opm": 28.0,
+    "pat": 2561.0
+   },
+   {
+    "period": "Mar 2024",
+    "q": "Q4 FY24",
+    "sales": 11983.0,
+    "op_profit": 3035.0,
+    "opm": 25.0,
+    "pat": 2659.0
+   },
+   {
+    "period": "Jun 2024",
+    "q": "Q1 FY25",
+    "sales": 12653.0,
+    "op_profit": 3608.0,
+    "opm": 29.0,
+    "pat": 2861.0
+   },
+   {
+    "period": "Sep 2024",
+    "q": "Q2 FY25",
+    "sales": 13291.0,
+    "op_profit": 3939.0,
+    "opm": 30.0,
+    "pat": 3037.0,
+    "sales_yoy": 9.0,
+    "pat_yoy": 27.3
+   },
+   {
+    "period": "Dec 2024",
+    "q": "Q3 FY25",
+    "sales": 13675.0,
+    "op_profit": 4009.0,
+    "opm": 29.0,
+    "pat": 2913.0,
+    "sales_yoy": 10.5,
+    "pat_yoy": 13.7
+   },
+   {
+    "period": "Mar 2025",
+    "q": "Q4 FY25",
+    "sales": 12959.0,
+    "op_profit": 3716.0,
+    "opm": 29.0,
+    "pat": 2154.0,
+    "sales_yoy": 8.1,
+    "pat_yoy": -19.0
+   },
+   {
+    "period": "Jun 2025",
+    "q": "Q1 FY26",
+    "sales": 13851.0,
+    "op_profit": 4302.0,
+    "opm": 31.0,
+    "pat": 2293.0,
+    "sales_yoy": 9.5,
+    "pat_yoy": -19.9
+   },
+   {
+    "period": "Sep 2025",
+    "q": "Q2 FY26",
+    "sales": 14478.0,
+    "op_profit": 4527.0,
+    "opm": 31.0,
+    "pat": 3125.0,
+    "sales_yoy": 8.9,
+    "pat_yoy": 2.9
+   },
+   {
+    "period": "Dec 2025",
+    "q": "Q3 FY26",
+    "sales": 15521.0,
+    "op_profit": 4948.0,
+    "opm": 32.0,
+    "pat": 3381.0,
+    "sales_yoy": 13.5,
+    "pat_yoy": 16.1
+   },
+   {
+    "period": "Mar 2026",
+    "q": "Q4 FY26",
+    "sales": 14612.0,
+    "op_profit": 3954.0,
+    "opm": 27.0,
+    "pat": 2710.0,
+    "sales_yoy": 12.8,
+    "pat_yoy": 25.8
+   },
+   {
+    "period": "Jun 2026",
+    "q": "Q1 FY27",
+    "sales": 15300.0,
+    "op_profit": 4418.0,
+    "opm": 29.0,
+    "pat": 2901.0,
+    "sales_yoy": 10.5,
+    "pat_yoy": 26.5
+   },
+   {
+    "period": "Sep 2026",
+    "q": "Q2 FY27",
+    "sales": 16199.0,
+    "op_profit": 4744.0,
+    "opm": 29.0,
+    "pat": 1995.0,
+    "sales_yoy": 11.9,
+    "pat_yoy": -36.2
+   }
+  ],
+  "annual": [
+   {
+    "period": "Mar 2017",
+    "fy": "FY17",
+    "sales": 31578.0,
+    "opm": 32.0,
+    "pat": 7846.0,
+    "borrowings": 9832.0,
+    "equity": 36640.0,
+    "de": 0.27,
+    "cfo": 7082.0,
+    "cfi": -4186.0,
+    "sales_growth": 10.9
+   },
+   {
+    "period": "Mar 2018",
+    "fy": "FY18",
+    "sales": 26489.0,
+    "opm": 21.0,
+    "pat": 2542.0,
+    "borrowings": 10385.0,
+    "equity": 38314.0,
+    "de": 0.27,
+    "cfo": 3907.0,
+    "cfi": -3104.0,
+    "sales_growth": -16.1
+   },
+   {
+    "period": "Mar 2019",
+    "fy": "FY19",
+    "sales": 29066.0,
+    "opm": 22.0,
+    "pat": 3208.0,
+    "borrowings": 10514.0,
+    "equity": 41409.0,
+    "de": 0.25,
+    "cfo": 2196.0,
+    "cfi": -310.0,
+    "sales_growth": 9.7
+   },
+   {
+    "period": "Mar 2020",
+    "fy": "FY20",
+    "sales": 32838.0,
+    "opm": 21.0,
+    "pat": 4172.0,
+    "borrowings": 8315.0,
+    "equity": 45265.0,
+    "de": 0.18,
+    "cfo": 6555.0,
+    "cfi": -2225.0,
+    "sales_growth": 13.0
+   },
+   {
+    "period": "Mar 2021",
+    "fy": "FY21",
+    "sales": 33498.0,
+    "opm": 25.0,
+    "pat": 2272.0,
+    "borrowings": 3869.0,
+    "equity": 46463.0,
+    "de": 0.08,
+    "cfo": 6170.0,
+    "cfi": 407.0,
+    "sales_growth": 2.0
+   },
+   {
+    "period": "Mar 2022",
+    "fy": "FY22",
+    "sales": 38654.0,
+    "opm": 27.0,
+    "pat": 3389.0,
+    "borrowings": 1290.0,
+    "equity": 48011.0,
+    "de": 0.03,
+    "cfo": 8985.0,
+    "cfi": -5556.0,
+    "sales_growth": 15.4
+   },
+   {
+    "period": "Mar 2023",
+    "fy": "FY23",
+    "sales": 43886.0,
+    "opm": 27.0,
+    "pat": 8513.0,
+    "borrowings": 6886.0,
+    "equity": 55995.0,
+    "de": 0.12,
+    "cfo": 4959.0,
+    "cfi": -7220.0,
+    "sales_growth": 13.5
+   },
+   {
+    "period": "Mar 2024",
+    "fy": "FY24",
+    "sales": 48497.0,
+    "opm": 27.0,
+    "pat": 9610.0,
+    "borrowings": 3274.0,
+    "equity": 63667.0,
+    "de": 0.05,
+    "cfo": 12135.0,
+    "cfi": -763.0,
+    "sales_growth": 10.5
+   },
+   {
+    "period": "Mar 2025",
+    "fy": "FY25",
+    "sales": 52578.0,
+    "opm": 29.0,
+    "pat": 10965.0,
+    "borrowings": 2362.0,
+    "equity": 72218.0,
+    "de": 0.03,
+    "cfo": 14072.0,
+    "cfi": -5183.0,
+    "sales_growth": 8.4
+   },
+   {
+    "period": "Mar 2026",
+    "fy": "FY26",
+    "sales": 58462.0,
+    "opm": 28.0,
+    "pat": 11509.0,
+    "borrowings": 4627.0,
+    "equity": 83570.0,
+    "de": 0.06,
+    "cfo": 12419.0,
+    "cfi": -10405.0,
+    "sales_growth": 11.2
+   }
+  ]
+ },
+ "balance": {
+  "borrowings": 4627.0,
+  "equity": 83570.0,
+  "de": 0.06,
+  "de_3y_ago": 0.12,
+  "working_capital": {
+   "Debtor Days": [
+    {
+     "period": "Mar 2021",
+     "value": 99.0
+    },
+    {
+     "period": "Mar 2022",
+     "value": 99.0
+    },
+    {
+     "period": "Mar 2023",
+     "value": 95.0
+    },
+    {
+     "period": "Mar 2024",
+     "value": 85.0
+    },
+    {
+     "period": "Mar 2025",
+     "value": 91.0
+    },
+    {
+     "period": "Mar 2026",
+     "value": 97.0
+    }
+   ],
+   "Inventory Days": [
+    {
+     "period": "Mar 2021",
+     "value": 378.0
+    },
+    {
+     "period": "Mar 2022",
+     "value": 315.0
+    },
+    {
+     "period": "Mar 2023",
+     "value": 360.0
+    },
+    {
+     "period": "Mar 2024",
+     "value": 338.0
+    },
+    {
+     "period": "Mar 2025",
+     "value": 348.0
+    },
+    {
+     "period": "Mar 2026",
+     "value": 363.0
+    }
+   ],
+   "Days Payable": [
+    {
+     "period": "Mar 2021",
+     "value": 167.0
+    },
+    {
+     "period": "Mar 2022",
+     "value": 158.0
+    },
+    {
+     "period": "Mar 2023",
+     "value": 194.0
+    },
+    {
+     "period": "Mar 2024",
+     "value": 194.0
+    },
+    {
+     "period": "Mar 2025",
+     "value": 210.0
+    },
+    {
+     "period": "Mar 2026",
+     "value": 232.0
+    }
+   ],
+   "Cash Conversion Cycle": [
+    {
+     "period": "Mar 2021",
+     "value": 310.0
+    },
+    {
+     "period": "Mar 2022",
+     "value": 255.0
+    },
+    {
+     "period": "Mar 2023",
+     "value": 261.0
+    },
+    {
+     "period": "Mar 2024",
+     "value": 229.0
+    },
+    {
+     "period": "Mar 2025",
+     "value": 228.0
+    },
+    {
+     "period": "Mar 2026",
+     "value": 228.0
+    }
+   ],
+   "Working Capital Days": [
+    {
+     "period": "Mar 2021",
+     "value": 51.0
+    },
+    {
+     "period": "Mar 2022",
+     "value": 47.0
+    },
+    {
+     "period": "Mar 2023",
+     "value": 40.0
+    },
+    {
+     "period": "Mar 2024",
+     "value": 55.0
+    },
+    {
+     "period": "Mar 2025",
+     "value": 65.0
+    },
+    {
+     "period": "Mar 2026",
+     "value": 54.0
+    }
+   ],
+   "ROCE %": [
+    {
+     "period": "Mar 2021",
+     "value": 13.0
+    },
+    {
+     "period": "Mar 2022",
+     "value": 17.0
+    },
+    {
+     "period": "Mar 2023",
+     "value": 16.0
+    },
+    {
+     "period": "Mar 2024",
+     "value": 17.0
+    },
+    {
+     "period": "Mar 2025",
+     "value": 20.0
+    },
+    {
+     "period": "Mar 2026",
+     "value": 21.0
+    }
+   ]
+  }
+ },
+ "cash": {
+  "cfo_to_pat_3y": 1.2,
+  "years": [
+   {
+    "fy": "FY21",
+    "cfo": 6170.0,
+    "pat": 2272.0,
+    "cfi": 407.0
+   },
+   {
+    "fy": "FY22",
+    "cfo": 8985.0,
+    "pat": 3389.0,
+    "cfi": -5556.0
+   },
+   {
+    "fy": "FY23",
+    "cfo": 4959.0,
+    "pat": 8513.0,
+    "cfi": -7220.0
+   },
+   {
+    "fy": "FY24",
+    "cfo": 12135.0,
+    "pat": 9610.0,
+    "cfi": -763.0
+   },
+   {
+    "fy": "FY25",
+    "cfo": 14072.0,
+    "pat": 10965.0,
+    "cfi": -5183.0
+   },
+   {
+    "fy": "FY26",
+    "cfo": 12419.0,
+    "pat": 11509.0,
+    "cfi": -10405.0
+   }
+  ]
+ },
+ "calls": [
+  {
+   "month": "Nov 2026",
+   "quarter": "Q2 FY27",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=fe431adc-0e1a-48ee-9c2b-b6e39cba04e4.pdf",
+   "status": "ok",
+   "tone": "Management is confident about future growth despite some current quarter slowdowns and R&D spend tracking lower.",
+   "pushback": [
+    "Slowdown in Ilumya growth in US market.",
+    "Clarity on full-year R&D spend guidance.",
+    "Sustainability of India business volume growth."
+   ],
+   "delivery_comments": [
+    {
+     "topic": "R&D spend",
+     "quote": "Consolidated investments towards R&D for Q2 '27 stands at INR7,784 million or 4.8% of sales. Innovative R&D accounted for 32.4% of our total R&D spend. These numbers are tracking lower than our intended R&D spend, but we expect the second half of the year to catch up some of this R&D spend.",
+     "page": 6
+    },
+    {
+     "topic": "Ilumya US growth",
+     "quote": "This quarter, we saw a slowdown in Ilumya business in the US driven by a mix of factors. This is a key reason behind slower growth in global innovative medicines.",
+     "page": 5
+    }
+   ],
+   "segments": [
+    {
+     "name": "Innovative Medicines",
+     "share_or_growth": "21.1% of Sun sales",
+     "page": 4
+    },
+    {
+     "name": "India formulations",
+     "share_or_growth": "34.5% of total consolidated sales",
+     "page": 5
+    },
+    {
+     "name": "US business",
+     "share_or_growth": "27% of consolidated sales",
+     "page": 5
+    },
+    {
+     "name": "Emerging Markets",
+     "share_or_growth": "20.7% of total consolidated revenue",
+     "page": 6
+    },
+    {
+     "name": "Rest of the World",
+     "share_or_growth": "14.3% of consolidated revenue",
+     "page": 6
+    }
+   ]
+  },
+  {
+   "month": "Aug 2026",
+   "quarter": "Q1 FY27",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=34be7c92-1d9f-4010-ba30-2344c959bc5e.pdf",
+   "status": "ok",
+   "tone": "Management expressed confidence in innovative products and full-year guidance, while acknowledging some quarterly fluctuations.",
+   "pushback": [
+    "Deceleration of growth in specialty medicines segment.",
+    "Sustainability of gross margin levels.",
+    "Access and formulary for Leqselvi and Unloxcyt.",
+    "Overall top line growth guidance for the full year."
+   ],
+   "delivery_comments": [
+    {
+     "topic": "EBITDA margins",
+     "quote": "EBITDA margins came in at 28.9% while EBITDA margins were slightly lower, please note that Q1 FY26 had some benefit from Lenalidomide sales. Adjusted for that, EBITDA margins were higher year-on-year.",
+     "page": 4
+    },
+    {
+     "topic": "Gross margin",
+     "quote": "Gross margin was at 80.5% for the quarter, higher than the same period last year, mainly on account of better product mix.",
+     "page": 4
+    },
+    {
+     "topic": "R&D expenses",
+     "quote": "in the current quarter, just as you would have heard us a little while ago, the R&D expenses have tracked a bit lower that will get normalized in the coming quarters.",
+     "page": 10
+    },
+    {
+     "topic": "Emerging Markets growth",
+     "quote": "I would characterize the impact as a combination of both the geopolitical issues and difficult macroeconomic conditions in certain countries.",
+     "page": 12
+    }
+   ],
+   "segments": [
+    {
+     "name": "Global Innovative Medicines",
+     "share_or_growth": "12.8% growth, 21.9% of Sun sales",
+     "page": 4
+    },
+    {
+     "name": "India formulations",
+     "share_or_growth": "16% growth, 36.1% of total consolidated sales",
+     "page": 4
+    },
+    {
+     "name": "Emerging Markets formulations",
+     "share_or_growth": "4.2% growth, 19.4% of total consolidated revenue",
+     "page": 6
+    },
+    {
+     "name": "Rest of the World formulations",
+     "share_or_growth": "marginally lower, approximately 13.6% of consolidated revenue",
+     "page": 6
+    },
+    {
+     "name": "R&D spend",
+     "share_or_growth": "5.4% of sales (30% for Innovative R&D)",
+     "page": 6
+    }
+   ]
+  },
+  {
+   "month": "May 2026",
+   "quarter": "Q4 FY26",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=287022b2-8de5-487d-8d0d-77b819ee3eb4.pdf",
+   "status": "ok",
+   "tone": "Management is cautiously optimistic, highlighting growth drivers while acknowledging margin pressures and investment needs.",
+   "pushback": [
+    "Sequential drop in EBITDA margin",
+    "UNLOXCYT launch and account onboarding",
+    "Impact of biosimilar STELARA on ILUMYA"
+   ],
+   "delivery_comments": [
+    {
+     "topic": "EBITDA margin",
+     "quote": "EBITDA margin came at 27.1%, lower both on year-on-year, which was 28.7% and on a quarter-on-quarter, which was 31.9%.",
+     "page": 4
+    },
+    {
+     "topic": "EBITDA margin",
+     "quote": "Ex-forex, EBITDA margins were lower quarter-on-quarter due to several factors, including lower milestone income, some seasonality, reduced contribution from lenalidomide in Q4 versus Q3 and higher spend in certain geographies, including US.",
+     "page": 4
+    },
+    {
+     "topic": "Market Share",
+     "quote": "I am pleased to note that this year, we have seen the highest gain in market share for Sun since Ranbaxy acquisition.",
+     "page": 5
+    },
+    {
+     "topic": "US Innovative Medicines",
+     "quote": "I'm also pleased to note for the year that Innovative Medicines crossed $1 billion for the first time in the United States.",
+     "page": 5
+    }
+   ],
+   "segments": [
+    {
+     "name": "Global Innovative Medicine",
+     "share_or_growth": "22.2% of the share of Sun sales for the quarter",
+     "page": 4
+    },
+    {
+     "name": "India formulations",
+     "share_or_growth": "33.2% of total consolidated sales for the quarter",
+     "page": 5
+    },
+    {
+     "name": "U.S. business",
+     "share_or_growth": "28.8% of consolidated sales for the quarter",
+     "page": 5
+    },
+    {
+     "name": "Emerging Markets",
+     "share_or_growth": "19.2% of total consolidated revenue for Q4",
+     "page": 5
+    },
+    {
+     "name": "Rest of the World",
+     "share_or_growth": "approximately 13.8% of consolidated revenue",
+     "page": 6
+    }
+   ]
+  },
+  {
+   "month": "May 2026",
+   "quarter": "Q4 FY26",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=293c1789-7308-4864-982a-192b016de087.pdf",
+   "status": "ok",
+   "tone": "Management is highly optimistic about the transformative acquisition, emphasizing growth opportunities and synergies.",
+   "pushback": [
+    "Cultural fit and management bandwidth for integration",
+    "Revenue drivers for innovative portfolio and biosimilars",
+    "Growth strategy for established brands",
+    "EPS accretion and divestment requirements"
+   ],
+   "delivery_comments": [],
+   "segments": [
+    {
+     "name": "Innovative Medicine (combined)",
+     "share_or_growth": "27%",
+     "page": 6
+    },
+    {
+     "name": "Established Brands (combined)",
+     "share_or_growth": "51%",
+     "page": 6
+    },
+    {
+     "name": "Generics (combined)",
+     "share_or_growth": "15%",
+     "page": 8
+    },
+    {
+     "name": "Biosimilar (combined)",
+     "share_or_growth": "6%",
+     "page": 8
+    }
+   ]
+  }
+ ],
+ "promises": [
+  {
+   "id": "G1",
+   "call": "Q2 FY27",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=fe431adc-0e1a-48ee-9c2b-b6e39cba04e4.pdf",
+   "page": 3,
+   "metric": "other",
+   "horizon": "early 2027",
+   "quote": "The Organon acquisition is subject to satisfaction of the remaining customary closing conditions and is on track to close by early 2027.",
+   "speaker": "Abhishek Sharma",
+   "target_low": null,
+   "target_high": null,
+   "unit": "other",
+   "verdict": "on_track",
+   "actual": "Acquisition not closed yet",
+   "note": "Expected early FY27, still pending",
+   "checked_by": "model"
+  },
+  {
+   "id": "G2",
+   "call": "Q2 FY27",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=fe431adc-0e1a-48ee-9c2b-b6e39cba04e4.pdf",
+   "page": 4,
+   "metric": "other",
+   "horizon": "November, following months",
+   "quote": "We are planning for a soft launch in November with a full launch in the following months.",
+   "speaker": "Kirti Ganorkar",
+   "target_low": null,
+   "target_high": null,
+   "unit": "other",
+   "verdict": "unverifiable",
+   "actual": "No launch data",
+   "note": "Soft launch timing not reflected in numbers",
+   "checked_by": "model"
+  },
+  {
+   "id": "G3",
+   "call": "Q2 FY27",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=fe431adc-0e1a-48ee-9c2b-b6e39cba04e4.pdf",
+   "page": 5,
+   "metric": "other",
+   "horizon": "Q4 FY27",
+   "quote": "We are now on track to close the transaction as per earlier communicated timelines, that is Q4 of FY27.",
+   "speaker": "Kirti Ganorkar",
+   "target_low": null,
+   "target_high": null,
+   "unit": "other",
+   "verdict": "too_early",
+   "actual": "Closure Q4 FY27 not occurred",
+   "note": "Future target",
+   "checked_by": "model"
+  },
+  {
+   "id": "G4",
+   "call": "Q2 FY27",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=fe431adc-0e1a-48ee-9c2b-b6e39cba04e4.pdf",
+   "page": 6,
+   "metric": "other",
+   "horizon": "H2 FY27",
+   "quote": "These numbers are tracking lower than our intended R&D spend, but we expect the second half of the year to catch up some of this R&D spend.",
+   "speaker": "Dilip Shanghvi",
+   "target_low": null,
+   "target_high": null,
+   "unit": "other",
+   "verdict": "too_early",
+   "actual": "R&D 4.8% of sales in Q2 FY27",
+   "note": "Catch‑up expected H2",
+   "checked_by": "model"
+  },
+  {
+   "id": "G5",
+   "call": "Q2 FY27",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=fe431adc-0e1a-48ee-9c2b-b6e39cba04e4.pdf",
+   "page": 7,
+   "metric": "other",
+   "horizon": "next few quarters",
+   "quote": "those interventions, coupled with the launch in psoriatic arthritis, we believe will return Ilumya to more typical growth patterns.",
+   "speaker": "Richard Ascroft",
+   "target_low": null,
+   "target_high": null,
+   "unit": "other",
+   "verdict": "unverifiable",
+   "actual": "Ilumya growth not quantified",
+   "note": "No post‑launch data",
+   "checked_by": "model"
+  },
+  {
+   "id": "G6",
+   "call": "Q2 FY27",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=fe431adc-0e1a-48ee-9c2b-b6e39cba04e4.pdf",
+   "page": 8,
+   "metric": "revenue_growth",
+   "horizon": "FY27",
+   "quote": "Regarding the guidance, I think we'll stick to what guidance we have given at the beginning of the year.",
+   "speaker": "Kirti Ganorkar",
+   "target_low": null,
+   "target_high": null,
+   "unit": "other",
+   "verdict": "unverifiable",
+   "actual": "No FY27 revenue target given",
+   "note": "Guidance vague",
+   "checked_by": "model"
+  },
+  {
+   "id": "G7",
+   "call": "Q2 FY27",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=fe431adc-0e1a-48ee-9c2b-b6e39cba04e4.pdf",
+   "page": 7,
+   "metric": "capex",
+   "horizon": "FY27",
+   "quote": "We have expenses, but they've been built into our overall budget. They're not extra.",
+   "speaker": "Richard Ascroft",
+   "target_low": null,
+   "target_high": null,
+   "unit": "other",
+   "verdict": "unverifiable",
+   "actual": "Capex not disclosed",
+   "note": "Budget inclusion not measurable",
+   "checked_by": "model"
+  },
+  {
+   "id": "G8",
+   "call": "Q2 FY27",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=fe431adc-0e1a-48ee-9c2b-b6e39cba04e4.pdf",
+   "page": 9,
+   "metric": "ebitda_margin",
+   "horizon": "FY27",
+   "quote": "our expectation is that as that ramps up, we should be able to meet the overall guidance that we've shared with people.",
+   "speaker": "Dilip Shanghvi",
+   "target_low": 6,
+   "target_high": 7,
+   "unit": "%",
+   "verdict": "on_track",
+   "actual": "EBITDA margin 29.1% (Q1 + Q2 FY27 so far)",
+   "note": null,
+   "checked_by": "code"
+  },
+  {
+   "id": "G9",
+   "call": "Q2 FY27",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=fe431adc-0e1a-48ee-9c2b-b6e39cba04e4.pdf",
+   "page": 15,
+   "metric": "other",
+   "horizon": "Q4 FY27",
+   "quote": "the acquisition-relating cost will continue until day 1, and some of these could be back-ended, right? So as we close the transaction in Q4 of FY27, we will have a full estimate in terms of the acquisition-related costs.",
+   "speaker": "Jayashree Satagopan",
+   "target_low": null,
+   "target_high": null,
+   "unit": "other",
+   "verdict": "too_early",
+   "actual": "Acquisition costs pending Q4 FY27",
+   "note": "Full estimate later",
+   "checked_by": "model"
+  },
+  {
+   "id": "G10",
+   "call": "Q1 FY27",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=34be7c92-1d9f-4010-ba30-2344c959bc5e.pdf",
+   "page": 3,
+   "metric": "other",
+   "horizon": "early 2027",
+   "quote": "The acquisition is subject to the satisfaction of remaining customary closing conditions and is on track to close by early 2027.",
+   "speaker": "Abhishek Sharma",
+   "target_low": null,
+   "target_high": null,
+   "unit": "other",
+   "verdict": "on_track",
+   "actual": "Acquisition still pending early FY27",
+   "note": "Consistent with G1",
+   "checked_by": "model"
+  },
+  {
+   "id": "G11",
+   "call": "Q1 FY27",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=34be7c92-1d9f-4010-ba30-2344c959bc5e.pdf",
+   "page": 4,
+   "metric": "other",
+   "horizon": "subsequent quarters",
+   "quote": "There would be additional charges on this account in the subsequent quarters. These charges are somewhat back-ended with a substantial part being accrued at closing.",
+   "speaker": "Jayashree Satagopan",
+   "target_low": null,
+   "target_high": null,
+   "unit": "other",
+   "verdict": "too_early",
+   "actual": "Subsequent‑quarter charges not yet seen",
+   "note": "Future expense",
+   "checked_by": "model"
+  },
+  {
+   "id": "G12",
+   "call": "Q1 FY27",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=34be7c92-1d9f-4010-ba30-2344c959bc5e.pdf",
+   "page": 4,
+   "metric": "other",
+   "horizon": "until Organon closing",
+   "quote": "Going forward, and until Organon closing, we expect the tax rate to be in a similar range as in Q1.",
+   "speaker": "Jayashree Satagopan",
+   "target_low": 27.8,
+   "target_high": null,
+   "unit": "%",
+   "verdict": "unverifiable",
+   "actual": "Tax rate not reported",
+   "note": "Range 27.8% unspecified",
+   "checked_by": "model"
+  },
+  {
+   "id": "G13",
+   "call": "Q1 FY27",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=34be7c92-1d9f-4010-ba30-2344c959bc5e.pdf",
+   "page": 6,
+   "metric": "other",
+   "horizon": "Q4 FY27",
+   "quote": "We expect the acquisition to be completed in Q4 of financial year '27 and an integration management office has been working on day one preparedness.",
+   "speaker": "Dilip Shanghvi",
+   "target_low": null,
+   "target_high": null,
+   "unit": "other",
+   "verdict": "too_early",
+   "actual": "Acquisition not completed Q4 FY27",
+   "note": "Future event",
+   "checked_by": "model"
+  },
+  {
+   "id": "G14",
+   "call": "Q1 FY27",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=34be7c92-1d9f-4010-ba30-2344c959bc5e.pdf",
+   "page": 7,
+   "metric": "revenue_growth",
+   "horizon": "ongoing",
+   "quote": "So we are expecting healthy growth to continue for innovative business in U.S., driven by new launches, as you know, Unloxcyt and Ilumya is also doing well.",
+   "speaker": "Kirti Ganorkar",
+   "target_low": null,
+   "target_high": null,
+   "unit": "other",
+   "verdict": "unverifiable",
+   "actual": "US innovative growth not shown",
+   "note": "No segment data",
+   "checked_by": "model"
+  },
+  {
+   "id": "G15",
+   "call": "Q1 FY27",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=34be7c92-1d9f-4010-ba30-2344c959bc5e.pdf",
+   "page": 7,
+   "metric": "other",
+   "horizon": "next quarter",
+   "quote": "We would expect to see similar next quarter [seasonality with Levulan].",
+   "speaker": "Richard Ascroft",
+   "target_low": null,
+   "target_high": null,
+   "unit": "other",
+   "verdict": "unverifiable",
+   "actual": "Levulan seasonality not in numbers",
+   "note": "No quarterly effect visible",
+   "checked_by": "model"
+  },
+  {
+   "id": "G16",
+   "call": "Q1 FY27",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=34be7c92-1d9f-4010-ba30-2344c959bc5e.pdf",
+   "page": 7,
+   "metric": "other",
+   "horizon": "ongoing",
+   "quote": "I'm hopeful that we will meet the market demand. So we are well prepared for this launch [semaglutide].",
+   "speaker": "Kirti Ganorkar",
+   "target_low": null,
+   "target_high": null,
+   "unit": "other",
+   "verdict": "unverifiable",
+   "actual": "Semaglutide demand not quantified",
+   "note": "Launch impact unknown",
+   "checked_by": "model"
+  },
+  {
+   "id": "G17",
+   "call": "Q1 FY27",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=34be7c92-1d9f-4010-ba30-2344c959bc5e.pdf",
+   "page": 8,
+   "metric": "capex",
+   "horizon": "FY27",
+   "quote": "I think don't look at the R&D spend this quarter. We have already guided for the annual number. And I think we should be able to meet those numbers.",
+   "speaker": "Dilip Shanghvi",
+   "target_low": null,
+   "target_high": null,
+   "unit": "other",
+   "verdict": "unverifiable",
+   "actual": "Capex FY27 not disclosed",
+   "note": "Budget claim not testable",
+   "checked_by": "model"
+  },
+  {
+   "id": "G18",
+   "call": "Q1 FY27",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=34be7c92-1d9f-4010-ba30-2344c959bc5e.pdf",
+   "page": 10,
+   "metric": "other",
+   "horizon": "coming quarters",
+   "quote": "the R&D expenses have tracked a bit lower that will get normalized in the coming quarters.",
+   "speaker": "Jayashree Satagopan",
+   "target_low": null,
+   "target_high": null,
+   "unit": "other",
+   "verdict": "too_early",
+   "actual": "R&D expense normalization pending",
+   "note": "Q2 FY27 still low",
+   "checked_by": "model"
+  },
+  {
+   "id": "G19",
+   "call": "Q1 FY27",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=34be7c92-1d9f-4010-ba30-2344c959bc5e.pdf",
+   "page": 10,
+   "metric": "revenue_growth",
+   "horizon": "FY27",
+   "quote": "Think we should stick on to the high single-digit growth for the full year.",
+   "speaker": "Jayashree Satagopan",
+   "target_low": null,
+   "target_high": null,
+   "unit": "%",
+   "verdict": "unverifiable",
+   "actual": "No FY27 growth target disclosed",
+   "note": "High single‑digit vague",
+   "checked_by": "model"
+  },
+  {
+   "id": "G20",
+   "call": "Q1 FY27",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=34be7c92-1d9f-4010-ba30-2344c959bc5e.pdf",
+   "page": 16,
+   "metric": "other",
+   "horizon": "ongoing",
+   "quote": "We expect to continue to see growth based on all of the indicators that we have today, whether that's increasing access, whether that's increasing the prescriber base, whether that's increasing repeat prescriptions.",
+   "speaker": "Richard Ascroft",
+   "target_low": null,
+   "target_high": null,
+   "unit": "other",
+   "verdict": "unverifiable",
+   "actual": "Growth indicators not quantified",
+   "note": "No metric",
+   "checked_by": "model"
+  },
+  {
+   "id": "G21",
+   "call": "Q1 FY27",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=34be7c92-1d9f-4010-ba30-2344c959bc5e.pdf",
+   "page": 17,
+   "metric": "ebitda_margin",
+   "horizon": "ongoing",
+   "quote": "Our endeavor, obviously, would be to look for areas to optimize the ETR, but we should look at this as a range.",
+   "speaker": "Jayashree Satagopan",
+   "target_low": null,
+   "target_high": null,
+   "unit": "%",
+   "verdict": "unverifiable",
+   "actual": "EBITDA margin range not given",
+   "note": "No specific figure",
+   "checked_by": "model"
+  },
+  {
+   "id": "G22",
+   "call": "Q4 FY26",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=287022b2-8de5-487d-8d0d-77b819ee3eb4.pdf",
+   "page": 4,
+   "metric": "other",
+   "horizon": "subsequent quarters",
+   "quote": "Some of these spends were elevated for the quarter, and we should see it normalizing in the subsequent quarters.",
+   "speaker": null,
+   "target_low": null,
+   "target_high": null,
+   "unit": "other",
+   "verdict": "delivered",
+   "actual": "EBITDA margin rose to 28.9% Q1 FY27",
+   "note": "Normalization after Q4 FY26",
+   "checked_by": "model"
+  },
+  {
+   "id": "G23",
+   "call": "Q4 FY26",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=287022b2-8de5-487d-8d0d-77b819ee3eb4.pdf",
+   "page": 6,
+   "metric": "revenue_growth",
+   "horizon": "FY27",
+   "quote": "we expect high single-digit consolidated top line growth for FY27 based on our current understanding of the regulatory and macro environment.",
+   "speaker": "Dilip Shanghvi",
+   "target_low": null,
+   "target_high": null,
+   "unit": "%",
+   "verdict": "delivered",
+   "actual": "Sales YoY +11.9% Q2 FY27",
+   "note": "Exceeds high single‑digit guidance",
+   "checked_by": "model"
+  },
+  {
+   "id": "G24",
+   "call": "Q4 FY26",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=287022b2-8de5-487d-8d0d-77b819ee3eb4.pdf",
+   "page": 6,
+   "metric": "other",
+   "horizon": "FY27",
+   "quote": "We expect our FY27 R&D spend to be 6% to 7% of the sales for the next year.",
+   "speaker": "Dilip Shanghvi",
+   "target_low": 6,
+   "target_high": 7,
+   "unit": "%",
+   "verdict": "missed",
+   "actual": "R&D 4.8% of sales vs 6‑7% target",
+   "note": "Spend below guidance",
+   "checked_by": "model"
+  },
+  {
+   "id": "G25",
+   "call": "Q4 FY26",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=287022b2-8de5-487d-8d0d-77b819ee3eb4.pdf",
+   "page": 6,
+   "metric": "other",
+   "horizon": "Q4 FY27",
+   "quote": "We expect the acquisition to be completed in Q4 FY27.",
+   "speaker": "Dilip Shanghvi",
+   "target_low": null,
+   "target_high": null,
+   "unit": "other",
+   "verdict": "too_early",
+   "actual": "Acquisition not closed Q4 FY27",
+   "note": "Future milestone",
+   "checked_by": "model"
+  },
+  {
+   "id": "G26",
+   "call": "Q4 FY26",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=287022b2-8de5-487d-8d0d-77b819ee3eb4.pdf",
+   "page": 10,
+   "metric": "other",
+   "horizon": "next years",
+   "quote": "We continue to see growth based on the model that we've adopted. And we also continue to see good growth of Cequa, a product that you didn't mention, where we think that will continue for the next years as well.",
+   "speaker": "Richard Ascroft",
+   "target_low": null,
+   "target_high": null,
+   "unit": "other",
+   "verdict": "unverifiable",
+   "actual": "Cequa growth not shown",
+   "note": "No product‑level data",
+   "checked_by": "model"
+  },
+  {
+   "id": "G27",
+   "call": "Q4 FY26",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=287022b2-8de5-487d-8d0d-77b819ee3eb4.pdf",
+   "page": 17,
+   "metric": "other",
+   "horizon": "next year",
+   "quote": "We expect the effective tax rate to be in the range of 25%.",
+   "speaker": "Jayashree Satagopan",
+   "target_low": 25,
+   "target_high": null,
+   "unit": "%",
+   "verdict": "unverifiable",
+   "actual": "Effective tax rate not disclosed",
+   "note": "Range 25% unspecified",
+   "checked_by": "model"
+  },
+  {
+   "id": "G28",
+   "call": "Q4 FY26",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=293c1789-7308-4864-982a-192b016de087.pdf",
+   "page": 6,
+   "metric": "other",
+   "horizon": "combined business",
+   "quote": "with the addition of both Organon and Sun, the total revenue would be 27% of a combined business.",
+   "speaker": null,
+   "target_low": 27,
+   "target_high": null,
+   "unit": "%",
+   "verdict": "unverifiable",
+   "actual": "Combined revenue share not reported",
+   "note": "No post‑acquisition numbers",
+   "checked_by": "model"
+  },
+  {
+   "id": "G29",
+   "call": "Q4 FY26",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=293c1789-7308-4864-982a-192b016de087.pdf",
+   "page": 6,
+   "metric": "market_share",
+   "horizon": "combined business",
+   "quote": "We will be number three in women's health position",
+   "speaker": null,
+   "target_low": null,
+   "target_high": null,
+   "unit": "other",
+   "verdict": "unverifiable",
+   "actual": "Market‑share rank not quantified",
+   "note": "No share data",
+   "checked_by": "model"
+  },
+  {
+   "id": "G30",
+   "call": "Q4 FY26",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=293c1789-7308-4864-982a-192b016de087.pdf",
+   "page": 6,
+   "metric": "other",
+   "horizon": "combined company",
+   "quote": "The 51% of the revenue share will come from the established brand.",
+   "speaker": null,
+   "target_low": 51,
+   "target_high": null,
+   "unit": "%",
+   "verdict": "unverifiable",
+   "actual": "Revenue share 51% not shown",
+   "note": "No segment breakdown",
+   "checked_by": "model"
+  },
+  {
+   "id": "G31",
+   "call": "Q4 FY26",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=293c1789-7308-4864-982a-192b016de087.pdf",
+   "page": 8,
+   "metric": "other",
+   "horizon": "combined company",
+   "quote": "the innovative part of medicine becomes 27%, generic become 15% and biosimilar which is one of the growth areas becomes 6% of our total revenues.",
+   "speaker": null,
+   "target_low": null,
+   "target_high": null,
+   "unit": "%",
+   "verdict": "unverifiable",
+   "actual": "Business mix percentages not disclosed",
+   "note": "No revenue split",
+   "checked_by": "model"
+  },
+  {
+   "id": "G32",
+   "call": "Q4 FY26",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=293c1789-7308-4864-982a-192b016de087.pdf",
+   "page": 9,
+   "metric": "debt",
+   "horizon": "post-acquisition",
+   "quote": "Sun from a net cash positive position post this acquisition will get into a net debt by EBITDA of 2.3x.",
+   "speaker": "Jayashree Satagopan",
+   "target_low": 2.3,
+   "target_high": null,
+   "unit": "x",
+   "verdict": "unverifiable",
+   "actual": "Net‑debt/EBITDA 2.3x not calculated",
+   "note": "Post‑acquisition leverage unknown",
+   "checked_by": "model"
+  },
+  {
+   "id": "G33",
+   "call": "Q4 FY26",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=293c1789-7308-4864-982a-192b016de087.pdf",
+   "page": 9,
+   "metric": "other",
+   "horizon": "next 6-9 months",
+   "quote": "we expect this deal to close in about six to nine month time.",
+   "speaker": "Jayashree Satagopan",
+   "target_low": null,
+   "target_high": null,
+   "unit": "other",
+   "verdict": "too_early",
+   "actual": "Deal not closed within 6‑9 months yet",
+   "note": "Closing still pending",
+   "checked_by": "model"
+  },
+  {
+   "id": "G34",
+   "call": "Q4 FY26",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=293c1789-7308-4864-982a-192b016de087.pdf",
+   "page": 10,
+   "metric": "other",
+   "horizon": "combined company",
+   "quote": "We will be number one pharma company in four countries, number three in women's health which is in contraceptive and fertility, will be number seven biosimilars.",
+   "speaker": null,
+   "target_low": null,
+   "target_high": null,
+   "unit": "other",
+   "verdict": "unverifiable",
+   "actual": "Country rankings not provided",
+   "note": "No market data",
+   "checked_by": "model"
+  },
+  {
+   "id": "G35",
+   "call": "Q4 FY26",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=293c1789-7308-4864-982a-192b016de087.pdf",
+   "page": 17,
+   "metric": "pat_growth",
+   "horizon": "first 12 months of closure",
+   "quote": "we believe this will be EPS accretive from the beginning.",
+   "speaker": "Jayashree Satagopan",
+   "target_low": null,
+   "target_high": null,
+   "unit": "other",
+   "verdict": "unverifiable",
+   "actual": "EPS accretion not shown",
+   "note": "No EPS figures",
+   "checked_by": "model"
+  },
+  {
+   "id": "G36",
+   "call": "Q4 FY26",
+   "call_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=293c1789-7308-4864-982a-192b016de087.pdf",
+   "page": 16,
+   "metric": "revenue_growth",
+   "horizon": "future",
+   "quote": "the established product business which is stagnant today and not growing will also turn around and will start showing some single digit growth, yes.",
+   "speaker": "Kirti Ganorkar",
+   "target_low": null,
+   "target_high": null,
+   "unit": "%",
+   "verdict": "unverifiable",
+   "actual": "Established product growth not evident",
+   "note": "No segment growth data",
+   "checked_by": "model"
+  }
+ ],
+ "tally": {
+  "on_track": 3,
+  "unverifiable": 22,
+  "too_early": 8,
+  "delivered": 2,
+  "missed": 1
+ },
+ "narrative_vs_numbers": [
+  {
+   "claim": "R&D spend will catch up in H2 FY27 (G4)",
+   "reality": "Q2 FY27 R&D 4.8% of sales, still below 6‑7% target",
+   "agree": false,
+   "cite": "G4,G24"
+  },
+  {
+   "claim": "Acquisition to close early FY27 (G1)",
+   "reality": "No closure recorded; still pending as of Q2 FY27",
+   "agree": false,
+   "cite": "G1"
+  },
+  {
+   "claim": "EBITDA margin normalising after Q4 FY26 (G22)",
+   "reality": "Margin rose from 27.1% Q4 FY26 to 28.9% Q1 FY27",
+   "agree": true,
+   "cite": "G22"
+  }
+ ],
+ "bull": [
+  {
+   "point": "FY27 sales grew 11.9% YoY, beating high single‑digit guidance",
+   "cite": "G23,Q2 FY27 sales_yoy"
+  },
+  {
+   "point": "Operating profit margin reached 32% in Q3 FY26, showing strong profitability",
+   "cite": "Q3 FY26 opm"
+  },
+  {
+   "point": "PAT increased 27% YoY in Q2 FY26, indicating earnings strength",
+   "cite": "Q2 FY26 pat_yoy"
+  }
+ ],
+ "bear": [
+  {
+   "point": "R&D spend at 4.8% of sales misses 6‑7% FY27 target",
+   "cite": "G24"
+  },
+  {
+   "point": "Acquisition‑related costs remain uncertain until Q4 FY27",
+   "cite": "G9"
+  },
+  {
+   "point": "EBITDA margin fell to 27.1% in Q4 FY26, a year‑on‑year decline",
+   "cite": "Q4 FY26"
+  }
+ ],
+ "verdict": "Management largely meets growth promises but falls short on R&D spend and acquisition timing, yielding a mixed performance.",
+ "sources": [
+  {
+   "type": "financials",
+   "label": "screener.in (consolidated)",
+   "url": "https://www.screener.in/company/SUNPHARMA/consolidated/"
+  },
+  {
+   "type": "transcript",
+   "label": "Q2 FY27 call (Nov 2026)",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=fe431adc-0e1a-48ee-9c2b-b6e39cba04e4.pdf"
+  },
+  {
+   "type": "transcript",
+   "label": "Q1 FY27 call (Aug 2026)",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=34be7c92-1d9f-4010-ba30-2344c959bc5e.pdf"
+  },
+  {
+   "type": "transcript",
+   "label": "Q4 FY26 call (May 2026)",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=287022b2-8de5-487d-8d0d-77b819ee3eb4.pdf"
+  },
+  {
+   "type": "transcript",
+   "label": "Q4 FY26 call (May 2026)",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=293c1789-7308-4864-982a-192b016de087.pdf"
+  }
+ ],
+ "complete": true,
+ "cost": {
+  "calls": 7,
+  "cached": 0,
+  "tokens_in": 49723,
+  "tokens_out": 9690,
+  "by_model": {
+   "gemini-2.5-flash": {
+    "calls": 6,
+    "tokens_in": 46436,
+    "tokens_out": 6260
+   },
+   "openai/gpt-oss-120b": {
+    "calls": 1,
+    "tokens_in": 3287,
+    "tokens_out": 3430
+   }
+  },
+  "seconds": 90.9
+ },
+ "discipline": "Primary sources only: company filings via screener.in, earnings-call transcripts. No news, broker notes or model memory."
+}
