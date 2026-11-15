@@ -1,5 +1,6 @@
 import { useState } from "react";
 import type { FeedItem, Person, Results } from "../lib";
+import { Columns } from "./Charts";
 import { CATEGORY_LABEL, num, pct, times, tone, when } from "../lib";
 
 export function Spark({ values, w = 74, h = 26 }: { values: (number | null)[]; w?: number; h?: number }) {
@@ -44,6 +45,13 @@ export function ResultsTable({ r }: { r: Results }) {
           ))}
         </tbody>
       </table>
+      <div className="mini">
+        {r.rows.filter((row) => row.key === "revenue" || row.key === "pat").filter((row) => row.current != null).map((row) => (
+          <Columns key={row.key} title={`${row.metric}, ₹ cr`} height={56} vw={150} labels={["Year ago", "Last qtr", "This qtr"]}
+            values={[c(row.year_ago_quarter), c(row.previous_quarter), c(row.current)]}
+            fmt={(v) => (v == null ? "not in filing" : num(v))} />
+        ))}
+      </div>
       {em && em.current != null ? (
         <div className="foot">
           EBITDA margin <span className="num">{pct(em.current, 1, false)}</span>

@@ -36,6 +36,25 @@ the sentence that matters, normal for reading, condensed + tabular figures for n
 - Phone: bottom tab bar with labels, safe-area insets. Desktop (≥1024px): left sidebar.
 - Loading, empty and error states on every data view (Brief, Holdings, Research).
 
+## Charts (web/src/components/Charts.tsx)
+One y-axis per chart (sales and margin are two charts, never a dual axis); bars ≤24px with a
+4px rounded data-end; 2px lines with a ringed end-dot; a readout line answers "what is this
+mark?" on hover or tap; text uses text tokens, never the series colour. Two-series charts use
+emphasis: the series the story is about in `--blue`, the reference in grey `#7B8494` (3.5:1;
+validator: CVD ΔE 29.8 vs blue). Gains/losses keep green/red but always with direction and a
+signed number, never colour alone.
+
+| Where | Chart | Question it answers |
+|---|---|---|
+| Brief, results card | Year ago vs this quarter (revenue, PAT) | Is it bigger than a year ago? |
+| Alerts | Stocks flagged per session, live with the dials | How noisy would these settings be? |
+| Holdings | Six biggest moves, diverging from zero | What moved most at the close? |
+| Research | Promise bullets (target band vs actual) | Did they hit what they guided? |
+| Research | Quarterly sales; EBITDA margin (separate) | Is growth real, and is it profitable? |
+| Research | Operating cash vs net profit by year | Is profit turning into cash? |
+| Research | Debtor days | Is working capital getting worse? |
+| Research home | Ranked bars across companies, 6 measures | Who keeps promises, grows, converts cash, costs least? |
+
 ## Audit (before → after)
 
 | Check | 390px | 360px | 1440px |

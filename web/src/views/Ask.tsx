@@ -1,7 +1,8 @@
 import { useEffect, useRef, useState } from "react";
 import { Row } from "../components/Cards";
+import { Bullet, Columns, HBars, Line, Paired } from "../components/Charts";
 import type { Data } from "../lib";
-import { dayLabel, num, pct, tone } from "../lib";
+import { dayLabel, num, pct, rs, tone } from "../lib";
 
 const API = (import.meta.env.VITE_API_URL as string | undefined)?.replace(/\/$/, "");
 type State = { status: "idle" } | { status: "running"; stage: string; symbol: string } | { status: "ready"; data: any }
@@ -69,6 +70,7 @@ export function Ask({ data, symbol, setSymbol }: { data: Data; symbol: string | 
 
       {state.status === "idle" && (
         <>
+          {Object.keys(data.researchIndex).length > 1 && <Compare symbols={Object.keys(data.researchIndex)} onPick={setSymbol} />}
           {saved.length > 0 && (
             <>
               <div className="section-title">Ready now</div>
@@ -93,6 +95,42 @@ export function Ask({ data, symbol, setSymbol }: { data: Data; symbol: string | 
       {state.status === "missing" && <Missing symbol={state.symbol} data={data} onPick={setSymbol} />}
       {state.status === "ready" && <Research r={state.data} />}
     </div>
+  );
+}
+
+/** Side-by-side: the same few measures for every researched company, ranked. */
+function Compare({ symbols, onPick }: { symbols: string[]; onPick: (s: string) => void }) {
+  const [rows, setRows] = useState<any[] | null>(null);
+  useEffect(() => {
+    let live = true;
+    Promise.all(symbols.map((s) => fetch(`/data/research/${s}.json`).then((r) => (r.ok ? r.json() : null)).catch(() => null)))
+      .then((all) => live && setRows(all.filter(Boolean)));
+    return () => { live = false; };
+  }, [symbols.join(",")]); // eslint-disable-line react-hooks/exhaustive-deps
+  if (!rows) return <p className="faint small">Loading comparison…</p>;
+  if (rows.length < 2) return null;
+  const rec = (r: any) => {
+    const t = r.tally || {}, judged = (t.delivered || 0) + (t.on_track || 0) + (t.partly || 0) + (t.behind || 0) + (t.missed || 0);
+    return judged ? Math.round((((t.delivered || 0) + (t.on_track || 0)) / judged) * 100) : null;
+  };
+  const metric = (title: string, get: (r: any) => number | null, fmt: (v: number | null) => string, asc = false) => {
+    const list = rows.map((r) => ({ key: r.symbol, label: r.symbol, value: get(r) }))
+      .sort((a, b) => ((asc ? 1 : -1) * ((a.value ?? -1e9) - (b.value ?? -1e9))));
+    return <HBars title={title} rows={list} fmt={fmt} onPick={onPick} />;
+  };
+  const p = (v: number | null) => (v == null ? "–" : `${v.toFixed(0)}%`);
+  return (
+    <section>
+      <div className="section-title">Compare {rows.length} companies <span className="faint">tap one to open it</span></div>
+      {metric("Promises kept (delivered or on track, of those judged)", rec, p)}
+      <div className="charts-2">
+        {metric("Sales growth, latest quarter YoY", (r) => r.snapshot?.last_q_sales_yoy ?? null, p)}
+        {metric("EBITDA margin, latest quarter", (r) => r.snapshot?.last_q_opm ?? null, p)}
+        {metric("Return on capital (ROCE)", (r) => r.snapshot?.roce ?? null, p)}
+        {metric("Cash conversion, 3 yrs (CFO ÷ profit)", (r) => r.cash?.cfo_to_pat_3y ?? null, (v) => (v == null ? "–" : `${v.toFixed(2)}×`))}
+      </div>
+      {metric("Price to earnings (lower is cheaper)", (r) => r.snapshot?.pe ?? null, (v) => (v == null ? "–" : `${v.toFixed(0)}×`), true)}
+    </section>
   );
 }
 
@@ -140,6 +178,15 @@ const VERDICTS: [string, string, string][] = [
   ["too_early", "Too early", "#9aa3b2"], ["unverifiable", "Can't verify", "#c4cad3"],
 ];
 
+/** Pull a plottable target/actual pair out of a code-checked promise, if it has one. */
+function numericPromise(p: any): { low: number; high: number | null; actual: number; unit: string } | null {
+  if (p.checked_by !== "code" || p.target_low == null || !p.actual) return null;
+  const rupees = /₹/.test(p.actual);
+  const m = String(p.actual).replace(/,/g, "").match(/-?\d+(\.\d+)?/);
+  if (!m) return null;
+  return { low: +p.target_low, high: p.target_high != null ? +p.target_high : null, actual: +m[0], unit: rupees ? "₹ cr" : "%" };
+}
+
 // Settled verdicts first: what was missed or is behind matters more than what's pending.
 const ORDER = ["missed", "behind", "partly", "delivered", "on_track", "too_early", "unverifiable"];
 
@@ -147,8 +194,8 @@ function Research({ r }: { r: any }) {
   const [allPromises, setAllPromises] = useState(false);
   const s = r.snapshot || {}, tr = r.trajectory || {}, bal = r.balance || {}, cash = r.cash || {};
   const total = r.promises?.length || 0;
-  const q = (tr.quarterly || []).slice(-8);
-  const maxSales = Math.max(...q.map((x: any) => x.sales || 0), 1);
+  const q = (tr.quarterly || []).slice(-12);
+  const years = (cash.years || []).filter((y: any) => y.cfo != null || y.pat != null);
   const dd = bal.working_capital?.["Debtor Days"] || bal.working_capital?.["Cash Conversion Cycle"];
   const transcriptUrl = (p: any) => (p.call_url ? `${p.call_url}${p.page ? `#page=${p.page}` : ""}` : null);
 
@@ -163,7 +210,9 @@ function Research({ r }: { r: any }) {
 
       {total === 0 && (
         <p className="small muted" style={{ marginTop: 6 }}>
-          Promise tracking hasn't run for this company yet{r.calls?.some((c: any) => c.status === "no_model") ? " (the free model quota ran out)" : ""}.
+          {!r.calls?.length
+            ? "No earnings-call transcripts are listed for this company, so there are no management promises to track. "
+            : `Promise tracking hasn't run for this company yet${r.calls.some((c: any) => c.status === "no_model") ? " (the free model quota ran out)" : ""}. `}
           The numbers below are complete.
         </p>
       )}
@@ -182,6 +231,7 @@ function Research({ r }: { r: any }) {
                 <span className={`v ${p.verdict}`}>{VERDICTS.find(([k]) => k === p.verdict)?.[1]}</span>
               </div>
               <q>{p.quote}</q>
+              {numericPromise(p) && <Bullet {...numericPromise(p)!} verdict={p.verdict} />}
               <div className="got">
                 {p.actual ? <>Actual: <b style={{ fontWeight: 600 }}>{p.actual}</b></> : <span className="faint">No number to check yet</span>}
                 {p.note && <span className="muted"> {p.note}</span>}
@@ -226,9 +276,13 @@ function Research({ r }: { r: any }) {
 
       {q.length > 2 && (
         <>
-          <div className="section-title">Trajectory <span className="faint">quarterly sales</span></div>
-          <div className="bars" aria-hidden="true">{q.map((x: any, i: number) => <i key={x.period} className={i === q.length - 1 ? "last" : ""} style={{ height: `${((x.sales || 0) / maxSales) * 100}%` }} />)}</div>
-          <div className="axis"><span>{q[0].q}</span><span>{q[q.length - 1].q}</span></div>
+          <div className="section-title">Trajectory</div>
+          <div className="charts-2">
+            <Columns title="Quarterly sales, ₹ cr" labels={q.map((x: any) => x.q || x.period)} values={q.map((x: any) => x.sales)}
+              fmt={rs} />
+            <Line title="EBITDA margin, %" labels={q.map((x: any) => x.q || x.period)} values={q.map((x: any) => x.opm)}
+              fmt={(v) => (v == null ? "–" : `${v.toFixed(0)}%`)} />
+          </div>
           <p className="small muted">
             Sales {pct(tr.sales_cagr_3y)} a year over 3 years, profit {pct(tr.pat_cagr_3y)}.
             {tr.opm_change_3y != null && <> Margin {tr.opm_change_3y >= 0 ? "up" : "down"} {Math.abs(tr.opm_change_3y).toFixed(1)} points over the same period.</>}
@@ -243,6 +297,19 @@ function Research({ r }: { r: any }) {
         {cash.cfo_to_pat_3y != null && (cash.cfo_to_pat_3y >= 0.9 ? ", so profits are turning into cash." : ", so profits are not fully turning into cash.")}
         {dd && dd.length > 1 && <> {Object.keys(bal.working_capital).includes("Debtor Days") ? "Debtor days" : "Cash conversion cycle"} {dd[0].value} → {dd[dd.length - 1].value}.</>}
       </p>
+
+      <div className="charts-2">
+        {years.length > 1 && (
+          <Paired title="Is profit turning into cash? ₹ cr" labels={years.map((y: any) => y.fy)}
+            a={{ name: "Operating cash flow", values: years.map((y: any) => y.cfo) }}
+            b={{ name: "Net profit", values: years.map((y: any) => y.pat) }}
+            fmt={rs} />
+        )}
+        {dd && dd.length > 2 && (
+          <Line title={Object.keys(bal.working_capital).includes("Debtor Days") ? "Debtor days (lower is better)" : "Cash conversion cycle, days"}
+            labels={dd.map((x: any) => x.period)} values={dd.map((x: any) => x.value)} fmt={(v) => (v == null ? "–" : `${Math.round(v)} days`)} />
+        )}
+      </div>
 
       {(r.bull?.length > 0 || r.bear?.length > 0) && (
         <div className="case">

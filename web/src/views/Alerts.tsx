@@ -2,6 +2,7 @@ import { useMemo } from "react";
 import type { Data, Thresholds } from "../lib";
 import { applyThresholds, CATEGORY_LABEL, dayLabel, pct, times } from "../lib";
 import { tick } from "../press";
+import { Columns } from "../components/Charts";
 
 const CHOOSABLE = ["results", "M&A", "management_change", "litigation", "fund_raise", "pledging", "capex",
   "credit_rating", "insider_trading", "bonus_split", "dividend", "press_release"];
@@ -53,6 +54,13 @@ export function Alerts({ data, t, setT, careAbout, setCareAbout }: {
           <button className="linkbtn" onClick={() => setT({ ...t, sigma_threshold: sigmaOn ? null : 3 })}>{sigmaOn ? "Turn off" : "Turn on"}</button>
         </div>
       </div>
+
+      {sessions > 0 && (() => {
+        const dates = (Object.values(stocks)[0] || []).map((r) => r[0]);
+        const per = dates.map((d) => hits.filter((h) => h.date === d).length);
+        return <Columns title="Stocks flagged per session" labels={dates.map((d) => dayLabel(d))} values={per}
+          fmt={(v) => `${v ?? 0} ${v === 1 ? "stock" : "stocks"} flagged`} height={70} />;
+      })()}
 
       <div className="section-title">Filings that can reach the top of your brief</div>
       <div className="cats" role="group" aria-label="Filing categories">

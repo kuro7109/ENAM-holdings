@@ -132,3 +132,7 @@ export function applyThresholds(stocks: Record<string, Signal[]>, t: Thresholds,
   }
   return hits.sort((a, b) => (a.date < b.date ? 1 : a.date > b.date ? -1 : Math.abs(b.pct || 0) - Math.abs(a.pct || 0)));
 }
+
+/** ₹ amount in crore with the sign outside the symbol: −₹600 cr. */
+export const rs = (x: number | null | undefined) =>
+  x == null || Number.isNaN(x) ? "–" : `${x < 0 ? "−" : ""}₹${inr.format(Math.abs(x))} cr`;

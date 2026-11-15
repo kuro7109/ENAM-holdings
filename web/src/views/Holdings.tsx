@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { Row, Spark } from "../components/Cards";
+import { HBars } from "../components/Charts";
 import type { Data, Stock, Thresholds } from "../lib";
 import { applyThresholds, dayLabel, num, pct, times, tone } from "../lib";
 
@@ -18,6 +19,10 @@ export function Holdings({ data, t, onResearch }: { data: Data; t: Thresholds; o
         <h1 style={{ fontSize: 26 }}>{up} up, {stocks.length - up} down. <span className="quiet">{flagged.size} flagged.</span></h1>
         <p>Close of {dayLabel(data.market.as_of)}. Biggest moves first; a dot means it crossed your alert thresholds.</p>
       </header>
+      <HBars title="Biggest moves at the last close" diverging polarity fmt={(v) => pct(v)}
+        rows={stocks.slice(0, 6).map((x) => ({ key: x.symbol, label: x.symbol, value: x.pct_change }))}
+        onPick={(k) => setOpen(stocks.find((x) => x.symbol === k) || null)} />
+      <div className="section-title">All holdings <span className="faint">30-day trend</span></div>
       {stocks.map((s) => (
         <button key={s.symbol} className="holding" onClick={() => setOpen(s)}>
           <span style={{ minWidth: 0 }}>
