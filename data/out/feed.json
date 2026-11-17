@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-11-17T02:43:00+05:30",
+ "generated_at": "2026-11-18T01:29:33+05:30",
  "window": {
-  "from": "2026-10-18",
-  "to": "2026-11-17",
+  "from": "2026-10-19",
+  "to": "2026-11-18",
   "days": 30
  },
  "weights": {
@@ -29,11 +29,117 @@
   "worth": 40
  },
  "counts": {
+  "routine": 145,
   "worth": 19,
-  "routine": 141,
   "top": 33
  },
  "items": [
+  {
+   "id": "12d8b721ad301dc0",
+   "symbol": "RELIANCE",
+   "name": "Reliance Industries",
+   "sector": "Energy & Conglomerate",
+   "filed_at": "2026-11-17T18:47:04+05:30",
+   "source": "NSE",
+   "category": "investor_meetings",
+   "tags": [],
+   "title": "This is further to the disclosure dated November 12, 2026 made by the Company. We wish to inform you that the Company executives participated in the Institutional Investors' Meeting - JM Financial India Conference and no unpublished price sensitive information was shared/discussed in the said one-on-one meeting.",
+   "exchange_category": "Updates",
+   "pdf_url": "https://nsearchives.nseindia.in/corporate/kavinavora_17112026184407_SE_17112026.pdf",
+   "summary": "Filed an update on November 17, 2026, regarding an institutional investors meeting.",
+   "score": 8.0,
+   "tier": "routine",
+   "why": [],
+   "enriched": null,
+   "related": []
+  },
+  {
+   "id": "87b67880cfbccb20",
+   "symbol": "HDFCBANK",
+   "name": "HDFC Bank",
+   "sector": "Private Bank",
+   "filed_at": "2026-11-17T15:54:23+05:30",
+   "source": "NSE",
+   "category": "unclassified",
+   "tags": [
+    "routine"
+   ],
+   "title": "HDFC Bank Limited has informed the Exchange regarding 'Grant of stock options under Employee Stock Option Scheme (ESOS Plan H-2024) and Grant of Restricted Stock Units under Employees Stock Incentive Master Scheme 2022'.",
+   "exchange_category": "Updates",
+   "pdf_url": "https://nsearchives.nseindia.in/corporate/HDFCBANK3_17112026155359_SE_Intimation_grant_of_ESOP_17112026.pdf",
+   "summary": "HDFC Bank granted 1,86,031 equity stock options under ESOS Plan H-2024 at Rs.",
+   "score": 1.0,
+   "tier": "routine",
+   "why": [],
+   "enriched": null,
+   "related": [
+    {
+     "id": "5370af0faacd6df5",
+     "title": "HDFC Bank Limited has informed the Exchange regarding Allotment of 1412278 Shares.",
+     "pdf_url": "https://nsearchives.nseindia.in/corporate/HDFCBANK3_17112026135613_SELetterESOP17112026.pdf",
+     "filed_at": "2026-11-17T13:59:06+05:30"
+    }
+   ]
+  },
+  {
+   "id": "9847cd2978746db3",
+   "symbol": "INFY",
+   "name": "Infosys",
+   "sector": "IT Services",
+   "filed_at": "2026-11-17T14:58:50+05:30",
+   "source": "NSE",
+   "category": "unclassified",
+   "tags": [],
+   "title": "Infosys Limited has informed the Exchange regarding 'Infosys Positioned as a Leader in the 2026 Gartner® Magic Quadrant for Public Cloud Optimization and Transformation Services for the Fourth Consecutive Year'.",
+   "exchange_category": "Updates",
+   "pdf_url": "https://nsearchives.nseindia.in/corporate/Infosys_17112026145826_PR_17112026.pdf",
+   "summary": "Announced on November 17, 2026, that it has been positioned as a Leader in the 2026 Gartner Magic Quadrant for Public Cloud Optimization and Transformation Services.",
+   "score": 5.0,
+   "tier": "routine",
+   "why": [],
+   "enriched": null,
+   "related": []
+  },
+  {
+   "id": "0e6d745b42eea124",
+   "symbol": "TRENT",
+   "name": "Trent",
+   "sector": "Retail",
+   "filed_at": "2026-11-17T14:06:22+05:30",
+   "source": "NSE",
+   "category": "investor_meetings",
+   "tags": [
+    "intimation"
+   ],
+   "title": "Trent Limited has informed the Exchange about Intimation of schedule of Analyst / Institutional Investors Meetings",
+   "exchange_category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+   "pdf_url": "https://nsearchives.nseindia.in/corporate/TRENT_17112026140114_Investor_Analyst_Meeting_17112026.pdf",
+   "summary": "Intimated the schedule of meetings with analysts and institutional investors pursuant to Regulation 30 of the SEBI Listing Obligations and Disclosure Requirements…",
+   "score": 1.6,
+   "tier": "routine",
+   "why": [],
+   "enriched": null,
+   "related": []
+  },
+  {
+   "id": "24c8694c3e370e58",
+   "symbol": "BAJFINANCE",
+   "name": "Bajaj Finance",
+   "sector": "NBFC",
+   "filed_at": "2026-11-17T08:25:32+05:30",
+   "source": "NSE",
+   "category": "fund_raise",
+   "tags": [],
+   "title": "Bajaj Finance Limited has informed the Exchange regarding allotment of 114146341 securities pursuant to Qualified Institution Placement at its meeting held on November 17, 2026",
+   "exchange_category": "Allotment of Securities",
+   "pdf_url": "https://nsearchives.nseindia.in/corporate/BAJFINANCE_17112026082518_BSENSE_Intimationofallotment.pdf",
+   "summary": "Allotted 114,146,341 equity shares to qualified institutional buyers at an issue price of Rs.",
+   "score": 60.0,
+   "tier": "worth",
+   "why": [],
+   "enriched": null,
+   "related": []
+  },
   {
    "id": "7161ccf7a6028b37",
    "symbol": "BAJFINANCE",
@@ -278,11 +384,21 @@
    "exchange_category": "ESOP/ESOS/ESPS",
    "pdf_url": "https://nsearchives.nseindia.in/corporate/ITC_13112026151900_SE.pdf",
    "summary": "Allotted 7,85,300 ordinary shares of one rupee each on 13th November 2026.",
-   "score": 1.0,
+   "score": 21.0,
    "tier": "routine",
-   "why": [],
+   "why": [
+    "Stock moved on it"
+   ],
    "enriched": null,
-   "related": []
+   "related": [],
+   "alert": {
+    "date": "2026-11-16",
+    "pct_change": 3.54,
+    "vol_ratio": 2.48,
+    "sigma": 2.06,
+    "headline": "+3.5% on the day, 2.5x its 20-day avg volume, a 2.1σ move for this stock",
+    "severity": "medium"
+   }
   },
   {
    "id": "191cd8e3d688aac3",
@@ -708,7 +824,7 @@
    "title": "Maruti Suzuki India Limited has informed the Exchange about Reference to the Financial Results issued by Suzuki Motor Corporation",
    "exchange_category": "General Updates",
    "pdf_url": "https://nsearchives.nseindia.in/corporate/MARUTIASHISH_10112026115416_STxIntimation_SMCResults_FirstHalfYr_10Nov2026.pdf",
-   "summary": "Filed a reference to the Financial Results for the first six months of FY 2026 issued by Suzuki Motor Corporation in Japan on 10th November 2026.",
+   "summary": null,
    "score": 80.0,
    "tier": "top",
    "why": [],
@@ -5447,38 +5563,6 @@
    "why": [],
    "enriched": "ok",
    "related": []
-  },
-  {
-   "id": "b7049943a8accd31",
-   "symbol": "TRENT",
-   "name": "Trent",
-   "sector": "Retail",
-   "filed_at": "2026-10-18T18:47:05+05:30",
-   "source": "NSE",
-   "category": "management_change",
-   "tags": [],
-   "title": "Trent Limited has informed the Exchange regarding Intimation of resignation of Non-Executive Non-Independent Director of the Company.",
-   "exchange_category": "Resignation",
-   "pdf_url": "https://nsearchives.nseindia.in/corporate/TRENT_18102026184315_Intimation_of_Resignation_of_NED.pdf",
-   "summary": "Harish Bhat resigned as Non-Executive Non-Independent Director effective 17 Oct 2026",
-   "score": 55.0,
-   "tier": "worth",
-   "why": [],
-   "enriched": "ok",
-   "related": [],
-   "management": {
-    "people": [
-     {
-      "name": "Harish Bhat",
-      "role": "Non-Executive Non-Independent Director",
-      "change": "resigned",
-      "effective": "17th October 2026",
-      "reason": "existing and growing professional and personal commitments",
-      "profile": null,
-      "top_role": false
-     }
-    ]
-   }
   }
  ]
 }

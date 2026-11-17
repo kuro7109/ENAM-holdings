@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-17T02:42:38+05:30",
-  "as_of": "2026-11-13",
+  "generated_at": "2026-11-18T01:29:12+05:30",
+  "as_of": "2026-11-16",
   "thresholds": {
     "global": {
       "price_move_pct": 4.0,
@@ -20,6 +20,25 @@
     }
   },
   "alerts": [
+    {
+      "symbol": "ITC",
+      "date": "2026-11-16",
+      "close": 295.1,
+      "pct_change": 3.54,
+      "vol_ratio": 2.48,
+      "sigma": 2.06,
+      "triggers": [
+        {
+          "type": "volume_spike",
+          "value": 2.48,
+          "threshold": 2.0
+        }
+      ],
+      "severity": "medium",
+      "headline": "+3.5% on the day, 2.5x its 20-day avg volume, a 2.1σ move for this stock",
+      "name": "ITC",
+      "sector": "FMCG"
+    },
     {
       "symbol": "HAL",
       "date": "2026-11-12",
@@ -696,49 +715,6 @@
       "headline": "+0.5% on the day, 2.7x its 20-day avg volume",
       "name": "Polycab India",
       "sector": "Cables & Wires"
-    },
-    {
-      "symbol": "INFY",
-      "date": "2026-10-13",
-      "close": 1062.1,
-      "pct_change": 4.13,
-      "vol_ratio": 2.09,
-      "sigma": 2.2,
-      "triggers": [
-        {
-          "type": "price_move",
-          "value": 4.13,
-          "threshold": 4.0
-        },
-        {
-          "type": "volume_spike",
-          "value": 2.09,
-          "threshold": 2.0
-        }
-      ],
-      "severity": "high",
-      "headline": "+4.1% on the day, 2.1x its 20-day avg volume, a 2.2σ move for this stock",
-      "name": "Infosys",
-      "sector": "IT Services"
-    },
-    {
-      "symbol": "PERSISTENT",
-      "date": "2026-10-13",
-      "close": 5988.0,
-      "pct_change": 3.47,
-      "vol_ratio": 2.35,
-      "sigma": 1.84,
-      "triggers": [
-        {
-          "type": "volume_spike",
-          "value": 2.35,
-          "threshold": 2.0
-        }
-      ],
-      "severity": "medium",
-      "headline": "+3.5% on the day, 2.4x its 20-day avg volume",
-      "name": "Persistent Systems",
-      "sector": "IT Services"
     }
   ]
 }
