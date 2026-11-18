@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-11-18T01:29:33+05:30",
+ "generated_at": "2026-11-19T01:02:12+05:30",
  "window": {
-  "from": "2026-10-19",
-  "to": "2026-11-18",
+  "from": "2026-10-20",
+  "to": "2026-11-19",
   "days": 30
  },
  "weights": {
@@ -29,11 +29,104 @@
   "worth": 40
  },
  "counts": {
-  "routine": 145,
-  "worth": 19,
-  "top": 33
+  "routine": 140,
+  "worth": 17,
+  "top": 32
  },
  "items": [
+  {
+   "id": "86e61777e73804cf",
+   "symbol": "INFY",
+   "name": "Infosys",
+   "sector": "IT Services",
+   "filed_at": "2026-11-18T22:10:55+05:30",
+   "source": "NSE",
+   "category": "unclassified",
+   "tags": [],
+   "title": "Infosys Limited has informed the Exchange regarding 'Change in Corporate office address of the Company s Registrar and Share Transfer Agent'.",
+   "exchange_category": "Updates",
+   "pdf_url": "https://nsearchives.nseindia.in/corporate/INFY_18112026221036_SE_filing_17112027__1_.pdf",
+   "summary": "Received intimation from its Registrar and Share Transfer Agent, KFin Technologies Limited, regarding a change in the corporate office address effective December 1, 2026.",
+   "score": 5.0,
+   "tier": "routine",
+   "why": [],
+   "enriched": null,
+   "related": [
+    {
+     "id": "7f01ab976144e28d",
+     "title": "Infosys Limited has informed the Exchange regarding 'Disclosure Under Regulation 30 Of SEBI LODR Regulations'.",
+     "pdf_url": "https://nsearchives.nseindia.in/corporate/INFY_18112026220604_Reg_30_disclosure_18112026.pdf",
+     "filed_at": "2026-11-18T22:06:40+05:30"
+    }
+   ]
+  },
+  {
+   "id": "0bb72635f24a96ae",
+   "symbol": "TITAN",
+   "name": "Titan Company",
+   "sector": "Consumer",
+   "filed_at": "2026-11-18T20:53:56+05:30",
+   "source": "NSE",
+   "category": "investor_meetings",
+   "tags": [],
+   "title": "Titan Company Limited has informed the Exchange about Schedule of meet",
+   "exchange_category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+   "pdf_url": "https://nsearchives.nseindia.in/corporate/TITAN_18112026205330_SEintimation_18_Nov_26.pdf",
+   "summary": "Disclosed the schedule for analyst and institutional investor meetings in November 2026.",
+   "score": 8.0,
+   "tier": "routine",
+   "why": [],
+   "enriched": null,
+   "related": []
+  },
+  {
+   "id": "a3d46ca972f00246",
+   "symbol": "BHARTIARTL",
+   "name": "Bharti Airtel",
+   "sector": "Telecom",
+   "filed_at": "2026-11-18T15:38:37+05:30",
+   "source": "NSE",
+   "category": "unclassified",
+   "tags": [
+    "newspaper_ad",
+    "routine"
+   ],
+   "title": "Bharti Airtel Limited has informed the Exchange about Copy of Newspaper Publication",
+   "exchange_category": "Copy of Newspaper Publication",
+   "pdf_url": "https://nsearchives.nseindia.in/corporate/BHARTIARTL_18112026153820_Newspaper_Advertisement.pdf",
+   "summary": "Published a newspaper advertisement on November 18, 2026, regarding the Second Reminder Notice for payment of the First and Final Call on partly paid-up equity shares.",
+   "score": 1.0,
+   "tier": "routine",
+   "why": [],
+   "enriched": null,
+   "related": []
+  },
+  {
+   "id": "53e7cb30da0ae477",
+   "symbol": "IRFC",
+   "name": "IRFC",
+   "sector": "PSU Finance",
+   "filed_at": "2026-11-18T13:50:34+05:30",
+   "source": "NSE",
+   "category": "unclassified",
+   "tags": [],
+   "title": "Indian Railway Finance Corporation Limited has informed the Exchange about General Updates",
+   "exchange_category": "General Updates",
+   "pdf_url": "https://nsearchives.nseindia.in/corporate/IRFC_18112026135021_OUTCOME18112026.pdf",
+   "summary": "Announces that its Board of Directors approved the extension of Shri Ajoy Choudhury’s tenure as Chief Risk Officer for one year, effective from 02.12.2026.",
+   "score": 5.0,
+   "tier": "routine",
+   "why": [],
+   "enriched": null,
+   "related": [
+    {
+     "id": "62cbbd8f64ddb3d1",
+     "title": "Indian Railway Finance Corporation Limited has informed the Exchange regarding Outcome of Board Meeting held on November 18, 2026.",
+     "pdf_url": "https://nsearchives.nseindia.in/corporate/IRFC_18112026134539_OUTCOME18112026.pdf",
+     "filed_at": "2026-11-18T13:45:55+05:30"
+    }
+   ]
+  },
   {
    "id": "12d8b721ad301dc0",
    "symbol": "RELIANCE",
@@ -700,7 +793,7 @@
    "title": "Bharti Airtel Limited has informed the Exchange about Schedule of meet",
    "exchange_category": "Analysts/Institutional Investor Meet/Con. Call Updates",
    "pdf_url": "https://nsearchives.nseindia.in/corporate/BHARTIARTL_11112026183310_BhartiAirtelSTXIntimation.pdf",
-   "summary": "Disclosed its schedule for investor meetings under SEBI Listing Regulations.",
+   "summary": null,
    "score": 8.0,
    "tier": "routine",
    "why": [],
@@ -767,7 +860,7 @@
    "title": "Titan Company Limited has informed the Exchange about Earnings Call Transcripts",
    "exchange_category": "Analysts/Institutional Investor Meet/Con. Call Updates",
    "pdf_url": "https://nsearchives.nseindia.in/corporate/TITAN_11112026143915_SEearningcalltranscriptsQ2.pdf",
-   "summary": "Filed a notice with BSE and NSE on 11th November 2026 regarding the transcript of the Q2 FY27 earnings conference call held on 5th November 2026.",
+   "summary": null,
    "score": 15.0,
    "tier": "routine",
    "why": [],
@@ -4817,12 +4910,6 @@
      "title": "Infosys Limited has informed the Exchange regarding 'Report of auditors on financial statements for the quarter and half year ended September 30, 2026 withUDIN'.",
      "pdf_url": "https://nsearchives.nseindia.in/corporate/Infosys_23102026200652_SE_filing_Auditors_report_with_UDIN.pdf",
      "filed_at": "2026-10-23T20:07:11+05:30"
-    },
-    {
-     "id": "b0d7d58c56f99e3a",
-     "title": "Infosys Limited has informed the Exchange regarding 'Infosys to Announce Second Quarter Results on October 23, 2026'.",
-     "pdf_url": "https://nsearchives.nseindia.in/corporate/Infosys_19102026154028_PR_19102026.pdf",
-     "filed_at": "2026-10-19T15:40:54+05:30"
     }
    ]
   },
@@ -5201,364 +5288,6 @@
    "pdf_url": "https://nsearchives.nseindia.in/corporate/SUNSEC_20102026173321_SE_Intimation_of_Press_Release_on_NCCN_Gudelines_Update.pdf",
    "summary": "Sun Pharma announces UNLOXCYT® receives NCCN Category 2A for locally advanced cutaneous squamous cell carcinoma, October 20, 2026.",
    "score": 15,
-   "tier": "routine",
-   "why": [],
-   "enriched": "ok",
-   "related": []
-  },
-  {
-   "id": "21df7689cf293912",
-   "symbol": "BAJFINANCE",
-   "name": "Bajaj Finance",
-   "sector": "NBFC",
-   "filed_at": "2026-10-19T21:00:04+05:30",
-   "source": "NSE",
-   "category": "investor_meetings",
-   "tags": [],
-   "title": "Bajaj Finance Limited has informed the Exchange about Link of Recording",
-   "exchange_category": "Analysts/Institutional Investor Meet/Con. Call Updates",
-   "pdf_url": "https://nsearchives.nseindia.in/corporate/BAJFINANCE_19102026205822_Outcome_of_investor_call_-_Q2FY27.pdf",
-   "summary": null,
-   "score": 28.0,
-   "tier": "routine",
-   "why": [
-    "Stock moved on it"
-   ],
-   "enriched": null,
-   "related": [],
-   "alert": {
-    "date": "2026-10-21",
-    "pct_change": -3.27,
-    "vol_ratio": 2.36,
-    "sigma": -1.59,
-    "headline": "-3.3% on the day, 2.4x its 20-day avg volume",
-    "severity": "medium"
-   }
-  },
-  {
-   "id": "247f478d96e8a2d9",
-   "symbol": "BAJFINANCE",
-   "name": "Bajaj Finance",
-   "sector": "NBFC",
-   "filed_at": "2026-10-19T17:57:20+05:30",
-   "source": "NSE",
-   "category": "management_change",
-   "tags": [],
-   "title": "Bajaj Finance Limited has informed the Exchange about change in Management",
-   "exchange_category": "Change in Management",
-   "pdf_url": "https://nsearchives.nseindia.in/corporate/BAJFINANCE_19102026175648_Change_in_SMT_Prashant_Verma_CISO_signed.pdf",
-   "summary": "Prashant Verma reappointed as Chief Information Security Officer effective 1 February 2027",
-   "score": 55,
-   "tier": "worth",
-   "why": [
-    "Stock moved on it"
-   ],
-   "enriched": "ok",
-   "related": [],
-   "management": {
-    "people": [
-     {
-      "name": "Prashant Verma",
-      "role": "Chief Information Security Officer",
-      "change": "reappointed",
-      "effective": "2027-02-01",
-      "reason": "Re-appointment of Prashant Verma as Chief Information Security Officer",
-      "profile": "Chief Information Security Officer since Feb 1, 2024, 21 years full-time security experience, former head of Cyber Risk Unit, architected security services, security auditor, consultant, CISSP, co-author of security books",
-      "top_role": false
-     }
-    ]
-   },
-   "alert": {
-    "date": "2026-10-21",
-    "pct_change": -3.27,
-    "vol_ratio": 2.36,
-    "sigma": -1.59,
-    "headline": "-3.3% on the day, 2.4x its 20-day avg volume",
-    "severity": "medium"
-   }
-  },
-  {
-   "id": "b9ce053afa2e6dae",
-   "symbol": "BAJFINANCE",
-   "name": "Bajaj Finance",
-   "sector": "NBFC",
-   "filed_at": "2026-10-19T17:57:20+05:30",
-   "source": "NSE",
-   "category": "fund_raise",
-   "tags": [],
-   "title": "Bajaj Finance Limited has informed the Exchange about issue of Securities",
-   "exchange_category": "Issue of Securities",
-   "pdf_url": "https://nsearchives.nseindia.in/corporate/BAJFINANCE_19102026175355_Issue_of_Securities_19102026.pdf",
-   "summary": "Bajaj Finance approved issue of 49,00,737 equity shares to employee trust on 19 Oct 2026",
-   "score": 35,
-   "tier": "routine",
-   "why": [
-    "Stock moved on it"
-   ],
-   "enriched": "ok",
-   "related": [],
-   "alert": {
-    "date": "2026-10-21",
-    "pct_change": -3.27,
-    "vol_ratio": 2.36,
-    "sigma": -1.59,
-    "headline": "-3.3% on the day, 2.4x its 20-day avg volume",
-    "severity": "medium"
-   }
-  },
-  {
-   "id": "9f7ac7b0c3035927",
-   "symbol": "BAJFINANCE",
-   "name": "Bajaj Finance",
-   "sector": "NBFC",
-   "filed_at": "2026-10-19T17:26:39+05:30",
-   "source": "NSE",
-   "category": "investor_meetings",
-   "tags": [],
-   "title": "Bajaj Finance Limited has informed the Exchange about Investor Presentation",
-   "exchange_category": "Investor Presentation",
-   "pdf_url": "https://nsearchives.nseindia.in/corporate/BAJFINANCE_19102026172612_SEIntimation_InvestorPPT_19102026.pdf",
-   "summary": "Bajaj Finance to present Q2 FY2027 results; webcast on 19 Oct 2026 at 6pm IST.",
-   "score": 28.0,
-   "tier": "routine",
-   "why": [
-    "Stock moved on it"
-   ],
-   "enriched": "ok",
-   "related": [],
-   "alert": {
-    "date": "2026-10-21",
-    "pct_change": -3.27,
-    "vol_ratio": 2.36,
-    "sigma": -1.59,
-    "headline": "-3.3% on the day, 2.4x its 20-day avg volume",
-    "severity": "medium"
-   }
-  },
-  {
-   "id": "48a7686e21ec6cc3",
-   "symbol": "TRENT",
-   "name": "Trent",
-   "sector": "Retail",
-   "filed_at": "2026-10-19T17:25:08+05:30",
-   "source": "NSE",
-   "category": "management_change",
-   "tags": [],
-   "title": "Trent Limited has informed the Exchange about Resignation of Director/KMP/SMP",
-   "exchange_category": "Resignation of Director/KMP/SMP",
-   "pdf_url": "https://nsearchives.nseindia.in/corporate/TRENT_ROID_100856_KMP_Doc.zip",
-   "summary": "No director resignation details provided.",
-   "score": 55.0,
-   "tier": "worth",
-   "why": [],
-   "enriched": "partial",
-   "related": [],
-   "management": {
-    "people": []
-   }
-  },
-  {
-   "id": "7e61372c899bbb4a",
-   "symbol": "BAJFINANCE",
-   "name": "Bajaj Finance",
-   "sector": "NBFC",
-   "filed_at": "2026-10-19T17:20:38+05:30",
-   "source": "NSE",
-   "category": "results",
-   "tags": [],
-   "title": "Bajaj Finance Limited has submitted to the Exchange, the financial results for the period ended September 30, 2026.",
-   "exchange_category": "Outcome of Board Meeting",
-   "pdf_url": "https://nsearchives.nseindia.in/corporate/BAJFINANCE_19102026172017_BMOutcome_19102026.pdf",
-   "summary": "Total income +23% YoY, PAT +29% YoY",
-   "score": 100,
-   "tier": "top",
-   "why": [
-    "PAT +29% YoY",
-    "Stock moved on it"
-   ],
-   "enriched": "ok",
-   "related": [],
-   "results": {
-    "statement": "consolidated",
-    "unit": "₹ crore",
-    "is_lender": true,
-    "labels": {
-     "current": "30.09.2026",
-     "previous_quarter": "30.06.2026",
-     "year_ago_quarter": "30.09.2025"
-    },
-    "rows": [
-     {
-      "metric": "Total income",
-      "key": "revenue",
-      "current": 24546.37,
-      "previous_quarter": 23165.45,
-      "year_ago_quarter": 19990.42,
-      "qoq": 6.0,
-      "yoy": 22.8
-     },
-     {
-      "metric": "PBT",
-      "key": "pbt",
-      "current": 8537.2,
-      "previous_quarter": 8149.0,
-      "year_ago_quarter": 6608.13,
-      "qoq": 4.8,
-      "yoy": 29.2
-     },
-     {
-      "metric": "PAT",
-      "key": "pat",
-      "current": 6366.57,
-      "previous_quarter": 6080.6,
-      "year_ago_quarter": 4947.76,
-      "qoq": 4.7,
-      "yoy": 28.7
-     }
-    ],
-    "margins": {
-     "pat": {
-      "current": 25.9,
-      "previous_quarter": 26.2,
-      "year_ago_quarter": 24.8
-     }
-    },
-    "checks": [],
-    "headline": "Total income +23% YoY, PAT +29% YoY",
-    "complete": true,
-    "ebitda_note": null
-   },
-   "alert": {
-    "date": "2026-10-21",
-    "pct_change": -3.27,
-    "vol_ratio": 2.36,
-    "sigma": -1.59,
-    "headline": "-3.3% on the day, 2.4x its 20-day avg volume",
-    "severity": "medium"
-   }
-  },
-  {
-   "id": "b6060a943324f1d5",
-   "symbol": "POLYCAB",
-   "name": "Polycab India",
-   "sector": "Cables & Wires",
-   "filed_at": "2026-10-19T16:39:28+05:30",
-   "source": "NSE",
-   "category": "earnings_call",
-   "tags": [],
-   "title": "Polycab India Limited has informed the Exchange about Transcript",
-   "exchange_category": "Analysts/Institutional Investor Meet/Con. Call Updates",
-   "pdf_url": "https://nsearchives.nseindia.in/corporate/POLYCAB_19102026163912_Intimation_of_Earnings_Call_Transcript.pdf",
-   "summary": null,
-   "score": 15.0,
-   "tier": "routine",
-   "why": [],
-   "enriched": null,
-   "related": []
-  },
-  {
-   "id": "3e917a190f69a4e5",
-   "symbol": "POLYCAB",
-   "name": "Polycab India",
-   "sector": "Cables & Wires",
-   "filed_at": "2026-10-19T16:23:29+05:30",
-   "source": "NSE",
-   "category": "investor_meetings",
-   "tags": [],
-   "title": "Polycab India Limited has informed the Exchange about Analyst(s)/Investor(s) meet.",
-   "exchange_category": "General Updates",
-   "pdf_url": "https://nsearchives.nseindia.in/corporate/POLYCAB_19102026162313_Intimationtostockexchange.pdf",
-   "summary": null,
-   "score": 8.0,
-   "tier": "routine",
-   "why": [],
-   "enriched": null,
-   "related": []
-  },
-  {
-   "id": "7ff9f59cf9a0c124",
-   "symbol": "TITAN",
-   "name": "Titan Company",
-   "sector": "Consumer",
-   "filed_at": "2026-10-19T16:11:44+05:30",
-   "source": "NSE",
-   "category": "unclassified",
-   "tags": [],
-   "title": "Titan Company Limited has informed the Exchange about Redemption of Commercial Paper",
-   "exchange_category": "General Updates",
-   "pdf_url": "https://nsearchives.nseindia.in/corporate/TITAN_19102026161128_SECPRedemption16102026.pdf",
-   "summary": "Titan Company fully redeemed ₹1000 crore Commercial Paper issued 21 July 2026.",
-   "score": -5.0,
-   "tier": "routine",
-   "why": [],
-   "enriched": "ok",
-   "related": []
-  },
-  {
-   "id": "5ac3a914c73ea021",
-   "symbol": "INFY",
-   "name": "Infosys",
-   "sector": "IT Services",
-   "filed_at": "2026-10-19T15:34:02+05:30",
-   "source": "NSE",
-   "category": "press_release",
-   "tags": [],
-   "title": "Infosys Limited has informed the Exchange regarding 'Infosys and Truist Strengthen Strategic Collaboration to Build a Global Capability Center in India'.",
-   "exchange_category": "Updates",
-   "pdf_url": "https://nsearchives.nseindia.in/corporate/Infosys_19102026153335_PR_19102026_2.pdf",
-   "summary": "Infosys and Truist expand AI‑first Global Capability Center in Hyderabad, onboarding 1,000+ colleagues.",
-   "score": 35,
-   "tier": "routine",
-   "why": [
-    "Stock moved on it"
-   ],
-   "enriched": "ok",
-   "related": [],
-   "alert": {
-    "date": "2026-10-23",
-    "pct_change": 0.04,
-    "vol_ratio": 2.43,
-    "sigma": 0.02,
-    "headline": "+0.0% on the day, 2.4x its 20-day avg volume",
-    "severity": "medium"
-   }
-  },
-  {
-   "id": "4d9087cc978daf88",
-   "symbol": "TRENT",
-   "name": "Trent",
-   "sector": "Retail",
-   "filed_at": "2026-10-19T11:00:59+05:30",
-   "source": "NSE",
-   "category": "unclassified",
-   "tags": [
-    "newspaper_ad",
-    "routine"
-   ],
-   "title": "Trent Limited has informed the Exchange about Notice of Special Window for re-lodgement of transfer requests of physical shares",
-   "exchange_category": "Copy of Newspaper Publication",
-   "pdf_url": "https://nsearchives.nseindia.in/corporate/TRENT_19102026105951_Reg30Noticeofrelodgementoftransferrequestsofphysicalshares.pdf",
-   "summary": null,
-   "score": 1.0,
-   "tier": "routine",
-   "why": [],
-   "enriched": null,
-   "related": []
-  },
-  {
-   "id": "caa230cd95ba2563",
-   "symbol": "LT",
-   "name": "Larsen & Toubro",
-   "sector": "Capital Goods",
-   "filed_at": "2026-10-19T10:18:20+05:30",
-   "source": "NSE",
-   "category": "unclassified",
-   "tags": [],
-   "title": "Larsen & Toubro Limited has informed the Exchange about Bagging/Receiving of orders/contracts",
-   "exchange_category": "Bagging/Receiving of orders/contracts",
-   "pdf_url": "https://nsearchives.nseindia.in/corporate/PAM_19102026101805_PressRelease19102026.pdf",
-   "summary": "L&T secures LNTP for Tashkent International Airport, begins pre‑construction activities.",
-   "score": -5.0,
    "tier": "routine",
    "why": [],
    "enriched": "ok",

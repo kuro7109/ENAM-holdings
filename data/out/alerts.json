@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-18T01:29:12+05:30",
-  "as_of": "2026-11-16",
+  "generated_at": "2026-11-19T01:01:45+05:30",
+  "as_of": "2026-11-17",
   "thresholds": {
     "global": {
       "price_move_pct": 4.0,
@@ -696,25 +696,6 @@
       "headline": "-1.0% on the day, 2.9x its 20-day avg volume",
       "name": "Persistent Systems",
       "sector": "IT Services"
-    },
-    {
-      "symbol": "POLYCAB",
-      "date": "2026-10-14",
-      "close": 8335.0,
-      "pct_change": 0.54,
-      "vol_ratio": 2.69,
-      "sigma": 0.32,
-      "triggers": [
-        {
-          "type": "volume_spike",
-          "value": 2.69,
-          "threshold": 2.0
-        }
-      ],
-      "severity": "medium",
-      "headline": "+0.5% on the day, 2.7x its 20-day avg volume",
-      "name": "Polycab India",
-      "sector": "Cables & Wires"
     }
   ]
 }
