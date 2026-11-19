@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-11-19T01:02:12+05:30",
+ "generated_at": "2026-11-20T01:06:58+05:30",
  "window": {
-  "from": "2026-10-20",
-  "to": "2026-11-19",
+  "from": "2026-10-21",
+  "to": "2026-11-20",
   "days": 30
  },
  "weights": {
@@ -30,10 +30,55 @@
  },
  "counts": {
   "routine": 140,
-  "worth": 17,
+  "worth": 18,
   "top": 32
  },
  "items": [
+  {
+   "id": "6fed840529a1e979",
+   "symbol": "RELIANCE",
+   "name": "Reliance Industries",
+   "sector": "Energy & Conglomerate",
+   "filed_at": "2026-11-19T18:35:25+05:30",
+   "source": "NSE",
+   "category": "investor_meetings",
+   "tags": [],
+   "title": "This is further to the disclosure dated November 13, 2026 made by the Company. We wish to inform you that the Company executives participated in the Institutional Investors' Meeting - Morgan Stanley 25th Annual Asia-Pacific Summit and no unpublished price sensitive information was shared/discussed in the said one-on-one meeting.",
+   "exchange_category": "Updates",
+   "pdf_url": "https://nsearchives.nseindia.in/corporate/kavinavora_19112026183441_SE_19112026.pdf",
+   "summary": "Provides an update on its Institutional Investors’ Meeting.",
+   "score": 8.0,
+   "tier": "routine",
+   "why": [],
+   "enriched": null,
+   "related": []
+  },
+  {
+   "id": "2ab3f6ca80386046",
+   "symbol": "IRFC",
+   "name": "IRFC",
+   "sector": "PSU Finance",
+   "filed_at": "2026-11-19T17:40:16+05:30",
+   "source": "NSE",
+   "category": "management_change",
+   "tags": [],
+   "title": "Indian Railway Finance Corporation Limited has informed the Exchange regarding Appointment of Ms Pallavi Joshi as part-time Chief Vigilance Officer, IRFC (additional charge) of the company w.e.f. November 19, 2026.",
+   "exchange_category": "Appointment",
+   "pdf_url": "https://nsearchives.nseindia.in/corporate/IRFC_19112026173949_SEintimation19112026.pdf",
+   "summary": "Intimates that Ms.",
+   "score": 55.0,
+   "tier": "worth",
+   "why": [],
+   "enriched": null,
+   "related": [
+    {
+     "id": "96edcb2700a450bb",
+     "title": "Indian Railway Finance Corporation Limited has informed the Exchange about change in Senior Management",
+     "pdf_url": "https://nsearchives.nseindia.in/corporate/IRFC_19112026173304_SEintimation19112026.pdf",
+     "filed_at": "2026-11-19T17:33:17+05:30"
+    }
+   ]
+  },
   {
    "id": "86e61777e73804cf",
    "symbol": "INFY",
@@ -322,9 +367,11 @@
    "exchange_category": "General Updates",
    "pdf_url": "https://nsearchives.nseindia.in/corporate/POLYCAB_16112026175513_Intimationtostockexchange.pdf",
    "summary": "Intimated the schedule of investor meetings pursuant to Regulation 30 of the SEBI Listing Regulations.",
-   "score": 8.0,
+   "score": 28.0,
    "tier": "routine",
-   "why": [],
+   "why": [
+    "Stock moved on it"
+   ],
    "enriched": null,
    "related": [
     {
@@ -333,7 +380,15 @@
      "pdf_url": "https://nsearchives.nseindia.in/corporate/POLYCAB_16112026112810_Intimationtostockexchange.pdf",
      "filed_at": "2026-11-16T11:28:25+05:30"
     }
-   ]
+   ],
+   "alert": {
+    "date": "2026-11-18",
+    "pct_change": -5.12,
+    "vol_ratio": 2.68,
+    "sigma": -2.81,
+    "headline": "-5.1% on the day, 2.7x its 20-day avg volume, a 2.8σ move for this stock",
+    "severity": "high"
+   }
   },
   {
    "id": "ca314b5190e7726d",
@@ -565,7 +620,7 @@
    "title": "Please note that the Company executives will be participating in the Institutional Investors' Meeting - JM Financial India Conference, scheduled to be held on November 17, 2026 at Mumbai. It is expected that the meeting with the investors will be on one-on-one basis.",
    "exchange_category": "Analysts/Institutional Investor Meet/Con. Call Updates",
    "pdf_url": "https://nsearchives.nseindia.in/corporate/kavinavora_12112026202324_SE_12112026.pdf",
-   "summary": "Disclosed that its executives will participate in the JM Financial India Conference in Mumbai on November 17, 2026.",
+   "summary": null,
    "score": 8.0,
    "tier": "routine",
    "why": [],
@@ -603,7 +658,7 @@
    "title": "Bharti Airtel Limited has informed the Exchange about Transcript",
    "exchange_category": "Analysts/Institutional Investor Meet/Con. Call Updates",
    "pdf_url": "https://nsearchives.nseindia.in/corporate/BHARTIARTL_12112026172851_Airtel_Stx_Intimation.pdf",
-   "summary": "Filed the transcript of its earnings call for the second quarter ended September 30, 2026, held on November 6, 2026.",
+   "summary": null,
    "score": 15.0,
    "tier": "routine",
    "why": [],
@@ -624,7 +679,7 @@
    "title": "Titan Company Limited has informed the Exchange about Schedule of Analyst / Institutional Investor Meeting",
    "exchange_category": "Analysts/Institutional Investor Meet/Con. Call Updates",
    "pdf_url": "https://nsearchives.nseindia.in/corporate/TITAN_12112026152942_SEintimation_12_Nov_26.pdf",
-   "summary": "Disclosed the schedule for analyst and institutional investor meetings in November 2026.",
+   "summary": null,
    "score": 1.6,
    "tier": "routine",
    "why": [],
@@ -643,7 +698,7 @@
    "title": "HDFC Bank Limited has informed the Exchange about Schedule of meet",
    "exchange_category": "Analysts/Institutional Investor Meet/Con. Call Updates",
    "pdf_url": "https://nsearchives.nseindia.in/corporate/HDFCBANK3_12112026142725_Analystmeetintimation12112026.pdf",
-   "summary": "Intimated the schedule for an analyst and institutional investor meeting under Regulation 30 of the SEBI Listing Obligations and Disclosure Requirements Regulations 2015.",
+   "summary": null,
    "score": 8.0,
    "tier": "routine",
    "why": [],
@@ -755,7 +810,7 @@
    "title": "Maruti Suzuki India Limited has informed the Exchange about Schedule of meet",
    "exchange_category": "Analysts/Institutional Investor Meet/Con. Call Updates",
    "pdf_url": "https://nsearchives.nseindia.in/corporate/MARUTIASHISH_12112026115520_Investor_Meeting_17_18_19Nov2026.pdf",
-   "summary": "Scheduled investor meetings for 17th, 18th, and 19th November 2026.",
+   "summary": null,
    "score": 8.0,
    "tier": "routine",
    "why": [],
@@ -5269,25 +5324,6 @@
    "pdf_url": "https://nsearchives.nseindia.in/corporate/PAM_21102026094637_PressRelease21102026.pdf",
    "summary": "L&T secured two large government orders in Delhi and Andhra Pradesh, totaling 70.3 lakh sq. ft.",
    "score": -5.0,
-   "tier": "routine",
-   "why": [],
-   "enriched": "ok",
-   "related": []
-  },
-  {
-   "id": "b25db2bf388928c3",
-   "symbol": "SUNPHARMA",
-   "name": "Sun Pharma",
-   "sector": "Pharma",
-   "filed_at": "2026-10-20T17:35:31+05:30",
-   "source": "NSE",
-   "category": "press_release",
-   "tags": [],
-   "title": "Sun Pharmaceutical Industries Limited has informed the Exchange regarding a press release dated October 20, 2026.",
-   "exchange_category": "Press Release",
-   "pdf_url": "https://nsearchives.nseindia.in/corporate/SUNSEC_20102026173321_SE_Intimation_of_Press_Release_on_NCCN_Gudelines_Update.pdf",
-   "summary": "Sun Pharma announces UNLOXCYT® receives NCCN Category 2A for locally advanced cutaneous squamous cell carcinoma, October 20, 2026.",
-   "score": 15,
    "tier": "routine",
    "why": [],
    "enriched": "ok",

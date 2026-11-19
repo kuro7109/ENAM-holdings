@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-19T01:01:45+05:30",
-  "as_of": "2026-11-17",
+  "generated_at": "2026-11-20T01:06:36+05:30",
+  "as_of": "2026-11-18",
   "thresholds": {
     "global": {
       "price_move_pct": 4.0,
@@ -20,6 +20,49 @@
     }
   },
   "alerts": [
+    {
+      "symbol": "POLYCAB",
+      "date": "2026-11-18",
+      "close": 7307.5,
+      "pct_change": -5.12,
+      "vol_ratio": 2.68,
+      "sigma": -2.81,
+      "triggers": [
+        {
+          "type": "price_move",
+          "value": -5.12,
+          "threshold": 4.0
+        },
+        {
+          "type": "volume_spike",
+          "value": 2.68,
+          "threshold": 2.0
+        }
+      ],
+      "severity": "high",
+      "headline": "-5.1% on the day, 2.7x its 20-day avg volume, a 2.8σ move for this stock",
+      "name": "Polycab India",
+      "sector": "Cables & Wires"
+    },
+    {
+      "symbol": "TITAN",
+      "date": "2026-11-18",
+      "close": 4648.1,
+      "pct_change": -5.3,
+      "vol_ratio": 1.38,
+      "sigma": -3.73,
+      "triggers": [
+        {
+          "type": "price_move",
+          "value": -5.3,
+          "threshold": 4.0
+        }
+      ],
+      "severity": "medium",
+      "headline": "-5.3% on the day, a 3.7σ move for this stock",
+      "name": "Titan Company",
+      "sector": "Consumer"
+    },
     {
       "symbol": "ITC",
       "date": "2026-11-16",
@@ -677,25 +720,6 @@
       "headline": "+2.8% on the day, 3.7x its 20-day avg volume",
       "name": "Bharti Airtel",
       "sector": "Telecom"
-    },
-    {
-      "symbol": "PERSISTENT",
-      "date": "2026-10-15",
-      "close": 5840.0,
-      "pct_change": -0.98,
-      "vol_ratio": 2.93,
-      "sigma": -0.51,
-      "triggers": [
-        {
-          "type": "volume_spike",
-          "value": 2.93,
-          "threshold": 2.0
-        }
-      ],
-      "severity": "medium",
-      "headline": "-1.0% on the day, 2.9x its 20-day avg volume",
-      "name": "Persistent Systems",
-      "sector": "IT Services"
     }
   ]
 }
