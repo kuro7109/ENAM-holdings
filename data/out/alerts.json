@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-20T01:06:36+05:30",
-  "as_of": "2026-11-18",
+  "generated_at": "2026-11-21T00:44:01+05:30",
+  "as_of": "2026-11-19",
   "thresholds": {
     "global": {
       "price_move_pct": 4.0,
@@ -20,6 +20,49 @@
     }
   },
   "alerts": [
+    {
+      "symbol": "MARUTI",
+      "date": "2026-11-19",
+      "close": 13589.0,
+      "pct_change": 7.58,
+      "vol_ratio": 2.39,
+      "sigma": 4.66,
+      "triggers": [
+        {
+          "type": "price_move",
+          "value": 7.58,
+          "threshold": 4.0
+        },
+        {
+          "type": "volume_spike",
+          "value": 2.39,
+          "threshold": 2.0
+        }
+      ],
+      "severity": "high",
+      "headline": "+7.6% on the day, 2.4x its 20-day avg volume, a 4.7σ move for this stock",
+      "name": "Maruti Suzuki",
+      "sector": "Auto"
+    },
+    {
+      "symbol": "POLYCAB",
+      "date": "2026-11-19",
+      "close": 7550.0,
+      "pct_change": 3.32,
+      "vol_ratio": 2.93,
+      "sigma": 1.72,
+      "triggers": [
+        {
+          "type": "volume_spike",
+          "value": 2.93,
+          "threshold": 2.0
+        }
+      ],
+      "severity": "medium",
+      "headline": "+3.3% on the day, 2.9x its 20-day avg volume",
+      "name": "Polycab India",
+      "sector": "Cables & Wires"
+    },
     {
       "symbol": "POLYCAB",
       "date": "2026-11-18",
@@ -658,68 +701,6 @@
       "headline": "-0.9% on the day, 2.1x its 20-day avg volume",
       "name": "Persistent Systems",
       "sector": "IT Services"
-    },
-    {
-      "symbol": "INFY",
-      "date": "2026-10-16",
-      "close": 1161.2,
-      "pct_change": 4.61,
-      "vol_ratio": 2.12,
-      "sigma": 2.33,
-      "triggers": [
-        {
-          "type": "price_move",
-          "value": 4.61,
-          "threshold": 4.0
-        },
-        {
-          "type": "volume_spike",
-          "value": 2.12,
-          "threshold": 2.0
-        }
-      ],
-      "severity": "high",
-      "headline": "+4.6% on the day, 2.1x its 20-day avg volume, a 2.3σ move for this stock",
-      "name": "Infosys",
-      "sector": "IT Services"
-    },
-    {
-      "symbol": "PERSISTENT",
-      "date": "2026-10-16",
-      "close": 5741.0,
-      "pct_change": -1.7,
-      "vol_ratio": 4.38,
-      "sigma": -0.88,
-      "triggers": [
-        {
-          "type": "volume_spike",
-          "value": 4.38,
-          "threshold": 2.0
-        }
-      ],
-      "severity": "high",
-      "headline": "-1.7% on the day, 4.4x its 20-day avg volume",
-      "name": "Persistent Systems",
-      "sector": "IT Services"
-    },
-    {
-      "symbol": "BHARTIARTL",
-      "date": "2026-10-16",
-      "close": 1905.0,
-      "pct_change": 2.75,
-      "vol_ratio": 3.71,
-      "sigma": 1.85,
-      "triggers": [
-        {
-          "type": "volume_spike",
-          "value": 3.71,
-          "threshold": 2.0
-        }
-      ],
-      "severity": "medium",
-      "headline": "+2.8% on the day, 3.7x its 20-day avg volume",
-      "name": "Bharti Airtel",
-      "sector": "Telecom"
     }
   ]
 }

@@ -1,32 +1,156 @@
 {
-  "generated_at": "2026-11-20T01:06:57+05:30",
+  "generated_at": "2026-11-21T00:44:29+05:30",
   "window": {
-    "from": "2026-10-21",
-    "to": "2026-11-20",
+    "from": "2026-10-22",
+    "to": "2026-11-21",
     "days": 30
   },
   "summary": {
-    "total": 233,
-    "material": 74,
-    "needs_llm": 64,
+    "total": 228,
+    "material": 72,
+    "needs_llm": 58,
     "by_category": {
-      "unclassified": 86,
-      "investor_meetings": 44,
+      "unclassified": 79,
+      "investor_meetings": 48,
       "results": 29,
       "earnings_call": 17,
       "management_change": 16,
       "press_release": 10,
-      "credit_rating": 8,
-      "fund_raise": 7,
+      "fund_raise": 6,
+      "credit_rating": 6,
       "postal_ballot": 5,
       "M&A": 5,
       "agm_egm": 2,
       "litigation": 2,
+      "insider_trading": 1,
       "bonus_split": 1,
       "dividend": 1
     }
   },
   "items": [
+    {
+      "id": "ad122dbf35f317ad",
+      "symbol": "HDFCBANK",
+      "company": "HDFC Bank Limited",
+      "source": "NSE",
+      "filed_at": "2026-11-20T20:43:09+05:30",
+      "exchange_category": "Shareholders meeting",
+      "subject": "HDFC Bank Limited has submitted the Exchange a copy Srutinizers report of Postal Ballot. Further, the company has informed the Exchange regarding voting results.",
+      "pdf_url": "https://nsearchives.nseindia.in/corporate/HDFCBANK_20112026204256_SE_Intimation_-_PB_Results_-20112026.pdf",
+      "category": "postal_ballot",
+      "secondary": [
+        "agm_egm"
+      ],
+      "tags": [],
+      "needs_llm": false,
+      "fetched_at": "2026-11-21T00:44:03+05:30",
+      "exchange_summary": "HDFC Bank Limited reports that the Special Resolution for the re-appointment of Mrs. Lily Vadera, DIN 09400410, as an Independent Director has been passed with the requisite majority. The resolution was approved via postal ballot on Friday, November 20, 2026. Scrutinizer Mr. B. Narasimhan of M/s. BN & Associates confirmed the results. Out of 48,41,772 members holding shares as of the cut-off date of Friday, October 16, 2026, 12,114 members voted. The votes in favor accounted for 99.092 percent of valid votes cast, while votes against accounted for 0.908 percent. The e-voting period ran from Thursday, October 22, 2026, to Friday, November 20, 2026. The results are deemed passed on the last date of the e-voting period.",
+      "material": false
+    },
+    {
+      "id": "8db1b9c9f2a262b5",
+      "symbol": "TRENT",
+      "company": "Trent Limited",
+      "source": "NSE",
+      "filed_at": "2026-11-20T18:07:41+05:30",
+      "exchange_category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "subject": "Trent Limited has informed the Exchange about Intimation of schedule of Analyst / Institutional Investors Meetings",
+      "pdf_url": "https://nsearchives.nseindia.in/corporate/TRENT_20112026175823_InvestorAnalystMeeting20112026.pdf",
+      "category": "investor_meetings",
+      "secondary": [],
+      "tags": [
+        "intimation"
+      ],
+      "needs_llm": false,
+      "fetched_at": "2026-11-21T00:44:03+05:30",
+      "exchange_summary": "Trent Limited has intimated the schedule of meetings with analysts and institutional investors pursuant to Regulation 30 of the SEBI Listing Obligations and Disclosure Requirements Regulations, 2015. Canarobeco is scheduled for a one-to-one meeting on 26th November 2026. Dalal Broacha is scheduled for 27th November 2026. Capital Group International is scheduled for 3rd December 2026. Millenium is scheduled for 9th December 2026. HSBC India Consumer tour is also scheduled for 9th December 2026. The schedule is subject to change due to exigencies on either side. The company confirms that no unpublished price sensitive information will be shared during these meetings. This communication is for information and records.",
+      "material": false
+    },
+    {
+      "id": "e223ba33a0a9d03e",
+      "symbol": "TITAN",
+      "company": "Titan Company Limited",
+      "source": "NSE",
+      "filed_at": "2026-11-20T17:36:07+05:30",
+      "exchange_category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "subject": "Titan Company Limited has informed the Exchange about Schedule of meet",
+      "pdf_url": "https://nsearchives.nseindia.in/corporate/Titan002_20112026173557_SEintimation_20_November.pdf",
+      "category": "investor_meetings",
+      "secondary": [],
+      "tags": [],
+      "needs_llm": false,
+      "fetched_at": "2026-11-21T00:44:03+05:30",
+      "exchange_summary": "Titan Company Limited has disclosed the schedule for analyst and institutional investor meetings planned for December 2026. The meetings include a one-on-one session with Aikya Investment Management on 08-12-2026 from 11:45 a.m. to 12:45 p.m. at a physical venue. This schedule is in addition to previously disclosed meetings. The company states that no price-sensitive information or forward-looking statements will be disclosed or discussed during these meetings. The schedule may undergo changes due to exigencies on the part of the investor or the company.",
+      "material": false
+    },
+    {
+      "id": "80ba2bd0886e3e55",
+      "symbol": "TITAN",
+      "company": "Titan Company Limited",
+      "source": "NSE",
+      "filed_at": "2026-11-20T17:32:33+05:30",
+      "exchange_category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "subject": "Titan Company Limited has informed the Exchange about Schedule of meet",
+      "pdf_url": "https://nsearchives.nseindia.in/corporate/Titan002_20112026173215_SEintimation_20_Nov.pdf",
+      "category": "investor_meetings",
+      "secondary": [],
+      "tags": [],
+      "needs_llm": false,
+      "fetched_at": "2026-11-21T00:44:03+05:30",
+      "exchange_summary": "Titan Company Limited has disclosed a schedule for an analyst and institutional investor meeting on 23-11-2026. The meeting is with HDFC Life Insurance and will be a one-on-one physical session. It is scheduled from 10:00 a.m. to 12:00 p.m. This meeting is in addition to those disclosed earlier. The company states that no price-sensitive information or forward-looking statements will be discussed. The schedule may change due to exigencies.",
+      "material": false
+    },
+    {
+      "id": "2457ded497689111",
+      "symbol": "MARUTI",
+      "company": "Maruti Suzuki India Limited",
+      "source": "NSE",
+      "filed_at": "2026-11-20T14:08:13+05:30",
+      "exchange_category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "subject": "Maruti Suzuki India Limited has informed the Exchange about Schedule of meet",
+      "pdf_url": "https://nsearchives.nseindia.in/corporate/MARUTIASHISH_20112026140538_STxIntimation_InvstCall_26Nov2026.pdf",
+      "category": "investor_meetings",
+      "secondary": [],
+      "tags": [],
+      "needs_llm": false,
+      "fetched_at": "2026-11-21T00:44:03+05:30",
+      "exchange_summary": "Maruti Suzuki India Limited has scheduled an investor meeting for 26th November 2026. The notice was issued on 20th November 2026 by Sanjeev Grover, Executive Officer and Company Secretary. The date is subject to change due to exigencies on the part of the investor group or the company. This communication is pursuant to Regulation 30(6) of the Securities and Exchange Board of India Listing Obligations and Disclosure Requirements Regulations, 2015.",
+      "material": false
+    },
+    {
+      "id": "075a0d8097c9648d",
+      "symbol": "DIXON",
+      "company": "Dixon Technologies (India) Limited",
+      "source": "NSE",
+      "filed_at": "2026-11-20T12:13:59+05:30",
+      "exchange_category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "subject": "Dixon Technologies (India) Limited has informed the Exchange about Outcome of Analyst /Institutional Investor Meet",
+      "pdf_url": "https://nsearchives.nseindia.in/corporate/DIXON_20112026121311_InvestorMeetOutcome20112026.pdf",
+      "category": "investor_meetings",
+      "secondary": [],
+      "tags": [],
+      "needs_llm": false,
+      "fetched_at": "2026-11-21T00:44:03+05:30",
+      "exchange_summary": "Dixon Technologies (India) Limited intimates that its officials held meetings with Invesco Asset Management on 19th November 2026 at 2:30 P.M. and with Investec Capital on 20th November 2026 at 9:45 A.M. Both meetings were conducted in person and were of the one-on-one type. The company confirms that no unpublished price sensitive information was shared during these sessions. Additionally, no presentation was made at the aforesaid meetings. This intimation is filed pursuant to Regulations 30 and 46 of the SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015.",
+      "material": false
+    },
+    {
+      "id": "283731ab2770333f",
+      "symbol": "ASIANPAINT",
+      "company": "Asian Paints Limited",
+      "source": "NSE",
+      "filed_at": "2026-11-20T11:20:15+05:30",
+      "exchange_category": "Trading Plan under PIT",
+      "subject": "Asian Paints Limited has informed the Exchange regarding Trading Plan pursuant to SEBI (Prohibition of Insider Trading) Regulations, 2015",
+      "pdf_url": "https://nsearchives.nseindia.in/corporate/ASIANPAINT_20112026111957_Stock_Exchange_Intimation.pdf",
+      "category": "insider_trading",
+      "secondary": [],
+      "tags": [],
+      "needs_llm": false,
+      "fetched_at": "2026-11-21T00:44:03+05:30",
+      "exchange_summary": "Asian Paints Limited intimates that a trading plan dated 18th November 2026 from Mr. Pinkal Kumar Patel was approved on 20th November 2026. The plan authorizes the sale of 765 securities between 23rd March 2027 and 30th March 2027. The price limit is not lower than Rs. 2,300 per share. This price is derived from the closing price on 17th November 2028, allowing up to 20% lower. The company filed this notice with BSE and NSE under SEBI PIT Regulations.",
+      "material": true
+    },
     {
       "id": "6fed840529a1e979",
       "symbol": "RELIANCE",
@@ -40,7 +164,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": "Reliance Industries Limited provides an update on its Institutional Investors’ Meeting. The company executives participated in the Morgan Stanley 25th Annual Asia-Pacific Summit held in Singapore on November 18 and 19, 2026. This event was organized by a third party. The company confirms that no unpublished price sensitive information was shared or discussed during the meeting. This disclosure follows the previous announcement made on November 13, 2026. The information is submitted for records.",
       "material": false
     },
@@ -57,7 +181,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": "Indian Railway Finance Corporation Limited intimates that Ms. Pallavi Joshi assumed charge as part-time Chief Vigilance Officer on additional basis with effect from 19th November 2026 afternoon for an initial period of three years. This appointment follows Ministry of Railways order No. 2023/E(0)II/39/20 dated 18.11.2026. Ms. Joshi is a 2004-batch Indian Railway Accounts Service officer currently serving as Executive Director Finance in the Ministry of Railways. Consequently, Shri Pranav Kumar Mallick ceased to hold the additional charge of part-time Chief Vigilance Officer with effect from 19th November 2026 afternoon. The disclosures are submitted pursuant to Regulation 30 and 51 of SEBI LODR Regulations 2015.",
       "material": true
     },
@@ -74,7 +198,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": "Indian Railway Finance Corporation Limited intimates that Ms. Pallavi Joshi assumed charge as part-time Chief Vigilance Officer on additional basis with effect from 19th November 2026 afternoon for an initial period of three years. This appointment follows Ministry of Railways order No. 2023/E(0)II/39/20 dated 18.11.2026. Ms. Joshi is a 2004-batch Indian Railway Accounts Service officer currently serving as Executive Director Finance in the Ministry of Railways. Consequently, Shri Pranav Kumar Mallick ceased to hold the additional charge of the same post with effect from 19th November 2026 afternoon. The disclosures are submitted pursuant to Regulation 30 and 51 of SEBI LODR Regulations 2015.",
       "material": true
     },
@@ -91,7 +215,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": true,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": "Infosys Limited has received intimation from its Registrar and Share Transfer Agent, KFin Technologies Limited, regarding a change in the corporate office address effective December 1, 2026. The new address is 6, 23, 24, 25th Floor, South Tower, Rajapushpa West Avenue, Survey No. 115, Kokapet, Serilingampally Mandal, District Ranga Reddy, Hyderabad, Telangana 500075. The contact telephone number is 1800 309 4001 and the email address is einward.ris@kfintech.com. The company requests the exchange to update its records accordingly. This information will also be hosted on the company website at www.infosys.com. The notice was issued by A.G.S. Manikantha, Company Secretary, with membership number A21918, on November 18, 2026.",
       "material": false
     },
@@ -108,7 +232,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": true,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": "Infosys Limited’s wholly owned subsidiary, Infosys Singapore Pte. Ltd., will enter into a joint venture agreement with NTT DOCOMO, INC. Infosys is investing JPY 1.59bn to acquire a 10.1% stake in NTT Docomo Playspace, Inc. This joint venture is anchored by NTT Docomo and focuses on creating a virtual economic ecosystem in the metaverse in Japan. Infosys will serve as a minority investor and strategic technology and AI partner. As a minority shareholder, Infosys holds the right to nominate one director to the Board of the joint venture company. The transaction does not fall within related party transactions. The parties have no relationship with the promoter or promoter group. This intimation is filed under Regulation 30 of SEBI Listing Obligations and Disclosure Requirements Regulations, 2015.",
       "material": false
     },
@@ -125,7 +249,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": "Titan Company Limited has disclosed the schedule for analyst and institutional investor meetings in November 2026. A group meeting is planned for 24th November 2026 from 9:00 a.m. to 10:00 a.m. at a physical venue. Participating firms include Alecta, Allianz Global Investors, Lazard Asset Management, Northrock Capital Management, Invesco Asset Management, and Tata Asset Management. The company states that no price sensitive information or forward looking statements will be disclosed during these meetings. The schedule is subject to change due to exigencies. This disclosure is made pursuant to Regulation 30 of the SEBI Listing Obligations and Disclosure Requirements Regulations 2015.",
       "material": false
     },
@@ -145,7 +269,7 @@
         "routine"
       ],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": "Bharti Airtel Limited published a newspaper advertisement on November 18, 2026, regarding the Second Reminder Notice for payment of the First and Final Call on partly paid-up equity shares. The payment window closes on Thursday, November 19, 2026. The call amount is Rs. 401.25 per share, comprising Rs. 3.75 towards face value and Rs. 397.50 towards premium. This applies to 649,835 partly paid-up equity shares with outstanding calls. Interest at 10% per annum is applicable on delayed payments. Eligible shareholders are urged to pay by the end of banking hours on November 19, 2026. Payments can be made via the R-WAP facility or by depositing cheques or demand drafts at designated Kotak Mahindra Bank collection centers. Failure to pay may result in continued interest levies, forfeiture of shares, or application of future dividends to outstanding sums.",
       "material": false
     },
@@ -162,7 +286,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": true,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": "Indian Railway Finance Corporation Limited announces that its Board of Directors approved the extension of Shri Ajoy Choudhury’s tenure as Chief Risk Officer for one year, effective from 02.12.2026. The Board also noted the Ministry of Railways order dated 18.11.2026 appointing Ms. Pallavi Joshi as part-time Chief Vigilance Officer on additional charge for an initial period of three years. The meeting commenced at 11.00 AM and concluded at 12.00 PM.",
       "material": false
     },
@@ -179,7 +303,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": true,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": "Indian Railway Finance Corporation Limited announces that its Board of Directors approved the extension of Shri Ajoy Choudhury’s tenure as Chief Risk Officer for one year, effective from 02.12.2026. The Board also noted the Ministry of Railways order dated 18.11.2026 appointing Ms. Pallavi Joshi as part-time Chief Vigilance Officer on additional charge for an initial period of three years. The meeting commenced at 11.00 AM and concluded at 12.00 PM.",
       "material": false
     },
@@ -196,7 +320,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": "Reliance Industries Limited filed an update on November 17, 2026, regarding an institutional investors meeting. The company executives participated in the JM Financial India Conference held in Mumbai on November 17, 2026. This event was organized by a third party. The company confirmed that no unpublished price sensitive information was shared or discussed during the meeting. This disclosure follows a previous announcement made on November 12, 2026. The filing was signed by Savithri Parekh, Company Secretary and Compliance Officer. Copies were sent to the Luxembourg Stock Exchange and Singapore Exchange Limited.",
       "material": false
     },
@@ -215,7 +339,7 @@
         "routine"
       ],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": "HDFC Bank granted 1,86,031 equity stock options under ESOS Plan H-2024 at Rs. 816.50 per option. These options vest in four equal stages over forty-eight months and must be exercised within four years of vesting. The bank also granted 41,377 restricted stock units under RSU 021 at Re. 1 per unit. These units vest in four equal stages over forty-eight months and must be exercised within one year of vesting. The grants were approved by the Governance, Nomination and Remuneration Committee on November 17, 2026.",
       "material": false
     },
@@ -232,7 +356,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": true,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": "Infosys Limited announced on November 17, 2026, that it has been positioned as a Leader in the 2026 Gartner Magic Quadrant for Public Cloud Optimization and Transformation Services. This marks the fourth consecutive year the company has received this recognition. The announcement highlights Infosys' AI-first approach and its use of Infosys Cobalt and Infosys Topaz to help enterprises modernize hybrid multi-cloud environments. The press release was filed with the BSE, NSE, and NYSE. The information is also available on the company website at www.infosys.com. The filing was signed by Company Secretary A.G.S. Manikantha.",
       "material": false
     },
@@ -251,7 +375,7 @@
         "intimation"
       ],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": "Trent Limited has intimated the schedule of meetings with analysts and institutional investors pursuant to Regulation 30 of the SEBI Listing Obligations and Disclosure Requirements Regulations, 2015. Northcape Capital, Australia, represented by Jefferies, will hold a one-to-one meeting on 25th November 2026. JP Morgan Asset Management, Hong Kong, is scheduled for 26th November 2026. Bernstein will meet on 30th November 2026. Wellington Management is set for 4th December 2026. All meetings are one-to-one. The schedule is subject to change due to exigencies on either side. No unpublished price sensitive information will be shared during these meetings. The company secretary, Krupa Anandpara, filed this notice for information and records.",
       "material": false
     },
@@ -270,7 +394,7 @@
         "routine"
       ],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": "HDFC Bank allotted 14,12,278 equity shares to employees on November 17, 2026, pursuant to the exercise of options and restricted stock units under its Employees Stock Options Schemes and Employee Stock Incentive Scheme. Consequently, the bank's paid-up share capital increased from 15,43,24,11,468 equity shares of Re. 1 each to 15,43,38,23,746 equity shares of Re. 1 each. The company secretary, Ajay Agarwal, submitted this information to the BSE and NSE for their records.",
       "material": false
     },
@@ -287,7 +411,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": "Bajaj Finance Limited has allotted 114,146,341 equity shares to qualified institutional buyers at an issue price of Rs. 1,025 per share. The total amount raised is approximately Rs. 117,000 million. The allotment was approved by the QIP Allotment Committee on November 17, 2026. The floor price was Rs. 992.25 per share. The company's paid-up equity share capital has increased from Rs. 6,225.95 million to Rs. 6,340.10 million. The total number of equity shares has risen from 6,225,954,304 to 6,340,100,645. ICICI Prudential Mutual Fund was allotted 11,707,317 shares, representing 10.26 percent of the issue. Government Pension Fund Global was allotted 5,849,421 shares, representing 5.12 percent of the issue.",
       "material": true
     },
@@ -304,7 +428,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": "Bajaj Finance Limited closed its Qualified Institutions Placement on November 16, 2026. The QIP Committee approved the allocation of 114,146,341 equity shares at an issue price of Rs. 1,025 per share. This price is higher than the floor price of Rs. 992.25. The company received application forms and funds from eligible qualified institutional buyers. The placement document dated November 16, 2026, was adopted. Confirmation of allocation notes will be sent to the eligible buyers. The placement document is available on the company website. It will be filed with BSE Limited and National Stock Exchange of India Limited on November 16, 2026.",
       "material": true
     },
@@ -321,7 +445,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": "Dixon Technologies entered into an Asset Purchase Agreement with Vimal Plast on 16th November 2026. The company will acquire movable assets including moulds, R&D lab equipment, and machinery from Vimal. The total consideration is up to INR 49,75,00,000 excluding taxes. This acquisition is subject to satisfactory completion of conditions precedent. The transaction aims to enhance semi-automatic washing machine ODM capabilities. Dixon Technologies holds no shareholding in Vimal Plast. The parties are not related. This filing is under Regulation 30 of SEBI LODR Regulations.",
       "material": true
     },
@@ -338,7 +462,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": "Reliance Industries Limited provides an update on its Institutional Investors Meeting. The company executives participated in the CLSA India Forum held in Mumbai on November 16, 2026. This event was organized by a third party. The company confirms that no unpublished price sensitive information was shared or discussed during the meeting. This disclosure follows the previous announcement made on November 6, 2026. The information is submitted for records to the BSE Limited, National Stock Exchange of India Limited, Luxembourg Stock Exchange, and Singapore Exchange Limited.",
       "material": false
     },
@@ -355,7 +479,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": true,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": "Bharti Airtel Limited received a notice from the Department of Telecommunications, Kerala LSA, on November 16, 2026, imposing a penalty of Rs. 13,72,000 for alleged violation of subscriber verification norms. The authority cited non-compliance with licensing terms regarding customer verification during a Customer Application Form Audit for August 2026. The company has opted not to contest the notice and will pay the penalty. The maximum financial impact is limited to the levied penalty amount.",
       "material": false
     },
@@ -372,7 +496,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": "Polycab India Limited has intimated the schedule of investor meetings pursuant to Regulation 30 of the SEBI Listing Regulations. The company will hold a one-on-one meeting with ICICI Securities in person in Mumbai on November 20, 2026. A UK non-deal roadshow organized by Citi Group or one-on-one meetings will take place in the UK on November 26 and 27, 2026. A virtual one-on-one meeting with Millenium is scheduled for December 2, 2026, in Mumbai. These meetings are subject to change. Corporate and earnings presentations hosted on the company website and other publicly available information will be shared during these sessions.",
       "material": false
     },
@@ -389,7 +513,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": "Dixon Technologies held a virtual one-on-one meeting with Duro Capital on 16th November, 2026 at 3:00 P.M. The company confirmed that no unpublished price sensitive information was shared during the session. No presentation was made at the meeting. This intimation is filed pursuant to Regulations 30 and 46 of the SEBI LODR Regulations, 2015.",
       "material": false
     },
@@ -406,7 +530,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": "Trent Limited intimates that CARE Ratings Limited re-affirmed the credit rating on its Commercial Papers on 16th November 2026 at 3.17 p.m. The rating for Commercial Papers is CARE A1+. The limit for these Commercial Papers has been enhanced to ₹ 750 Crore from ₹ 500 Crore. This information is available on the company website at https://trentlimited.com/.",
       "material": true
     },
@@ -423,7 +547,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": "Polycab India Limited has intimated the exchange regarding investor meetings scheduled for November 20, 2026. The company will hold a one-on-one virtual meeting with GIC in Mumbai. Additionally, an in-person meeting is planned with BNP Paribas. These engagements are subject to change. The presentations will be limited to corporate and earnings information already available on the company website and other public sources. No material non-public information will be shared. The notice was issued by Manita Carmen A. Gonsalves, Vice President-Legal and Company Secretary. The disclosure is made pursuant to Regulation 30 of the SEBI Listing Obligations and Disclosure Requirements Regulations, 2015.",
       "material": false
     },
@@ -443,7 +567,7 @@
         "routine"
       ],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": "Bharti Airtel Limited published newspaper advertisements on November 14, 2026, regarding the claim of proceeds from fractional entitlements. These proceeds relate to the Scheme between Tata Teleservices Maharashtra Limited and Bharti Airtel Limited, effective July 1, 2019. Eligible shareholders of Tata Teleservices Maharashtra Limited are requested to claim unclaimed amounts by sending an application to KFin Technologies Limited on or before February 15, 2027. The required documents include Form ISR-1 and ISR-2, a self-attested PAN card copy, address proof, a cancelled cheque copy, and a Client Master List for DEMAT holdings. If no claim is received by February 15, 2027, the unclaimed amounts will be transferred to the Investor Education and Protection Fund Authority.",
       "material": false
     },
@@ -460,8 +584,8 @@
       "secondary": [],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
-      "exchange_summary": "Reliance Industries Limited disclosed that its executives will participate in the Morgan Stanley 25th Annual Asia-Pacific Summit in Singapore on November 18 and 19, 2026. The meetings with investors are expected to be on a one-on-one basis. The company confirmed that no unpublished price sensitive information is proposed to be shared or discussed during these meetings. This disclosure is made under Regulation 30 of the SEBI Listing Obligations and Disclosure Requirements Regulations, 2015.",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
+      "exchange_summary": null,
       "material": false
     },
     {
@@ -477,8 +601,8 @@
       "secondary": [],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
-      "exchange_summary": "HDFC Bank Limited has approved the re-appointment of Mr. V. Srinivasa Rangan, DIN 00030248, as Whole-time Director designated as Executive Director for a period of one year effective from November 23, 2026. This approval follows recommendations from the Governance, Nomination and Remuneration Committee and consent from the Reserve Bank of India. The re-appointment is subject to shareholder approval. Mr. Rangan will continue at extant remuneration. He is not related to any other Director or Key Managerial Personnel of the Bank and is not debarred from holding office. The bank will seek shareholder approval for this re-appointment.",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
+      "exchange_summary": null,
       "material": true
     },
     {
@@ -496,8 +620,8 @@
         "routine"
       ],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
-      "exchange_summary": "ITC Limited allotted 7,85,300 ordinary shares of one rupee each on 13th November 2026. This allotment resulted from the exercise of 78,530 options by optionees under the company's Employee Stock Option Schemes. The committee meeting for the allotment concluded at 3:10 p.m. Consequently, the issued and subscribed share capital of ITC Limited increased to 1253,26,97,881 rupees. This capital is divided into 1253,26,97,881 ordinary shares of one rupee each. The change is effective from 13th November 2026.",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
+      "exchange_summary": null,
       "material": false
     },
     {
@@ -513,8 +637,8 @@
       "secondary": [],
       "tags": [],
       "needs_llm": true,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
-      "exchange_summary": "Hindustan Aeronautics Limited has notified a change in senior management. Shri Shrirang Anilrao Kothe has been appointed as CEO Helicopter Complex. The effective date of this appointment is 13th November 2026. The company filed this disclosure with BSE Limited and National Stock Exchange of India Ltd under Regulation 30 of the SEBI Listing Obligations and Disclosure Requirements Regulations 2015. The BSE scrip code is 541154. The NSE symbol is HAL. Shailesh Bansal, Company Secretary and Compliance Officer, signed the communication.",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
+      "exchange_summary": null,
       "material": true
     },
     {
@@ -530,8 +654,8 @@
       "secondary": [],
       "tags": [],
       "needs_llm": true,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
-      "exchange_summary": "Trent Limited issued a reminder on 13th November 2026 to shareholders holding physical shares to dematerialize them. The company cites SEBI regulations prohibiting the transfer of physical shares since April 1, 2021, and the issuance of new physical certificates since January 2022. Shareholders are urged to contact their Depository Participant to convert physical holdings into demat form. The letter outlines benefits including convenient holding, immediate transfer, reduced paperwork, and direct credit for corporate actions. The Registrar and Share Transfer Agent is MUFG Intime India Private Limited. Queries can be directed to them at Mumbai. The intimation is also placed on the company website.",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
+      "exchange_summary": null,
       "material": false
     },
     {
@@ -547,7 +671,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -564,7 +688,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": true,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -583,7 +707,7 @@
       ],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -602,7 +726,7 @@
         "top_role"
       ],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": true
     },
@@ -621,7 +745,7 @@
         "intimation"
       ],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -638,7 +762,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -655,7 +779,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": true
     },
@@ -672,7 +796,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -689,7 +813,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": true,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -706,7 +830,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -723,7 +847,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": true
     },
@@ -740,7 +864,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": true
     },
@@ -759,7 +883,7 @@
       ],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -776,7 +900,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": true
     },
@@ -793,7 +917,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": true,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -810,7 +934,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": true
     },
@@ -827,7 +951,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -844,7 +968,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": true,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -861,7 +985,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -880,7 +1004,7 @@
         "intimation"
       ],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -897,7 +1021,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": true,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -914,7 +1038,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": true,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -933,7 +1057,7 @@
       ],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -950,7 +1074,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": true
     },
@@ -967,7 +1091,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -984,7 +1108,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": true
     },
@@ -1003,7 +1127,7 @@
       ],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -1020,7 +1144,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -1040,7 +1164,7 @@
         "routine"
       ],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -1057,7 +1181,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -1074,7 +1198,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -1091,7 +1215,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": true,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": true
     },
@@ -1108,7 +1232,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": true,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -1125,7 +1249,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": true
     },
@@ -1144,7 +1268,7 @@
         "intimation"
       ],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -1161,7 +1285,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": true,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -1178,7 +1302,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -1195,7 +1319,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": true,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -1212,7 +1336,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": true
     },
@@ -1231,7 +1355,7 @@
         "top_role"
       ],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": true
     },
@@ -1250,7 +1374,7 @@
         "routine"
       ],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -1267,7 +1391,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": true,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -1284,7 +1408,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": true,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -1303,7 +1427,7 @@
         "routine"
       ],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -1320,7 +1444,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": true,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -1337,7 +1461,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -1354,7 +1478,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -1371,7 +1495,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": true
     },
@@ -1390,7 +1514,7 @@
       ],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -1407,7 +1531,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": true
     },
@@ -1426,7 +1550,7 @@
       ],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": true
     },
@@ -1443,7 +1567,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": true
     },
@@ -1460,7 +1584,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -1480,7 +1604,7 @@
         "routine"
       ],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -1499,7 +1623,7 @@
       ],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -1516,7 +1640,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -1533,7 +1657,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": true
     },
@@ -1552,7 +1676,7 @@
       ],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -1569,7 +1693,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": true,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -1586,7 +1710,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": true,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -1605,7 +1729,7 @@
       ],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -1622,7 +1746,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": true,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -1639,7 +1763,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": true,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -1659,7 +1783,7 @@
         "routine"
       ],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -1676,7 +1800,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -1693,7 +1817,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": true,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -1710,7 +1834,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": true,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -1727,7 +1851,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -1744,7 +1868,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": true
     },
@@ -1761,7 +1885,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": true,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -1780,7 +1904,7 @@
       ],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -1797,7 +1921,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": true,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -1814,7 +1938,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": true,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -1833,7 +1957,7 @@
         "routine"
       ],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -1850,7 +1974,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -1869,7 +1993,7 @@
       ],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -1886,7 +2010,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": true
     },
@@ -1903,7 +2027,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -1920,7 +2044,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": true
     },
@@ -1937,7 +2061,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": true,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -1954,7 +2078,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": true
     },
@@ -1971,7 +2095,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": true,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -1990,7 +2114,7 @@
       ],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -2007,7 +2131,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": true
     },
@@ -2027,7 +2151,7 @@
         "routine"
       ],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -2044,7 +2168,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": true,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -2063,7 +2187,7 @@
       ],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -2080,7 +2204,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": true,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -2097,7 +2221,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": true
     },
@@ -2114,7 +2238,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": true,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": true
     },
@@ -2131,7 +2255,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -2151,7 +2275,7 @@
         "routine"
       ],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -2170,7 +2294,7 @@
       ],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -2190,7 +2314,7 @@
         "routine"
       ],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -2209,7 +2333,7 @@
       ],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": true
     },
@@ -2226,7 +2350,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": true,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -2243,7 +2367,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -2260,7 +2384,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -2277,7 +2401,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": true,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -2296,7 +2420,7 @@
       ],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": true
     },
@@ -2315,7 +2439,7 @@
       ],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": true
     },
@@ -2334,7 +2458,7 @@
       ],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": true
     },
@@ -2351,7 +2475,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": true,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -2368,7 +2492,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": true
     },
@@ -2385,7 +2509,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": true,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -2402,7 +2526,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": true,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": true
     },
@@ -2419,7 +2543,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": true
     },
@@ -2439,7 +2563,7 @@
         "routine"
       ],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -2458,7 +2582,7 @@
         "routine"
       ],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -2475,7 +2599,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": true,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -2492,7 +2616,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": true,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -2509,7 +2633,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": true
     },
@@ -2528,7 +2652,7 @@
         "routine"
       ],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -2545,7 +2669,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": true
     },
@@ -2562,7 +2686,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": true
     },
@@ -2579,7 +2703,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -2596,7 +2720,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -2613,7 +2737,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": true,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -2630,7 +2754,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": true
     },
@@ -2647,7 +2771,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": true
     },
@@ -2666,7 +2790,7 @@
         "top_role"
       ],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": true
     },
@@ -2685,7 +2809,7 @@
         "top_role"
       ],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": true
     },
@@ -2704,7 +2828,7 @@
       ],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": true
     },
@@ -2721,7 +2845,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": true,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -2738,7 +2862,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": true,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -2755,7 +2879,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": true
     },
@@ -2775,7 +2899,7 @@
         "routine"
       ],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -2792,7 +2916,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": true
     },
@@ -2811,7 +2935,7 @@
       ],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": true
     },
@@ -2830,7 +2954,7 @@
       ],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": true
     },
@@ -2850,7 +2974,7 @@
       ],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": true
     },
@@ -2870,7 +2994,7 @@
       ],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": true
     },
@@ -2887,7 +3011,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": true
     },
@@ -2904,7 +3028,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": true,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -2921,7 +3045,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": true
     },
@@ -2938,7 +3062,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": true,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -2958,7 +3082,7 @@
         "routine"
       ],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -2975,7 +3099,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -2992,7 +3116,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": true
     },
@@ -3009,7 +3133,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -3026,7 +3150,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -3043,7 +3167,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": true,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -3063,7 +3187,7 @@
         "routine"
       ],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -3080,7 +3204,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": true
     },
@@ -3100,7 +3224,7 @@
         "routine"
       ],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -3117,7 +3241,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": true
     },
@@ -3134,7 +3258,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": true
     },
@@ -3151,7 +3275,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -3168,7 +3292,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -3187,7 +3311,7 @@
         "intimation"
       ],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -3204,7 +3328,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -3225,7 +3349,7 @@
         "intimation"
       ],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -3242,7 +3366,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -3261,7 +3385,7 @@
         "routine"
       ],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -3278,7 +3402,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -3295,7 +3419,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": true
     },
@@ -3312,7 +3436,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": true,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -3329,7 +3453,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": true,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -3348,7 +3472,7 @@
       ],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": true
     },
@@ -3365,7 +3489,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": true
     },
@@ -3384,7 +3508,7 @@
         "routine"
       ],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -3401,7 +3525,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": true
     },
@@ -3418,7 +3542,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": true,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -3435,7 +3559,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": true,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -3452,7 +3576,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": true
     },
@@ -3469,7 +3593,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": true,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -3486,7 +3610,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": true,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -3503,7 +3627,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -3522,7 +3646,7 @@
         "routine"
       ],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -3539,7 +3663,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -3556,7 +3680,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": true,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -3575,7 +3699,7 @@
         "routine"
       ],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -3592,7 +3716,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": true,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -3612,7 +3736,7 @@
         "routine"
       ],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -3629,7 +3753,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": true
     },
@@ -3648,7 +3772,7 @@
       ],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -3667,7 +3791,7 @@
       ],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -3684,7 +3808,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": true
     },
@@ -3703,7 +3827,7 @@
       ],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -3720,7 +3844,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": true
     },
@@ -3737,7 +3861,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -3754,7 +3878,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": true
     },
@@ -3771,7 +3895,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": true,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -3788,7 +3912,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": true
     },
@@ -3807,7 +3931,7 @@
       ],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": true
     },
@@ -3826,7 +3950,7 @@
       ],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -3843,7 +3967,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -3860,7 +3984,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": true
     },
@@ -3879,7 +4003,7 @@
       ],
       "tags": [],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -3898,7 +4022,7 @@
         "routine"
       ],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -3915,7 +4039,7 @@
       "secondary": [],
       "tags": [],
       "needs_llm": true,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     },
@@ -3935,215 +4059,7 @@
         "routine"
       ],
       "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
-      "exchange_summary": null,
-      "material": false
-    },
-    {
-      "id": "8d3db6125c1ad1b1",
-      "symbol": "RELIANCE",
-      "company": "Reliance Industries Limited",
-      "source": "NSE",
-      "filed_at": "2026-10-21T22:44:39+05:30",
-      "exchange_category": "Updates",
-      "subject": "Please find attached a media statement issued by the Company.",
-      "pdf_url": "https://nsearchives.nseindia.in/corporate/kavinavora_21102026224413_SE_21102026.pdf",
-      "category": "unclassified",
-      "secondary": [],
-      "tags": [],
-      "needs_llm": true,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
-      "exchange_summary": null,
-      "material": false
-    },
-    {
-      "id": "5a7e15659bbb83f9",
-      "symbol": "PERSISTENT",
-      "company": "Persistent Systems Limited",
-      "source": "NSE",
-      "filed_at": "2026-10-21T20:52:10+05:30",
-      "exchange_category": "Credit Rating",
-      "subject": "Persistent Systems Limited has informed the Exchange about Credit Rating",
-      "pdf_url": "https://nsearchives.nseindia.in/corporate/PERSISTENTUSER1_21102026205156_PSLIntimationofCreditRatingNCDsd.pdf",
-      "category": "credit_rating",
-      "secondary": [],
-      "tags": [],
-      "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
-      "exchange_summary": null,
-      "material": true
-    },
-    {
-      "id": "2d93cfee31db257a",
-      "symbol": "RELIANCE",
-      "company": "Reliance Industries Limited",
-      "source": "NSE",
-      "filed_at": "2026-10-21T20:43:30+05:30",
-      "exchange_category": "Credit Rating",
-      "subject": "Reliance Industries Limited has informed the Exchange about Credit Rating",
-      "pdf_url": "https://nsearchives.nseindia.in/corporate/PVIVINMA_21102026204310_SE_ICRA.pdf",
-      "category": "credit_rating",
-      "secondary": [],
-      "tags": [],
-      "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
-      "exchange_summary": null,
-      "material": true
-    },
-    {
-      "id": "b103328414b9d817",
-      "symbol": "PERSISTENT",
-      "company": "Persistent Systems Limited",
-      "source": "NSE",
-      "filed_at": "2026-10-21T19:59:41+05:30",
-      "exchange_category": "Committee Meeting Updates",
-      "subject": "Persistent Systems Limited has informed the Exchange regarding Outcome of Committee Meeting held on October 21, 2026.",
-      "pdf_url": "https://nsearchives.nseindia.in/corporate/PERSISTENTUSER1_21102026195926_PersistentUpdateonSEOutcomeQIPissueopeningOct212026signed.pdf",
-      "category": "unclassified",
-      "secondary": [],
-      "tags": [],
-      "needs_llm": true,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
-      "exchange_summary": null,
-      "material": false
-    },
-    {
-      "id": "011314f9b059682a",
-      "symbol": "PERSISTENT",
-      "company": "Persistent Systems Limited",
-      "source": "NSE",
-      "filed_at": "2026-10-21T19:22:58+05:30",
-      "exchange_category": "Issue of Securities",
-      "subject": "Persistent Systems Limited has informed the Exchange about issue of Securities",
-      "pdf_url": "https://nsearchives.nseindia.in/corporate/PERSISTENTUSER1_21102026192219_PersistentSEOutcomeQIPissueopeningOct212026V3signed.pdf",
-      "category": "fund_raise",
-      "secondary": [],
-      "tags": [],
-      "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
-      "exchange_summary": null,
-      "material": true
-    },
-    {
-      "id": "74e13fb6e737c083",
-      "symbol": "PERSISTENT",
-      "company": "Persistent Systems Limited",
-      "source": "NSE",
-      "filed_at": "2026-10-21T19:16:46+05:30",
-      "exchange_category": "Committee Meeting Updates",
-      "subject": "Persistent Systems Limited has informed the Exchange regarding Outcome of Committee Meeting held on October 21, 2026.",
-      "pdf_url": "https://nsearchives.nseindia.in/corporate/PERSISTENTUSER1_21102026191632_PersistentSEOutcomeQIPissueopeningOct212026V3signed.pdf",
-      "category": "unclassified",
-      "secondary": [],
-      "tags": [],
-      "needs_llm": true,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
-      "exchange_summary": null,
-      "material": false
-    },
-    {
-      "id": "5379f26854e264dd",
-      "symbol": "DIXON",
-      "company": "Dixon Technologies (India) Limited",
-      "source": "NSE",
-      "filed_at": "2026-10-21T18:41:55+05:30",
-      "exchange_category": "Updates",
-      "subject": "Dixon Technologies (India) Limited has informed the Exchange regarding 'Giving of guarantees or indemnity or becoming a surety for any third party'.",
-      "pdf_url": "https://nsearchives.nseindia.in/corporate/DIXON_21102026184143_Regulation30GuaranteeQuanta21102026.pdf",
-      "category": "unclassified",
-      "secondary": [],
-      "tags": [],
-      "needs_llm": true,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
-      "exchange_summary": null,
-      "material": false
-    },
-    {
-      "id": "1efc105456eccc8b",
-      "symbol": "SUZLON",
-      "company": "Suzlon Energy Limited",
-      "source": "NSE",
-      "filed_at": "2026-10-21T16:07:30+05:30",
-      "exchange_category": "ESOP/ESOS/ESPS",
-      "subject": "Suzlon Energy Limited has informed the Exchange regarding Allotment of 346000 Shares.",
-      "pdf_url": "https://nsearchives.nseindia.in/corporate/SUZLON1_21102026160631_Suzlon21102026.pdf",
-      "category": "unclassified",
-      "secondary": [],
-      "tags": [
-        "routine"
-      ],
-      "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
-      "exchange_summary": null,
-      "material": false
-    },
-    {
-      "id": "5a9ffa64195af377",
-      "symbol": "MARUTI",
-      "company": "Maruti Suzuki India Limited",
-      "source": "NSE",
-      "filed_at": "2026-10-21T15:39:05+05:30",
-      "exchange_category": "Analysts/Institutional Investor Meet/Con. Call Updates",
-      "subject": "Maruti Suzuki India Limited has informed the Exchange about Schedule of meet",
-      "pdf_url": "https://nsearchives.nseindia.in/corporate/MARUTIASHISH_21102026153744_STxIntimation_EarningsCall_27Oct2026.pdf",
-      "category": "investor_meetings",
-      "secondary": [],
-      "tags": [],
-      "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
-      "exchange_summary": null,
-      "material": false
-    },
-    {
-      "id": "51174a05ebe68a39",
-      "symbol": "BAJFINANCE",
-      "company": "Bajaj Finance Limited",
-      "source": "NSE",
-      "filed_at": "2026-10-21T12:29:52+05:30",
-      "exchange_category": "Allotment of Securities",
-      "subject": "Bajaj Finance Limited has informed the Exchange regarding allotment of 2,12,000 securities pursuant to Non Convertible Securities at its meeting held on October 21, 2026",
-      "pdf_url": "https://nsearchives.nseindia.in/corporate/BAJFINANCE_21102026122914_REG30_Allotment_intimation.pdf",
-      "category": "unclassified",
-      "secondary": [],
-      "tags": [],
-      "needs_llm": true,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
-      "exchange_summary": null,
-      "material": false
-    },
-    {
-      "id": "9ef818b607e0e433",
-      "symbol": "HDFCBANK",
-      "company": "HDFC Bank Limited",
-      "source": "NSE",
-      "filed_at": "2026-10-21T11:52:36+05:30",
-      "exchange_category": "Shareholders meeting",
-      "subject": "HDFC Bank Limited has informed the Exchange regarding Notice of Postal Ballot",
-      "pdf_url": "https://nsearchives.nseindia.in/corporate/HDFCBANK3_21102026115151_SEIntimationPostalBallotNoticeOct2026.pdf",
-      "category": "postal_ballot",
-      "secondary": [
-        "agm_egm"
-      ],
-      "tags": [],
-      "needs_llm": false,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
-      "exchange_summary": null,
-      "material": false
-    },
-    {
-      "id": "440af7aa5cc6b019",
-      "symbol": "LT",
-      "company": "Larsen & Toubro Limited",
-      "source": "NSE",
-      "filed_at": "2026-10-21T09:46:52+05:30",
-      "exchange_category": "Bagging/Receiving of orders/contracts",
-      "subject": "Larsen & Toubro Limited has informed the Exchange about Bagging/Receiving of orders/contracts",
-      "pdf_url": "https://nsearchives.nseindia.in/corporate/PAM_21102026094637_PressRelease21102026.pdf",
-      "category": "unclassified",
-      "secondary": [],
-      "tags": [],
-      "needs_llm": true,
-      "fetched_at": "2026-11-20T01:06:38+05:30",
+      "fetched_at": "2026-11-21T00:44:03+05:30",
       "exchange_summary": null,
       "material": false
     }
