@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-21T00:44:01+05:30",
-  "as_of": "2026-11-19",
+  "generated_at": "2026-11-24T04:22:58+05:30",
+  "as_of": "2026-11-20",
   "thresholds": {
     "global": {
       "price_move_pct": 4.0,
@@ -20,6 +20,49 @@
     }
   },
   "alerts": [
+    {
+      "symbol": "PERSISTENT",
+      "date": "2026-11-20",
+      "close": 6124.0,
+      "pct_change": 4.15,
+      "vol_ratio": 3.25,
+      "sigma": 2.27,
+      "triggers": [
+        {
+          "type": "price_move",
+          "value": 4.15,
+          "threshold": 4.0
+        },
+        {
+          "type": "volume_spike",
+          "value": 3.25,
+          "threshold": 2.0
+        }
+      ],
+      "severity": "high",
+      "headline": "+4.1% on the day, 3.2x its 20-day avg volume, a 2.3σ move for this stock",
+      "name": "Persistent Systems",
+      "sector": "IT Services"
+    },
+    {
+      "symbol": "MARUTI",
+      "date": "2026-11-20",
+      "close": 14011.0,
+      "pct_change": 3.11,
+      "vol_ratio": 2.64,
+      "sigma": 1.64,
+      "triggers": [
+        {
+          "type": "volume_spike",
+          "value": 2.64,
+          "threshold": 2.0
+        }
+      ],
+      "severity": "medium",
+      "headline": "+3.1% on the day, 2.6x its 20-day avg volume",
+      "name": "Maruti Suzuki",
+      "sector": "Auto"
+    },
     {
       "symbol": "MARUTI",
       "date": "2026-11-19",
@@ -682,25 +725,6 @@
       "headline": "-3.3% on the day, 2.4x its 20-day avg volume",
       "name": "Bajaj Finance",
       "sector": "NBFC"
-    },
-    {
-      "symbol": "PERSISTENT",
-      "date": "2026-10-19",
-      "close": 5690.0,
-      "pct_change": -0.89,
-      "vol_ratio": 2.13,
-      "sigma": -0.46,
-      "triggers": [
-        {
-          "type": "volume_spike",
-          "value": 2.13,
-          "threshold": 2.0
-        }
-      ],
-      "severity": "medium",
-      "headline": "-0.9% on the day, 2.1x its 20-day avg volume",
-      "name": "Persistent Systems",
-      "sector": "IT Services"
     }
   ]
 }
