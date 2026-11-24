@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-11-24T04:23:18+05:30",
+ "generated_at": "2026-11-25T02:58:24+05:30",
  "window": {
-  "from": "2026-10-25",
-  "to": "2026-11-24",
+  "from": "2026-10-26",
+  "to": "2026-11-25",
   "days": 30
  },
  "weights": {
@@ -29,11 +29,87 @@
   "worth": 40
  },
  "counts": {
+  "routine": 134,
   "worth": 18,
-  "routine": 130,
   "top": 28
  },
  "items": [
+  {
+   "id": "2d64174f453b8593",
+   "symbol": "LT",
+   "name": "Larsen & Toubro",
+   "sector": "Capital Goods",
+   "filed_at": "2026-11-24T17:33:26+05:30",
+   "source": "NSE",
+   "category": "investor_meetings",
+   "tags": [],
+   "title": "Larsen & Toubro Limited has informed the Exchange about Schedule of meet",
+   "exchange_category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+   "pdf_url": "https://nsearchives.nseindia.in/corporate/PAM_24112026173302_Intimation24112026.pdf",
+   "summary": "Notified the BSE and NSE regarding a schedule for an Analyst and Institutional Investors meet.",
+   "score": 8.0,
+   "tier": "routine",
+   "why": [],
+   "enriched": null,
+   "related": []
+  },
+  {
+   "id": "7854480e2c2f74ac",
+   "symbol": "DIXON",
+   "name": "Dixon Technologies",
+   "sector": "Electronics Mfg",
+   "filed_at": "2026-11-24T15:04:54+05:30",
+   "source": "NSE",
+   "category": "unclassified",
+   "tags": [],
+   "title": "Dixon Technologies (India) Limited has informed the Exchange regarding Appointment of Ms Aruna Jayanthi (DIN: 00817860) as Other of the company w.e.f. November 24, 2026.",
+   "exchange_category": "Appointment",
+   "pdf_url": "https://nsearchives.nseindia.in/corporate/DIXON_24112026150148_Reg30DisclosureArunaJayanthi24112026.pdf",
+   "summary": "Dixon Technologies appointed Ms.",
+   "score": 5.0,
+   "tier": "routine",
+   "why": [],
+   "enriched": null,
+   "related": []
+  },
+  {
+   "id": "234020465050b62e",
+   "symbol": "BHARTIARTL",
+   "name": "Bharti Airtel",
+   "sector": "Telecom",
+   "filed_at": "2026-11-24T13:13:15+05:30",
+   "source": "NSE",
+   "category": "unclassified",
+   "tags": [],
+   "title": "Bharti Airtel Limited has informed the Exchange about Action(s) taken or orders passed",
+   "exchange_category": "Action(s) taken or orders passed",
+   "pdf_url": "https://nsearchives.nseindia.in/corporate/BHARTIARTL_24112026131238_BhartiAirtelSTXdisclosure.pdf",
+   "summary": "Received a notice from the Department of Telecommunications, Andhra Pradesh LSA on November 23, 2026.",
+   "score": 5.0,
+   "tier": "routine",
+   "why": [],
+   "enriched": null,
+   "related": []
+  },
+  {
+   "id": "5861df7de6a11651",
+   "symbol": "POLYCAB",
+   "name": "Polycab India",
+   "sector": "Cables & Wires",
+   "filed_at": "2026-11-24T10:46:47+05:30",
+   "source": "NSE",
+   "category": "investor_meetings",
+   "tags": [],
+   "title": "Polycab India Limited has informed the Exchange about Analyst(s)/Investor(s) meet.",
+   "exchange_category": "General Updates",
+   "pdf_url": "https://nsearchives.nseindia.in/corporate/POLYCAB_24112026104607_Intimationtostockexchange.pdf",
+   "summary": "Intimated the BSE and NSE regarding scheduled meetings with institutional investors and analysts under Regulation 30 of the SEBI Listing Regulations.",
+   "score": 8.0,
+   "tier": "routine",
+   "why": [],
+   "enriched": null,
+   "related": []
+  },
   {
    "id": "4df2844e94ec0cd3",
    "symbol": "SUNPHARMA",
@@ -161,11 +237,21 @@
    "exchange_category": "Updates",
    "pdf_url": "https://nsearchives.nseindia.in/corporate/PERSISTENTUSER1_23112026074246_CompanyStatementforexchangesreleaseNov232026Signed.pdf",
    "summary": "Informs the exchange that a U.S.-based law firm handling its employee immigration matters may have experienced a cybersecurity incident, resulting in the purported…",
-   "score": 5.0,
+   "score": 25.0,
    "tier": "routine",
-   "why": [],
+   "why": [
+    "Stock moved on it"
+   ],
    "enriched": null,
-   "related": []
+   "related": [],
+   "alert": {
+    "date": "2026-11-23",
+    "pct_change": 2.59,
+    "vol_ratio": 2.1,
+    "sigma": 1.36,
+    "headline": "+2.6% on the day, 2.1x its 20-day avg volume",
+    "severity": "medium"
+   }
   },
   {
    "id": "31bfa4cea43331ba",
@@ -510,7 +596,7 @@
    "title": "This is further to the disclosure dated November 12, 2026 made by the Company. We wish to inform you that the Company executives participated in the Institutional Investors' Meeting - JM Financial India Conference and no unpublished price sensitive information was shared/discussed in the said one-on-one meeting.",
    "exchange_category": "Updates",
    "pdf_url": "https://nsearchives.nseindia.in/corporate/kavinavora_17112026184407_SE_17112026.pdf",
-   "summary": "Filed an update on November 17, 2026, regarding an institutional investors meeting.",
+   "summary": null,
    "score": 8.0,
    "tier": "routine",
    "why": [],
@@ -531,7 +617,7 @@
    "title": "HDFC Bank Limited has informed the Exchange regarding 'Grant of stock options under Employee Stock Option Scheme (ESOS Plan H-2024) and Grant of Restricted Stock Units under Employees Stock Incentive Master Scheme 2022'.",
    "exchange_category": "Updates",
    "pdf_url": "https://nsearchives.nseindia.in/corporate/HDFCBANK3_17112026155359_SE_Intimation_grant_of_ESOP_17112026.pdf",
-   "summary": "HDFC Bank granted 1,86,031 equity stock options under ESOS Plan H-2024 at Rs.",
+   "summary": null,
    "score": 1.0,
    "tier": "routine",
    "why": [],
@@ -557,7 +643,7 @@
    "title": "Infosys Limited has informed the Exchange regarding 'Infosys Positioned as a Leader in the 2026 Gartner® Magic Quadrant for Public Cloud Optimization and Transformation Services for the Fourth Consecutive Year'.",
    "exchange_category": "Updates",
    "pdf_url": "https://nsearchives.nseindia.in/corporate/Infosys_17112026145826_PR_17112026.pdf",
-   "summary": "Announced on November 17, 2026, that it has been positioned as a Leader in the 2026 Gartner Magic Quadrant for Public Cloud Optimization and Transformation Services.",
+   "summary": null,
    "score": 5.0,
    "tier": "routine",
    "why": [],
@@ -578,7 +664,7 @@
    "title": "Trent Limited has informed the Exchange about Intimation of schedule of Analyst / Institutional Investors Meetings",
    "exchange_category": "Analysts/Institutional Investor Meet/Con. Call Updates",
    "pdf_url": "https://nsearchives.nseindia.in/corporate/TRENT_17112026140114_Investor_Analyst_Meeting_17112026.pdf",
-   "summary": "Intimated the schedule of meetings with analysts and institutional investors pursuant to Regulation 30 of the SEBI Listing Obligations and Disclosure Requirements…",
+   "summary": null,
    "score": 1.6,
    "tier": "routine",
    "why": [],
@@ -597,7 +683,7 @@
    "title": "Bajaj Finance Limited has informed the Exchange regarding allotment of 114146341 securities pursuant to Qualified Institution Placement at its meeting held on November 17, 2026",
    "exchange_category": "Allotment of Securities",
    "pdf_url": "https://nsearchives.nseindia.in/corporate/BAJFINANCE_17112026082518_BSENSE_Intimationofallotment.pdf",
-   "summary": "Allotted 114,146,341 equity shares to qualified institutional buyers at an issue price of Rs.",
+   "summary": null,
    "score": 60.0,
    "tier": "worth",
    "why": [],
@@ -4140,6 +4226,12 @@
    ],
    "enriched": "ok",
    "related": [
+    {
+     "id": "f97f15f668bfe4c4",
+     "title": "This is to inform you that the management representatives would be meeting the members of the Promoter(s) & Promoter(s) Group on Friday, 27th November 2026, 4.00 pm (IST) onwards in Mumbai, to brief them on the performance of the Company for the quarter and half year ended 30th September 2026.",
+     "pdf_url": "https://nsearchives.nseindia.in/corporate/ASIANPAINT_24112026142403_SEINTIMATIONPROMOTERMEETNOV2026signed.pdf",
+     "filed_at": "2026-11-24T14:24:16+05:30"
+    },
     {
      "id": "85231f8dc9586275",
      "title": "Please find enclosed the Press Release on the performance of the Company for the quarter and half year ended 30th September 2026.",

@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-24T04:22:58+05:30",
-  "as_of": "2026-11-20",
+  "generated_at": "2026-11-25T02:58:02+05:30",
+  "as_of": "2026-11-23",
   "thresholds": {
     "global": {
       "price_move_pct": 4.0,
@@ -20,6 +20,25 @@
     }
   },
   "alerts": [
+    {
+      "symbol": "PERSISTENT",
+      "date": "2026-11-23",
+      "close": 6282.5,
+      "pct_change": 2.59,
+      "vol_ratio": 2.1,
+      "sigma": 1.36,
+      "triggers": [
+        {
+          "type": "volume_spike",
+          "value": 2.1,
+          "threshold": 2.0
+        }
+      ],
+      "severity": "medium",
+      "headline": "+2.6% on the day, 2.1x its 20-day avg volume",
+      "name": "Persistent Systems",
+      "sector": "IT Services"
+    },
     {
       "symbol": "PERSISTENT",
       "date": "2026-11-20",
@@ -706,25 +725,6 @@
       "headline": "+0.0% on the day, 2.4x its 20-day avg volume",
       "name": "Infosys",
       "sector": "IT Services"
-    },
-    {
-      "symbol": "BAJFINANCE",
-      "date": "2026-10-21",
-      "close": 926.0,
-      "pct_change": -3.27,
-      "vol_ratio": 2.36,
-      "sigma": -1.59,
-      "triggers": [
-        {
-          "type": "volume_spike",
-          "value": 2.36,
-          "threshold": 2.0
-        }
-      ],
-      "severity": "medium",
-      "headline": "-3.3% on the day, 2.4x its 20-day avg volume",
-      "name": "Bajaj Finance",
-      "sector": "NBFC"
     }
   ]
 }
