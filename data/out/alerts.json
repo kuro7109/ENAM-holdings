@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-27T01:58:28+05:30",
-  "as_of": "2026-11-25",
+  "generated_at": "2026-11-28T01:44:00+05:30",
+  "as_of": "2026-11-26",
   "thresholds": {
     "global": {
       "price_move_pct": 4.0,
@@ -20,6 +20,25 @@
     }
   },
   "alerts": [
+    {
+      "symbol": "INFY",
+      "date": "2026-11-26",
+      "close": 1183.0,
+      "pct_change": 4.69,
+      "vol_ratio": 1.49,
+      "sigma": 2.29,
+      "triggers": [
+        {
+          "type": "price_move",
+          "value": 4.69,
+          "threshold": 4.0
+        }
+      ],
+      "severity": "medium",
+      "headline": "+4.7% on the day, a 2.3σ move for this stock",
+      "name": "Infosys",
+      "sector": "IT Services"
+    },
     {
       "symbol": "PERSISTENT",
       "date": "2026-11-23",
@@ -706,25 +725,6 @@
       "headline": "+4.0% on the day, a 2.3σ move for this stock",
       "name": "Polycab India",
       "sector": "Cables & Wires"
-    },
-    {
-      "symbol": "INFY",
-      "date": "2026-10-23",
-      "close": 1153.8,
-      "pct_change": 0.04,
-      "vol_ratio": 2.43,
-      "sigma": 0.02,
-      "triggers": [
-        {
-          "type": "volume_spike",
-          "value": 2.43,
-          "threshold": 2.0
-        }
-      ],
-      "severity": "medium",
-      "headline": "+0.0% on the day, 2.4x its 20-day avg volume",
-      "name": "Infosys",
-      "sector": "IT Services"
     }
   ]
 }
